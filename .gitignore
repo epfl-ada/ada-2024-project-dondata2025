@@ -1,2 +1,17 @@
 # Ignore any files in the data directory
 data/
+# vscode
+.vscode/
+# Jupyter Notebook
+.ipynb_checkpoints/
+# pycharm
+.idea/
+# Mac
+.DS_Store
+# Windows
+Thumbs.db
+# Linux
+*~
+# Python
+*.pyc
+*.pyo
