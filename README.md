@@ -1,7 +1,19 @@
 
-# Your project name
-This is a template repo for your project to help you organise and document your code better. 
-Please use this structure for your project and document the installation, usage and structure as below.
+# DonData : Nice name ! Where does it come from ?
+
+## Abstract
+*This is a ~150 word description of the project idea and goals. What's our motivation ? What story do we want to tell*
+
+Movies, and more generally TV content are known to be a powerfull source of influence. Jennifer Aniston's haircut, introduced in the TV show *Friends*, is considered to have become one of the most requested ever in history. 
+
+Our goal is to evaluate wether movies have influenced even the deepest part of who we are: our names.
+
+In order to investigate this topic, we'll use 
+
+
+
+
+
 
 ## Quickstart
 
