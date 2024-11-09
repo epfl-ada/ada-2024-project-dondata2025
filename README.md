@@ -19,49 +19,16 @@ We will focus on the most popular movies per year and analyse the changes it mig
 - Does the sexe of the newborn have any impact on that ?
 - Is it a global phenomenom or does it happen more in certain country ?
 
+## Additional datasets
+*List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible*
 
-## Quickstart
+## Methods
+A remplir
 
-```bash
-# clone project
-git clone <project link>
-cd <project repo>
+## Proposed timeline
 
-# [OPTIONAL] create conda environment
-conda create -n <env_name> python=3.11 or ...
-conda activate <env_name>
+## Organization within the team
+*A list of internal milestones up until project Milestone P3.*
 
-
-# install requirements
-pip install -r pip_requirements.txt
-```
-
-
-
-### How to use the library
-Tell us how the code is arranged, any explanations goes here.
-
-
-
-## Project Structure
-
-The directory structure of new project looks like this:
-
-```
-├── data                        <- Project data files
-│
-├── src                         <- Source code
-│   ├── data                            <- Data directory
-│   ├── models                          <- Model directory
-│   ├── utils                           <- Utility directory
-│   ├── scripts                         <- Shell scripts
-│
-├── tests                       <- Tests of any kind
-│
-├── results.ipynb               <- a well-structured notebook showing the results
-│
-├── .gitignore                  <- List of files ignored by git
-├── pip_requirements.txt        <- File for installing python dependencies
-└── README.md
-```
-
+## Questions for TAs
+*Optional*
