@@ -1,16 +1,16 @@
 
-# DonData : Nice name ! Where does it come from ?
+# DonData : Beautiful name ! Where does it come from ?
 
 ## Abstract
 *This is a ~150 word description of the project idea and goals. What's our motivation ? What story do we want to tell*
 
 Movies, and more generally TV content are known to be a powerfull source of influence. Jennifer Aniston's haircut, introduced in the TV show *Friends*, is considered to have become one of the most requested ever in history. 
 
-Our goal is to evaluate wether movies have influenced even the deepest part of who we are: our names.
+Our project aims to evaluate wether movies have influenced even the deepest part of who we are: our names.
 
-In order to investigate this topic, we'll use 
+In order to investigate this topic, we use a dataset containing [INSERT CORRECT VALUE] movies combined with one containing the names of the characters. To connect those data with real life, various datasets containing names attribution over time periods from different countries were found freely on the internet.
 
-
+We will focus on the most popular movies per year and analyse the changes it might have caused to the naming of newborns and try to find if we can find some patterns or differences depending on various parameters from our datasets. 
 
 
 
