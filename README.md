@@ -12,7 +12,12 @@ In order to investigate this topic, we use a dataset containing [INSERT CORRECT 
 
 We will focus on the most popular movies per year and analyse the changes it might have caused to the naming of newborns and try to find if we can find some patterns or differences depending on various parameters from our datasets. 
 
+## Research questions
+*A list of research questions you would like to address during the project.*
 
+- Can we find some names that have been ....
+- Does the sexe of the newborn have any impact on that ?
+- Is it a global phenomenom or does it happen more in certain country ?
 
 
 ## Quickstart
