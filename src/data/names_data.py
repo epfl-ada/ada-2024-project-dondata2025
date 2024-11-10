@@ -46,7 +46,7 @@ class NamesData():
         if("/" in clean_name):
             split = clean_name.split("/")
             clean_name = split[-1]
-            print(f"File name has been changed to {self.file_name} (we don't want directories in the clean folder)")
+            print(f"{self.name} : File name has been changed to {clean_name} (we don't want directories in the clean folder)")
         
         self.clean_df.to_csv(f'{CLEAN_DATA_PATH}{clean_name}', index=False)
 
@@ -59,7 +59,7 @@ class NamesData():
         self.fetch_raw_data()
         self.clean_raw_data()
         self.write_clean_data()
-        print(f"Data has been cleaned and saved to the clean data directory !")
+        print(f"{self.name} : Data has been cleaned and saved to the clean data directory ! ({self.clean_df.shape[0]} rows)")
 
     # Checks if there are missing values in the raw data and that it conforms to the expected structure
     def check_clean_data(self):
@@ -116,10 +116,6 @@ class UKNamesData(NamesData):
         # for a strange reason, the type of the numbers are set to float -> cast to int
         self.clean_df['Year'] = self.clean_df['Year'].astype(int)
         self.clean_df['Count'] = self.clean_df['Count'].astype(int)
-        # Check the data
-        # self.check_clean_data() -> this will fail due to some missing values in the data
-        missing_values = self.clean_df.isnull().sum().sum()
-        print(f"{self.name} : the raw dataset contains {missing_values} missing values out of {self.clean_df.shape[0]} rows, it will be dropped")
         # Dataset contains 1 missing values out of 565817 rows -> drop the row
         self.clean_df.dropna(inplace=True)
         # Check the data
