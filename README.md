@@ -1,5 +1,5 @@
 
-# DonData : Beautiful name ! Where does it come from ?
+# Beautiful name! Where does it come from?
 
 ## Abstract
 *This is a ~150 word description of the project idea and goals. What's our motivation ? What story do we want to tell*
