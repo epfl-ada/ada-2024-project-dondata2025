@@ -40,7 +40,11 @@ class NamesData():
     # Function called when 'len' is called on the object
     def __len__(self):
         return self.clean_df.shape[0] 
-
+    
+    # function executed when an instance of the class is called, we return the cleaned dataframe
+    def __call__(self, *args, **kwds):
+        return self.clean_df
+        
     # Reads the raw data and stores it in the raw_df attribute
     def fetch_raw_data(self):
 
