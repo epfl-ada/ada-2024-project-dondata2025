@@ -2,7 +2,6 @@
 # inidividual functions can be used to just load the clean data
 
 import pandas as pd
-import sys
 
 # All the cleaned dataframes will follow the same structure:
 # 1. Year
@@ -17,7 +16,7 @@ CLEAN_DATA_PATH = 'data/clean/names/'
 # Class for all the data cleaners
 class NamesData():
 
-    def __init__(self, name, file_name, credits=None, separator=','):
+    def __init__(self, name, file_name, credits=None, separator=',', loaded=True):
 
         # name used to refer to the dataset when errors are raised
         self.name = name
@@ -31,16 +30,30 @@ class NamesData():
         self.columns = ['Year', 'Name', 'Sex', 'Count']
         # separator used in the csv file
         self.separator = separator
-        # load the raw data
-        self.fetch_raw_data()
+        
+        if(loaded): # If loaded is true, there is a file corresponding to the data in the raw directory
+            self.loaded = True
+            self.fetch_raw_data()
+        else: # was created from in memory content, no file corresponding in the raw directory
+            self.loaded = False
+
+    # Function called when 'len' is called on the object
+    def __len__(self):
+        return self.clean_df.shape[0] 
 
     # Reads the raw data and stores it in the raw_df attribute
     def fetch_raw_data(self):
+
+        if not self.loaded:
+            print(f"{self.name} : This object does not come from a local file, cannot be loaded")
+            return
+        
         self.raw_df = pd.read_csv(f'{RAW_DATA_PATH}{self.file_name}', delimiter=self.separator)
         print(f"{self.name} : loaded {self.raw_df.shape[0]} rows !")
 
     # Writes the cleaned data to a csv file
     def write_clean_data(self):
+
         clean_name = self.file_name
          # hierarchy of the file is not repercuted in the clean folder
         if("/" in clean_name):
@@ -56,6 +69,9 @@ class NamesData():
         
     # Execute all the cleaning steps
     def pipeline(self):
+        if not self.loaded:
+            print(f"{self.name} : This object does not come from a local file, cannot be loaded")
+            return
         self.fetch_raw_data()
         self.clean_raw_data()
         self.write_clean_data()
@@ -71,6 +87,8 @@ class NamesData():
         # Missing values in the cleaned data
         missing_values = self.clean_df.isnull().sum().sum()
         missing_values += self.clean_df.isna().sum().sum()
+        # for the string
+        missing_values += self.clean_df.isin(['']).sum().sum()
         assert missing_values == 0, f'{self.name} has missing values!'
 
         # Check the tyoe of the columns
@@ -82,6 +100,18 @@ class NamesData():
         assert self.clean_df['Sex'].dtype == 'object', f'{self.name} : Sex column is not of type object (string)'
         ## Count column : int64
         assert self.clean_df['Count'].dtype == 'int64', f'{self.name} : Count column is not of type int64'
+
+        # Check for duplicates -> same name, same sex, same year, but different count
+        wo_year = self.clean_df.drop(columns=['Count'])
+        duplicates = wo_year.duplicated().sum()
+        assert duplicates == 0, f'{self.name} has {duplicates} duplicates !'
+
+        # Check that the names contain only letters
+        # allowed regex for name : '^[A-Z-\s\']+$' -> space and - are allowed and ' in case of names like O'Brien
+        # allowed regex for sexe (only M/F) : '^[MF]$'
+        assert all(self.clean_df['Name'].str.match("^[A-Z-\s\']+$")), f'{self.name} : Not all the names are composed of uppercased letters'
+        assert all(self.clean_df['Sex'].str.match('^[MF]$')), f'{self.name} : The sex column contains values different from M/F'
+
 
     # Function that will be defined by children classes
     def clean_raw_data(self):
@@ -107,6 +137,9 @@ class UKNamesData(NamesData):
 
     # Clean the raw data
     def clean_raw_data(self):
+
+        from unidecode import unidecode
+
         # 1. drop the the columns that we don't need
         self.clean_df = self.raw_df.drop(columns=['rank', 'nation'])
         # invert columns 1 and 2
@@ -116,6 +149,14 @@ class UKNamesData(NamesData):
         # for a strange reason, the type of the numbers are set to float -> cast to int
         self.clean_df['Year'] = self.clean_df['Year'].astype(int)
         self.clean_df['Count'] = self.clean_df['Count'].astype(int)
+        # Put the name in upper case
+        self.clean_df['Name'] = self.clean_df['Name'].str.upper()
+        # The dataset contained both values in uppercase and lowercase, but with different count -> group them
+        self.clean_df = self.clean_df.groupby(['Year', 'Name', 'Sex']).sum().reset_index()
+        # Replace accents on letters
+        self.clean_df['Name'] = self.clean_df['Name'].apply(lambda x: unidecode(x))
+        # 31 entries are not complying with the regex -> drop them
+        self.clean_df = self.clean_df[self.clean_df['Name'].str.match('^[A-Z-\s\']+$')]
         # Dataset contains 1 missing values out of 565817 rows -> drop the row
         self.clean_df.dropna(inplace=True)
         # Check the data
@@ -142,7 +183,8 @@ class FranceNamesData(NamesData):
         self.clean_df = self.clean_df.groupby(['annais', 'preusuel', 'sexe']).sum().reset_index()
 
         # the sex is 1 if it is a boy, 2 if it is a girl -> replace by M/F
-        self.clean_df['sexe'] = self.clean_df['sexe'].replace({1:'M', 2:'F'})
+        self.clean_df['sexe'] = self.clean_df['sexe'].replace(1, 'M')
+        self.clean_df['sexe'] = self.clean_df['sexe'].replace(2, 'F')
 
         self.clean_df = self.clean_df[['annais', 'preusuel', 'sexe', 'nombre']]
         self.clean_df.columns = self.columns
@@ -155,17 +197,9 @@ class FranceNamesData(NamesData):
         self.clean_df['Year'] = self.clean_df['Year'].astype(int)
         self.clean_df['Name'] = self.clean_df['Name'].str.upper()
         self.clean_df['Count'] = self.clean_df['Count'].astype(int)
-        self.clean_df['Sex'] = self.clean_df['Count'].astype(str)
-        
+
+        # There is only 1 name not matching the regex -> drop
+        self.clean_df = self.clean_df[self.clean_df['Name'].str.match('^[A-Z-\s\']+$')]      
+
         # Check the data
         self.check_clean_data()
-
-
-
-
-    
-
-        
-
-
-
