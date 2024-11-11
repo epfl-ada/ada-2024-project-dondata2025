@@ -2,7 +2,7 @@
 # Beautiful name! Where does it come from?
 
 ## Abstract
-*This is a ~150 word description of the project idea and goals. What's our motivation ? What story do we want to tell*
+*This is a ~150 word description of the project idea and goals. What's our motivation? What story do we want to tell*
 
 Movies, and more generally TV content are known to be a powerfull source of influence. Jennifer Aniston's haircut, introduced in the TV show *Friends*, is considered to have become one of the most requested ever in history. 
 
@@ -16,8 +16,8 @@ We will focus on the most popular movies per year and analyse the changes it mig
 *A list of research questions you would like to address during the project.*
 
 - Can we find some names that have been ....
-- Does the sexe of the newborn have any impact on that ?
-- Is it a global phenomenom or does it happen more in certain country ?
+- Does the sexe of the newborn have any impact on that?
+- Is it a global phenomenom or does it happen more in certain country?
 
 ## Additional datasets
 *List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible*
