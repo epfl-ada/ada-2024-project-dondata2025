@@ -1,12 +1,6 @@
 import json
-
-
-
-
-# this script is used to load read raw data, clean it and save it to a new file
-# inidividual functions can be used to just load the clean data
-
 import pandas as pd
+import os
 
 # All the cleaned dataframes will follow the same structure:
 # 1. Year
@@ -16,17 +10,22 @@ import pandas as pd
 
 # DATA FOLDER PATH (script is launched from the root folder)
 RAW_DATA_PATH = 'data/raw/'
-CLEAN_DATA_PATH = 'data/clean/character/'
+CLEAN_DATA_PATH = 'data/clean/movies_char/'
+
+# Create the clean data directory if it does not exist
+os.makedirs(CLEAN_DATA_PATH, exist_ok=True)
 
 # Class for all the data cleaners
-class NamesData():
+class DataClass():
 
-    def __init__(self, name, file_name, credits=None, separator=',', loaded=True):
+    def __init__(self, name, file_name, credits=None, separator=',', loaded=True, output_name=None):
 
         # name used to refer to the dataset when errors are raised
         self.name = name
         # file name of the raw data
         self.file_name = file_name
+        # output name of the cleaned data
+        self.output_name = output_name
         # create empty dataframes
         self.raw_df = pd.DataFrame()
         self.clean_df = pd.DataFrame()
@@ -57,21 +56,20 @@ class NamesData():
         if not self.loaded:
             print(f"{self.name} : This object does not come from a local file, cannot be loaded")
             return
-        
 
         print(f"{self.name} : Loading the raw data in the attribute")
         print(f'{RAW_DATA_PATH}{self.file_name}')
         self.raw_df = pd.read_csv(f'{RAW_DATA_PATH}{self.file_name}', delimiter=self.separator)
         print(f"{self.name} : loaded {self.raw_df.shape[0]} rows !")
 
-     
-
-
-
     # Writes the cleaned data to a csv file
     def write_clean_data(self):
 
-        clean_name = self.file_name
+        # takes the file name if no output_name is given
+        if self.output_name is None:
+            self.output_name = self.file_name
+
+        clean_name = self.output_name
          # hierarchy of the file is not repercuted in the clean folder
         if("/" in clean_name):
             split = clean_name.split("/")
@@ -79,25 +77,11 @@ class NamesData():
             print(f"{self.name} : File name has been changed to {clean_name} (we don't want directories in the clean folder)")
         
         self.clean_df.to_csv(f'{CLEAN_DATA_PATH}{clean_name}', index=False)
-
-
-
+        print(f"{self.name} : Data has been cleaned and saved to {CLEAN_DATA_PATH}{clean_name}!")
 
     # If the clean data is already saved, load it (will throw an error if the file is not found)
     def load_clean_data(self):
         self.clean_df = pd.read_csv(f'{CLEAN_DATA_PATH}{self.file_name}')
-        
-    # Execute all the cleaning steps
-    def pipeline(self):
-        if not self.loaded:
-            print(f"{self.name} : This object does not come from a local file, cannot be loaded")
-            return
-        self.fetch_raw_data()
-        self.clean_raw_data()
-        self.write_clean_data()
-        print(f"{self.name} : Data has been cleaned and saved to the clean data directory ! ({self.clean_df.shape[0]} rows)")
-
-
 
     # Checks if there are missing values in the raw data and that it conforms to the expected structure
     def check_clean_data(self):
@@ -134,118 +118,23 @@ class NamesData():
         assert all(self.clean_df['Name'].str.match("^[A-Z-\s\']+$")), f'{self.name} : Not all the names are composed of uppercased letters'
         assert all(self.clean_df['Sex'].str.match('^[MF]$')), f'{self.name} : The sex column contains values different from M/F'
 
-
-
     # Function that will be defined by children classes
     def clean_raw_data(self):
         raise NotImplementedError
-    
 
- 
-
-
-
-
-
-
-# Class for the US data
-class USNamesData(NamesData):
-    
-    # Clean the raw data
-    def clean_raw_data(self):
-         
-        self.clean_df = self.raw_df.copy()
-        # Change the column names
-        self.clean_df.columns = self.columns
-        # Rewrite the names in upper case
-        self.clean_df['Name'] = self.clean_df['Name'].str.upper()
-        # Check the data
-        self.check_clean_data() #Nothing more has to be done, this dataset is already clean and of good quality
-
-# Class for the UK data
-class UKNamesData(NamesData):
-
-    # Clean the raw data
-    def clean_raw_data(self):
-
-        from unidecode import unidecode
-
-        # 1. drop the the columns that we don't need
-        self.clean_df = self.raw_df.drop(columns=['rank', 'nation'])
-        # invert columns 1 and 2
-        self.clean_df = self.clean_df[['year', 'name', 'sex', 'n']]
-        # Change the column names
-        self.clean_df.columns = self.columns
-        # for a strange reason, the type of the numbers are set to float -> cast to int
-        self.clean_df['Year'] = self.clean_df['Year'].astype(int)
-        self.clean_df['Count'] = self.clean_df['Count'].astype(int)
-        # Put the name in upper case
-        self.clean_df['Name'] = self.clean_df['Name'].str.upper()
-        # The dataset contained both values in uppercase and lowercase, but with different count -> group them
-        self.clean_df = self.clean_df.groupby(['Year', 'Name', 'Sex']).sum().reset_index()
-        # Replace accents on letters
-        self.clean_df['Name'] = self.clean_df['Name'].apply(lambda x: unidecode(x))
-        # 31 entries are not complying with the regex -> drop them
-        self.clean_df = self.clean_df[self.clean_df['Name'].str.match('^[A-Z-\s\']+$')]
-        # Dataset contains 1 missing values out of 565817 rows -> drop the row
-        self.clean_df.dropna(inplace=True)
-        # Check the data
-        self.check_clean_data()
-
-# Class for the Spain data
-class FranceNamesData(NamesData):
-
-    # Clean the raw data
-    def clean_raw_data(self):
-
-        # Latin language use accents in the name, this function will help to remove them
-        from unidecode import unidecode
-
-        self.clean_df = self.raw_df.drop(columns=['dpt'])
-
-        # the null value for the departement is XX, and the null value for the year is XXXX, we will remove these entries
-        self.clean_df = self.clean_df[self.clean_df['annais'] != 'XXXX']
-
-        # Remove the accents from the names (might take some time)
-        self.clean_df['preusuel'] = self.clean_df['preusuel'].astype(str)
-        self.clean_df['preusuel'] = self.clean_df['preusuel'].apply(lambda x: unidecode(x))
-        # this might have created some duplicates -> we need to group them and sum the counts
-        self.clean_df = self.clean_df.groupby(['annais', 'preusuel', 'sexe']).sum().reset_index()
-
-        # the sex is 1 if it is a boy, 2 if it is a girl -> replace by M/F
-        self.clean_df['sexe'] = self.clean_df['sexe'].replace(1, 'M')
-        self.clean_df['sexe'] = self.clean_df['sexe'].replace(2, 'F')
-
-        self.clean_df = self.clean_df[['annais', 'preusuel', 'sexe', 'nombre']]
-        self.clean_df.columns = self.columns
-
-        # order by year
-        self.clean_df = self.clean_df.sort_values(by='Year')
-        self.clean_df.reset_index(drop=True, inplace=True)
-
-        # set the column types
-        self.clean_df['Year'] = self.clean_df['Year'].astype(int)
-        self.clean_df['Name'] = self.clean_df['Name'].str.upper()
-        self.clean_df['Count'] = self.clean_df['Count'].astype(int)
-
-        # There is only 1 name not matching the regex -> drop
-        self.clean_df = self.clean_df[self.clean_df['Name'].str.match('^[A-Z-\s\']+$')]      
-
-        # Check the data
-        self.check_clean_data()
-
-
-
-
-
-
-
-
+    # Execute all the cleaning steps
+    def pipeline(self):
+        if not self.loaded:
+            print(f"{self.name} : This object does not come from a local file, cannot be loaded")
+            return
+        self.fetch_raw_data()
+        self.clean_raw_data()
+        self.write_clean_data()
 
 # Class for Character data from 
-class CharacterData(NamesData):
+class CharacterData(DataClass):
 
-    def __init__(self, name, file_name, separator='\t', loaded=True):
+    def __init__(self, name, file_name, separator='\t', loaded=True, output_name=None):
         super().__init__(name, file_name, separator=separator, loaded=loaded)
         self.columns = ['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_ethnicity', 'Actor_name', 'Actor_age', 'Freebase_character_map', 'Freebase_character_ID', 'Freebase_actor_ID']
 
@@ -256,13 +145,14 @@ class CharacterData(NamesData):
         # Correct any misalignments in column names due to spaces
         self.clean_df.columns = [col.strip() for col in self.columns]
 
-
-        # Check the good typpe format for the columns  
+        # Check the good type format for the columns
         # Convert DOB and Release date to datetime
         self.clean_df['Actor_DOB'] = pd.to_datetime(self.clean_df['Actor_DOB'], errors='coerce', format='%Y-%m-%d')
         self.clean_df['Release_date'] = pd.to_datetime(self.clean_df['Release_date'], errors='coerce', format='%Y-%m-%d')
+        # Fill missing values with NaT
         self.clean_df['Actor_DOB'] = self.clean_df['Actor_DOB'].fillna(pd.NaT)
         self.clean_df['Release_date'] = self.clean_df['Release_date'].fillna(pd.NaT)
+
         # Convert Character_name and Actor_name to object type
         self.clean_df['Character_name'] = self.clean_df['Character_name'].astype('object')
         self.clean_df['Actor_name'] = self.clean_df['Actor_name'].astype('object')
@@ -273,12 +163,9 @@ class CharacterData(NamesData):
  
         # Drop Freebase_movie_ID, Freebase_actor_ID, Freebas_character_map, Freebase_character_ID columns because they are not useful
         self.clean_df.drop(columns=['Freebase_movie_ID', 'Freebase_actor_ID', 'Freebase_character_map','Freebase_character_ID'], inplace=True)
-        
 
         # Check the cleaned data
         self.check_clean_data()
-
-        
 
     def check_clean_data(self):    
          #Check the number of columns (9)
@@ -294,7 +181,6 @@ class CharacterData(NamesData):
         # for the string
         #missing_values += self.clean_df.isin(['']).sum().sum()
         #assert missing_values == 0, f'{self.name} has missing values!'
-
 
         # Check the type of the columns
         ## Wikipedia_movie_ID : int64
@@ -318,15 +204,11 @@ class CharacterData(NamesData):
         ## allowed regex for name : '^[A-Z-\s\']+$' -> space and - are allowed and ' in case of names like O'Brien
         assert all(self.clean_df['Actor_gender'].str.match('^[MF]$')), f'{self.name} : The Actor_gender column contains values different from M/F'
 
-
-
-
-
 # Class for Movie data from movie metadata
-class MovieData(NamesData):
+class MovieData(DataClass):
 
-    def init(self, name, file_name, separator='\t', loaded=True):
-        super().init(name, file_name, separator=separator, loaded=loaded)
+    def __init__(self, name, file_name, separator='\t', loaded=True, output_name=None):
+        super().__init__(name, file_name, separator=separator, loaded=loaded)
         self.columns = ['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Movie_name', 'Release_date', 'Revenue',
                         'Runtime', 'Languages', 'Countries', 'Genres']
         
@@ -335,56 +217,68 @@ class MovieData(NamesData):
         if not self.loaded:
             print(f"{self.name} : This object does not come from a local file, cannot be loaded")
             return
-        
 
         print(f"{self.name} : Loading the raw data in the attribute")
         print(f'{RAW_DATA_PATH}{self.file_name}')
         self.raw_df = pd.read_csv(f'{RAW_DATA_PATH}{self.file_name}', delimiter='\t', quotechar='"', escapechar='\\')
         print(f"{self.name} : loaded {self.raw_df.shape[0]} rows !")
     
-
-
-    
     # Clean the raw data
     def clean_raw_data(self):
         self.clean_df = self.raw_df.copy()
+
+        # Change the column names
+        self.clean_df.columns = self.columns
+
         # Correct any misalignments in column names due to spaces
-        self.clean_df.columns = [col.strip() for col in self.columns]
+        self.clean_df.columns = [col.strip() for col in self.clean_df.columns]
 
-        # Rename columns
-        #self.clean_df.columns = self.columns
+        # Ensure the 'Languages' column exists before processing
+        if 'Languages' in self.clean_df.columns:
+            self.clean_df['Languages'] = self.clean_df['Languages'].apply(
+                lambda data: self.parse_json_column(data, 'Languages'))
+        else:
+            print("Warning: 'Languages' column not found in the data")
 
-        # Process the format of columns that are unreadable
-        # Process 'Languages' column
-        self.clean_df['Languages'] = self.clean_df['Languages'].apply(lambda data: self._parse_json_column(data, 'Languages'))
-        # Process 'Countries' column
-        self.clean_df['Countries'] = self.clean_df['Countries'].apply(lambda data: self._parse_json_column(data, 'Countries'))
-        # Process 'Genres' column
-        self.clean_df['Genres'] = self.clean_df['Genres'].apply(lambda data: self._parse_json_column(data, 'Genres'))
+        # Ensure the 'Countries' column exists before processing
+        if 'Countries' in self.clean_df.columns:
+            self.clean_df['Countries'] = self.clean_df['Countries'].apply(
+                lambda data: self.parse_json_column(data, 'Countries'))
+        else:
+            print("Warning: 'Countries' column not found in the data")
+
+        # Ensure the 'Genres' column exists before processing
+        if 'Genres' in self.clean_df.columns:
+            self.clean_df['Genres'] = self.clean_df['Genres'].apply(
+                lambda data: self.parse_json_column(data, 'Genres'))
+        else:
+            print("Warning: 'Genres' column not found in the data")
 
         # Checking the data types of the columns
-        # Realase date to datetime
-        self.clean_df['Release_date'] = pd.to_datetime(self.clean_df['Release_date'], errors='coerce',format='%Y-%m-%d')
+        # Release date to datetime
+        self.clean_df['Release_date'] = pd.to_datetime(self.clean_df['Release_date'], errors='coerce',
+                                                       format='%Y-%m-%d')
+        # Wikipedia_movie_ID to int64
+        self.clean_df['Wikipedia_movie_ID'] = pd.to_numeric(self.clean_df['Wikipedia_movie_ID'], errors='coerce')
+
         # Revenue to float
         self.clean_df['Revenue'] = pd.to_numeric(self.clean_df['Revenue'], errors='coerce')
         # Runtime to timedelta
         self.clean_df['Runtime'] = pd.to_timedelta(self.clean_df['Runtime'], errors='coerce')
         # Convert the columns to object type
         self.clean_df['Movie_name'] = self.clean_df['Movie_name'].astype('object')
-        self.clean_df['Languages'] = self.clean_df['Languages'].astype('object')
-        self.clean_df['Countries'] = self.clean_df['Countries'].astype('object')
-        self.clean_df['Genres'] = self.clean_df['Genres'].astype('object')
-
+        if 'Languages' in self.clean_df.columns:
+            self.clean_df['Languages'] = self.clean_df['Languages'].astype('object')
+        if 'Countries' in self.clean_df.columns:
+            self.clean_df['Countries'] = self.clean_df['Countries'].astype('object')
+        if 'Genres' in self.clean_df.columns:
+            self.clean_df['Genres'] = self.clean_df['Genres'].astype('object')
 
         # Drop the 'Freebase_movie_ID' column because not useful
         self.clean_df.drop(columns=['Freebase_movie_ID'], inplace=True)
 
         # Check the cleaned data
         self.check_clean_data()
-
-
-
-
 
     def parse_json_column(self, data, column_name):
         if pd.notna(data):
@@ -424,15 +318,15 @@ class MovieData(NamesData):
 
         # Check the type of the columns
         # Wikipedia_movie_ID : object
-        assert self.clean_df['Wikipedia_movie_ID'].dtype == 'object', f'{self.name}: Wikipedia_movie_ID column is not of type object'
+        assert self.clean_df['Wikipedia_movie_ID'].dtype == 'int64', f'{self.name}: Wikipedia_movie_ID column is not of type int64'
         # Movie_name : object
         assert self.clean_df['Movie_name'].dtype == 'object', f'{self.name}: Movie_name column is not of type object'
-        # Release_date : datetime64[s]
-        assert self.clean_df['Release_date'].dtype == 'datetime64[s]', f'{self.name}: Release_date column is not of type datetime64[s]'
+        # Release_date : datetime
+        assert pd.api.types.is_datetime64_any_dtype(self.clean_df['Release_date']), f'{self.name}: Release_date column is not of type datetime'
         # Revenue : float64
         assert self.clean_df['Revenue'].dtype == 'float64', f'{self.name}: Revenue column is not of type float64'
-        # Runtime : timedelta64[s]
-        assert self.clean_df['Runtime'].dtype == 'timedelta64[s]', f'{self.name}: Runtime column is not of type timedelta64[s]'
+        # Runtime : timedelta
+        assert pd.api.types.is_timedelta64_dtype(self.clean_df['Runtime']), f'{self.name}: Runtime column is not of type timedelta'
         # Languages : object
         assert self.clean_df['Languages'].dtype == 'object', f'{self.name}: Languages column is not of type object'
         # Countries : object
@@ -443,99 +337,3 @@ class MovieData(NamesData):
         # Check for duplicates
         #duplicates = self.clean_df.duplicated().sum()
         #assert duplicates == 0, f'{self.name} has {duplicates} duplicates!'
-
-
-
-
-
-
-
-
-'''
-# Class for Movie data from movie metadata
-class MovieData(NamesData):
-
-    def init(self, name, file_name, separator='\t', loaded=True):
-        super().init(name, file_name, separator=separator, loaded=loaded)
-        self.columns = ['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Movie_name', 'Release_date', 'Revenue',
-                        'Runtime', 'Languages', 'Countries', 'Genres']
-
-    # Clean the raw data
-    def clean_raw_data(self):
-        self.clean_df = self.raw_df.copy()
-        # Rename columns
-        self.clean_df.columns = self.columns
-
-        # Drop the 'Freebase_movie_ID' column
-        self.clean_df.drop(columns=['Freebase_movie_ID'], inplace=True)
-
-        # Process 'Languages' column
-        self.clean_df['Languages'] = self.clean_df['Languages'].apply(lambda data: self._parse_json_column(data, 'Languages'))
-        # Process 'Countries' column
-        self.clean_df['Countries'] = self.clean_df['Countries'].apply(lambda data: self._parse_json_column(data, 'Countries'))
-        # Process 'Genres' column
-        self.clean_df['Genres'] = self.clean_df['Genres'].apply(lambda data: self._parse_json_column(data, 'Genres'))
-
-        #Assign types to columns
-        self.clean_df['Release_date'] = pd.to_datetime(self.clean_df['Release_date'], errors='coerce')
-        self.clean_df['Revenue'] = pd.to_numeric(self.clean_df['Revenue'], errors='coerce')
-        self.clean_df['Runtime'] = pd.to_timedelta(self.clean_df['Runtime'], errors='coerce')
-        # Assigne type object to the columns
-        self.clean_df['Movie_name'] = self.clean_df['Movie_name'].astype('object')
-        self.clean_df['Languages'] = self.clean_df['Languages'].astype('object')
-        self.clean_df['Countries'] = self.clean_df['Countries'].astype('object')
-        self.clean_df['Genres'] = self.clean_df['Genres'].astype('object')
-
-        # Check the cleaned data
-        self.check_clean_data()
-
-    def parse_json_column(self, data, column_name):
-        if pd.notna(data):
-            try:
-                # Convert string representation of a dictionary to an actual dictionary
-                data_dict = json.loads(data.replace("'", '"'))
-            except Exception as e:
-                return None  # Handle cases where conversion fails
-
-            # Extract and process data based on the column type
-            if column_name in ['Languages', 'Countries']:
-                return ', '.join(
-                    value.replace(" Language", "").replace(" Country", "") for value in data_dict.values())
-            elif column_name == 'Genres':
-                return ', '.join(genre.split(': ')[-1] if ': ' in genre else genre for genre in data_dict.values())
-            else:
-                return ', '.join(data_dict.values())
-        return None
-
-        # Check the cleaned data
-
-    def check_clean_data(self):
-        # Number of Columns should be 7
-        assert self.clean_df.shape[1] == 8, f'{self.name} has {self.clean_df.shape[1]} columns, 8 are expected'
-        # Expected column names
-        expected_columns = ['Wikipedia_movie_ID', 'Movie_name', 'Release_date', 'Revenue', 'Runtime', 'Languages',
-                            'Countries', 'Genres']
-        assert all(col in self.clean_df.columns for col in
-                   expected_columns), f'{self.name} does not have the right column names: {expected_columns}'
-
-        # Missing values in the cleaned data
-        missing_values = self.clean_df.isnull().sum().sum()
-        missing_values += self.clean_df.isna().sum().sum()
-        missing_values += self.clean_df.isin(['']).sum().sum()
-        assert missing_values == 0, f'{self.name} has missing values!'
-
-        # Check the type of the columns
-        assert self.clean_df['Wikipedia_movie_ID'].dtype == 'object', f'{self.name}: Wikipedia_movie_ID column is not of type object'
-        assert self.clean_df['Movie_name'].dtype == 'object', f'{self.name}: Movie_name column is not of type object'
-        assert self.clean_df['Release_date'].dtype == 'datetime64[s]', f'{self.name}: Release_date column is not of type datetime64[s]'
-        assert self.clean_df['Revenue'].dtype == 'float64', f'{self.name}: Revenue column is not of type float64'
-        assert self.clean_df['Runtime'].dtype == 'timedelta64[s]', f'{self.name}: Runtime column is not of type timedelta64[s]'
-        assert self.clean_df['Languages'].dtype == 'object', f'{self.name}: Languages column is not of type object'
-        assert self.clean_df['Countries'].dtype == 'object', f'{self.name}: Countries column is not of type object'
-        assert self.clean_df['Genres'].dtype == 'object', f'{self.name}: Genres column is not of type object'
-
-        # Check for duplicates
-        duplicates = self.clean_df.duplicated().sum()
-        assert duplicates == 0, f'{self.name} has {duplicates} duplicates!'
-
- '''

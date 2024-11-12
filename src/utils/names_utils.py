@@ -38,39 +38,26 @@ def merge_names_data(namesData : list) -> NamesData:
 
     
 # Merge two names classes together: Movies and Characters
-def merge_movies_characters_data(moviesData : NamesData, charactersData : NamesData) -> NamesData:
-        
-        moviesData.check_clean_data()
-        charactersData.check_clean_data()
-    
-        # Merge the data
-        df = pd.merge(moviesData.clean_df, charactersData.clean_df, on=['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date' ])
-    
-        # New object
-        name = f"{moviesData.name} & {charactersData.name}"
-        merged = NamesData(name, name.replace(" & ", "_") + ".csv", loaded=False)
-        merged.clean_df = df
-    
-        # Due to the merging, the data might be duplicated -> group by and sum the counts
-        merged.clean_df = merged.clean_df.groupby(['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date' ]).sum().reset_index()
-        
-        return merged
-
-
-
-def merge_movies_characters_data(moviesData : NamesData, charactersData : NamesData) -> NamesData:
-    
+def merge_movies_characters_data(moviesData: NamesData, charactersData: NamesData) -> NamesData:
     moviesData.check_clean_data()
     charactersData.check_clean_data()
 
-    # Merge the data
-    df = pd.merge(moviesData.clean_df, charactersData.clean_df, on=['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date' ])
-
-    # New object
+    df = pd.merge(moviesData.clean_df, charactersData.clean_df, on=['Wikipedia_movie_ID', 'Release_date'], how='inner')
     name = f"{moviesData.name} & {charactersData.name}"
     merged = NamesData(name, name.replace(" & ", "_") + ".csv", loaded=False)
     merged.clean_df = df
 
-    # Due to the merging, the data might be duplicated -> group by and sum the counts
-    merged.clean_df = merged.clean_df.groupby(['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date' ]).sum().reset_index()
+    # Print data types of columns
+    print(merged.clean_df.dtypes)
+
+    # Check for duplicates and print them if any
+    duplicates = merged.clean_df[merged.clean_df.duplicated()]
+    if not duplicates.empty:
+        print("Duplicates found:")
+        print(duplicates)
+
+    # Remove duplicates
+    merged.clean_df = merged.clean_df.drop_duplicates()
+
+    return merged
 
