@@ -53,8 +53,24 @@ def merge_movies_characters_data(moviesData : NamesData, charactersData : NamesD
     
         # Due to the merging, the data might be duplicated -> group by and sum the counts
         merged.clean_df = merged.clean_df.groupby(['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date' ]).sum().reset_index()
-        merged.check_clean_data()
+        
         return merged
 
 
+
+def merge_movies_characters_data(moviesData : NamesData, charactersData : NamesData) -> NamesData:
+    
+    moviesData.check_clean_data()
+    charactersData.check_clean_data()
+
+    # Merge the data
+    df = pd.merge(moviesData.clean_df, charactersData.clean_df, on=['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date' ])
+
+    # New object
+    name = f"{moviesData.name} & {charactersData.name}"
+    merged = NamesData(name, name.replace(" & ", "_") + ".csv", loaded=False)
+    merged.clean_df = df
+
+    # Due to the merging, the data might be duplicated -> group by and sum the counts
+    merged.clean_df = merged.clean_df.groupby(['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date' ]).sum().reset_index()
 
