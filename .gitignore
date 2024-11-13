@@ -6,6 +6,8 @@ data/raw
 .ipynb_checkpoints/
 # pycharm
 .idea/
+# Python
+__pycache__/
 # Mac
 .DS_Store
 # Windows
