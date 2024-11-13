@@ -41,16 +41,19 @@ def predict_naming_ARIMA(data: NamesData, name: str, stop_year: int, nb_years: i
 
     # Plot if necessary
     if plot:
+
+        x_train = pd.Series(x_train, dtype=int)
         y_train = pd.Series(y_train)
-        y_forecast = pd.Series(forecast)
-        x_train = pd.Series(x_train)
+
         # for the beauty of the plot, we add the last year of the train data to the forecast so that the line is connected
-        x_forecast = pd.Series(range(stop_year, stop_year + 1 + nb_years))
+        x_forecast = pd.Series(range(stop_year, stop_year + 1 + nb_years), dtype=int)
+        y_forecast = pd.Series(forecast)
         y_forecast = pd.concat([y_train[-1:], y_forecast])
+
         # Plot the test data in blue and label it
-        # keep only 10 years before the stop year
-        x_train = x_train[-10:]
-        y_train = y_train[-10:]
+        # keep only 30 years before the stop year
+        x_train = x_train[-30:]
+        y_train = y_train[-30:]
         plt.plot(x_train, y_train, color='blue', label='Train data')
         # Plot the forecast data in orange
         plt.plot(x_forecast, y_forecast, color='orange', label='Forecast data')

@@ -116,6 +116,14 @@ class NamesData():
         assert all(self.clean_df['Name'].str.match("^[A-Z-\s\']+$")), f'{self.name} : Not all the names are composed of uppercased letters'
         assert all(self.clean_df['Sex'].str.match('^[MF]$')), f'{self.name} : The sex column contains values different from M/F'
 
+        # Check that the year is positive, less than 2024 and bigger than 1750
+        assert all(self.clean_df['Year'] > 1750), f'{self.name} : The year is lower than 1750'
+        assert all(self.clean_df['Year'] < 2024), f'{self.name} : The year is bigger than 2024'
+
+        # Check that the count is positive
+        assert all(self.clean_df['Count'] >= 0), f'{self.name} : The count is negative'
+
+        print(f"{self.name} : Data is clean and conforms to the expected structure !")
 
     # Function that will be defined by children classes
     def clean_raw_data(self):
