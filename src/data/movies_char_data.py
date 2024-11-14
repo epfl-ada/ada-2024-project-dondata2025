@@ -67,7 +67,7 @@ class CharacterData(DataClass):
         self.clean_df['Actor_height'] = pd.to_numeric(self.clean_df['Actor_height'], errors='coerce')
  
         # Drop Freebase_movie_ID, Freebase_actor_ID, Freebas_character_map, Freebase_character_ID columns because they are not useful
-        self.clean_df.drop(columns=['Freebase_movie_ID', 'Freebase_actor_ID', 'Freebase_character_map','Freebase_character_ID'], inplace=True)
+        self.clean_df.drop(columns=['Freebase_movie_ID', 'Freebase_actor_ID', 'Freebase_character_map','Freebase_character_ID', 'Actor_ethnicity'], inplace=True)
 
         # Check the cleaned data
         self.check_clean_data()
@@ -75,8 +75,8 @@ class CharacterData(DataClass):
     def check_clean_data(self):    
          #Check the number of columns (9)
         assert self.clean_df.shape[1] == 9, f'{self.name} has {self.clean_df.shape[1]} columns, 9 are expected'
-        #Expected columns are  ['Wikipedia_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_ethnicity', 'Actor_name', 'Actor_age']]
-        expected_columns = ['Wikipedia_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_ethnicity', 'Actor_name', 'Actor_age']
+        #Expected columns are  ['Wikipedia_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_name', 'Actor_age']]
+        expected_columns = ['Wikipedia_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_name', 'Actor_age']
         assert all(col in self.clean_df.columns for col in expected_columns), f'{self.name} does not have the right column names: {expected_columns}'
         
         ## Wikipedia_movie_ID : int64
