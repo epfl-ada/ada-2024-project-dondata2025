@@ -1,5 +1,4 @@
 # Ignore any files in the data directory
-data/raw
 # vscode
 .vscode/
 # Jupyter Notebook
