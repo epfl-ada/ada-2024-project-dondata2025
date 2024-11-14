@@ -20,7 +20,9 @@ By integrating this information, we aim to identify correlations and patterns. W
 
 ## Additional datasets
 *We will discuss here the list of additional datasets we would like to use in our project* 
+
 For our project, we integrated several name attribution datasets from various countries, including:
+
 - Canada
 - United States of America
 - France
@@ -42,6 +44,7 @@ We ultimately assembled nearly ten diverse datasets. Since the formats varied wi
 2. Name (in uppercase)
 3. Sex [F/M]
 4. Count
+
 This standardization process ensures consistent and efficient analysis across all datasets.
 
 *List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible*
