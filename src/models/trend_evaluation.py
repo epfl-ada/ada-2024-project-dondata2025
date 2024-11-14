@@ -13,11 +13,11 @@ def trend_eval_ranking(df_babies, df_movies):
     # Ditching entries with nan revenue 
     df_movies = df_movies.dropna(subset=['Revenue'])
     # Taking only the first name of the character name
-    df_movies['Character_name'] = df_movies['Character_name'].str.split().str[0]
+    df_movies.loc[:, 'Character_name'] = df_movies['Character_name'].str.split().str[0]
     # Putting every character name in upper case
-    df_movies['Character_name'] = df_movies['Character_name'].str.upper()
+    df_movies.loc[:, 'Character_name'] = df_movies['Character_name'].str.upper()
 
-    # Taking only characters of the top 100 characters by revenue every year
+    # Taking only characters of the top 10 characters by revenue every year
     df_movies = df_movies.groupby('Release_year').apply(lambda x: x.nlargest(10, 'Revenue')).reset_index(drop=True)
 
     merged_df = df_babies.merge(
