@@ -1,6 +1,7 @@
 import json
 import pandas as pd
 import os
+from src.data.data_class import DataClass
 
 # All the cleaned dataframes will follow the same structure:
 # 1. Year
@@ -15,128 +16,14 @@ CLEAN_DATA_PATH = 'data/clean/movies_char/'
 # Create the clean data directory if it does not exist
 os.makedirs(CLEAN_DATA_PATH, exist_ok=True)
 
-# Class for all the data cleaners
-class DataClass():
-
-    def __init__(self, name, file_name, credits=None, separator=',', loaded=True, output_name=None):
-
-        # name used to refer to the dataset when errors are raised
-        self.name = name
-        # file name of the raw data
-        self.file_name = file_name
-        # output name of the cleaned data
-        self.output_name = output_name
-        # create empty dataframes
-        self.raw_df = pd.DataFrame()
-        self.clean_df = pd.DataFrame()
-        # We can add a credits attribute to give credit to the source of the data
-        self.credits = credits
-        self.columns = ['Year', 'Name', 'Sex', 'Count']
-        # separator used in the csv file
-        self.separator = separator
-        
-        print("Checking if the data is loaded from a file or from memory")
-        if(loaded): # If loaded is true, there is a file corresponding to the data in the raw directory
-            self.loaded = True
-            self.fetch_raw_data()
-        else: # was created from in memory content, no file corresponding in the raw directory
-            self.loaded = False
-
-    # Function called when 'len' is called on the object
-    def __len__(self):
-        return self.clean_df.shape[0] 
-    
-    # function executed when an instance of the class is called, we return the cleaned dataframe
-    def __call__(self, *args, **kwds):
-        return self.clean_df
-        
-    # Reads the raw data and stores it in the raw_df attribute
-    def fetch_raw_data(self):
-
-        if not self.loaded:
-            print(f"{self.name} : This object does not come from a local file, cannot be loaded")
-            return
-
-        print(f"{self.name} : Loading the raw data in the attribute")
-        print(f'{RAW_DATA_PATH}{self.file_name}')
-        self.raw_df = pd.read_csv(f'{RAW_DATA_PATH}{self.file_name}', delimiter=self.separator)
-        print(f"{self.name} : loaded {self.raw_df.shape[0]} rows !")
-
-    # Writes the cleaned data to a csv file
-    def write_clean_data(self):
-
-        # takes the file name if no output_name is given
-        if self.output_name is None:
-            self.output_name = self.file_name
-
-        clean_name = self.output_name
-         # hierarchy of the file is not repercuted in the clean folder
-        if("/" in clean_name):
-            split = clean_name.split("/")
-            clean_name = split[-1]
-            print(f"{self.name} : File name has been changed to {clean_name} (we don't want directories in the clean folder)")
-        
-        self.clean_df.to_csv(f'{CLEAN_DATA_PATH}{clean_name}', index=False)
-        print(f"{self.name} : Data has been cleaned and saved to {CLEAN_DATA_PATH}{clean_name}!")
-
-    # If the clean data is already saved, load it (will throw an error if the file is not found)
-    def load_clean_data(self):
-        self.clean_df = pd.read_csv(f'{CLEAN_DATA_PATH}{self.file_name}')
-
-    # Checks if there are missing values in the raw data and that it conforms to the expected structure
-    def check_clean_data(self):
-        # Number of Columns if equal to 4
-        assert self.clean_df.shape[1] == 4, f'{self.name} has {self.clean_df.shape[1]} columns, 4 are excepted'
-        # Expected column names are ['Year', 'Name', 'Sex', 'Count']
-        assert all(col in self.clean_df.columns for col in self.columns), f'{self.name} has not the right column names : {self.columns}'
-
-        # Missing values in the cleaned data
-        missing_values = self.clean_df.isnull().sum().sum()
-        missing_values += self.clean_df.isna().sum().sum()
-        # for the string
-        missing_values += self.clean_df.isin(['']).sum().sum()
-        assert missing_values == 0, f'{self.name} has missing values!'
-
-        # Check the tyoe of the columns
-        ## Year column should be int64
-        assert self.clean_df['Year'].dtype == 'int64', f'{self.name} : Year column is not of type int64'
-        ## Name column : String -> object in pandas
-        assert self.clean_df['Name'].dtype == 'object', f'{self.name} : Name column is not of type object (string)'
-        ## Sex column : String -> object in pandas
-        assert self.clean_df['Sex'].dtype == 'object', f'{self.name} : Sex column is not of type object (string)'
-        ## Count column : int64
-        assert self.clean_df['Count'].dtype == 'int64', f'{self.name} : Count column is not of type int64'
-
-        # Check for duplicates -> same name, same sex, same year, but different count
-        wo_year = self.clean_df.drop(columns=['Count'])
-        duplicates = wo_year.duplicated().sum()
-        assert duplicates == 0, f'{self.name} has {duplicates} duplicates !'
-
-        # Check that the names contain only letters
-        # allowed regex for name : '^[A-Z-\s\']+$' -> space and - are allowed and ' in case of names like O'Brien
-        # allowed regex for sexe (only M/F) : '^[MF]$'
-        assert all(self.clean_df['Name'].str.match("^[A-Z-\s\']+$")), f'{self.name} : Not all the names are composed of uppercased letters'
-        assert all(self.clean_df['Sex'].str.match('^[MF]$')), f'{self.name} : The sex column contains values different from M/F'
-
-    # Function that will be defined by children classes
-    def clean_raw_data(self):
-        raise NotImplementedError
-
-    # Execute all the cleaning steps
-    def pipeline(self):
-        if not self.loaded:
-            print(f"{self.name} : This object does not come from a local file, cannot be loaded")
-            return
-        self.fetch_raw_data()
-        self.clean_raw_data()
-        self.write_clean_data()
-
 # Class for Character data from 
 class CharacterData(DataClass):
 
-    def __init__(self, name, file_name, separator='\t', loaded=True, output_name=None):
-        super().__init__(name, file_name, separator=separator, loaded=loaded)
-        self.columns = ['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_ethnicity', 'Actor_name', 'Actor_age', 'Freebase_character_map', 'Freebase_character_ID', 'Freebase_actor_ID']
+    # Initialize the class and call the parent class constructor
+    def __init__(self, name, file_name, loaded=True, output_name=None):
+        separator='\t'
+        columns = ['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_ethnicity', 'Actor_name', 'Actor_age', 'Freebase_character_map', 'Freebase_character_ID', 'Freebase_actor_ID']
+        super().__init__(name, file_name, None, separator, loaded, columns, RAW_DATA_PATH, CLEAN_DATA_PATH, output_name)
 
     # Load and clean the raw data
     def clean_raw_data(self):
@@ -204,24 +91,16 @@ class CharacterData(DataClass):
         ## allowed regex for name : '^[A-Z-\s\']+$' -> space and - are allowed and ' in case of names like O'Brien
         assert all(self.clean_df['Actor_gender'].str.match('^[MF]$')), f'{self.name} : The Actor_gender column contains values different from M/F'
 
+
+
 # Class for Movie data from movie metadata
 class MovieData(DataClass):
 
-    def __init__(self, name, file_name, separator='\t', loaded=True, output_name=None):
-        super().__init__(name, file_name, separator=separator, loaded=loaded)
-        self.columns = ['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Movie_name', 'Release_date', 'Revenue',
-                        'Runtime', 'Languages', 'Countries', 'Genres']
-        
-    def fetch_raw_data(self):
-
-        if not self.loaded:
-            print(f"{self.name} : This object does not come from a local file, cannot be loaded")
-            return
-
-        print(f"{self.name} : Loading the raw data in the attribute")
-        print(f'{RAW_DATA_PATH}{self.file_name}')
-        self.raw_df = pd.read_csv(f'{RAW_DATA_PATH}{self.file_name}', delimiter='\t', quotechar='"', escapechar='\\')
-        print(f"{self.name} : loaded {self.raw_df.shape[0]} rows !")
+    # Initialize the class and call the parent class constructor
+    def __init__(self, name, file_name, loaded=True, output_name=None):
+        separator = '\t'
+        columns = ['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Movie_name', 'Release_date', 'Revenue','Runtime', 'Languages', 'Countries', 'Genres']
+        super().__init__(name, file_name, None, separator, loaded, columns, RAW_DATA_PATH, CLEAN_DATA_PATH, output_name)
     
     # Clean the raw data
     def clean_raw_data(self):
