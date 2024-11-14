@@ -63,7 +63,7 @@ However, we have to take into account that the character name could be influence
 ![Michael graph](img/michael_graph.png)
 
 
-## Proposed timeline
+## Proposed timeline 
 Week 18-24nov 
 - Models improvement and refinement
 - Add more visualization
@@ -88,11 +88,15 @@ Week 9-14dec
 Week 15-20dec
 - Polish everything for the submission
 - Finish any above task that is not done
-	
 
+## Task attribution
+Jérémy and Emile : coding up the features 
 
-## Organization within the team
-*A list of internal milestones up until project Milestone P3.*
+Julien and Pauline : Designing the process and the algorithms
+
+Corentin : handling the website/data story visualizations
+
+Obviously bound to change according to necessities
 
 ## Questions for TAs
 *Optional*
