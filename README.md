@@ -53,7 +53,7 @@ However, we must take into account that the character name could be influenced b
 
 ![Michael graph](img/michael_graph.png)
 
-Another approach to detect unusual trends in name counts following a key date, we tryed to use Interrupted Time Series (ITS). This approach involves splitting the data, using the pre-date segment to train a model that forecasts expected trends, and then comparing this forecast with the actual post-date data. We’re evaluating two models (Prophet and SARIMA), considering our yearly data limitations.
+We tried another approach to detect unusual trends in name counts following a key date: using Interrupted Time Series (ITS). This approach involves splitting the data, using the pre-date segment to train a model that forecasts expected trends, and then comparing this forecast with the actual post-date data. We’re evaluating two models (Prophet and SARIMA), considering our yearly data limitations.
 
 ## Proposed timeline 
 Week 18-24nov 
