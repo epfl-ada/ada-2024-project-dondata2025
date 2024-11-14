@@ -4,6 +4,7 @@ import os
 from src.data.data_class import DataClass
 from unidecode import unidecode
 
+
 # All the cleaned dataframes will follow the same structure:
 # 1. Year
 # 2. Name : in upper case
