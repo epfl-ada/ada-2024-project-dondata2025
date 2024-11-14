@@ -50,9 +50,9 @@ This standardization process ensures consistent and efficient analysis across al
 *List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible*
 
 ## Methods
-Our methodology aims to assess the impact of popular movie character names on baby name trends, capturing shifts in naming patterns following major film releases. By focusing on characters from high-revenue movies, we isolate those with the greatest cultural visibility, allowing us to detect potential influence on baby name choices.
+The first method we use is designed to analyze the impact of popular movie character names on baby name trends, revealing shifts in naming patterns after blockbuster movies releases. By focusing on characters from high-revenue movies, we make sure we take into account only those with the greatest cultural visibility, allowing us to detect potential influence on baby name choices.
 
-- Data Filtering: The analysis begins by filtering the dataset of movies to retain only those with high cultural impact, defined as the top 10 characters from biggest revenue-generating movies per year. This criterion ensures that only prominent characters, likely to influence naming trends, are considered. Each year’s top movies are identified by grouping the dataset by Release_year and selecting the 10 characters coming from those movies with the highest revenue within each group.
+- Data Filtering: First we filter the dataset of movies to keep only those with high cultural impact, defined as the top 10 characters from biggest revenue-generating movies per year. This criterion ensures that only prominent characters, likely to influence naming trends, are considered. Each year’s top movies are identified by grouping the dataset by Release_year and selecting the 10 characters coming from those movies with the highest revenue within each group.
 
 - Character Selection: Once top movies are identified, the character dataset is filtered to include only characters appearing in these selected movies. This filtering creates a refined subset of character names with high public exposure, ready for trend analysis.
 
@@ -63,7 +63,7 @@ However, we have to take into account that the character name could be influence
 ![Michael graph](img/michael_graph.png)
 
 
-## Proposed timeline
+## Proposed timeline 
 Week 18-24nov 
 - Models improvement and refinement
 - Add more visualization
@@ -88,11 +88,15 @@ Week 9-14dec
 Week 15-20dec
 - Polish everything for the submission
 - Finish any above task that is not done
-	
 
+## Task attribution
+Jérémy and Emile : coding up the features 
 
-## Organization within the team
-*A list of internal milestones up until project Milestone P3.*
+Julien and Pauline : Designing the process and the algorithms
+
+Corentin : handling the website/data story visualizations
+
+Obviously bound to change according to necessities
 
 ## Questions for TAs
 *Optional*
