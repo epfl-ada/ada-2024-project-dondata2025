@@ -46,16 +46,14 @@ We ultimately assembled nearly ten diverse datasets. Since the formats varied wi
 
 This standardization process ensures consistent and efficient analysis across all datasets.
 
-*List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible*
-
 ## Methods
-The first method we use is designed to analyze the impact of popular movie character names on baby name trends, revealing shifts in naming patterns after blockbuster movies releases. By focusing on characters from high-revenue movies, we make sure we consider only those with the greatest cultural visibility, allowing us to detect potential influence on baby name choices.
+The first method we use is designed to analyze the impact of popular movie character names on baby name trends, revealing shifts in naming patterns after blockbuster movies releases.
 
-- Data Filtering: First we filter the dataset of movies to keep only those with high cultural impact, defined as the top 10 characters from biggest revenue-generating movies per year. This criterion ensures that only prominent characters, likely to influence naming trends, are considered. Each year’s top movies are identified by grouping the dataset by Release_year and selecting the 10 characters coming from those movies with the highest revenue within each group.
+- Data Filtering: First we filter the dataset of movies to keep only those with high cultural impact, defined as the top 10 characters from biggest revenue-generating movies per year. Each year’s top movies are identified by grouping the dataset by Release_year and selecting the 10 characters coming from those movies with the highest revenue within each group.
 
 - Character Selection: Once top movies are identified, the character dataset is filtered to include only characters appearing in these selected movies. This filtering creates a refined subset of character names with high public exposure, ready for trend analysis.
 
-- Trend Computation: For each character name in the filtered dataset, we compute the change in baby name popularity around the movie’s release. This involves calculating the average annual count of babies given the name in the five years before and five years after the release. By comparing the mean count before and after, we quantify the trend increase or decrease for each character name. This systematic approach allows for the detection of naming patterns potentially influenced by popular movie characters.
+- Trend Computation: For each character name in the filtered dataset, we compute the change in baby name popularity around the movie’s release. We do this by calculating the average annual count of babies given the name in the five years before and five years after the release. The difference between these two averages is our trend evalutation.
 
 However, we must take into account that the character name could be influenced by baby name trends and not the other way around. For example, the trend evaluation assessed that the 1953 movie "Peter Pan" was influential and increased the number of babies named "Michael". If we look at the graph, we can see that "Peter-Pan" came out during a "Michael" trend and was thus most likely not so influential on said trend.
 
@@ -99,3 +97,4 @@ Obviously bound to change according to necessities
 
 ## Questions for TAs
 - Is it a reasonable assumption that blockbusters will have no missing datas (NaN values) and thus we don't have to worry about discarding data entries with missing values in important fields such as Revenue ?
+- How can we elaborately determine how a movie is a blockbuster ? For now we only sort by Revenue but should we use a more refined metric ? Same question for iconic actors
