@@ -160,6 +160,13 @@ class MovieData(DataClass):
         self.check_clean_data()
 
     def parse_json_column(self, data, column_name):
+        '''
+        Parse the JSON data in the column and return a string representation of the values
+        param data: JSON data in the column
+        param column_name: Name of the column
+        return: String representation of the values
+        
+        '''
         if pd.notna(data):
             try:
                 # Convert string representation of a dictionary to an actual dictionary
