@@ -22,29 +22,23 @@ By integrating this information, we aim to identify correlations and patterns. W
 
 For our project, we integrated several name attribution datasets from various countries, including:
 
-- Canada
 - United States of America
 - France
-- New Zealand
 - United Kingdom
 - Norway
 - Ireland
-- Spain
-- Argentina
 
-You may wonder why our additional datasets predominantly come from developed countries. We initially considered a more diverse selection, aiming to include datasets from countries like China, Japan, Russia, and India. However, we faced an initial challenge: **the alphabet**. Many countries use scripts other than the Latin alphabet, which complicates the task of managing and processing names consistently. Translating traditional names or finding equivalent representations in the Latin script proved to be a daunting, error-prone task.
-Therefore, we opted to limit our analysis to datasets that use the Latin alphabet. Even so, there remains a wide array of countries to choose from. 
+You may wonder why our additional datasets predominantly come from developed countries. We faced an initial challenge: **the alphabet**. Many countries use scripts other than the Latin alphabet, which complicates the task of managing and processing names consistently. Translating traditional names or finding equivalent representations in the Latin script proved to be a daunting, error-prone task.
+Therefore, we opted to limit our analysis to datasets that use the Latin alphabet.
 
-Our second challenge was **data availability from national statistics offices**. While these agencies do their best, offices in developing countries often prioritize data on critical metrics such as birth mortality rates or education levels—an understandable priority that, unfortunately, restricts the availability of name attribution data.
+Our second challenge was **data availability from national statistics offices**. Offices in developing countries often prioritize data on critical metrics such as birth mortality rates or education levels—an understandable priority that, unfortunately, restricts the availability of name attribution data.
 
-We ultimately assembled nearly ten diverse datasets. Since the formats varied widely, we developed a script (names_data.py) to clean and standardize the datasets into a unified structure with these fields:
+Since the formats varied widely, we developed a script (names_data.py) to clean and standardize the datasets into a unified structure with these fields:
 
 1. Year
 2. Name (in uppercase)
 3. Sex [F/M]
 4. Count
-
-This standardization process ensures consistent and efficient analysis across all datasets.
 
 ## Methods
 The first method we use is designed to analyze the impact of popular movie character names on baby name trends, revealing shifts in naming patterns after blockbuster movies releases.

@@ -27,16 +27,18 @@ def trend_eval_ranking(df_babies, df_movies):
     )
 
 
+    # Function to analyze the trend of a character name
     def analyze_trend(group, window_before = 5, window_after = 5):
         movie_name = group['Movie_name'].iloc[0]
         release_year = group['Release_year'].iloc[0]
-        #print(group['Movie_name'].iloc[0], group['Release_year'].iloc[0], group['Name'].iloc[0])
         pre_movie = group[(group['Year'] < release_year) & (group['Year'] >= release_year - window_before)]
         post_movie = group[(group['Year'] >= release_year) & (group['Year'] <= release_year + window_after)]
         pre_avg = pre_movie['Count'].mean()
         post_avg = post_movie['Count'].mean()
         trend_increase = post_avg - pre_avg
         return pd.Series({'pre_avg': pre_avg, 'post_avg': post_avg, 'trend_increase': trend_increase, 'movie_name': movie_name, 'release_year': release_year})
+
+
 
     # Apply the function to each character name
     groupedByName =  merged_df.groupby('Character_name')
