@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import os
 from src.data.data_class import DataClass
+from unidecode import unidecode
 
 # All the cleaned dataframes will follow the same structure:
 # 1. Year
@@ -21,6 +22,8 @@ class CharacterData(DataClass):
 
     # Initialize the class and call the parent class constructor
     def __init__(self, name, file_name, loaded=True, output_name=None):
+
+        self.regex = '^[A-Z-\s\']+$'
         separator='\t'
         columns = ['Wikipedia_movie_ID', 'Freebase_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_ethnicity', 'Actor_name', 'Actor_age', 'Freebase_character_map', 'Freebase_character_ID', 'Freebase_actor_ID']
         super().__init__(name, file_name, None, separator, loaded, columns, RAW_DATA_PATH, CLEAN_DATA_PATH, output_name)
@@ -43,6 +46,21 @@ class CharacterData(DataClass):
         # Convert Character_name and Actor_name to object type
         self.clean_df['Character_name'] = self.clean_df['Character_name'].astype('object')
         self.clean_df['Actor_name'] = self.clean_df['Actor_name'].astype('object')
+
+        # We need to homogenize the name of the character and the actor
+        # They need to comply to the following REGEX : '^[A-Z-\s\']+$' -> space and - are allowed and ' in case of names like O'Brien
+        ### 1. Uppercase
+        self.clean_df['Character_name'] = self.clean_df['Character_name'].str.upper()
+        self.clean_df['Actor_name'] = self.clean_df['Actor_name'].str.upper()
+        ### 2. Remove accents using unidecode
+        self.clean_df['Character_name'] = self.clean_df['Character_name'].astype(str)
+        self.clean_df['Actor_name'] = self.clean_df['Actor_name'].astype(str)
+        self.clean_df['Character_name'] = self.clean_df['Character_name'].apply(lambda x: unidecode(x))
+        self.clean_df['Actor_name'] = self.clean_df['Actor_name'].apply(lambda x: unidecode(x))
+        ### 3. Remove special characters that doesn't comply to the regex (remove the row since the name will never match a real one)
+        self.clean_df = self.clean_df[self.clean_df['Character_name'].str.match(self.regex)]
+        self.clean_df = self.clean_df[self.clean_df['Actor_name'].str.match(self.regex)]
+
         # Convert Actor_age to integer type
         self.clean_df['Actor_age'] = pd.to_numeric(self.clean_df['Actor_age'], errors='coerce')
         #Convert Actor_height to float
@@ -60,16 +78,7 @@ class CharacterData(DataClass):
         #Expected columns are  ['Wikipedia_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_ethnicity', 'Actor_name', 'Actor_age']]
         expected_columns = ['Wikipedia_movie_ID', 'Release_date', 'Character_name', 'Actor_DOB', 'Actor_gender', 'Actor_height', 'Actor_ethnicity', 'Actor_name', 'Actor_age']
         assert all(col in self.clean_df.columns for col in expected_columns), f'{self.name} does not have the right column names: {expected_columns}'
-        # to delete : assert all(col in self.clean_df.columns for col in self.columns), f'{self.name} has not the right column names : {self.columns}'
-
-        # Check for missing values
-        #missing_values = self.clean_df.isnull().sum().sum()
-        #missing_values += self.clean_df.isna().sum().sum()
-        # for the string
-        #missing_values += self.clean_df.isin(['']).sum().sum()
-        #assert missing_values == 0, f'{self.name} has missing values!'
-
-        # Check the type of the columns
+        
         ## Wikipedia_movie_ID : int64
         assert self.clean_df['Wikipedia_movie_ID'].dtype == 'int64', f'{self.name} : Wikipedia_movie_ID column is not of type int64'
         ## Release_date : datetime64
@@ -88,9 +97,12 @@ class CharacterData(DataClass):
         assert self.clean_df['Actor_age'].dtype == 'float64', f'{self.name} : Actor_age column is not of type float64'
 
         # Check that the names contain only letters
-        ## allowed regex for name : '^[A-Z-\s\']+$' -> space and - are allowed and ' in case of names like O'Brien
+        ## allowed regex for name : '^[A-Z0-9-\s\']+$' -> space, numbers, and - are allowed and ' in case of names like O'Brien
+        ## allowed regex for sexe (only M/F) : '^[MF]$'
+        assert all(self.clean_df['Character_name'].str.match(self.regex)), f'{self.name} : Not all the Character_name are composed of uppercased letters'
+        assert all(self.clean_df['Actor_name'].str.match(self.regex)), f'{self.name} : Not all the Actor_name are composed of uppercased letters'
         assert all(self.clean_df['Actor_gender'].str.match('^[MF]$')), f'{self.name} : The Actor_gender column contains values different from M/F'
-
+    
 
 
 # Class for Movie data from movie metadata
@@ -143,7 +155,7 @@ class MovieData(DataClass):
         # Revenue to float
         self.clean_df['Revenue'] = pd.to_numeric(self.clean_df['Revenue'], errors='coerce')
         # Runtime to timedelta
-        self.clean_df['Runtime'] = pd.to_timedelta(self.clean_df['Runtime'], errors='coerce')
+        self.clean_df['Runtime'] = pd.to_timedelta(self.clean_df['Runtime'], unit='m', errors='coerce')
         # Convert the columns to object type
         self.clean_df['Movie_name'] = self.clean_df['Movie_name'].astype('object')
         if 'Languages' in self.clean_df.columns:
