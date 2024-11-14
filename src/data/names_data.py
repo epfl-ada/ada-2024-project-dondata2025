@@ -1,7 +1,6 @@
-# this script is used to load read raw data, clean it and save it to a new file
-# inidividual functions can be used to just load the clean data
 
 import pandas as pd
+from src.data.data_class import DataClass
 
 # All the cleaned dataframes will follow the same structure:
 # 1. Year
@@ -14,72 +13,13 @@ RAW_DATA_PATH = 'data/raw/names/'
 CLEAN_DATA_PATH = 'data/clean/names/'
 
 # Class for all the data cleaners
-class NamesData():
+class NamesData(DataClass):
 
     def __init__(self, name, file_name, credits=None, separator=',', loaded=True):
 
-        # name used to refer to the dataset when errors are raised
-        self.name = name
-        # file name of the raw data
-        self.file_name = file_name
-        # create empty dataframes
-        self.raw_df = pd.DataFrame()
-        self.clean_df = pd.DataFrame()
-        # We can add a credits attribute to give credit to the source of the data
-        self.credits = credits
-        self.columns = ['Year', 'Name', 'Sex', 'Count']
-        # separator used in the csv file
-        self.separator = separator
-        
-        if(loaded): # If loaded is true, there is a file corresponding to the data in the raw directory
-            self.loaded = True
-            self.fetch_raw_data()
-        else: # was created from in memory content, no file corresponding in the raw directory
-            self.loaded = False
-
-    # Function called when 'len' is called on the object
-    def __len__(self):
-        return self.clean_df.shape[0] 
-    
-    # function executed when an instance of the class is called, we return the cleaned dataframe
-    def __call__(self, *args, **kwds):
-        return self.clean_df
-        
-    # Reads the raw data and stores it in the raw_df attribute
-    def fetch_raw_data(self):
-
-        if not self.loaded:
-            print(f"{self.name} : This object does not come from a local file, cannot be loaded")
-            return
-        
-        self.raw_df = pd.read_csv(f'{RAW_DATA_PATH}{self.file_name}', delimiter=self.separator)
-        print(f"{self.name} : loaded {self.raw_df.shape[0]} rows !")
-
-    # Writes the cleaned data to a csv file
-    def write_clean_data(self):
-
-        clean_name = self.file_name
-         # hierarchy of the file is not repercuted in the clean folder
-        if("/" in clean_name):
-            split = clean_name.split("/")
-            clean_name = split[-1]
-            print(f"{self.name} : File name has been changed to {clean_name} (we don't want directories in the clean folder)")
-        
-        self.clean_df.to_csv(f'{CLEAN_DATA_PATH}{clean_name}', index=False)
-
-    # If the clean data is already saved, load it (will throw an error if the file is not found)
-    def load_clean_data(self):
-        self.clean_df = pd.read_csv(f'{CLEAN_DATA_PATH}{self.file_name}')
-        
-    # Execute all the cleaning steps
-    def pipeline(self):
-        if not self.loaded:
-            print(f"{self.name} : This object does not come from a local file, cannot be loaded")
-            return
-        self.fetch_raw_data()
-        self.clean_raw_data()
-        self.write_clean_data()
-        print(f"{self.name} : Data has been cleaned and saved to the clean data directory ! ({self.clean_df.shape[0]} rows)")
+        columns = ['Year', 'Name', 'Sex', 'Count']
+        # Call the parent class constructor
+        super().__init__(name, file_name, credits, separator, loaded, columns, RAW_DATA_PATH, CLEAN_DATA_PATH)
 
     # Checks if there are missing values in the raw data and that it conforms to the expected structure
     def check_clean_data(self):
