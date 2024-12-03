@@ -100,7 +100,6 @@ class UKNamesData(NamesData):
         self.clean_df.columns = self.columns
         # for a strange reason, the type of the numbers are set to float -> cast to int
         self.clean_df['Year'] = self.clean_df['Year'].astype(int)
-        print(self.clean_df["Year"].dtype)
         self.clean_df['Count'] = self.clean_df['Count'].astype(int)
         # Put the name in upper case
         self.clean_df['Name'] = self.clean_df['Name'].str.upper()
