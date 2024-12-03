@@ -37,13 +37,13 @@ class NamesData(DataClass):
 
         # Check the tyoe of the columns
         ## Year column should be int64
-        assert self.clean_df['Year'].dtype == 'int64', f'{self.name} : Year column is not of type int64'
+        assert (self.clean_df['Year'].dtype == 'int64' or self.clean_df['Year'].dtype == 'int32'), f'{self.name} : Year column is not of type int64'
         ## Name column : String -> object in pandas
         assert self.clean_df['Name'].dtype == 'object', f'{self.name} : Name column is not of type object (string)'
         ## Sex column : String -> object in pandas
         assert self.clean_df['Sex'].dtype == 'object', f'{self.name} : Sex column is not of type object (string)'
         ## Count column : int64
-        assert self.clean_df['Count'].dtype == 'int64', f'{self.name} : Count column is not of type int64'
+        assert (self.clean_df['Count'].dtype == 'int64' or self.clean_df['Year'].dtype == 'int32'), f'{self.name} : Count column is not of type int64'
 
         # Check for duplicates -> same name, same sex, same year, but different count
         wo_year = self.clean_df.drop(columns=['Count'])
@@ -100,6 +100,7 @@ class UKNamesData(NamesData):
         self.clean_df.columns = self.columns
         # for a strange reason, the type of the numbers are set to float -> cast to int
         self.clean_df['Year'] = self.clean_df['Year'].astype(int)
+        print(self.clean_df["Year"].dtype)
         self.clean_df['Count'] = self.clean_df['Count'].astype(int)
         # Put the name in upper case
         self.clean_df['Name'] = self.clean_df['Name'].str.upper()

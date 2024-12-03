@@ -16,3 +16,6 @@ Thumbs.db
 # Python
 *.pyc
 *.pyo
+
+# Heavy datasets
+data/raw/imdb/

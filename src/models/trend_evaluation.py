@@ -17,8 +17,11 @@ def trend_eval_ranking(df_babies, df_movies):
     # Putting every character name in upper case
     df_movies.loc[:, 'Character_name'] = df_movies['Character_name'].str.upper()
 
-    # Taking only characters of the top 10 characters by revenue every year
-    df_movies = df_movies.groupby('Release_year').apply(lambda x: x.nlargest(10, 'Revenue')).reset_index(drop=True)
+    # Taking only characters of the top 100 characters by revenue every year
+    df_movies = (df_movies[df_movies["numVotes"] >= 100000]
+        .groupby('Release_year')
+        .apply(lambda x: x.nlargest(100, 'averageRating'))
+        .reset_index(drop=True))
 
     merged_df = df_babies.merge(
         df_movies[['Character_name', 'Release_year', 'Movie_name']],
