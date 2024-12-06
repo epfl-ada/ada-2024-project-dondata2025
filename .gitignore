@@ -22,7 +22,6 @@ data/raw/imdb/
 
 
 # GemFile
-docs/Gemfile
 docs/Gemfile.lock
 docs/_site/*
 docs/_site/
