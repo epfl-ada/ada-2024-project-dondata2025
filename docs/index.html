@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block title %}ADA 2024 Project{% endblock %}
+
+{% block content %}
+    
+    <!-- <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center w-100" id="navbarNav">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-nowrap active" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-nowrap" href="#movies">Movies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    <div class="section vh-100 d-flex align-items-center justify-content-center" id="project">
+        <div class="film-content d-flex align-items-center justify-content-center">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://m.media-amazon.com/images/I/812Ek9bE0VL._UF1000,1000_QL80_.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Nice name! Where does it come from?</h1>
+                    <p class="lead">Project description in a few word. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, harum illum explicabo nemo enim recusandae perferendis omnis iste placeat animi? Fugit, minus! Ipsum, soluta. Nam quos ratione laudantium dolorum laboriosam!</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a class="btn btn-primary btn-lg px-4 me-md-2" href="#Project_title">Start the story</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section vh-100 vw-100 d-flex align-items-center" id="movies">
+
+        <div class="container film-content text-center ">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Movies</h1>
+                    <p class="lead mb-4">
+                        Discover the connection between cinema and baby names. Explore how iconic characters inspire names across generations.
+                    </p>
+                    <canvas id="myChart" width="400" height="200" class="mb-4"></canvas>
+                    <a href="#project" class="btn btn-primary btn-lg px-4">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <!-- Chart.js Script -->
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+<script>
+    // var header = document.getElementById("navbarNav");
+    // var btns = header.getElementsByClassName("nav-link");
+    // for (var i = 0; i < btns.length; i++) {
+    //     btns[i].addEventListener("click", function(e) {
+    //         e.preventDefault(); // Prevent default behavior
+    //         var targetId = this.getAttribute("href");
+    //         var target = document.querySelector(targetId);
+    //         if (target) {
+    //             target.scrollIntoView({ behavior: "smooth" });
+    //         }
+
+    //         // Update active class
+    //         var current = document.getElementsByClassName("active");
+    //         if (current.length > 0) {
+    //             current[0].className = current[0].className.replace(" active", "");
+    //         }
+    //         this.className += " active";
+    //     });
+    // }
+
+</script>
+
+{% endblock %}
