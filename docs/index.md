@@ -13,3 +13,5 @@ This is a simple page written in Markdown.
 {% include filmstrip.html %}
 
 [Visit GitHub](https://github.com)
+
+{% include line_chart.html %}
