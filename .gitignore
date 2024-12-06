@@ -19,3 +19,10 @@ Thumbs.db
 
 # Heavy datasets
 data/raw/imdb/
+
+
+# GemFile
+docs/GemFile
+docs/GemFile.lock
+docs/_site/*
+docs/_site/
