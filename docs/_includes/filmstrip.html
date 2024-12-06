@@ -3,10 +3,12 @@
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
+            justify-content: center;
         }
 
         .carousel-wrapper {
-            width: 60%;
+            max-width: max-content;
+            margin: 30px;
             height: 50vh;
             display: flex;
             justify-content: center;
@@ -87,46 +89,57 @@
         }
 
         .carousel-content {
-            flex: 1;
+            height: 100%;
             width: 90%;
-            max-height: calc(100% - 100px); /* Account for top/bottom padding and some margin */
+            max-height: calc(100% - 50px); /* Account for top/bottom padding and some margin */
             padding: 20px;
-            text-align: center;
+            text-align: left;
             background-color: #fff;
             z-index: 1;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: start;
+            align-items: start;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             filter: sepia(0.5);
             overflow-y: auto; /* Allow scrolling if content overflows */
+            overflow-x: hidden;
             margin: 10px 0; /* Add some spacing from the film strips */
         }
 
         .carousel-buttons {
             position: absolute;
-            bottom: 10px;
-            right: 10px;
-            display: flex;
-            gap: 10px;
-            z-index: 3;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 100%;
         }
 
         .carousel-buttons button {
+            position: absolute;
             padding: 10px 15px;
-            margin: 0;
-            border: none;
-            border-radius: 4px;
-            background-color: rgb(95, 95, 95);
+            background-color: rgba(0, 0, 0, 0.5);
             color: white;
+            font-weight: bolder;
+            border: none;
             cursor: pointer;
+            border-radius: 5px;
             transition: background-color 0.3s ease;
+            border: 1px solid white;
+        }
+
+        .carousel-buttons button:first-child {  /* Previous button */
+            left: 10px;
+        }
+
+        .carousel-buttons button:last-child {   /* Next button */
+            right: 10px;
         }
 
         .carousel-buttons button:hover {
             background-color: #333;
         }
+
 </style>
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -137,15 +150,17 @@
                 <div class="carousel" id="carousel">
                     <div class="carousel-slide">
                         <div class="carousel-content">
-                            Slide 1: Welcome to the carousel!
-                            <script>
-                              var data = [{ x: [1, 2, 3], y: [10, 15, 13], type: 'scatter' }];
-                              Plotly.newPlot('graph', data);
-                            </script>
+                            <img src="https://static.posters.cz/image/1300/poster/star-wars-episode-iv-eine-neue-hoffnung-i90218.jpg" alt="Starwars IV" width="150px" style="margin: 0px 20px 20px 20px;"> 
+                            <section>
+                                <strong>Starwars IV</strong>
+                                <p><strong>Leia</strong>: Starwars IV</p>
+                            </section>  
                         </div>
                     </div>
                     <div class="carousel-slide">
-                        <div class="carousel-content">Slide 2: This is a responsive slideshow.</div>
+                        <div class="carousel-content">
+                            <h3>Most influencial movies</h3>
+                        </div>
                     </div>
                     <div class="carousel-slide">
                         <div class="carousel-content">Slide 3: You can add your own content.</div>
@@ -157,8 +172,8 @@
                 </div>
             </div>
             <div class="carousel-buttons">
-                <button onclick="prevSlide()">Previous</button>
-                <button onclick="nextSlide()">Next</button>
+                <button onclick="prevSlide()"><</button>
+                <button onclick="nextSlide()">></button>
             </div>
         </div>
     </div>

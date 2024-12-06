@@ -1,17 +1,17 @@
 ---
-title: Welcome to My Site
-layout: default
+layout: page
+title: Nice name! Where does it come from?
+background: 'https://static.posters.cz/image/1300/poster/star-wars-episode-iv-eine-neue-hoffnung-i90218.jpg'
 ---
-
-# Hello, World!
-This is a simple page written in Markdown.
+<hr>
+# Naming your child based on a movie??
+WHAT? NOOOO That's not what I did! Advertisement doesn't work on me hihihihih (has 23 Nike t shirts and 2 off-white shoes)
 
 - You can write lists
 - Add images
-- Use **bold** and _italic_ text
+- This is a **bold text** haha
 
 {% include filmstrip.html %}
 
-[Visit GitHub](https://github.com)
-
+## What? We can even include graphs?!
 {% include line_chart.html %}
