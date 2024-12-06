@@ -3,10 +3,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
         }
 
         .carousel-wrapper {
@@ -136,11 +133,9 @@
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <div class="body">
-    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;"></div>
         <div class="carousel-wrapper">
             <div class="carousel-container">
                 <div class="carousel" id="carousel">
-
                     <div class="carousel-slide">
                         <div class="carousel-content">
                             Slide 1: Welcome to the carousel!
@@ -168,9 +163,9 @@
             </div>
         </div>
     </div>
-</div>
 
 {% raw %}
+
 <script>
     const carousel = document.getElementById('carousel');
     const totalSlides = carousel.children.length;
@@ -198,5 +193,7 @@
             nextSlide();
         }
     });
+
 </script>
+
 {% endraw %}
