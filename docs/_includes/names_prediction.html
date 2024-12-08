@@ -1,0 +1,133 @@
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<style>
+    #error-message {
+      color: red;
+      font-size: 14px;
+      display: none; 
+    }
+
+    #suggestions {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="mb-3 position-relative">
+        <!-- Input with Bootstrap dropdown -->
+        <input type="text" id="word-input" class="form-control" placeholder="Enter a word..." autocomplete="off">
+        <div class="dropdown">
+        <ul class="dropdown-menu w-100" id="suggestions"></ul>
+        </div>
+    </div>
+    <button id="update-button" >Search this name</button>
+    <p id="error-message">We could not find this name, sorry...</p>
+    <!-- Div for the chart -->
+    <div id="line-chart" class="mt-5" style="width: 100%; max-width: 700px; height: 400px;"></div>
+</div>
+    
+
+<script>
+
+// initial graph -> an empty one with years from 1900 to 2012
+const trace = {
+    x: Array.from({ length: 113 }, (_, i) => i + 1900),
+    //y from 0 to 100
+    y: Array.from({ length: 113 }, (_, i) => i),
+    type: 'bar',
+    mode: 'lines+markers',
+    name: 'example'
+};
+
+//put the initial graph in the layout
+const layout = {
+    title: 'Graph for "example"',
+    xaxis: { title: 'Year' },
+    yaxis: { title: 'Naming count' }
+};
+
+//plot the initial graph
+Plotly.newPlot('line-chart', [trace], layout);
+
+// Mock data dictionary with many items
+const dataDict = {};
+for (let i = 1; i <= 333; i++) {
+    dataDict[`example${i}`] = {
+    x: [0, 1, 2, 3],
+    y: [0, i, i * 2, i * 3]
+    };
+}
+
+// Maximum number of suggestions to show
+const MAX_SUGGESTIONS = 10;
+
+// Input elements
+const input = document.getElementById('word-input');
+const updateButton = document.getElementById('update-button');
+const errorMessage = document.getElementById('error-message');
+const suggestions = document.getElementById('suggestions');
+
+
+
+// Show suggestions as the user types
+input.addEventListener('input', () => {
+    const query = input.value.toLowerCase().trim();
+    suggestions.innerHTML = ''; // Clear previous suggestions
+    if (query) {
+    // Filter and limit suggestions
+    const matchedWords = Object.keys(dataDict)
+        .filter(word => word.toLowerCase().includes(query))
+        .slice(0, MAX_SUGGESTIONS); // Limit to MAX_SUGGESTIONS
+        
+    if (matchedWords.length > 0) {
+        suggestions.classList.add('show');
+        matchedWords.forEach(word => {
+        const li = document.createElement('li');
+        li.className = 'dropdown-item';
+        li.textContent = word;
+        li.onclick = () => {
+            input.value = word; // Set input to clicked word
+            suggestions.classList.remove('show'); // Hide suggestions
+        };
+        suggestions.appendChild(li);
+        });
+    } else {
+        suggestions.classList.remove('show');
+    }
+    } else {
+    suggestions.classList.remove('show');
+    }
+});
+
+// Hide suggestions when input loses focus
+input.addEventListener('blur', () => {
+    setTimeout(() => {
+    suggestions.classList.remove('show');
+    }, 200); // Delay to allow click on suggestion
+});
+
+// Update graph on button click
+updateButton.addEventListener('click', () => {
+    const word = input.value.trim();
+    if (dataDict[word]) {
+    errorMessage.style.display = 'none'; // Hide error message
+    const { x, y } = dataDict[word];
+    const trace = {
+        x,
+        y,
+        type: 'bar',
+        mode: 'lines+markers',
+        name: word
+    };
+    const layout = {
+        title: `Graph for "${word}"`,
+        xaxis: { title: 'Year' },
+        yaxis: { title: 'Naming count' }
+    };
+    Plotly.newPlot('line-chart', [trace], layout);
+    } else {
+    errorMessage.style.display = 'block'; // Show error message
+    }
+});
+</script>

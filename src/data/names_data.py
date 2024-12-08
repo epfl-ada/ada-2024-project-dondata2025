@@ -46,8 +46,8 @@ class NamesData(DataClass):
         assert (self.clean_df['Count'].dtype == 'int64' or self.clean_df['Year'].dtype == 'int32'), f'{self.name} : Count column is not of type int64'
 
         # Check for duplicates -> same name, same sex, same year, but different count
-        wo_year = self.clean_df.drop(columns=['Count'])
-        duplicates = wo_year.duplicated().sum()
+        wo_count = self.clean_df.drop(columns=['Count'])
+        duplicates = wo_count.duplicated().sum()
         assert duplicates == 0, f'{self.name} has {duplicates} duplicates !'
 
         # Check that the names contain only letters
@@ -154,4 +154,49 @@ class FranceNamesData(NamesData):
         self.clean_df = self.clean_df[self.clean_df['Name'].str.match('^[A-Z-\s\']+$')]      
 
         # Check the data
+        self.check_clean_data()
+
+
+class NovergianNamesData(NamesData):
+
+    # https://www.ssb.no/en/statbank/table/10467/
+
+    # Clean the raw data
+    def clean_raw_data(self):
+
+        df = self.raw_df.copy()
+
+        # Change the column names
+        df.columns = ["Name", "Year", "Count", "Sex"]
+
+        # Premut the first and seocond columns and the third and fourth columns
+        df = df[["Year", "Name", "Count", "Sex"]]
+
+        # Drop every row with missing values
+        df = df.dropna()
+        df = df.reset_index(drop=True)
+
+        # Drop all the "." and ".." in the count column
+        df = df[df["Count"] != "."]
+        df = df[df["Count"] != ".."]
+
+        # Names to upper case
+        df["Name"] = df["Name"].str.upper()
+
+        # Set the type of the columns
+        df["Year"] = df["Year"].astype(int)
+        df["Count"] = df["Count"].astype(int)
+
+        # Names not matching the regex
+        unmatching = df[~df["Name"].str.match("^[A-Z-\s\']+$")]
+        fraction = unmatching.shape[0] / df.shape[0]
+        # print(f"Fraction of names not matching the regex : {fraction}") # Is about 1% -> drop them
+        df = df[df["Name"].str.match("^[A-Z-\s\']+$")]
+
+        # Duplicates, there are 44 duplicates in the dataset -> keep the sum
+        duplicates = df[df.duplicated()]
+        df = df.groupby(['Year', 'Name', 'Sex']).sum().reset_index()
+
+        # Check the data
+        self.clean_df = df
         self.check_clean_data()

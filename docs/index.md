@@ -1,16 +1,13 @@
 ---
 layout: page
 title: Nice name! Where does it come from?
-cover-img: 'https://i.imgur.com/w1z5c.jpeg'
-thumbnail-img: 'https://i.imgur.com/w1z5c.jpeg'
+cover-img: 'assets/img/w1z5c.jpeg'
 ---
 
 <style>
     /*Custom css for the page*/
     .page-heading h1{
         background-color: rgba(190, 4, 4, 1);
-
-        
     }
 </style>
 
@@ -27,6 +24,7 @@ In this article, we will see how the names given to caracters in movies have an 
 # The influence of movies over your name
 Throughout this post, you will see how we used data freely available on the web to find out if movies had an impact on the names.
 
+{% include names_prediction.html %}
 ## What movies to look at?
 
 Since not all movies have been watched by the same number of people, we cannot assume that they all had the same chances to have an influence on the naming of babies.
@@ -34,9 +32,6 @@ This is why we firtsly decided to facilitate the research by keeping movies that
 
 - Revenue
 - IMDB scores
-
-
-
 
 
 {% include filmstrip.html %}
