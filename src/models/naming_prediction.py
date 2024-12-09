@@ -99,8 +99,6 @@ def predict_naming_prophet(data: NamesData, name: str, stop_year: int, nb_years:
     true_data = name_data[name_data['Year'] >= stop_year]  # the = is for visualisation -> connected points on the graph
     true_data = true_data[true_data['Year'] <= stop_year + nb_years]
 
-    print(true_data)
-
     y_true = true_data['Count'].values
 
     # Convert the Year column to datetime
@@ -152,7 +150,7 @@ def predict_naming_prophet(data: NamesData, name: str, stop_year: int, nb_years:
 
     return forecast
 
-def compute_distance(df_pred):
+def compute_distance_abs(df_pred):
     """
     Computes the absolute difference between predicted and true counts.
 
@@ -160,7 +158,22 @@ def compute_distance(df_pred):
     :return: DataFrame with an additional 'Distance' column representing the absolute difference
     """
     distance_pred = df_pred[['Year', 'Predicted Count', 'True Count']].copy()
+
     distance_pred['Distance'] = abs(distance_pred['Predicted Count'] - distance_pred['True Count'])
+    return distance_pred
+
+def compute_distance(df_pred):
+    """
+    Computes the distance between the true count and the predicted count for each year.
+    If the predicted count is higher than the true count, -inf is returned. Otherwise, the absolute difference is returned.
+
+    :param df_pred: DataFrame containing the columns 'Year', 'Predicted Count', and 'True Count'
+    :return: DataFrame with an additional 'Distance' column representing the computed distance
+    """
+    distance_pred = df_pred[['Year', 'Predicted Count', 'True Count']].copy()
+
+    distance_pred['Distance'] = np.where(distance_pred['Predicted Count'] > distance_pred['True Count'], -np.inf,
+                                         abs(distance_pred['Predicted Count'] - distance_pred['True Count']))
     return distance_pred
 
 def compute_area(distance_df):
