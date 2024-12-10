@@ -1,0 +1,14 @@
+.two-col {
+    display: flex;
+    align-items: start; /* Centers items vertically */
+    gap: 20px; /* Space between the two elements */
+  }
+  
+  .two-row > div {
+    flex: 1; /* Ensures both children take equal space by default */
+  }
+  
+  .two-row img {
+    max-width: 100%; /* Ensures images scale within their container */
+    height: auto; /* Maintain image aspect ratio */
+  }
