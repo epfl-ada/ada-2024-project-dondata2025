@@ -14,14 +14,14 @@ cover-img: 'assets/img/w1z5c.jpeg'
 </style>
 
 # From the *big screen* to your everyday life
-Movies and TV shows have always been a major influence in our daily. From political messages to new slang expressions, there are numerous examples of actors or celebrities redefining how people behave, how they dress or even how they think. 
+Movies and TV shows have always been a major influence in our daily, shaping our preceptions, preferences and even cultural norms. From political messages delivered through the narrative to the emergence of new slang expressions, the impact of this medium is powerful and often underrated. Over the years, actors and the characters they played have redefined societal behaviours, starting fashion trends and even ideologies. 
 
-For example, the famous sitcom *Friends* created "The Rachel" phenomenon. In this show, the character played by Jenifer Aniston wore an original haircut that became one of the most requested ever.
+For example, the famous sitcom *Friends* created "The Rachel" phenomenon. In this show, the character played by Jenifer Aniston wore an original haircut that became one of the most requested styles at hair salons across the world. It symbolized a moment where people were identifying as Rachel, were marked by the show and wanted to be just like her. Which is just what we are looking for: media influence !
 
 {% include rachel.html %}
 
-A single person's appearance managed to influence the tastes of thousands of people. This is what intrigued us for our project and lead us to its subject.
-In this article, we will see how the character names in movies induce trends on baby names, particularly the few years following the movie release. 
+This illustrates how a single person's captivated the audience and shaped the tastes of thousands. This is how far the power of storytelling and character design reaches. This is what intrigued us for our project and guided us toward its subject.
+In this article, we will see how the character names in movies induce trends in baby names, particularly the years immediately following the movie release. 
 
 # Try it yourself !
 Before diving in deeper, let's give you a taste of our results. Enter any name, and see what movie potentially impacted its popularity.
@@ -37,8 +37,8 @@ In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average
 ### What makes a movie popular ?
 Obviously, a blockbuster is more prone to impacting baby name trends than an obscure short film from the 40s. As such, we used the average IMDB rating of a movie as its popularity, excluding movies with few votes. 
 ### Genre representation
-{% include top10_genres.html %}
-**NB:** We grouped all genres that represent <1% of the dataset in "Other"
+{% include top_10_genres.html %}
+**NB:** A movie can belong to multiple genres.
 
 
 
