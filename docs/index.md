@@ -46,6 +46,7 @@ Obviously, a blockbuster is more prone to impacting baby name trends than an obs
 Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events. A cultural event can even create a new name, as for [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)). 
 
 We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Denmark to acccount for name trends.
+### Most given names in the dataset
 <img src="assets/img/wordcloud.png" alt="Word Cloud">
 
 
