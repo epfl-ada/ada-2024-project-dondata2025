@@ -20,7 +20,7 @@ For example, the famous sitcom *Friends* created "The Rachel" phenomenon. In thi
 
 {% include rachel.html %}
 
-This illustrates how a single person's captivated the audience and shaped the tastes of thousands. This is how far the power of storytelling and character design reaches. This is what intrigued us for our project and guided us toward its subject.
+The case illustrates how a single person's captivated the audience and shaped the tastes of thousands, displaying how far the power of storytelling and character design reaches. That effect is what intrigued us for our project and guided us toward its subject.
 In this article, we will see how the character names in movies induce trends in baby names, particularly the years immediately following the movie release. 
 
 # Try it yourself !
