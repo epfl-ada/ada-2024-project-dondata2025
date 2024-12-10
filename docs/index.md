@@ -41,7 +41,6 @@ Obviously, a blockbuster is more prone to impacting baby name trends than an obs
 **NB:** A movie can belong to multiple genres.
 
 
-
 ## The baby names collection
 Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events. A cultural event can even create a new name, as for [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)). 
 
