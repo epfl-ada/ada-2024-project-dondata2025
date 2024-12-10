@@ -13,7 +13,7 @@ cover-img: 'assets/img/w1z5c.jpeg'
     }
 </style>
 
-# From the *big screen* to your everyday life
+# From the *Big Screen* to your everyday life
 Movies and TV shows have always been a major influence in our daily, shaping our preceptions, preferences and even cultural norms. From political messages delivered through the narrative to the emergence of new slang expressions, the impact of this medium is powerful and often underrated. Over the years, actors and the characters they played have redefined societal behaviours, starting fashion trends and even ideologies. 
 
 For example, the famous sitcom *Friends* created "The Rachel" phenomenon. In this show, the character played by Jenifer Aniston wore an original haircut that became one of the most requested styles at hair salons across the world. It symbolized a moment where people were identifying as Rachel, were marked by the show and wanted to be just like her. Which is just what we are looking for: media influence !
@@ -64,6 +64,7 @@ Your name is the word that is used to identify your person among others and has 
 # Bibliography
 1. [Wikipedia: The Rachel](https://en.wikipedia.org/wiki/The_Rachel#:~:text=%22The%20Rachel%22%20is%20described%20as,as%20the%20hairstyle's%20defining%20characteristics.)
 2. [Rachel's Picture](https://tierneysalons.com/wp-content/uploads/2023/12/0e461a848663146e13e5444687934cb0.jpg)
-3. [Header Background Picture](https://imgur.com/photo-103bn-photo-116-hollywood-stars-including-leonardo-di-caprio-steven-spielberg-tom-cruise-robert-downey-jr-jack-nicholson-sean-penn-brad-pitt-martin-scorsese-dustin-hoffman-meryl-streep-jj-abrams-barbra-streisand-more-pose-toge-w1z5c) 
+3. [Article on "The Rachel" by InStyle](https://www.instyle.com/the-rachel-haircut-8575551)
+4. [Header Background Picture](https://imgur.com/photo-103bn-photo-116-hollywood-stars-including-leonardo-di-caprio-steven-spielberg-tom-cruise-robert-downey-jr-jack-nicholson-sean-penn-brad-pitt-martin-scorsese-dustin-hoffman-meryl-streep-jj-abrams-barbra-streisand-more-pose-toge-w1z5c) 
 
 
