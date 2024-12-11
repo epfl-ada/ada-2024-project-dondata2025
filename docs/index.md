@@ -34,6 +34,8 @@ First and most important, movies are what inspire people. They tell stories and 
 Our dataset contains movies released up to 2014 and informations such as their **unique ID**, **release date**, **genre** and the list of **characters** featured in the work.
 
 In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average rating** and **number of voters** coming from the [IMDB data files](https://datasets.imdbws.com).
+We pretreated this dataset to only keep one weighted mean of votes per movie and the number of voters. We created an information 
+
 ### What makes a movie popular ?
 Blockbuster movies are far more likely to influence baby name trends than obscure short films from the 1940s. To focus on culturally impactful films, we filtered out less popular ones. This was done by evaluating a movie's popularity using its average IMDb rating and the number of votes it received.
 {% include rating_votes.html %}
