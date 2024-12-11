@@ -20,7 +20,7 @@ def trend_eval_ranking(df_babies, df_movies):
     # Taking only characters of the top 100 characters by revenue every year
     df_movies = (df_movies[df_movies["totalVotes"] >= 100000]
         .groupby('Release_year')
-        .apply(lambda x: x.nlargest(100, 'averageRating'))
+        .apply(lambda x: x.nlargest(100, 'weightedAverageRating'))
         .reset_index(drop=True))
 
     merged_df = df_babies.merge(
