@@ -20,7 +20,7 @@ For example, the famous sitcom *Friends* created "The Rachel" phenomenon. In thi
 
 {% include rachel.html %}
 
-The case illustrates how a single person's captivated the audience and shaped the tastes of thousands, displaying how far the power of storytelling and character design reaches. That effect is what intrigued us for our project and guided us toward its subject.
+The case illustrates how a single person's appearance captivated the audience and shaped the tastes of thousands of people, displaying how far the power of storytelling and character design reaches. That effect is what intrigued us for our project and guided us toward its subject.
 In this article, we will see how the character names in movies induce trends in baby names, particularly the years immediately following the movie release. 
 
 # Try it yourself !
@@ -35,18 +35,28 @@ Our dataset contains movies released up to 2014 and informations such as their *
 
 In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average rating** and **number of voters** coming from the [IMDB data files](https://datasets.imdbws.com).
 ### What makes a movie popular ?
-Obviously, a blockbuster is more prone to impacting baby name trends than an obscure short film from the 40s. As such, we used the average IMDB rating of a movie as its popularity, excluding movies with few votes. 
+Blockbuster movies are far more likely to influence baby name trends than obscure short films from the 1940s. To focus on culturally impactful films, we filtered out less popular ones. This was done by evaluating a movie's popularity using its average IMDb rating and the number of votes it received.
+{% include rating_votes.html %}
 ### Genre representation
 {% include top_10_genres.html %}
 **NB:** A movie can belong to multiple genres.
+### Important characters
+Some characters retain the attention of spectators whereas others will be forgotten after a day. To account for this disparity and for simplicity, we decided to keep only the most important characters in every movie in the dataset. 
+
+In order to measure character importance, we count the number of citation of their name in the summary of the movie and keep the most mentioned ones.
+
+**A VENIR : exemple avec les 2-3 persos d'un film connu, fourni par Coco**
 
 
 ## The baby names collection
 Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events. A cultural event can even create a new name, as for [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)). 
 
-We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Denmark to acccount for name trends.
+We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Norway to acccount for name trends.
 ### Most given names in the dataset
 <img src="assets/img/wordcloud.png" alt="Word Cloud">
+
+
+
 
 
 
