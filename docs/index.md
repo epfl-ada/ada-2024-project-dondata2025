@@ -41,16 +41,16 @@ Obviously, a blockbuster is more prone to impacting baby name trends than an obs
 **NB:** A movie can belong to multiple genres.
 
 
-
 ## The baby names collection
-Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity
+Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events. A cultural event can even create a new name, as for [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)). 
+
+We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Denmark to acccount for name trends.
+### Most given names in the dataset
+<img src="assets/img/wordcloud.png" alt="Word Cloud">
 
 
 
-
-# The influence of movies over your name
-Your name is the word that is used to identify your person among others and has such
-## Following part
+# Test 2 colonnes de texte
 <div class="two-col">
   <div>
     <p>Text a gauche lorem fidsfjiji j idfisi ii ii ifii ii fi i ifjwionfnenfo nn nef iewi omeiofm owmefiom io</p>
@@ -62,7 +62,7 @@ Your name is the word that is used to identify your person among others and has 
 
 
 # Bibliography
-1. [Wikipedia: The Rachel](https://en.wikipedia.org/wiki/The_Rachel#:~:text=%22The%20Rachel%22%20is%20described%20as,as%20the%20hairstyle's%20defining%20characteristics.)
+1. [Wikipedia: The Rachel](https://en.wikipedia.org/wiki/The_Rachel)
 2. [Rachel's Picture](https://tierneysalons.com/wp-content/uploads/2023/12/0e461a848663146e13e5444687934cb0.jpg)
 3. [Article on "The Rachel" by InStyle](https://www.instyle.com/the-rachel-haircut-8575551)
 4. [Header Background Picture](https://imgur.com/photo-103bn-photo-116-hollywood-stars-including-leonardo-di-caprio-steven-spielberg-tom-cruise-robert-downey-jr-jack-nicholson-sean-penn-brad-pitt-martin-scorsese-dustin-hoffman-meryl-streep-jj-abrams-barbra-streisand-more-pose-toge-w1z5c) 
