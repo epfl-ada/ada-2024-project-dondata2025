@@ -38,7 +38,7 @@ We pretreated this dataset to only keep one weighted mean of votes per movie and
 
 ### What makes a movie popular ?
 Blockbuster movies are far more likely to influence baby name trends than obscure short films from the 1940s. To focus on culturally impactful films, we filtered out less popular ones. This was done by evaluating a movie's popularity using its average IMDb rating and the number of votes it received.
-{% include rating_votes.html %}
+{% include rating-votes.html %}
 ### Genre representation
 {% include top_10_genres.html %}
 **NB:** A movie can belong to multiple genres.
@@ -57,6 +57,16 @@ We used a dataset consisting of baby names each year for the United States, Unit
 ### Most given names in the dataset
 <img src="assets/img/wordcloud.png" alt="Word Cloud">
 
+# Processes
+Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
+## The naïve approach
+At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
+<img src="assets/img/trend_formula.png">
+Unfortunately, this is not so simple. This model doesn't account for the inverse effect, i.e. the name trend influencing the filmmakers for the name of their characters. 
+
+To illustrate this, let's take the example of [Michael from Peter Pan](https://disney.fandom.com/wiki/Michael_Darling). According to our model, the 1953 film Peter Pan had a great impact on people naming their child Michael. Let's look at the trend graph : 
+<img src="assets/img/Michael_name_trend.png">
+It is clear that the film was released during a peak of popularity for the name Michael, and therefore most likely didn't play a role in its usage.
 
 
 
