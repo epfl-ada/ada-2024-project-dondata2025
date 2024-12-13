@@ -36,6 +36,13 @@ def merge_names_data(namesData : list) -> NamesData:
     merged.check_clean_data()
     return merged
 
-    
+def to_csv(self, filepath: str, index: bool = False):
+    """
+    Saves the clean_df DataFrame to a CSV file.
+    :param filepath: The path to save the CSV file.
+    :param index: Whether to include the index in the saved file.
+    """
+    self.clean_df.to_csv(filepath, index=index)
+
 
 

@@ -25,13 +25,29 @@ def get_movie_votes(datapath):
     print(f"There are {len(title_basics_ratings)} movies in the title-basic merged dataset before treating duplicates.")
     
     # Aggregation of ratings and basics so that there is no duplicates due to different countries origins of votes for movies
-    title_basics_ratings.groupby('primaryTitle').apply(lambda group: pd.Series({
-        'weightedAverageRating': (group['numVotes'] * group['averageRating']).sum() / group['numVotes'].sum(),
+    aggregated_imdb = title_basics_ratings.groupby('primaryTitle').apply(lambda group: pd.Series({
+        'weightedAverageRating': round((group['numVotes'] * group['averageRating']).sum() / group['numVotes'].sum(), 2),
         'totalVotes': group['numVotes'].sum()})
         ).reset_index()
 
-    return title_basics_ratings
 
+    # adding a column to weighted average rating and total votes
+    #imdb_votes = title_basics_ratings.merge(aggregated_imdb, on='primaryTitle', how='left')
+
+
+    return aggregated_imdb
+
+
+def is_blockbuster(row, votes_threshold=1000000, rating_threshold=8.0):
+    """
+    Determines if a movie is a blockbuster based on total votes and weighted average rating.
+
+    :param row: A row of the DataFrame
+    :param votes_threshold: The minimum number of votes to qualify as a blockbuster
+    :param rating_threshold: The minimum average rating to qualify as a blockbuster
+    :return: Boolean (True if blockbuster, False otherwise)
+    """
+    return row['totalVotes'] > votes_threshold and row['weightedAverageRating'] >= rating_threshold
 
 
 def merge_imdb_and_dataset(imdb_df, characters_df):
@@ -53,16 +69,3 @@ def merge_imdb_and_dataset(imdb_df, characters_df):
 
     print(f"There are {char_rating.shape[0]} rows in the merged dataset")
     return char_rating
-
-
-def is_blockbuster(row, votes_threshold=1000000, rating_threshold=8.0):
-    """
-    Determines if a movie is a blockbuster based on total votes and weighted average rating.
-
-    :param row: A row of the DataFrame
-    :param votes_threshold: The minimum number of votes to qualify as a blockbuster
-    :param rating_threshold: The minimum average rating to qualify as a blockbuster
-    :return: Boolean (True if blockbuster, False otherwise)
-    """
-    return row['totalVotes'] > votes_threshold and row['weightedAverageRating'] >= rating_threshold
-
