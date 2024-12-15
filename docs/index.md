@@ -41,11 +41,11 @@ We pretreated this dataset to only keep one weighted mean of votes per movie and
 Blockbuster movies are far more likely to influence baby name trends than obscure short films from the 1940s. To focus on culturally impactful films, we filtered out less popular ones. This was done by evaluating a movie's popularity using its average IMDb rating and the number of votes it received.
 {% include rating-votes.html %}
 ### Genre representation
+The genre of a movie is a key indicator of themes and storytelling style of a movie. We will look at its distribution in the dataset.
 {% include top_10_genres.html %}
-### Most represented names per movie genre
-Here is an interactive visualization showing the most frequent character names in each movie genre:
-{% include top_10_names_by_genres.html %}
 **NB:** A movie can belong to multiple genres.
+Characters in movie genres often follow archetypes, including how they are named. Here are the most common names by genre.
+{% include top_10_names_by_genres.html %}
 ### Important characters
 Some characters retain the attention of spectators whereas others will be forgotten after a day. To account for this disparity and for simplicity, we decided to keep only the most important characters in every movie in the dataset. 
 
@@ -55,7 +55,7 @@ In order to measure character importance, we count the number of citation of the
 
 
 ## The baby names collection
-Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events. A cultural event can even create a new name, as for [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)). 
+Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events.
 
 We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Norway to acccount for name trends.
 ### Most given names in the dataset
@@ -81,6 +81,11 @@ To illustrate this, let's take the example of [Michael from Peter Pan](https://d
 It is clear that the film was released during a peak of popularity for the name Michael, and therefore most likely didn't play a role in its usage.
 
 
+# Birth of a new name
+Some films have such a cultural impact that they leave a lasting impression on the audience with their characters and make them remember their name, even when they don't even exist. These events lead to the creation of a new name. Ever heard of children named [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)) ?
+
+These names did not exist and were invented by the scriptwriters. They left such an impact on popular culture that people started naming their child like their favorite character !
+<img src="assets/img/neo_graph.png">
 
 
 

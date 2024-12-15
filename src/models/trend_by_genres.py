@@ -83,6 +83,11 @@ def visualize_top_names(top_names_df):
         color="Genres",
         template="plotly_white"
     )
-    top_fig.show()
+    # fixed size for better visualization
+    top_fig.update_layout(width=1000, height=600)
+    top_fig.update_traces(
+        hovertemplate="<b>%{label}</b><br>Count: %{value}<extra></extra>"
+    )
     top_fig.write_html("docs/_includes/top_10_names_by_genres.html")
+    top_fig.show()
 

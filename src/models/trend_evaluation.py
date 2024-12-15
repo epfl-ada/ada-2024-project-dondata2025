@@ -56,10 +56,12 @@ def plot_trend(name, sex, ranking, df_babies):
     plt.xlabel('Year')
     plt.ylabel('Count')
 
-    movname = ranking[ranking['Character_name'] == name]['movie_name'].iloc[0]
+    #movname = ranking[ranking['Character_name'] == name]['movie_name'].iloc[0]
 
     # add vertical lines for the release year of the movie influencing the trend
-    plt.axvline(x=ranking[ranking['Character_name'] == name]['release_year'].iloc[0], color='r', linestyle='--', label=f'{movname} Release Year')
+    #plt.axvline(x=ranking[ranking['Character_name'] == name]['release_year'].iloc[0], color='r', linestyle='--', label=f'{movname} Release Year')
+     # add vertical line for release year of star wars I 
+    plt.axvline(x=1999, color='g', linestyle='--', label='Star Wars I Release Year')
 
     plt.legend()
     plt.show()
