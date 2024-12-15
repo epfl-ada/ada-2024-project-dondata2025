@@ -75,12 +75,14 @@ def visualize_top_names(top_names_df):
     """
     Creates a treemap to visualize the top 10 names per genre.
     """
-    fig = px.treemap(
+    top_fig = px.treemap(
         top_names_df,
         path=["Genres", "Character_name"],
         values="Count",
-        title="Répartition des Top 10 Prénoms par Genre de Films",
+        title="Top 10 most represented names by moie genres",
         color="Genres",
         template="plotly_dark"
     )
-    fig.show()
+    top_fig.show()
+    top_fig.write_html("docs/_includes/top_10_names_by_genres.html")
+
