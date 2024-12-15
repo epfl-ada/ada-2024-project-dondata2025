@@ -38,9 +38,7 @@ We pretreated this dataset to only keep one weighted mean of votes per movie and
 
 ## Most represented names per movie genre
 
-Here is an interactive visualization showing the most frequent character names in each movie genre:
-
-{% include top_10_names.html %}
+Here is an interactive visualization showing the most frequent character names in each movie genre:{% include top_10_names.html %}
 
 
 
