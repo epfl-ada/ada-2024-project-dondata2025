@@ -44,6 +44,7 @@ Blockbuster movies are far more likely to influence baby name trends than obscur
 The genre of a movie is a key indicator of themes and storytelling style of a movie. We will look at its distribution in the dataset.
 {% include top_10_genres.html %}
 **NB:** A movie can belong to multiple genres.
+
 Characters in movie genres often follow archetypes, including how they are named. Here are the most common names by genre.
 {% include top_10_names_by_genres.html %}
 ### Important characters
@@ -84,8 +85,10 @@ It is clear that the film was released during a peak of popularity for the name 
 # Birth of a new name
 Some films have such a cultural impact that they leave a lasting impression on the audience with their characters and make them remember their name, even when they don't even exist. These events lead to the creation of a new name. Ever heard of children named [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)) ?
 
-These names did not exist and were invented by the scriptwriters. They left such an impact on popular culture that people started naming their child like their favorite character !
+These names did not exist and were invented by the scriptwriters. They left a mark on popular culture, and people started naming their child like their favorite character !
+
 <img src="assets/img/neo_graph.png">
+
 
 
 
