@@ -36,18 +36,15 @@ Our dataset contains movies released up to 2014 and informations such as their *
 In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average rating** and **number of voters** coming from the [IMDB data files](https://datasets.imdbws.com).
 We pretreated this dataset to only keep one weighted mean of votes per movie and the number of voters. We created an information 
 
-## Most represented names per movie genre
-Here is an interactive visualization showing the most frequent character names in each movie genre:
-{% include top_10_names_by_genres.html %}
-
-
-
 
 ### What makes a movie popular ?
 Blockbuster movies are far more likely to influence baby name trends than obscure short films from the 1940s. To focus on culturally impactful films, we filtered out less popular ones. This was done by evaluating a movie's popularity using its average IMDb rating and the number of votes it received.
 {% include rating-votes.html %}
 ### Genre representation
 {% include top_10_genres.html %}
+### Most represented names per movie genre
+Here is an interactive visualization showing the most frequent character names in each movie genre:
+{% include top_10_names_by_genres.html %}
 **NB:** A movie can belong to multiple genres.
 ### Important characters
 Some characters retain the attention of spectators whereas others will be forgotten after a day. To account for this disparity and for simplicity, we decided to keep only the most important characters in every movie in the dataset. 
