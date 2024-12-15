@@ -81,7 +81,7 @@ def visualize_top_names(top_names_df):
         values="Count",
         title="Top 10 most represented names by movie genres",
         color="Genres",
-        template="plotly_dark"
+        template="plotly_white"
     )
     top_fig.show()
     top_fig.write_html("docs/_includes/top_10_names_by_genres.html")
