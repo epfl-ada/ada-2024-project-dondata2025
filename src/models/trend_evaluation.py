@@ -63,3 +63,8 @@ def plot_trend(name, sex, ranking, df_babies):
 
     plt.legend()
     plt.show()
+
+
+
+
+

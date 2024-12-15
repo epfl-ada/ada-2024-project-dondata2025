@@ -1,0 +1,101 @@
+Genre,First Name,Count
+Action,THE,250
+Action,CAPTAIN,196
+Action,JOHN,190
+Action,JACK,140
+Action,AGENT,128
+Action,INSPECTOR,127
+Action,GENERAL,126
+Action,DETECTIVE,124
+Action,FRANK,122
+Action,JAMES,79
+Action/Adventure,THE,143
+Action/Adventure,JOHN,138
+Action/Adventure,CAPTAIN,121
+Action/Adventure,JACK,103
+Action/Adventure,FRANK,95
+Action/Adventure,AGENT,81
+Action/Adventure,GENERAL,70
+Action/Adventure,DETECTIVE,65
+Action/Adventure,JAMES,58
+Action/Adventure,INSPECTOR,53
+Adventure,THE,211
+Adventure,CAPTAIN,138
+Adventure,JOHN,91
+Adventure,KING,72
+Adventure,GENERAL,65
+Adventure,JACK,62
+Adventure,YOUNG,58
+Adventure,PROFESSOR,48
+Adventure,LORD,47
+Adventure,SIR,41
+Comedy,THE,459
+Comedy,JACK,207
+Comedy,JOHN,193
+Comedy,MISS,185
+Comedy,MARY,157
+Comedy,JOE,153
+Comedy,MOE,149
+Comedy,FRANK,147
+Comedy,TOM,142
+Comedy,GEORGE,140
+Crime Fiction,THE,212
+Crime Fiction,DETECTIVE,211
+Crime Fiction,INSPECTOR,159
+Crime Fiction,JOHN,152
+Crime Fiction,JACK,132
+Crime Fiction,FRANK,117
+Crime Fiction,JOE,96
+Crime Fiction,PAUL,84
+Crime Fiction,POLICE,84
+Crime Fiction,CAPTAIN,83
+Drama,THE,810
+Drama,JOHN,547
+Drama,MARY,363
+Drama,JACK,358
+Drama,YOUNG,358
+Drama,LE,302
+Drama,PAUL,282
+Drama,DAVID,278
+Drama,FRANK,276
+Drama,CAPTAIN,275
+Indie,THE,250
+Indie,JACK,104
+Indie,JOHN,94
+Indie,YOUNG,75
+Indie,MARY,71
+Indie,DAVID,67
+Indie,TOM,66
+Indie,SAM,65
+Indie,JIMMY,63
+Indie,PAUL,63
+Romance Film,THE,216
+Romance Film,JOHN,179
+Romance Film,YOUNG,134
+Romance Film,MARY,126
+Romance Film,JACK,125
+Romance Film,PAUL,110
+Romance Film,JOE,105
+Romance Film,MISS,105
+Romance Film,DAVID,99
+Romance Film,FRANK,99
+Thriller,DETECTIVE,287
+Thriller,THE,284
+Thriller,JOHN,227
+Thriller,JACK,203
+Thriller,INSPECTOR,151
+Thriller,FRANK,147
+Thriller,CAPTAIN,136
+Thriller,MICHAEL,134
+Thriller,DAVID,133
+Thriller,AGENT,131
+World cinema,INSPECTOR,131
+World cinema,THE,129
+World cinema,LE,86
+World cinema,POLICE,66
+World cinema,RAJ,63
+World cinema,YOUNG,61
+World cinema,POOJA,51
+World cinema,DOCTOR,45
+World cinema,PRIYA,45
+World cinema,RAHUL,45

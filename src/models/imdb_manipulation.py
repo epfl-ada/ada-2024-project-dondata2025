@@ -41,7 +41,6 @@ def get_movie_votes(datapath):
 def is_blockbuster(row, votes_threshold=1000000, rating_threshold=8.0):
     """
     Determines if a movie is a blockbuster based on total votes and weighted average rating.
-
     :param row: A row of the DataFrame
     :param votes_threshold: The minimum number of votes to qualify as a blockbuster
     :param rating_threshold: The minimum average rating to qualify as a blockbuster

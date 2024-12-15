@@ -36,6 +36,14 @@ Our dataset contains movies released up to 2014 and informations such as their *
 In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average rating** and **number of voters** coming from the [IMDB data files](https://datasets.imdbws.com).
 We pretreated this dataset to only keep one weighted mean of votes per movie and the number of voters. We created an information 
 
+## Most represented names per movie genre
+
+Here is an interactive visualization showing the most frequent character names in each movie genre:
+
+{% include top_10_names.html %}
+
+
+
 ### What makes a movie popular ?
 Blockbuster movies are far more likely to influence baby name trends than obscure short films from the 1940s. To focus on culturally impactful films, we filtered out less popular ones. This was done by evaluating a movie's popularity using its average IMDb rating and the number of votes it received.
 {% include rating-votes.html %}
@@ -89,6 +97,13 @@ It is clear that the film was released during a peak of popularity for the name 
     <p>Paragraph on the right for additional content or details.</p>
   </div>
 </div>
+
+
+# Is there a movie genre that have a stronger influence on names ?
+
+
+
+# Are women names more influenced than man's ?
 
 
 # Bibliography
