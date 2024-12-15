@@ -79,7 +79,7 @@ def visualize_top_names(top_names_df):
         top_names_df,
         path=["Genres", "Character_name"],
         values="Count",
-        title="Top 10 most represented names by moie genres",
+        title="Top 10 most represented names by movie genres",
         color="Genres",
         template="plotly_dark"
     )
