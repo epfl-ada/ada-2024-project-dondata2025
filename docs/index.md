@@ -37,7 +37,6 @@ In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average
 We pretreated this dataset to only keep one weighted mean of votes per movie and the number of voters. We created an information 
 
 ## Most represented names per movie genre
-
 Here is an interactive visualization showing the most frequent character names in each movie genre:
 {% include top_10_names_by_genres.html %}
 
