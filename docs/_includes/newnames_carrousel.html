@@ -198,17 +198,17 @@ const totalSlides = carousel.children.length;
 let currentSlide_newname = 0;
 
 function updateCarousel() {
-    const offset = -currentSlide_newnam * 100;
+    const offset = -currentSlide_newname * 100;
     carousel.style.transform = `translateX(${offset}%)`;
 }
 
 function prevSlide() {
-    currentSlide_newnam = (currentSlide_newnam - 1 + totalSlides) % totalSlides;
+    currentSlide_newname = (currentSlide_newname - 1 + totalSlides) % totalSlides;
     updateCarousel();
 }
 
 function nextSlide() {
-    currentSlide_newnam = (currentSlide_newnam + 1) % totalSlides;
+    currentSlide_newname = (currentSlide_newname + 1) % totalSlides;
     updateCarousel();
 }
 
