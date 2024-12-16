@@ -79,7 +79,7 @@ Unfortunately, this is not so simple. This model doesn't account for the inverse
 To illustrate this, let's take the example of [Michael from Peter Pan](https://disney.fandom.com/wiki/Michael_Darling). According to our model, the 1953 film Peter Pan had a great impact on people naming their child Michael. Let's look at the trend graph : 
 
 
-<img src="assets/img/Michael_name_trend.png" alt="Name trend for Michael">
+{% include michael_trend.html %}
 
 
 It is clear that the film was released during a peak of popularity for the name Michael, and therefore most likely didn't play a role in its usage.
@@ -90,7 +90,7 @@ Some films have such a cultural impact that they leave a lasting impression on t
 
 These names did not exist and were invented by the scriptwriters. They left a mark on popular culture, and people started naming their child like their favorite character !
 
-<img src="assets/img/neo_graph.png" alt="Name trend for Neo">
+{% include newnames_carrousel.html %}
 
 
 

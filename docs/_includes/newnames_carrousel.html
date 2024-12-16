@@ -1,0 +1,228 @@
+<style>
+    .body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel-wrapper {
+        max-width: max-content;
+        margin: 30px;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+        border-radius: 8px;
+        position: relative;
+        background-color: #000000;
+        overflow: hidden;
+    }
+
+    .carousel-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+        padding: 40px 0;
+        background-color: black;
+        height: 100%; /* Ensure full height */
+    }
+
+    /* Top film strip */
+    .carousel-slide::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px; /* Needs to be the same as the padding size*/
+        background-color: black;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent 0,
+            transparent 10px,
+            white 15px,
+            white 32px
+        );
+        background-size: 41px 25px;
+        background-position: center;
+        background-repeat: repeat-x;
+    }
+
+            
+    /* Bottom film strip */
+    .carousel-slide::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-color: black;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent 0,
+            transparent 10px,
+            white 15px,
+            white 32px
+        );
+        background-size: 41px 25px;
+        background-position: center;
+        background-repeat: repeat-x;
+    }
+
+    .carousel-content {
+        height: 100%;
+        width: 90%;
+        max-height: calc(100% - 50px); /* Account for top/bottom padding and some margin */
+        padding: 20px;
+        text-align: left;
+        background-color: #fff;
+        z-index: 1;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        filter: sepia(0.5);
+        overflow-y: auto; /* Allow scrolling if content overflows */
+        overflow-x: hidden;
+        margin: 10px 0; /* Add some spacing from the film strips */
+    }
+
+    .carousel-buttons {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        width: 100%;
+    }
+
+    .carousel-buttons button {
+        position: absolute;
+        padding: 10px 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-weight: bolder;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        border: 1px solid white;
+    }
+
+    .carousel-buttons button:first-child {  /* Previous button */
+        left: 10px;
+    }
+
+    .carousel-buttons button:last-child {   /* Next button */
+        right: 10px;
+    }
+
+    .carousel-buttons button:hover {
+        background-color: #333;
+    }
+
+</style>
+
+<div class="body">
+    <div class="carousel-wrapper">
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-slide">
+                    <div class="carousel-content">
+                        <section>
+                            <h3>Neo from <i>The Matrix</i></h3>
+                            <iframe 
+                                src="docs/_includes/neo_trend.html" 
+                                style="border:none;">
+                            </iframe>
+                        </section>  
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-content">
+                        <section>
+                            <h3>Influence</h3>
+                            <ul>
+                                <li>
+                                    Was the most popular hairstyle in the United States in 1995.
+                                </li>
+                                <li>
+                                    Peaked again during the 2020s pandemic lockdown, after the tv special <i>Friends: The Reunion</i>.
+                                </li>
+                                <li>
+                                    Aniston publicly expressed her dislike of the hairstyle due to its difficulty to maintain.
+                                </li>
+                            </ul>
+                        </section>  
+                    </div>
+                </div>
+                <div class="carousel-slide">                        
+                    <div class="carousel-content">
+                        <img src="https://www.instyle.com/thmb/wfmeD89A2SJn6zUagmm9IxKWJlo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-2036483655-70501e59e2e4477991d20e84aa953282.jpg" alt = "Rachel article" width="225px" style="margin: 0px 20px 20px 20px;"> 
+                        <section>
+                            <p>Named one of the most iconic hairstyles of all time by InStyle magazine.</p>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-buttons">
+            <button onclick="prevSlide()"><</button>
+            <button onclick="nextSlide()">></button>
+        </div>
+    </div>
+</div>
+
+{% raw %}
+
+<script>
+const carousel = document.getElementById('carousel');
+const totalSlides = carousel.children.length;
+let currentSlide = 0;
+
+function updateCarousel() {
+    const offset = -currentSlide * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+}
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') {
+        prevSlide();
+    } else if (event.key === 'ArrowRight') {
+        nextSlide();
+    }
+});
+
+</script>
+
+{% endraw %}
