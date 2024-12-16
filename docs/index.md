@@ -64,7 +64,7 @@ We used a dataset consisting of baby names each year for the United States, Unit
 
 # Processes
 
-<img src="assets/img/laplace_citation.jpg" alt="laplace citation" height=400>
+<img src="assets/img/laplace_citation.jpg" alt="laplace citation" height=200>
 
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
 ## The naïve approach
