@@ -63,7 +63,9 @@ We used a dataset consisting of baby names each year for the United States, Unit
 <img src="assets/img/wordcloud.png" alt="Word Cloud">
 
 # Processes
-<img src="assets/img/laplace_citation.jpg" alt="laplace citation">
+
+<img src="assets/img/laplace_citation.jpg" alt="laplace citation" height=800 width=1000>
+
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
 ## The naïve approach
 At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
