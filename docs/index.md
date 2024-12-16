@@ -63,12 +63,13 @@ We used a dataset consisting of baby names each year for the United States, Unit
 <img src="assets/img/wordcloud.png" alt="Word Cloud">
 
 # Processes
+<img src="assets/img/laplace_citation.jpg" alt="laplace citation"
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
 ## The naïve approach
 At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
 
 
-<img src="assets/img/trend_formula.png">
+<img src="assets/img/trend_formula.png" alt="trend formula">
 
 
 Unfortunately, this is not so simple. This model doesn't account for the inverse effect, i.e. the name trend influencing the filmmakers for the name of their characters. 
@@ -76,7 +77,7 @@ Unfortunately, this is not so simple. This model doesn't account for the inverse
 To illustrate this, let's take the example of [Michael from Peter Pan](https://disney.fandom.com/wiki/Michael_Darling). According to our model, the 1953 film Peter Pan had a great impact on people naming their child Michael. Let's look at the trend graph : 
 
 
-<img src="assets/img/Michael_name_trend.png">
+<img src="assets/img/Michael_name_trend.png" alt="Name trend for Michael">
 
 
 It is clear that the film was released during a peak of popularity for the name Michael, and therefore most likely didn't play a role in its usage.
@@ -87,7 +88,7 @@ Some films have such a cultural impact that they leave a lasting impression on t
 
 These names did not exist and were invented by the scriptwriters. They left a mark on popular culture, and people started naming their child like their favorite character !
 
-<img src="assets/img/neo_graph.png">
+<img src="assets/img/neo_graph.png" alt="Name trend for Neo">
 
 
 
