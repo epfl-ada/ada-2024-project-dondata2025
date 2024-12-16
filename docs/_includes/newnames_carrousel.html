@@ -195,20 +195,20 @@
 <script>
 const carousel = document.getElementById('carousel');
 const totalSlides = carousel.children.length;
-let currentSlide = 0;
+let currentSlide_newname = 0;
 
 function updateCarousel() {
-    const offset = -currentSlide * 100;
+    const offset = -currentSlide_newnam * 100;
     carousel.style.transform = `translateX(${offset}%)`;
 }
 
 function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    currentSlide_newnam = (currentSlide_newnam - 1 + totalSlides) % totalSlides;
     updateCarousel();
 }
 
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
+    currentSlide_newnam = (currentSlide_newnam + 1) % totalSlides;
     updateCarousel();
 }
 
