@@ -174,22 +174,22 @@
 {% raw %}
 
 <script>
-const carousel = document.getElementById('carousel-2');
-const totalSlides = carousel.children.length;
+const carousel2 = document.getElementById('carousel-2');
+const totalSlides2 = carousel2.children.length;
 let currentSlide_newname = 0;
 
 function updateCarousel2() {
     const offset = -currentSlide_newname * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
+    carousel2.style.transform = `translateX(${offset}%)`;
 }
 
 function prevSlide2() {
-    currentSlide_newname = (currentSlide_newname - 1 + totalSlides) % totalSlides;
+    currentSlide_newname = (currentSlide_newname - 1 + totalSlides2) % totalSlides2;
     updateCarousel2();
 }
 
 function nextSlide2() {
-    currentSlide_newname = (currentSlide_newname + 1) % totalSlides;
+    currentSlide_newname = (currentSlide_newname + 1) % totalSlides2;
     updateCarousel2();
 }
 
