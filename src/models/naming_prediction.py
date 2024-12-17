@@ -4,6 +4,8 @@ from src.data.names_data import NamesData
 import matplotlib.pyplot as plt
 from prophet import Prophet
 from causalimpact import CausalImpact
+import numpy as np
+
 
 
 def predict_naming_ARIMA(data: NamesData, name: str, stop_year: int, nb_years: int, plot=False) -> pd.DataFrame:
@@ -16,7 +18,6 @@ def predict_naming_ARIMA(data: NamesData, name: str, stop_year: int, nb_years: i
     :param plot: if True, displays diagnostic plots
     :return: a dataframe with the predictions (starting from stop_year + 1)
     """
-    data.check_clean_data()
     input_data = data().copy()
 
     # Filter for the specified name and aggregate counts if needed
@@ -29,6 +30,21 @@ def predict_naming_ARIMA(data: NamesData, name: str, stop_year: int, nb_years: i
     true_data = name_data[name_data['Year'] >= stop_year]
     true_data = true_data[true_data['Year'] <= stop_year + nb_years]
 
+    # Check if there is data to train the model (since some odd names might not have enough data)
+    # we want to have more than 10 years of data
+    if len(train_data) < 5:
+        return None
+
+    # An issue is that the data might have some missing years, we need to fill them with 0! -> 1915, 1917, 1918, 1919, 1920 -> 1916 is missing and should be filled with 0
+    # We will create a new dataframe with all the years from the first year to the stop year
+    # Then we will merge the two dataframes and fill the missing values with 0
+    all_years = pd.DataFrame({'Year': range(train_data['Year'].min(), stop_year + 1)})
+    train_data = pd.merge(all_years, train_data, on='Year', how='left').fillna(0)
+    
+    # We do the same for the true data, it can also be completely empty -> we fill it from the stop year to the stop year + nb_years -> it should always have this shape
+    all_years = pd.DataFrame({'Year': range(stop_year, stop_year + nb_years + 1)})
+    true_data = pd.merge(all_years, true_data, on='Year', how='left').fillna(0)
+
     # Split into x and y as an array
     x_train = train_data['Year'].values
     y_train = train_data['Count'].values
@@ -36,9 +52,13 @@ def predict_naming_ARIMA(data: NamesData, name: str, stop_year: int, nb_years: i
     x_true = true_data['Year'].values
     y_true = true_data['Count'].values
 
-    # Fit the model
-    model = pm.auto_arima(y_train, seasonal=True, m=1)
-    forecast, conf_int = model.predict(n_periods=nb_years, return_conf_int=True)
+    try:
+        # Fit the model
+        model = pm.auto_arima(y_train, seasonal=True, m=1)
+        forecast, conf_int = model.predict(n_periods=nb_years, return_conf_int=True)
+    except:
+        print(f"An error occurred while predicting the evolution of the name count for {name} using SARIMA.")
+        return None
 
     # Plot if necessary
     if plot:
@@ -53,6 +73,9 @@ def predict_naming_ARIMA(data: NamesData, name: str, stop_year: int, nb_years: i
         # Confidence intervals
         lower_bound = pd.Series(conf_int[:, 0])  # Lower bound of CI
         upper_bound = pd.Series(conf_int[:, 1])  # Upper bound of CI
+        # To make the graph look better and since the prediction starts at y+1, we add the last value of y_train
+        lower_bound = pd.concat([y_train[-1:], lower_bound])
+        upper_bound = pd.concat([y_train[-1:], upper_bound])
 
         # Plot the test data in blue and label it
         # keep only 30 years before the stop year
@@ -65,7 +88,7 @@ def predict_naming_ARIMA(data: NamesData, name: str, stop_year: int, nb_years: i
         plt.plot(x_true, y_true, color='green', label='True data')
 
         # Plot confidence intervals as a shaded region
-        x_conf = pd.Series(range(stop_year + 1, stop_year + 1 + nb_years), dtype=int)  # Forecast years
+        x_conf = pd.Series(range(stop_year, stop_year + nb_years + 1), dtype=int)  # Forecast years
         plt.fill_between(x_conf, lower_bound, upper_bound, color='gray', alpha=0.2, label='Confidence Interval')
 
         # Horizontal line for the stop year
@@ -81,6 +104,7 @@ def predict_naming_ARIMA(data: NamesData, name: str, stop_year: int, nb_years: i
     # Create the dataframe containg the prediction and the real data
     # drop the first element of the true data as it is the last element of the train data
     y_true = y_true[1:]
+
     prediction = pd.DataFrame({
     'Year': range(stop_year + 1, stop_year + 1 + nb_years),
     'Predicted Count': forecast,
@@ -90,6 +114,53 @@ def predict_naming_ARIMA(data: NamesData, name: str, stop_year: int, nb_years: i
     })
     return prediction
 
+def difference_in_means(names_data: NamesData, name: str, stop_year: int, nb_year: int, progress : np.array):
+    """
+    Compute the difference in means between the period before and after the stop year.
+    :param names_data: the name dataset
+    :param name: the name from which we compute the difference in means
+    :param stop_year: the year of the event
+    :param nb_year: the number of years to consider before and after the event
+    :param progress: an array to store the progress of the computation
+    :return: the difference in means or np.inf if the name was invented by a movie
+    """
+    # Filter for the specified name and aggregate counts if needed
+    name_data = names_data()[names_data()['Name'] == name]
+    name_data = name_data.groupby(['Year']).sum().reset_index()
+
+    progress[0] += 1
+    # print the progress
+    if progress[0] == progress[1]//4:
+        print("25%")
+    elif progress[0] == progress[1]//2:
+        print("50%")
+    elif progress[0] == 3*progress[1]//4:
+        print("75%")
+    elif progress[0] == progress[1]:
+        print("100%")
+
+    # Split the dataset at the stop_year
+    pre_period = name_data[(name_data['Year'] >= stop_year - nb_year) & (name_data['Year'] < stop_year)]
+    post_period = name_data[(name_data['Year'] >= stop_year) & (name_data['Year'] <= stop_year + nb_year)]
+
+    # Compute the difference in means
+    pre_mean = pre_period['Count'].mean()
+    post_mean = post_period['Count'].mean()
+
+    # If the pre_mean is 0, we check if the name was invented by a movie
+    if pre_mean == 0 or np.isnan(pre_mean):
+        two_years_after = name_data[(name_data['Year'] <= stop_year + 2) & (name_data['Year'] >= stop_year)]
+        created = two_years_after['Count'].mean()
+
+        if created >= 0:
+            return np.inf
+        elif np.isnan(created):
+            return -np.inf
+    if post_mean == 0 or np.isnan(post_mean):
+        return -np.inf
+        
+    diff = post_mean - pre_mean
+    return diff
 
 def predict_naming_prophet(data: NamesData, name: str, stop_year: int, nb_years: int, plot=False) -> pd.DataFrame:
     """
@@ -101,7 +172,11 @@ def predict_naming_prophet(data: NamesData, name: str, stop_year: int, nb_years:
     :param plot: if True, displays diagnostic plots
     :return: a dataframe with the predictions (starting from stop_year + 1)
     """
-    data.check_clean_data()
+
+    # Supress the warnings
+    import logging
+    logging.getLogger('cmdstanpy').setLevel(logging.ERROR)
+
     input_data = data().copy()
 
     # Filter for the specified name and aggregate counts if needed
@@ -120,7 +195,7 @@ def predict_naming_prophet(data: NamesData, name: str, stop_year: int, nb_years:
     train_data['ds'] = pd.to_datetime(train_data['ds'], format='%Y')
 
     # Fit the model
-    model = Prophet(interval_width=0.95) # 95% confidence interval
+    model = Prophet(interval_width=0.95, changepoint_prior_scale=0.001) # 95% confidence interval
     model.fit(train_data)
 
     prediction = model.make_future_dataframe(periods=nb_years+1, freq='YE')
@@ -161,9 +236,16 @@ def predict_naming_prophet(data: NamesData, name: str, stop_year: int, nb_years:
 
     y_true = y_true[1:]
 
-    forecast['True Count'] = y_true
+    # Make sure true_data has 'Year' aligned with forecast
+    # For missing years, fill them with zero in true_data as well.
+    all_years_for_true = pd.DataFrame({'Year': range(stop_year + 1, stop_year + 1 + nb_years)})
+    true_data_aligned = pd.merge(all_years_for_true, true_data[['Year', 'Count']], on='Year', how='left').fillna(0)
+
+    # Now you can assign directly since both have the same index and number of rows
+    forecast['True Count'] = true_data_aligned['Count'].values
 
     return forecast
+
 
 def compute_distance_abs(df_pred):
     """

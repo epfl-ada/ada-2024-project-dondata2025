@@ -64,14 +64,20 @@ class DataClass():
             clean_name = split[-1]
             print(f"{self.name} : File name has been changed to {clean_name} (we don't want directories in the clean folder)")
         
-        self.clean_df.to_csv(f'{self.clean_path}{clean_name}', index=False)
+        self.clean_df.to_csv(f'{self.clean_path}{clean_name}', index=False, encoding='utf-8')
         print(f"{self.name} : Clean data has been and saved to {self.clean_path}{clean_name}! ({self.clean_df.shape[0]} rows)")
 
     # If the clean data is already saved, load it (will throw an error if the file is not found)
     def load_clean_data(self):
         if self.output_name is None:
             self.output_name = self.file_name
-        self.clean_df = pd.read_csv(f'{self.clean_path}{self.output_name}')
+        print(f"{self.name} : Loading clean data from {self.clean_path}{self.output_name}")
+
+        # read the csv file and set the columns, but this is a big file!
+        self.clean_df = pd.read_csv(f'{self.clean_path}{self.output_name}', low_memory=False, encoding='utf-8')
+
+        # set the column with self.columns
+        self.clean_df.columns = self.columns
 
     # Checks if there are missing values in the raw data and that it conforms to the expected structure
     def check_clean_data(self):

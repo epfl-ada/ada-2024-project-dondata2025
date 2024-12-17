@@ -40,6 +40,7 @@ class CharacterData(DataClass):
         # Convert DOB and Release date to datetime
         self.clean_df['Actor_DOB'] = pd.to_datetime(self.clean_df['Actor_DOB'], errors='coerce', format='%Y-%m-%d')
         self.clean_df['Release_date'] = pd.to_datetime(self.clean_df['Release_date'], errors='coerce', format='%Y-%m-%d')
+        
         # Fill missing values with NaT
         self.clean_df['Actor_DOB'] = self.clean_df['Actor_DOB'].fillna(pd.NaT)
         self.clean_df['Release_date'] = self.clean_df['Release_date'].fillna(pd.NaT)

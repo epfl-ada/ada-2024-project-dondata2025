@@ -1,0 +1,877 @@
+Wikipedia_movie_ID,Movie_name,Release_date,Revenue,Runtime,Languages,Countries,Genres,weightedAverageRating,totalVotes,is_blockbuster,year
+30607472.0,breathless,1960-01-01,686703.0,0 days 02:10:00,Korean,South Korea,"Crime Fiction, Drama, World cinema",7.7,89850.0,False,1960
+339526.0,breathless,1960-03-16,67464.0,0 days 01:30:00,"French, English","United States of America, France","Crime Fiction, Art film, World cinema, Black-and-white, Drama, Romance Film, Neo-noir",7.7,89850.0,False,1960
+5989305.0,breathless,1960-01-01,19910002.0,0 days 01:33:00,English,United States of America,"Crime Fiction, Remake, Drama, Suspense, Romantic drama, Crime Thriller, Romance Film",7.7,89850.0,False,1960
+2491582.0,eyes without a face,1960-01-01,,0 days 01:30:00,French,"France, Italy","Gothic Film, Horror, World cinema, Black-and-white",7.6,36551.0,False,1960
+330874.0,l'avventura,1960-01-01,,0 days 02:23:00,"Italian, English","France, Italy","Mystery, Drama, World cinema, Black-and-white, Adventure",7.7,33542.0,False,1960
+557036.0,la dolce vita,1960-02-03,19516000.0,0 days 02:57:00,"French, Italian, German, English","France, Italy","Ensemble Film, World cinema, Media Satire, Comedy-drama, Black-and-white, Satire, Drama, Comedy",8.0,80111.0,False,1960
+413949.0,peeping tom,1960-04-07,,0 days 01:41:00,English,United Kingdom,"Thriller, Crime Fiction, Horror, Psychological thriller, Cult, Suspense",7.6,41081.0,False,1960
+24176843.0,psycho,1960-01-01,,,Kannada,India,Thriller,8.5,738572.0,True,1960
+5441262.0,psycho,1960-06-16,,0 days 01:48:00,English,United States of America,"Thriller, Horror, Psychological thriller, Black-and-white, Cult, Slasher",8.5,738572.0,True,1960
+3949045.0,rocco and his brothers,1960-09-06,,0 days 02:48:00,Italian,"France, Italy","Thriller, Melodrama, Art film, World cinema, Family Drama, Black-and-white, Sports, Drama",8.2,22341.0,False,1960
+1647985.0,shoot the piano player,1960-01-01,,0 days 01:20:00,French,France,"Thriller, Melodrama, Art film, World cinema, Crime Drama, Comedy-drama, Black-and-white, Drama, Comedy, Film noir",7.4,21042.0,False,1960
+166813.0,spartacus,1960-10-06,60000000.0,0 days 03:08:00,English,United States of America,"Adventure, Costume drama, Historical fiction, Epic, Drama, War film, Biographical film, Action, Romance Film",7.9,146091.0,False,1960
+43849.0,the apartment,1960-06-15,24600000.0,0 days 02:05:00,English,United States of America,"Romantic comedy, Comedy-drama, Workplace Comedy, Black-and-white, Drama, Comedy, Romance Film",8.3,202865.0,False,1960
+12606064.0,the hole,1960-01-01,,,,United States of America,Short Film,8.5,21219.0,False,1960
+29230179.0,the hole,1960-01-01,,0 days 00:09:00,,,"Short Film, Documentary",8.5,21219.0,False,1960
+325206.0,the little shop of horrors,1960-09-14,,0 days 01:10:00,English,United States of America,"Indie, Black-and-white, Cult, Musical, Comedy, Black comedy",6.2,20215.0,False,1960
+31556.0,the magnificent seven,1960-10-23,,0 days 02:08:00,"English, Spanish",United States of America,"Action/Adventure, Western, Drama",7.7,104817.0,False,1960
+2821933.0,the time machine,1960-08-17,2610000.0,0 days 01:43:00,English,United States of America,"Science Fiction, Adventure, Doomsday film, Epic, Action/Adventure, Drama, Film adaptation, Time travel, Action, Dystopia",7.5,45908.0,False,1960
+1411283.0,the virgin spring,1960-02-08,,0 days 01:29:00,Swedish,Sweden,"Thriller, Crime Fiction, Art film, World cinema, Crime Drama, Costume drama, Black-and-white, Period piece, Drama, Crime Thriller",8.0,32278.0,False,1960
+51906.0,breakfast at tiffany's,1961-10-05,14000000.0,0 days 01:54:00,"Portuguese, English",United States of America,"Romantic comedy, Comedy of manners, Comedy-drama, Drama, Comedy, Romance Film",7.6,195946.0,False,1961
+92715.0,judgment at nuremberg,1961-12-19,10000000.0,0 days 03:06:00,English,United States of America,"Drama, Political drama, Courtroom Drama",8.3,88356.0,False,1961
+6816597.0,la notte,1961-01-01,,0 days 02:02:00,Italian,"France, Italy","Marriage Drama, Drama, World cinema, Black-and-white, Art film",7.9,24811.0,False,1961
+157173.0,last year at marienbad,1961-01-01,,0 days 01:33:00,French,"France, Italy","Art film, World cinema, Surrealism, Experimental film, Drama, Romantic drama, Romance Film, Avant-garde",7.6,25561.0,False,1961
+179351.0,one hundred and one dalmatians,1961-01-25,215880014.0,0 days 01:18:00,English,United States of America,"Family Film, Drama, Adventure, Animation",7.3,186494.0,False,1961
+660343.0,"one, two, three",1961-12-15,,0 days 01:48:00,"English, Russian, German",United States of America,"Parody, Screwball comedy, Comedy of manners, Black-and-white, Political satire, Satire, Comedy, Political cinema",7.9,23472.0,False,1961
+6984559.0,the guns of navarone,1961-04-27,,0 days 02:36:00,"Greek, German, English","United States of America, United Kingdom","Action, Drama, Adventure, War film",7.5,56734.0,False,1961
+9309429.0,the hustler,1961-09-25,7600000.0,0 days 02:15:00,English,United States of America,"Sports, Drama, Black-and-white",7.9,88018.0,False,1961
+1899307.0,the innocents,1961-12-25,,0 days 01:40:00,English,United Kingdom,"Thriller, Horror, Black-and-white, Cult, Drama, Film adaptation",7.7,33965.0,False,1961
+1134155.0,the misfits,1961-02-01,,0 days 02:04:00,English,United States of America,"Black-and-white, Action/Adventure, Western, Drama, Comedy, Romantic drama, Romance Film",7.2,24063.0,False,1961
+31176.0,the parent trap,1961-01-01,25150385.0,0 days 02:09:00,English,United States of America,"Romantic comedy, Comedy",7.2,24760.0,False,1961
+1836615.0,through a glass darkly,1961-01-01,,0 days 01:31:00,Swedish,Sweden,"Drama, World cinema, Black-and-white, Art film",7.9,27939.0,False,1961
+2270205.0,viridiana,1961-01-01,,0 days 01:30:00,Spanish,"Mexico, Spain","Art film, World cinema, Comedy-drama, Satire, Drama, Comedy, Black comedy",8.1,26673.0,False,1961
+4608223.0,west side story,1961-10-18,43700000.0,0 days 02:32:00,"English, Spanish",United States of America,"Crime Fiction, Musical, Drama, Romance Film, Musical Drama, Juvenile Delinquency Film",7.6,123087.0,False,1961
+312498.0,yojimbo,1961-04-25,,0 days 01:50:00,Japanese,Japan,"Crime Fiction, Thriller, Japanese Movies, Adventure, World cinema, Costume Adventure, Black-and-white, Action/Adventure, Drama, Samurai cinema, Action, Art film",8.2,134877.0,False,1961
+1100688.0,carnival of souls,1962-09-26,,,English,United States of America,"Thriller, Parody, Horror, Indie, Supernatural, Cult, Drama, Comedy",7.0,29099.0,False,1962
+3644380.0,cleo from 5 to 7,1962-04-11,,0 days 01:30:00,French,"France, Italy","Music, Drama, Comedy, World cinema",7.8,28604.0,False,1962
+6446053.0,dr. no,1962-10-05,59600000.0,0 days 01:49:00,"French, English",United Kingdom,"Action/Adventure, Thriller, Glamorized Spy Film, Action, Adventure",7.2,183663.0,False,1962
+3137571.0,harakiri,1962-09-16,,0 days 02:13:00,Japanese,Japan,"Samurai cinema, Japanese Movies, Drama, Art film, World cinema",8.6,74808.0,False,1962
+2158246.0,jules and jim,1962-01-01,,0 days 01:41:00,"French, English, German",France,"Art film, World cinema, Black-and-white, Period piece, Drama, Romantic drama, Romance Film",7.7,45290.0,False,1962
+43452.0,lawrence of arabia,1962-12-10,,0 days 03:48:00,"Arabic, English, Turkish","United States of America, United Kingdom","LGBT, Historical fiction, Adventure, British Empire Film, Costume drama, Roadshow theatrical release, Epic, Action/Adventure, Drama, War film, Biographical film, Action",8.3,322969.0,True,1962
+1488066.0,lolita,1962-06-12,9250000.0,0 days 02:32:00,"French, English","United States of America, United Kingdom","Romantic drama, Comedy-drama, Black-and-white, Satire, Drama, Comedy, Film adaptation, Black comedy, Romance Film",7.5,110958.0,False,1962
+3992363.0,mutiny on the bounty,1962-11-08,,0 days 02:59:00,English,United States of America,"Adventure, History, Action/Adventure, Drama, Film adaptation, Romance Film, Action",7.6,25361.0,False,1962
+180241.0,sanjuro,1962-01-01,,0 days 01:36:00,Japanese,Japan,"Japanese Movies, Adventure, World cinema, Black-and-white, Action/Adventure, Martial Arts Film, Drama, Comedy, Samurai cinema, Art film",8.0,42039.0,False,1962
+1343139.0,the longest day,1962-09-25,50000000.0,0 days 02:58:00,"French, German, English",United States of America,"History, Action, Drama, Epic, War film",7.7,60546.0,False,1962
+434089.0,the man who shot liberty valance,1962-01-01,,0 days 02:03:00,English,United States of America,"Action/Adventure, Revisionist Western, Western, Action, Black-and-white",8.1,84343.0,False,1962
+58147.0,the manchurian candidate,1962-10-24,7716923.0,0 days 02:09:00,English,United States of America,"Thriller, Political thriller, Cold War, Film adaptation, Psychological thriller, Black-and-white, Mystery, Drama, War film, Political drama, Film noir, Spy",7.9,81302.0,False,1962
+4607980.0,to kill a mockingbird,1962-12-25,20629846.0,0 days 02:04:00,English,United States of America,"Crime Fiction, Family Drama, Childhood Drama, Black-and-white, Mystery, Drama, Film adaptation, Courtroom Drama",8.3,339066.0,True,1962
+1170181.0,vivre sa vie,1962-01-01,,0 days 01:23:00,French,France,"Drama, Art film, World cinema",7.8,35918.0,False,1962
+1917925.0,what ever happened to baby jane?,1962-10-26,9000000.0,0 days 02:15:00,English,United States of America,"Thriller, Drama, Horror, Psychological thriller",8.0,63831.0,False,1962
+2030233.0,what ever happened to baby jane?,1962-01-01,,0 days 01:34:00,English,United States of America,"Thriller, Drama, Psychological thriller, Suspense, Television movie",8.0,63831.0,False,1962
+318810.0,8½,1963-02-14,,0 days 02:18:00,"French, Italian, German, English","France, Italy","Drama, Fantasy",8.0,127471.0,False,1963
+25367772.0,charade,1963-01-01,,0 days 01:23:00,English,United States of America,"Mystery, Drama, Comedy",7.8,88090.0,False,1963
+899442.0,charade,1963-12-05,13474588.0,0 days 01:53:00,"French, Italian, German, English",United States of America,"Romantic comedy, Thriller, Mystery, Comedy, Crime Thriller, Black comedy, Romance Film, Suspense",7.8,88090.0,False,1963
+16179528.0,cleopatra,1963-01-01,,,Tamil,India,,7.0,38574.0,False,1963
+6306820.0,cleopatra,1963-01-01,,0 days 01:42:00,English,United States of America,"Biography, Costume drama, Epic, Black-and-white, Pre-Code, Drama, Romantic drama, Romance Film",7.0,38574.0,False,1963
+4954774.0,cleopatra,1963-06-12,57777778.0,0 days 04:08:00,English,"United States of America, Switzerland, United Kingdom","History, Roadshow theatrical release, Epic, Period piece, War film, Drama, Costume drama, Romantic drama, Biographical film, Romance Film",7.0,38574.0,False,1963
+1109777.0,contempt,1963-01-01,,0 days 01:45:00,"French, Italian, German, English","France, Italy","Art film, World cinema, Satire, Drama, Marriage Drama, Romantic drama, Romance Film",7.4,36915.0,False,1963
+6446071.0,from russia with love,1963-10-11,78900000.0,0 days 01:51:00,"Romani language, Turkish, Russian, English",United Kingdom,"Thriller, Action/Adventure, Glamorized Spy Film, Action, Spy",7.3,148992.0,False,1963
+867935.0,high and low,1963-01-01,,0 days 02:23:00,Japanese,Japan,"Thriller, Crime Fiction, Japanese Movies, Art film, World cinema, Drama, Crime Thriller",8.4,56934.0,False,1963
+210219.0,irma la douce,1963-06-05,,0 days 02:27:00,English,United States of America,"Romantic comedy, Romance Film, Sex comedy, Comedy of manners, Comedy",7.3,22081.0,False,1963
+18952889.0,"it's a mad, mad, mad, mad world",1963-11-07,46332858.0,0 days 03:02:00,English,United States of America,"Crime Fiction, Ensemble Film, Adventure, Chase Movie, Comedy, Family Film, Action",7.5,47266.0,False,1963
+304428.0,the birds,1963-03-28,11403529.0,0 days 01:59:00,English,United States of America,"Thriller, Natural horror films, Horror, Suspense, Doomsday film",7.6,210101.0,False,1963
+950929.0,the haunting,1963-01-01,,0 days 01:52:00,English,"United States of America, United Kingdom","Drama, Horror, Psychological horror",7.4,43594.0,False,1963
+4463477.0,the leopard,1963-03-28,,0 days 03:25:00,"French, Italian, German, English","France, Italy","History, Romance Film, Drama, Historical drama, War film",7.9,30193.0,False,1963
+15384130.0,the leopard,1963-01-01,,,Silent film,Hungary,"Silent film, Indie, Black-and-white",7.9,30193.0,False,1963
+2609169.0,the pink panther,1963-12-19,10878107.0,0 days 01:55:00,"Italian, English",United States of America,"Crime Fiction, Parody, Comedy-drama, Comedy, Family Film, Slapstick",7.0,58076.0,False,1963
+4549625.0,the silence,1963-09-23,,0 days 01:35:00,Swedish,Sweden,"World cinema, Drama, Art film, Black-and-white",8.6,9.0,False,1963
+31665157.0,the silence,1963-01-01,,0 days 01:16:00,"Persian, Farsi, Western","France, Iran","Music, Drama, World cinema",7.7,21720.0,False,1963
+3650653.0,the sword in the stone,1963-12-25,12000000.0,0 days 01:19:00,English,United States of America,,7.1,108808.0,False,1963
+2492199.0,winter light,1963-01-01,,0 days 01:20:00,Swedish,Sweden,"Drama, World cinema, Black-and-white, Art film",8.0,27727.0,False,1963
+441926.0,a fistful of dollars,1964-12-10,,0 days 01:40:00,"Italian, English, Spanish","Spain, Italy, Germany","World cinema, Spaghetti Western, Remake, Action/Adventure, Western, Action",7.9,239141.0,False,1964
+248601.0,a hard day's night,1964-07-06,,0 days 01:27:00,"German, English",United Kingdom,"Jukebox musical, Ensemble Film, Indie, Absurdism, Musical, Black-and-white, Star vehicle, British New Wave, Music, Comedy",7.5,49009.0,False,1964
+8695.0,dr. strangelove or: how i learned to stop worrying and love the bomb,1964-01-29,9164370.0,0 days 01:30:00,"English, Russian",United Kingdom,"Drama, Comedy",8.3,530300.0,True,1964
+6322029.0,goldfinger,1964-09-17,124900000.0,0 days 01:51:00,"Chinese language, English, Spanish",United Kingdom,"Action/Adventure, Thriller, Glamorized Spy Film, Action, Crime Fiction",7.7,206774.0,False,1964
+1268511.0,kwaidan,1964-12-29,,0 days 02:44:00,Japanese,Japan,"Horror, Art film, World cinema, Japanese Movies, Period piece, Fantasy, Drama, Costume Horror",7.9,20900.0,False,1964
+264851.0,marnie,1964-01-01,7000000.0,0 days 02:10:00,English,United States of America,"Thriller, Melodrama, Psychological thriller, Mystery, Drama, Suspense, Film adaptation, Romance Film",7.1,55252.0,False,1964
+77856.0,mary poppins,1964-08-27,102272727.0,0 days 02:19:00,English,United States of America,,7.8,190023.0,False,1964
+4836072.0,my fair lady,1964-10-21,72000000.0,0 days 02:52:00,English,United States of America,"Costume drama, Roadshow theatrical release, Musical, Drama, Comedy, Romance Film, Family Film",7.7,103494.0,False,1964
+24570377.0,my fair lady,1964-01-01,,,,,Musical,7.7,103494.0,False,1964
+2854839.0,onibaba,1964-01-01,,0 days 01:43:00,Japanese,Japan,"Crime Fiction, Horror, Art film, World cinema, Supernatural, Drama, Japanese Movies, Costume Horror",7.9,23168.0,False,1964
+1833819.0,red desert,1964-01-01,,0 days 01:55:00,"France, Italian","France, Italy","Drama, Art film, World cinema",7.4,18132.0,False,1964
+1748912.0,the killers,1964-05-30,,0 days 01:35:00,English,United States of America,"Thriller, Crime Fiction, Drama, Film noir, Mystery",7.7,24420.0,False,1964
+4196905.0,the masque of the red death,1964-01-01,,0 days 01:28:00,English,United Kingdom,"Horror, Supernatural, Costume drama, Cult, Period piece, Drama, Film adaptation",6.9,16954.0,False,1964
+145445.0,the umbrellas of cherbourg,1964-02-19,,0 days 01:31:00,French,"France, West Germany, Germany","Melodrama, World cinema, Musical, Drama, Romantic drama, Romance Film",7.8,32320.0,False,1964
+45606.0,zorba the greek,1964-12-17,,0 days 02:22:00,"Greek, English","United States of America, United Kingdom, Greece","Drama, Buddy film, Adventure, Film adaptation",7.6,24544.0,False,1964
+18725026.0,zulu,1964-01-22,,0 days 02:18:00,"Zulu, English",United Kingdom,"British Empire Film, History, Historical fiction, Epic, Action/Adventure, Drama, War film, Historical Epic, Action",7.7,43740.0,False,1964
+143952.0,alphaville,1965-01-01,,0 days 01:39:00,French,"France, Italy","Crime Fiction, Science Fiction, Future noir, Art film, World cinema, Black-and-white, Drama, Dystopia",7.0,28521.0,False,1965
+11077335.0,doctor zhivago,1965-01-01,,,,,Costume drama,7.9,83453.0,False,1965
+97758.0,doctor zhivago,1965-12-22,111721910.0,0 days 03:20:00,"Russian, English","United States of America, Italy","Roadshow theatrical release, Epic, Period piece, Drama, War film, Romantic drama, Romance Film",7.9,83453.0,False,1965
+442300.0,for a few dollars more,1965-12-18,,0 days 02:12:00,Italian,"Spain, Italy, Germany","Crime Fiction, Adventure, World cinema, Spaghetti Western, Action/Adventure, Western, Action",8.2,282304.0,False,1965
+3869329.0,help!,1965-07-29,,0 days 01:36:00,English,United Kingdom,"Jukebox musical, Adventure, Absurdism, Screwball comedy, Musical, Satire, Adventure Comedy, Comedy",7.1,21485.0,False,1965
+1424739.0,pierrot le fou,1965-01-01,,0 days 01:52:00,"French, English","France, Italy","Crime Fiction, Art film, World cinema, Road movie, Experimental film, Musical, Drama, Comedy, Romantic drama, Romance Film, Avant-garde",7.4,38079.0,False,1965
+235331.0,red beard,1965-01-01,,0 days 03:05:00,Japanese,Japan,"Japanese Movies, Art film, World cinema, Black-and-white, Period piece, Drama, Medical fiction",8.3,21827.0,False,1965
+1001142.0,repulsion,1965-01-01,,0 days 01:45:00,English,United Kingdom,"Thriller, Psychological thriller, Black-and-white",7.6,58809.0,False,1965
+1949083.0,the cincinnati kid,1965-10-15,,0 days 01:40:00,English,United States of America,"Period piece, Drama, Film adaptation",7.2,18673.0,False,1965
+5667453.0,the flight of the phoenix,1965-12-15,,0 days 02:24:00,English,United States of America,"Disaster, Film adaptation, Drama, Adventure, Airplanes and airports",7.5,22878.0,False,1965
+265891.0,the great race,1965-07-01,,0 days 02:26:00,English,United States of America,"Parody, Ensemble Film, Adventure, Costume Adventure, Sports, Musical, Adventure Comedy, Comedy, Family Film, Action, Romance Film, Slapstick",7.2,20339.0,False,1965
+6722354.0,the secret of my success,1965-09-29,,0 days 01:52:00,English,United Kingdom,Black comedy,6.5,37848.0,False,1965
+5718787.0,the sons of katie elder,1965-07-01,,0 days 02:01:00,English,United States of America,"Action/Adventure, Western, Drama",7.1,19733.0,False,1965
+4836239.0,the sound of music,1965-03-02,286214286.0,0 days 02:52:00,English,United States of America,,8.1,268583.0,False,1965
+9378717.0,the spy who came in from the cold,1965-01-01,,0 days 01:52:00,English,United Kingdom,"Thriller, Film adaptation, Spy",7.5,19234.0,False,1965
+6152265.0,thunderball,1965-12-09,141200000.0,0 days 02:10:00,"French, English","Thailand, United Kingdom","Thriller, Action Thrillers, Action/Adventure, Glamorized Spy Film, Action, Spy",6.9,130015.0,False,1965
+1411169.0,andrei rublev,1966-01-01,,0 days 02:45:00,"Italian, Russian","Soviet Union, Russia","Christian film, Biography, Art film, World cinema, Costume drama, History, Biopic [feature], Period piece, Drama, War film, Biographical film, Historical fiction, Historical Epic, Historical drama",8.0,58120.0,False,1966
+1885499.0,au hasard balthazar,1966-01-01,,0 days 01:35:00,French,"France, Sweden","Crime Fiction, Drama, Art film, World cinema",7.7,23498.0,False,1966
+4727.0,batman,1966-07-30,,0 days 01:44:00,English,United States of America,"Parody, Superhero movie, Camp, Action/Adventure, Fantasy, Comedy, Action",7.5,414111.0,True,1966
+448385.0,blowup,1966-12-18,20000000.0,0 days 01:50:00,English,"United States of America, Italy, United Kingdom","Thriller, Mystery, Psychological thriller, Crime Thriller",7.4,69324.0,False,1966
+3586028.0,django,1966-04-06,,0 days 01:37:00,"Italian, English, Spanish","Spain, Italy","Action/Adventure, Western, Spaghetti Western, Action, World cinema",7.2,31941.0,False,1966
+6482185.0,fahrenheit 451,1966-01-01,,0 days 01:50:00,English,United Kingdom,"Thriller, Science Fiction, Drama, Dystopia, Film adaptation",7.2,46094.0,False,1966
+6458670.0,fahrenheit 451,1966-01-01,,,,United States of America,Dystopia,7.2,46094.0,False,1966
+5308985.0,how the grinch stole christmas!,1966-12-18,,0 days 00:26:00,English,,"Short Film, Christmas movie",6.3,298980.0,False,1966
+1627058.0,how to steal a million,1966-07-13,,0 days 02:07:00,English,United States of America,"Crime Fiction, Romantic comedy, Crime Comedy, Heist, Caper story, Comedy, Romance Film",7.5,30487.0,False,1966
+246355.0,manos: the hands of fate,1966-11-05,,0 days 01:14:00,English,United States of America,Horror,1.7,37867.0,False,1966
+667945.0,persona,1966-01-01,,0 days 01:25:00,Swedish,Sweden,"Fantasy, Drama, World cinema, Black-and-white",8.0,133861.0,False,1966
+3733842.0,seconds,1966-01-01,,0 days 01:40:00,English,United States of America,"Thriller, Science Fiction, Psychological thriller, Suspense",7.6,23193.0,False,1966
+9944484.0,the battle of algiers,1966-09-03,,0 days 02:01:00,"French, Arabic, Italian, English","Italy, Algeria","Crime Fiction, World cinema, Drama, War film, Political drama, Historical drama",8.1,67870.0,False,1966
+31557.0,"the good, the bad and the ugly",1966-12-23,25100000.0,0 days 02:57:00,"Italian, English","Spain, Italy, West Germany","World cinema, Epic Western, Spaghetti Western, Action/Adventure, Revisionist Western, Western, War film, Action",8.8,833413.0,True,1966
+1556135.0,torn curtain,1966-07-14,13000000.0,0 days 01:59:00,English,United States of America,"Thriller, Spy, Suspense, Political thriller",6.6,30088.0,False,1966
+9377241.0,who's afraid of virginia woolf?,1966-06-22,40000000.0,0 days 02:11:00,"Latin, English, Spanish",United States of America,"Black comedy, Marriage Drama, Drama, Film adaptation",8.0,81479.0,False,1966
+8138535.0,barefoot in the park,1967-05-25,19994515.0,0 days 01:45:00,English,United States of America,"Romantic comedy, Romance Film, Comedy",7.0,20892.0,False,1967
+68245.0,bonnie and clyde,1967-08-04,50700000.0,0 days 01:52:00,English,United States of America,"Crime Fiction, Heist, Gangster Film, Crime Drama, Road movie, Action/Adventure, Drama, Outlaw, Romance Film, Action, Biographical film, New Hollywood",7.7,122894.0,False,1967
+161897.0,cool hand luke,1967-11-01,16217773.0,0 days 02:07:00,English,United States of America,"Crime Fiction, Prison film, Prison, Drama, Film adaptation",8.0,192207.0,False,1967
+70647.0,guess who's coming to dinner,1967-12-11,56666667.0,0 days 01:48:00,English,United States of America,"Comedy of manners, Family Drama, Comedy-drama, Drama, Romantic drama, Romance Film",7.8,50075.0,False,1967
+3346585.0,in cold blood,1967-01-01,13000000.0,0 days 02:14:00,English,United States of America,"Crime Fiction, Film adaptation, Drama, New Hollywood, Courtroom Drama",7.9,30127.0,False,1967
+1715414.0,in the heat of the night,1967-08-02,24379978.0,0 days 01:49:00,English,United States of America,"Crime Fiction, Thriller, Crime Drama, Mystery, Drama, Crime Thriller",7.9,85463.0,False,1967
+2046252.0,le samouraï,1967-10-25,,0 days 01:40:00,French,"France, Italy","Thriller, Crime Fiction, Drama, Mystery",8.0,60719.0,False,1967
+2885119.0,playtime,1967-12-16,,0 days 02:07:00,"French, German, English","France, United States of America, Italy","Drama, Comedy, World cinema, Art film",7.8,26820.0,False,1967
+1449256.0,point blank,1967-08-30,3500000.0,0 days 01:32:00,English,United States of America,"Thriller, Crime Fiction, Gangster Film, Mystery, Drama, Film noir, Crime Thriller, New Hollywood",7.8,20.0,False,1967
+32411644.0,point blank,1967-01-01,9230157.0,0 days 01:24:00,French,,Thriller,7.3,24287.0,False,1967
+309070.0,the dirty dozen,1967-01-01,45300000.0,0 days 02:30:00,"French, German, English","United States of America, United Kingdom","Ensemble Film, Action, War film",7.7,80721.0,False,1967
+1353086.0,the fearless vampire killers,1967-02-13,,0 days 01:48:00,English,"United States of America, United Kingdom","Parody, Cult, Horror, Comedy",7.0,34586.0,False,1967
+29942.0,the graduate,1967-12-21,104901839.0,0 days 01:46:00,English,United States of America,"Romance Film, Drama, Comedy",8.0,293375.0,False,1967
+919013.0,two for the road,1967-04-27,12000000.0,0 days 01:52:00,"French, English",United Kingdom,"Romantic comedy, Road movie, Existentialism, Comedy-drama, Marriage Drama, Drama, Comedy, Romantic drama, Romance Film",7.4,14995.0,False,1967
+19755481.0,wait until dark,1967-10-26,17550741.0,0 days 01:47:00,English,United States of America,"Thriller, Horror, Psychological thriller, New Hollywood, Suspense",7.7,34628.0,False,1967
+5078515.0,you only live twice,1967-06-12,,0 days 01:57:00,"Japanese, Russian, English",United Kingdom,"Action/Adventure, Thriller, Glamorized Spy Film, Action, Spy",6.8,120277.0,False,1967
+23941708.0,2001: a space odyssey,1968-04-06,190000000.0,0 days 02:36:00,"English, Russian","United States of America, United Kingdom","Thriller, Science Fiction, Adventure, Roadshow theatrical release, Surrealism, Mystery, Airplanes and airports",8.3,739012.0,True,1968
+1930290.0,barbarella,1968-10-10,613285.0,0 days 01:38:00,English,"France, Italy","Parody, Science Fiction, Fantasy Adventure, Adventure, World cinema, Superhero movie, Superhero, Cult, Satire, Fantasy, Comedy",5.9,38710.0,False,1968
+433285.0,bullitt,1968-10-17,42300873.0,0 days 01:54:00,English,United States of America,"Crime Fiction, Thriller, Chase Movie, Action Thrillers, Mystery, Drama, Action",7.4,77587.0,False,1968
+3917873.0,chitty chitty bang bang,1968-12-16,7800000.0,0 days 02:24:00,English,United Kingdom,"Musical, Family Film, Fantasy, Comedy, Family-Oriented Adventure",6.9,51780.0,False,1968
+3156200.0,hang 'em high,1968-07-31,6800000.0,0 days 01:54:00,English,United States of America,"Action/Adventure, Revisionist Western, Western",7.0,44594.0,False,1968
+4836572.0,oliver!,1968-09-26,77402877.0,0 days 02:33:00,English,United Kingdom,"Crime Fiction, Childhood Drama, Musical, Drama, Family Film, Musical Drama",7.4,42224.0,False,1968
+284676.0,once upon a time in the west,1968-12-21,5321508.0,0 days 02:55:00,"Italian, English","United States of America, Italy","Ensemble Film, World cinema, Epic Western, Spaghetti Western, Action/Adventure, Revisionist Western, Western, Action",8.5,358781.0,True,1968
+18618306.0,planet of the apes,1968-02-08,32589624.0,0 days 01:47:00,English,United States of America,"Cult, Thriller, Science Fiction, Adventure, New Hollywood",8.0,202104.0,False,1968
+4184054.0,romeo and juliet,1968-01-01,,,English,United States of America,"Short Film, Romance Film, Drama",7.6,35391.0,False,1968
+15115084.0,romeo and juliet,1968-01-01,,,,France,,7.6,35391.0,False,1968
+8609183.0,romeo and juliet,1968-01-01,,0 days 02:45:00,English,United States of America,Drama,7.6,35391.0,False,1968
+99025.0,romeo and juliet,1968-10-08,38901218.0,0 days 02:18:00,English,"Italy, United Kingdom","Tragedy, Costume drama, Roadshow theatrical release, Epic, Drama, Film adaptation, Romantic drama, Romance Film",7.6,35391.0,False,1968
+10309462.0,romeo and juliet,1968-01-01,,0 days 02:18:00,English,"Italy, United Kingdom","Costume drama, Romance Film, Drama",7.6,35391.0,False,1968
+9912066.0,romeo and juliet,1968-01-01,,,Spanish,Argentina,Black-and-white,7.6,35391.0,False,1968
+9830229.0,rosemary's baby,1968-06-12,33395426.0,0 days 02:16:00,English,United States of America,"Horror, Drama, Psychological thriller, Mystery",8.0,244251.0,False,1968
+7870353.0,the lion in winter,1968-01-01,,0 days 02:47:00,English,United States of America,"Television movie, Costume drama, Period piece, Drama, History, Romantic drama, Political drama",7.9,34876.0,False,1968
+7870124.0,the lion in winter,1968-10-30,22276975.0,0 days 02:15:00,English,United Kingdom,"LGBT, Biography, Costume drama, Epic, Period piece, Drama, Film adaptation, Political drama, Historical drama",7.9,34876.0,False,1968
+6492614.0,the odd couple,1968-05-02,44527234.0,0 days 01:46:00,English,United States of America,"Romance Film, Screwball comedy, Drama, Comedy, Film adaptation",7.6,38163.0,False,1968
+377287.0,the party,1968-01-01,,0 days 01:39:00,English,United States of America,Comedy,7.4,44839.0,False,1968
+1145761.0,where eagles dare,1968-12-04,21000000.0,0 days 02:38:00,"German, English","United States of America, United Kingdom","Adventure, Roadshow theatrical release, Action/Adventure, Drama, War film, Action",7.6,64307.0,False,1968
+2422489.0,yellow submarine,1968-06-06,,0 days 01:30:00,English,"United States of America, England, United Kingdom","Adventure, Animation, Musical, Fantasy, Comedy, Family Film",7.4,28592.0,False,1968
+3723140.0,army of shadows,1969-09-12,,0 days 02:20:00,"French, German, English","France, Italy","Drama, War film",8.1,26950.0,False,1969
+240483.0,battle of britain,1969-09-15,,0 days 02:06:00,"French, Polish, German, English",United Kingdom,"History, Epic, Action/Adventure, Drama, War film, Action",6.9,25239.0,False,1969
+21832989.0,big daddy,1969-06-11,,0 days 01:08:00,English,United States of America,"Thriller, Drama, Adventure",6.4,239482.0,False,1969
+99031.0,butch cassidy and the sundance kid,1969-09-23,102308889.0,0 days 01:50:00,"English, Spanish",United States of America,"Buddy film, Adventure, Outlaw, Action/Adventure, Western, Drama, Comedy, Action, New Hollywood",8.0,229720.0,False,1969
+73444.0,easy rider,1969-05-08,41728598.0,0 days 01:35:00,"English, Spanish",United States of America,"Crime Fiction, Biker Film, Action, Indie, Road movie, Existentialism, Americana, Action/Adventure, Drama, Stoner film, Outlaw biker film, New Hollywood, Adventure",7.2,119257.0,False,1969
+7024876.0,hello dolly!,1969-12-16,33208099.0,0 days 02:26:00,English,United States of America,"Romantic comedy, Romance Film, Musical, Family Film, Comedy",7.0,17374.0,False,1969
+42147.0,midnight cowboy,1969-05-25,44785053.0,0 days 01:53:00,"Italian, English",United States of America,"Drama, Buddy film",7.8,123669.0,False,1969
+6268880.0,on her majesty's secret service,1969-01-01,82000000.0,0 days 02:20:00,"German, English",United Kingdom,"Action/Adventure, Thriller, Glamorized Spy Film, Action, Spy",6.7,101960.0,False,1969
+12319656.0,paint your wagon,1969-10-16,31678778.0,0 days 02:44:00,English,United States of America,"Roadshow theatrical release, Western, Action/Adventure, Musical, Drama, Comedy, Film adaptation",6.6,15282.0,False,1969
+3822528.0,satyricon,1969-09-03,,0 days 02:08:00,"Italian, Latin","France, Italy","LGBT, Romantic comedy, Drama, Art film, World cinema",6.79,17760.0,False,1969
+298925.0,take the money and run,1969-01-01,,0 days 01:25:00,English,United States of America,"Parody, Crime Fiction, Mockumentary, Crime Comedy, Indie, Absurdism, Cult, Comedy, Slapstick",7.2,31886.0,False,1969
+76630.0,the wild bunch,1969-06-18,10500000.0,0 days 02:25:00,"German, English, Spanish",United States of America,"Western, Action",7.9,91913.0,False,1969
+24124650.0,the wild bunch,1969-01-01,,,,Israel,Animation,7.9,91913.0,False,1969
+217776.0,"they shoot horses, don't they?",1969-12-10,12600000.0,0 days 02:09:00,English,United States of America,"Existentialism, Melodrama, Drama, Period piece, Psychological thriller",7.8,21372.0,False,1969
+161912.0,true grit,1969-06-11,31132592.0,0 days 02:07:00,English,United States of America,"Adventure, Costume drama, Action/Adventure, Western, Drama, Film adaptation",7.6,362923.0,True,1969
+75874.0,z,1969-01-01,14283305.0,0 days 02:07:00,French,"France, Algeria, Greece","Thriller, Crime Fiction, World cinema, History, Mystery, Drama, Political thriller, Political drama",8.1,32121.0,False,1969
+19603070.0,amour,1970-08-07,,0 days 01:34:00,Danish,Denmark,"Romantic drama, Romance Film, Drama",7.9,107207.0,False,1970
+152058.0,beneath the planet of the apes,1970-05-26,18999718.0,0 days 01:35:00,English,United States of America,"Science Fiction, Action, Doomsday film",6.0,54998.0,False,1970
+26922095.0,dorian gray,1970-04-24,,0 days 01:33:00,,West Germany,"Thriller, Fantasy, Horror, Supernatural",6.2,69100.0,False,1970
+1844221.0,el topo,1970-01-01,,0 days 02:04:00,Spanish,Mexico,"Action/Adventure, Indie, World cinema, Experimental film, Existentialism, Surrealism, Cult, Western, Drama, Hybrid Western, Acid western, Avant-garde",7.2,32040.0,False,1970
+73467.0,five easy pieces,1970-09-11,18099091.0,0 days 01:38:00,English,United States of America,"Road movie, Family Drama, Drama, New Hollywood",7.4,41920.0,False,1970
+933321.0,kelly's heroes,1970-06-23,5200000.0,0 days 02:29:00,"French, German, English","United States of America, Yugoslavia, Socialist Federal Republic of Yugoslavia","Crime Fiction, Heist, Adventure, Anti-war, Action/Adventure, Satire, Comedy, War film, Action, Anti-war film",7.6,55395.0,False,1970
+683486.0,little big man,1970-12-23,31559552.0,0 days 02:19:00,English,United States of America,"Adventure, Epic Western, History, Indian Western, Western, Action/Adventure, Revisionist Western, Period piece, Drama, Comedy, War film, Black comedy, Action, New Hollywood",7.5,38566.0,False,1970
+5474126.0,loving,1970-03-04,,0 days 01:29:00,English,United States of America,"Romantic drama, Romance Film, Drama, New Hollywood, Film adaptation",7.0,37473.0,False,1970
+16419903.0,nobody knows,1970-02-06,,0 days 01:25:00,Korean,South Korea,"Romance Film, Drama",8.0,32641.0,False,1970
+99454.0,patton,1970-03-26,61749765.0,0 days 02:50:00,"Arabic, Italian, English, French, Russian, German",United States of America,"Biography, Biopic [feature], Epic, Action/Adventure, Drama, War film, Biographical film, Action, New Hollywood",7.9,109828.0,False,1970
+343408.0,the aristocats,1970-12-11,55675257.0,0 days 01:18:00,English,United States of America,,7.1,117777.0,False,1970
+10457303.0,the conformist,1970-01-01,,0 days 01:47:00,"French, Italian, Latin","France, Italy, West Germany, Germany","Drama, Indie, World cinema, Political drama",7.9,34877.0,False,1970
+2498993.0,the red circle,1970-10-20,,0 days 02:15:00,French,"France, Italy","Thriller, Crime Fiction, World cinema, Caper story, Drama, Crime Thriller",7.9,29547.0,False,1970
+58018.0,tora! tora! tora!,1970-01-01,29548291.0,0 days 02:24:00,"Japanese, English","United States of America, Japan","Japanese Movies, Historical fiction, Action/Adventure, Drama, War film, Action, Airplanes and airports",7.5,38062.0,False,1970
+2173342.0,two mules for sister sara,1970-01-01,4700000.0,0 days 01:54:00,English,"Mexico, United States of America","Comedy Western, Action/Adventure, Western, Comedy, War film, Action",7.0,31482.0,False,1970
+1659954.0,a clockwork orange,1971-12-19,26589355.0,0 days 02:17:00,English,"United States of America, United Kingdom","Crime Fiction, Science Fiction, Cult, Satire, Drama, Dystopia, Black comedy, Juvenile Delinquency Film, New Hollywood",8.2,898616.0,True,1971
+31211654.0,anand,1971-01-01,,,Kannada,India,Drama,8.1,35972.0,False,1971
+1643298.0,anand,1971-01-01,,0 days 02:02:00,Hindi,India,"Musical, Drama, World cinema, Bollywood",8.1,35972.0,False,1971
+1329111.0,bananas,1971-01-01,11833696.0,0 days 01:22:00,English,United States of America,"Parody, Absurdism, Political satire, Satire, Comedy, Political cinema, Slapstick",6.9,38529.0,False,1971
+357525.0,bedknobs and broomsticks,1971-11-11,17871174.0,0 days 02:19:00,"English, German",United States of America,,7.1,41524.0,False,1971
+157481.0,diamonds are forever,1971-12-14,116000000.0,0 days 01:55:00,"German, English",United Kingdom,"Thriller, Science Fiction, Action/Adventure, Glamorized Spy Film, Action, Spy",6.5,116685.0,False,1971
+301798.0,dirty harry,1971-12-22,35976000.0,0 days 01:43:00,English,United States of America,"Thriller, Action Thrillers, Action/Adventure, Mystery, Crime Fiction, Action",7.7,172391.0,False,1971
+303928.0,escape from the planet of the apes,1971-05-21,12348905.0,0 days 01:38:00,English,United States of America,"Science Fiction, Adventure, Escape Film",6.3,42320.0,False,1971
+8656796.0,fiddler on the roof,1971-11-03,10404330.0,0 days 03:01:00,"Hebrew, English",United States of America,"Roadshow theatrical release, Comedy-drama, Epic, Period piece, Drama, Comedy, Romantic drama, Romance Film, Musical Drama, Musical",8.0,48860.0,False,1971
+13290.0,harold and maude,1971-01-01,,0 days 01:32:00,English,United States of America,"Romantic comedy, Cult, Coming of age, Comedy, Black comedy, Romance Film, New Hollywood",7.9,83170.0,False,1971
+196176.0,straw dogs,1971-11-03,11148828.0,0 days 01:58:00,English,"United States of America, United Kingdom","Thriller, Drama",7.4,65673.0,False,1971
+3887641.0,the andromeda strain,1971-03-12,12376563.0,0 days 01:55:00,English,United States of America,"Thriller, Mystery, Science Fiction",7.2,41400.0,False,1971
+17049621.0,the andromeda strain,1971-01-01,,0 days 02:49:00,English,United States of America,Science Fiction,7.2,41400.0,False,1971
+99463.0,the french connection,1971-10-07,51700000.0,0 days 01:44:00,"French, English",United States of America,"Thriller, Crime Fiction, Detective fiction, Chase Movie, Action Thrillers, Mystery, Drama, Action",7.7,139443.0,False,1971
+74868.0,the last picture show,1971-10-03,29133000.0,0 days 02:06:00,English,United States of America,"Ensemble Film, Slice of life story, Americana, Black-and-white, Period piece, Coming of age, Film adaptation, Drama, New Hollywood",8.0,53862.0,False,1971
+31193.0,thx 1138,1971-03-11,2437000.0,0 days 01:21:00,English,United States of America,"Thriller, Mystery, Science Fiction, Drama",6.6,55583.0,False,1971
+174560.0,willy wonka & the chocolate factory,1971-06-30,4000000.0,0 days 01:29:00,"French, English, German","United States of America, United Kingdom, Germany",,7.8,233146.0,False,1971
+158052.0,"aguirre, the wrath of god",1972-01-01,,0 days 01:34:00,"English, German","Mexico, Peru, West Germany, Germany","Jungle Film, Adventure, World cinema, Costume drama, Existentialism, Historical fiction, Drama, Historical Epic, Art film",7.8,63971.0,False,1972
+236691.0,cabaret,1972-02-13,42765000.0,0 days 01:59:00,"French, Hebrew, English, German",United States of America,"LGBT, Musical, Drama, New Hollywood, Film adaptation",7.8,60950.0,False,1972
+657159.0,conquest of the planet of the apes,1972-06-29,9700000.0,0 days 01:28:00,English,United States of America,"Cult, Science Fiction, Action, Adventure",6.1,38536.0,False,1972
+101899.0,deliverance,1972-07-30,46122355.0,0 days 01:50:00,English,United States of America,"LGBT, Thriller, Adventure, Action/Adventure, Drama, Film adaptation, Action, New Hollywood",7.6,122552.0,False,1972
+1499102.0,everything you always wanted to know about sex (but were afraid to ask),1972-01-01,,0 days 01:22:00,"Italian, English",United States of America,"Romantic comedy, Cult, Fantasy, Comedy, Black comedy, Romance Film",6.7,42474.0,False,1972
+1047834.0,fist of fury,1972-01-01,,0 days 01:48:00,"Standard Cantonese, Standard Mandarin, English, Cantonese",Hong Kong,"World cinema, Action/Adventure, Martial Arts Film, Romance Film, Action, Chinese Movies",7.2,34960.0,False,1972
+508044.0,frenzy,1972-01-01,12600000.0,0 days 01:56:00,English,United Kingdom,"Thriller, Psychological thriller, Mystery, Drama, Suspense, Film adaptation, Crime Thriller",7.4,50536.0,False,1972
+26743188.0,hit man,1972-12-20,,0 days 01:30:00,English,United States of America,"Crime Fiction, Drama",6.8,100007.0,False,1972
+649482.0,jeremiah johnson,1972-09-10,,0 days 01:56:00,English,United States of America,"Action/Adventure, Revisionist Western, Western, Drama",7.6,35985.0,False,1972
+163456.0,last tango in paris,1972-10-14,96301534.0,0 days 02:16:00,"French, English","France, Italy","Erotic Drama, Erotica, World cinema, Drama, Romantic drama, Romance Film",6.8,59793.0,False,1972
+539816.0,silent running,1972-03-10,,0 days 01:30:00,English,United States of America,"Science Fiction, Adventure, Doomsday film, Cult, Drama, Dystopia",6.6,32146.0,False,1972
+346569.0,the discreet charm of the bourgeoisie,1972-01-01,,0 days 01:41:00,"French, Spanish","France, Spain, Italy","World cinema, Experimental film, Surrealism, Satire, Fantasy, Comedy, Drama, Black comedy, Avant-garde",7.8,47897.0,False,1972
+17182369.0,the fugitive,1972-12-06,,0 days 01:17:00,Standard Mandarin,Hong Kong,"Action, Adventure",7.8,327007.0,True,1972
+2466773.0,the godfather,1972-03-15,268500000.0,0 days 02:57:00,"Latin, Italian, Sicilian, English",United States of America,"Crime Fiction, Gangster Film, Crime Drama, Family Drama, Period piece, Drama, Film adaptation, New Hollywood",9.2,2073581.0,True,1972
+511228.0,the poseidon adventure,1972-12-12,93300000.0,0 days 01:57:00,"Hebrew, English",United States of America,"Thriller, Adventure, Action/Adventure, Drama, Disaster, Action",7.1,50347.0,False,1972
+68124.0,american graffiti,1973-08-01,140000000.0,0 days 01:48:00,English,United States of America,"Ensemble Film, Americana, Comedy-drama, Teen, Period piece, Coming of age, Comedy, Drama, Romance Film, New Hollywood",7.4,100727.0,False,1973
+68130.0,badlands,1973-10-13,,0 days 01:34:00,"English, Spanish",United States of America,"Crime Fiction, Thriller, Indie, Crime Drama, Road movie, Existentialism, Americana, Mystery, Period piece, Drama, Romantic drama, Romance Film, New Hollywood",7.7,80036.0,False,1973
+10193.0,enter the dragon,1973-07-26,,0 days 01:39:00,"English, Standard Cantonese","United States of America, Hong Kong","Thriller, Crime Fiction, Action, Drama",7.6,115126.0,False,1973
+1345521.0,high plains drifter,1973-04-19,8000000.0,0 days 01:45:00,English,United States of America,"Thriller, Action/Adventure, Western, Action, Revisionist Western",7.4,66284.0,False,1973
+6446061.0,live and let die,1973-06-27,161800000.0,0 days 02:01:00,"English, Hungarian language",United Kingdom,"Thriller, Crime Fiction, Adventure, Glamorized Spy Film, Action/Adventure, Blaxploitation, Action Thrillers, Action",6.7,118130.0,False,1973
+705984.0,magnum force,1973-12-25,44680473.0,0 days 02:03:00,English,United States of America,"Thriller, Crime Fiction, Action Thrillers, Mystery, Action, Action/Adventure",7.2,68340.0,False,1973
+18996.0,mean streets,1973-10-02,3000000.0,0 days 01:52:00,"Italian, English",United States of America,"Crime Fiction, Drama, Coming of age, Gangster Film, Crime Drama",7.2,122314.0,False,1973
+872386.0,papillon,1973-01-01,53267000.0,0 days 02:31:00,"English, Spanish","United States of America, France","Crime Fiction, Thriller, Adventure, Action/Adventure, Drama, Action, New Hollywood",8.0,140667.0,False,1973
+6309072.0,robin hood,1973-01-01,,0 days 01:56:00,English,United Kingdom,"Action/Adventure, Swashbuckler films, Television movie, Adventure, Costume drama",7.5,142288.0,False,1973
+982180.0,robin hood,1973-11-08,32056467.0,0 days 01:23:00,English,United States of America,"Romance Film, Family Film, Drama, Adventure, Animation",7.5,142288.0,False,1973
+15110213.0,robin hood,1973-01-01,,0 days 00:30:00,English,United States of America,"Short Film, Silent film, Drama, Indie, Black-and-white",7.5,142288.0,False,1973
+163459.0,serpico,1973-12-05,29800000.0,0 days 02:10:00,"Italian, English, Spanish","United States of America, Italy","Crime Fiction, Thriller, Biography, Social problem film, Docudrama, Drama, Crime Thriller, New Hollywood",7.7,138533.0,False,1973
+4773557.0,slither,1973-03-07,,0 days 01:37:00,English,United States of America,"Thriller, Road movie, Crime Fiction, Comedy",6.5,90795.0,False,1973
+45481.0,soylent green,1973-04-19,,0 days 01:37:00,"English, Spanish",United States of America,"Thriller, Mystery, Science Fiction, Drama",7.0,72095.0,False,1973
+725459.0,the exorcist,1973-06-19,441071011.0,0 days 02:00:00,"Arabic, Assyrian Neo-Aramaic, Greek, Latin, French, English, German",United States of America,"Demonic child, Horror, Supernatural, Psychological thriller, Cult, Drama, New Hollywood",8.1,468867.0,True,1973
+62440.0,the sting,1973-12-25,159616327.0,0 days 02:09:00,English,United States of America,"Crime Fiction, Buddy film, Gangster Film, Period piece, Drama, Comedy, Crime Comedy, Action, New Hollywood",8.3,285580.0,False,1973
+42313.0,the wicker man,1973-01-01,,0 days 01:28:00,"English, American English",United Kingdom,"Thriller, Mystery, Crime Fiction, Horror",7.5,97318.0,False,1973
+1584998.0,black christmas,1974-10-11,4053000.0,0 days 01:38:00,English,Canada,"Thriller, Horror, Indie, Cult, Mystery, Slasher",7.1,50244.0,False,1974
+3837.0,blazing saddles,1974-02-07,119500000.0,0 days 01:33:00,"Yiddish, English",United States of America,"Western, Satire, Comedy",7.7,156401.0,False,1974
+18904723.0,brief encounter,1974-11-12,,,English,"Italy, United Kingdom",Drama,8.0,45512.0,False,1974
+68092.0,chinatown,1974-06-20,29200000.0,0 days 02:10:00,"Cantonese, English, Spanish",United States of America,"Crime Fiction, Mystery, Thriller, Drama",8.1,358668.0,True,1974
+9822793.0,death wish,1974-07-24,22000000.0,0 days 01:33:00,"Italian, German, English",United States of America,"Thriller, Crime Fiction, Action/Adventure, Drama, Film adaptation, Crime Thriller, Action",6.9,45269.0,False,1974
+2187884.0,gone in 60 seconds,1974-10-28,40000000.0,0 days 01:38:00,English,United States of America,"Thriller, Crime Fiction, Heist, Action/Adventure, Crime Thriller, Action",6.5,299829.0,False,1974
+19701.0,monty python and the holy grail,1974-04-03,,0 days 01:31:00,"French, Latin, English",United Kingdom,"Parody, Action/Adventure, Adventure, Absurdism, Costume drama, Cult, Comedy, Humour, Slapstick",8.2,580202.0,True,1974
+5028092.0,murder on the orient express,1974-11-24,,0 days 02:07:00,"Italian, French, Swedish, Turkish, English, German",United Kingdom,"Thriller, Crime Fiction, Detective, Mystery, Period piece, Drama, Film adaptation, Crime Thriller",7.2,70856.0,False,1974
+73875.0,the godfather part ii,1974-12-12,193000000.0,0 days 03:20:00,"Italian, English, Latin, Spanish",United States of America,"Crime Fiction, Gangster Film, Drama, Crime Drama",9.0,1399682.0,True,1974
+7733814.0,the great gatsby,1974-03-27,26533200.0,0 days 02:24:00,English,United States of America,"Romance Film, Drama",7.2,611283.0,False,1974
+1937414.0,the little prince,1974-11-07,,0 days 01:28:00,English,"United States of America, Canada, United Kingdom","Drama, Musical, Fantasy, Family Film",7.6,67949.0,False,1974
+6223567.0,the man with the golden gun,1974-12-19,97600000.0,0 days 02:05:00,"Chinese language, Cantonese, English, Thai","Kingdom of Great Britain, United Kingdom","Thriller, Action Thrillers, Glamorized Spy Film, Action, Adventure",6.7,115636.0,False,1974
+29781.0,the texas chain saw massacre,1974-10-01,30859000.0,0 days 01:15:00,English,United States of America,"Thriller, Mystery, Horror, Cult",7.4,193749.0,False,1974
+101910.0,the towering inferno,1974-12-10,139700000.0,0 days 02:45:00,English,United States of America,"Disaster, Action/Adventure, Ensemble Film, Action, Doomsday film",7.0,49465.0,False,1974
+442647.0,young frankenstein,1974-12-15,86273333.0,0 days 01:45:00,"German, English",United States of America,"Parody, Science Fiction, Horror, Black-and-white, Horror Comedy, Comedy, Slapstick",8.0,173110.0,False,1974
+25918744.0,abduction,1975-10-24,,0 days 01:35:00,,United States of America,"Thriller, Crime Fiction, Drama",5.1,84128.0,False,1975
+4227.0,barry lyndon,1975-12-18,20000000.0,0 days 03:07:00,"French, English, German","United States of America, United Kingdom","Costume drama, Film adaptation, Period piece, Drama, War film, Romance Film, New Hollywood",8.1,188556.0,False,1975
+1017650.0,death race 2000,1975-01-01,5000000.0,0 days 01:20:00,English,United States of America,"Cult, Science Fiction, Indie, Sports, Action/Adventure, Satire, Action, Dystopia",6.2,31846.0,False,1975
+2537750.0,dersu uzala,1975-01-01,,0 days 01:26:00,Russian,Soviet Union,Adventure,8.2,34359.0,False,1975
+1624660.0,dersu uzala,1975-01-01,,0 days 02:20:00,"Chinese language, Japanese, Russian","Japan, Soviet Union, Russia","Action/Adventure, Japanese Movies, Drama, Adventure, World cinema",8.2,34359.0,False,1975
+101914.0,dog day afternoon,1975-01-01,50000000.0,0 days 02:05:00,English,United States of America,"LGBT, Crime Fiction, Crime Drama, Docudrama, Drama, New Hollywood",8.0,278352.0,False,1975
+27957907.0,ice age,1975-08-15,,0 days 01:55:00,,"West Germany, Norway",Drama,7.5,532949.0,True,1975
+74830.0,jaws,1975-06-20,470653000.0,0 days 02:10:00,English,United States of America,Thriller,8.1,680802.0,True,1975
+917363.0,love and death,1975-01-01,20123742.0,0 days 01:22:00,English,United States of America,"Parody, Comedy of Errors, Comedy, War film",7.6,41799.0,False,1975
+21913863.0,one flew over the cuckoo's nest,1975-11-19,108981275.0,0 days 02:09:00,English,United States of America,"Tragedy, Indie, Existentialism, Comedy-drama, Drama, Comedy, Film adaptation, Tragicomedy",8.7,1096597.0,True,1975
+5878044.0,picnic at hanging rock,1975-08-08,,0 days 01:47:00,"French, English",Australia,"LGBT, Thriller, Horror, World cinema, Supernatural, Mystery, Period piece, Coming of age, Drama",7.4,42366.0,False,1975
+17384479.0,ransom,1975-03-13,,0 days 01:29:00,English,United Kingdom,"Action/Adventure, Thriller, Action",6.7,137923.0,False,1975
+648216.0,sholay,1975-08-15,,0 days 03:18:00,Hindi,India,"Thriller, Adventure, World cinema, Western, Comedy, Romance Film, Action, Bollywood",8.1,59890.0,False,1975
+3613070.0,the man who would be king,1975-12-17,,0 days 02:09:00,English,"United States of America, United Kingdom","Period piece, Action, Adventure, Film adaptation",7.7,52914.0,False,1975
+25491.0,the rocky horror picture show,1975-08-14,175000000.0,0 days 01:40:00,English,"United States of America, United Kingdom","Parody, Sex comedy, Horror, Science Fiction, Cult, Musical, Comedy, Horror Comedy",7.4,172352.0,False,1975
+470185.0,three days of the condor,1975-09-24,41509797.0,0 days 01:58:00,"French, English",United States of America,"Thriller, Mystery, Suspense, Political thriller, New Hollywood, Spy",7.4,64510.0,False,1975
+909006.0,1900,1976-08-16,,0 days 04:00:00,"Italian, English","France, Italy, West Germany","Period piece, Family Drama, Drama, Epic, Political drama",7.6,27825.0,False,1976
+3450583.0,a star is born,1976-12-17,80000000.0,0 days 02:19:00,English,United States of America,"Romance Film, Musical, Drama, Indie, Romantic drama",7.6,429556.0,True,1976
+3876620.0,all the president's men,1976-04-04,70600000.0,0 days 02:18:00,"English, Spanish",United States of America,"Thriller, History, Drama, Political drama, Docudrama",7.9,129132.0,False,1976
+1399119.0,assault on precinct 13,1976-11-05,,0 days 01:31:00,English,United States of America,"Thriller, Crime Fiction, Indie, Action/Adventure, Suspense, Action",7.3,57385.0,False,1976
+11945073.0,hera pheri,1976-10-03,,0 days 02:30:00,Hindi,India,"Crime Fiction, World cinema, Action, Comedy, Bollywood",8.2,74612.0,False,1976
+518615.0,king kong,1976-12-17,90614445.0,0 days 02:14:00,English,United States of America,"Monster movie, Remake, Horror, Adventure, Action/Adventure",7.9,92693.0,False,1976
+5546896.0,logan's run,1976-01-01,,,,United States of America,"Thriller, Science Fiction, Action, Drama, Adventure",6.8,62441.0,False,1976
+5871867.0,logan's run,1976-06-23,25000000.0,0 days 01:59:00,English,United States of America,"Science Fiction, Action",6.8,62441.0,False,1976
+10507423.0,marathon man,1976-10-06,28204261.0,0 days 02:06:00,English,United States of America,"Thriller, Crime Fiction, Psychological thriller, Mystery, Drama, Film adaptation, Crime Thriller, Action, New Hollywood",7.4,71686.0,False,1976
+725468.0,murder by death,1976-06-23,32511047.0,0 days 01:34:00,English,United States of America,"Parody, Thriller, Detective fiction, Detective, Ensemble Film, Mystery, Comedy, Crime Thriller, Whodunit",7.3,43074.0,False,1976
+101935.0,network,1976-11-14,,0 days 02:01:00,English,United States of America,"Parody, Black comedy, Satire, Drama, New Hollywood",8.1,174771.0,False,1976
+11943293.0,taxi driver,1976-01-01,,0 days 02:05:00,Hindi,India,"Romantic drama, Romance Film, Drama, World cinema",8.2,953980.0,True,1976
+30000.0,taxi driver,1976-02-08,28262574.0,0 days 01:54:00,"English, Spanish",United States of America,"Thriller, Crime Fiction, Existentialism, Psychological thriller, Drama, New Hollywood",8.2,953980.0,True,1976
+29879308.0,the message,1976-01-01,,0 days 02:00:00,Standard Mandarin,China,"Thriller, Crime Fiction, World cinema, Historical fiction, Drama, Chinese Movies",8.24,62729.0,False,1976
+186856.0,the omen,1976-06-25,60922980.0,0 days 01:51:00,"Italian, Latin, English","United States of America, United Kingdom","Demonic child, Horror, Supernatural, Psychological thriller, Cult, Mystery",7.5,139173.0,False,1976
+75270.0,the outlaw josey wales,1976-06-30,31800000.0,0 days 02:15:00,"Navajo, English, Spanish",United States of America,"Action/Adventure, Revisionist Western, Western, War film",7.8,81854.0,False,1976
+1540319.0,the pink panther strikes again,1976-12-15,33833201.0,0 days 01:43:00,English,United Kingdom,"Crime Fiction, Parody, Crime Comedy, Comedy, Slapstick",7.1,32749.0,False,1976
+89397.0,a bridge too far,1977-01-01,50750000.0,0 days 02:56:00,English,"United States of America, United Kingdom","Indie, War film, Period piece, Drama, Film adaptation, The Netherlands in World War II, Action, Combat Films",7.4,63266.0,False,1977
+66870.0,annie hall,1977-04-20,38251425.0,0 days 01:34:00,"German, English",United States of America,"Romantic comedy, Comedy of manners, Drama, Comedy, Romance Film, New Hollywood",8.0,281615.0,False,1977
+146236.0,close encounters of the third kind,1977-11-15,337700000.0,0 days 02:17:00,"Hindi, French, English, Spanish",United States of America,"Science Fiction, Drama, Adventure, New Hollywood",7.6,222167.0,False,1977
+449352.0,cross of iron,1977-01-28,,0 days 02:08:00,"French, Russian, English","Yugoslavia, West Germany, United Kingdom, Germany","Action/Adventure, Combat Films, Action, Drama, War film",7.4,29939.0,False,1977
+36814246.0,eraserhead,1977-03-19,7000000.0,0 days 01:49:00,English,United States of America,"Science Fiction, Horror, Indie, Experimental film, Surrealism, Black-and-white, Cult, Drama, Fantasy, Avant-garde",7.3,131218.0,False,1977
+20286230.0,house,1977-01-01,,0 days 01:28:00,Japanese,Japan,"Cult, Japanese Movies, Horror, World cinema",7.3,35705.0,False,1977
+358367.0,pete's dragon,1977-11-03,36000000.0,0 days 02:14:00,English,United States of America,,6.7,62449.0,False,1977
+54175.0,saturday night fever,1977-12-14,282400000.0,0 days 01:53:00,"Italian, English",United States of America,"Dance, Musical, Drama, Coming of age, Romance Film, Musical Drama",6.8,89773.0,False,1977
+1412408.0,slap shot,1977-02-25,28000000.0,0 days 02:02:00,English,United States of America,"Sports, Action/Adventure, Action, Comedy",7.2,42714.0,False,1977
+844078.0,smokey and the bandit,1977-05-19,126737428.0,0 days 01:35:00,English,United States of America,"Crime Fiction, Adventure, Chase Movie, Road movie, Action Comedy, Action/Adventure, Comedy, Romance Film, Action",7.0,58715.0,False,1977
+447139.0,sorcerer,1977-06-24,12000000.0,0 days 01:32:00,"French, German, English, Spanish",United States of America,"Thriller, Crime Fiction, Adventure, Cult, Existentialism, Action/Adventure, Drama, Suspense, Crime Thriller, Action, New Hollywood",7.7,29729.0,False,1977
+52549.0,star wars episode iv: a new hope,1977-05-25,775398007.0,0 days 02:02:00,English,United States of America,"Science Fiction, Adventure, Fantasy, Coming of age, Family Film, Action, Space western",8.6,1482590.0,True,1977
+347000.0,suspiria,1977-02-01,,0 days 01:38:00,"Italian, English, Latin, Russian, Japanese, German",Italy,"Horror, World cinema, Supernatural, Gothic Film, Cult, Coming of age, Slasher",7.3,109804.0,False,1977
+1495388.0,the many adventures of winnie the pooh,1977-03-11,,0 days 01:11:00,English,United States of America,,7.5,40633.0,False,1977
+6446036.0,the spy who loved me,1977-07-07,185400000.0,0 days 02:06:00,"Arabic, Italian, English",United Kingdom,"Thriller, Action Thrillers, Action/Adventure, Glamorized Spy Film, Action, Spy",7.0,118802.0,False,1977
+225554.0,autumn sonata,1978-10-08,,0 days 01:37:00,Swedish,"France, West Germany, Sweden, Germany","Musical, Family Drama, Drama, Art film, World cinema",8.1,39084.0,False,1978
+443718.0,days of heaven,1978-09-13,3446749.0,0 days 01:33:00,"Italian, English",United States of America,"Crime Fiction, Period piece, Drama, Romantic drama, Romance Film, New Hollywood",7.7,64661.0,False,1978
+437840.0,drunken master,1978-01-01,,0 days 01:46:00,"Standard Cantonese, Cantonese",Hong Kong,"World cinema, Action Comedy, Action/Adventure, Martial Arts Film, Comedy, Action, Chinese Movies",7.4,45022.0,False,1978
+336846.0,grease,1978-06-16,394589888.0,0 days 03:45:00,English,United States of America,"Romantic comedy, LGBT, Musical, Comedy, Romance Film, Teen",7.2,308565.0,False,1978
+20179415.0,halloween,1978-10-25,70000000.0,0 days 01:31:00,English,United States of America,"Thriller, Horror, Indie, Cult, Slasher, Teen",7.7,318847.0,True,1978
+751724.0,i spit on your grave,1978-11-03,,0 days 01:41:00,English,United States of America,"Cult, Horror, Slasher",6.2,95990.0,False,1978
+5735396.0,invasion of the body snatchers,1978-12-20,24946533.0,0 days 01:55:00,English,United States of America,"Thriller, Science Fiction, Remake, New Hollywood, Doomsday film",7.7,56571.0,False,1978
+352795.0,jaws 2,1978-06-16,208900376.0,0 days 01:56:00,English,United States of America,"Thriller, Natural horror films, Horror, Adventure, Creature Film, Action/Adventure, Suspense, Action, Slasher",5.8,86869.0,False,1978
+2705267.0,little women,1978-10-02,,0 days 03:20:00,English,United States of America,"Costume drama, Family Film, Drama, Romance Film",7.8,257647.0,False,1978
+103021.0,midnight express,1978-08-31,35000000.0,0 days 02:01:00,"French, English","United States of America, United Kingdom","Thriller, LGBT, Indie, Crime Fiction, Escape Film, Biopic [feature], Drama, Biographical film, Prison, Adventure",7.5,89965.0,False,1978
+75261.0,national lampoon's animal house,1978-07-27,141600000.0,0 days 01:49:00,"Italian, English",United States of America,"Sex comedy, Absurdism, Gross-out film, Comedy, Gross out, Romance Film",7.4,131641.0,False,1978
+362719.0,superman,1978-12-10,300218018.0,0 days 02:31:00,English,"United States of America, United Kingdom","Science Fiction, Adventure, Superhero movie, Action/Adventure, Family Film, Action",7.4,191829.0,False,1978
+6243766.0,superman,1978-01-01,,,English,United States of America,"Action, Adventure, Black-and-white, Superhero movie",7.4,191829.0,False,1978
+27148466.0,superman,1978-01-01,,,,,"Thriller, Comedy film",7.4,191829.0,False,1978
+1645634.0,the big sleep,1978-03-13,,0 days 01:42:00,English,United Kingdom,"Crime Fiction, Thriller, Gangster Film, Mystery, Drama, Crime Thriller",7.9,92173.0,False,1978
+73425.0,the deer hunter,1978-12-08,50000000.0,0 days 03:03:00,"French, Vietnamese, Russian, English","United States of America, United Kingdom","Anti-war, Ensemble Film, Drama, War film, Anti-war film, New Hollywood",8.1,369617.0,True,1978
+982243.0,watership down,1978-01-01,,0 days 01:33:00,English,United Kingdom,"Indie, Animation, Fantasy, Film adaptation, Drama, Family Film, Adventure",7.6,40456.0,False,1978
+23487440.0,alien,1979-05-25,104931801.0,0 days 01:56:00,"English, Spanish","United States of America, United Kingdom","Science Fiction, Horror, Adventure, Sci-Fi Horror, Creature Film, New Hollywood",8.5,993758.0,True,1979
+9718646.0,all quiet on the western front,1979-11-14,,0 days 02:08:00,English,"United States of America, United Kingdom","Television movie, Drama, Film adaptation, War film",8.1,68983.0,False,1979
+18951054.0,apocalypse now,1979-05-10,78784010.0,0 days 02:33:00,"French, Vietnamese, Khmer language, English",United States of America,"Anti-war, Adventure, Existentialism, Jungle Film, Drama, War film, Anti-war film, New Hollywood",8.4,727885.0,True,1979
+1048695.0,dracula,1979-07-13,20158970.0,0 days 01:44:00,English,"United States of America, United Kingdom",Horror,7.4,61023.0,False,1979
+1707516.0,escape from alcatraz,1979-06-22,43000000.0,0 days 01:51:00,English,United States of America,"Thriller, Action/Adventure, Drama, Suspense, Escape Film, Action, Prison",7.6,150802.0,False,1979
+35919373.0,from here to eternity,1979-02-14,,0 days 06:00:00,English,United States of America,Drama,7.6,51958.0,False,1979
+103026.0,kramer vs. kramer,1979-01-01,106260000.0,0 days 01:45:00,English,United States of America,"Family Drama, Drama, Marriage Drama, New Hollywood, Courtroom Drama",7.8,158294.0,False,1979
+255898.0,mad max,1979-04-12,100000000.0,0 days 01:28:00,English,Australia,"Thriller, Tragedy, Adventure, World cinema, Doomsday film, Chase Movie, Science Fiction, Cult, Apocalyptic and post-apocalyptic fiction, Biker Film, Action",6.8,235161.0,False,1979
+74930.0,manhattan,1979-04-25,39946780.0,0 days 01:36:00,English,United States of America,"Romantic comedy, Indie, Black-and-white, Comedy, Romance Film, New Hollywood",7.8,149576.0,False,1979
+6446062.0,moonraker,1979-06-26,210300000.0,0 days 02:06:00,"Italian, English","France, United Kingdom","Thriller, Science Fiction, Adventure, Action/Adventure, Glamorized Spy Film, Action",6.3,111374.0,False,1979
+149433.0,rocky ii,1979-06-15,200182160.0,0 days 02:00:00,English,United States of America,"Sports, Drama, Boxing, New Hollywood",7.3,236559.0,False,1979
+286266.0,stalker,1979-01-01,,0 days 02:43:00,Russian,"Soviet Union, Russia, Germany","Science Fiction, World cinema",8.0,148436.0,False,1979
+277006.0,star trek: the motion picture,1979-01-01,139000000.0,0 days 02:16:00,"Klingon language, English",United States of America,"Science Fiction, Family Film, Drama, Adventure",6.4,98404.0,False,1979
+179044.0,the jerk,1979-12-14,73691419.0,0 days 01:44:00,English,United States of America,"Music, Screwball comedy, Slapstick, Comedy, Absurdism",7.1,65524.0,False,1979
+11780359.0,the warriors,1979-01-01,,,English,United States of America,"Crime Fiction, Action, Drama",7.5,113625.0,False,1979
+1173571.0,the warriors,1979-02-01,22490039.0,0 days 01:33:00,English,United States of America,"Thriller, Crime Fiction, Cult, Action/Adventure, Drama, Action",7.5,113625.0,False,1979
+46505.0,airplane!,1980-07-02,83453539.0,0 days 01:27:00,English,United States of America,"Parody, Ensemble Film, Absurdism, Cult, Satire, Comedy, Disaster, Romance Film, Airplanes and airports",7.7,268366.0,False,1980
+350629.0,altered states,1980-12-25,19853892.0,0 days 01:44:00,"English, Spanish",United States of America,"Science Fiction, Horror, Surrealism, Creature Film, Psychological thriller, Cult, Drama, Film adaptation",6.9,39639.0,False,1980
+667194.0,american gigolo,1980-02-08,,0 days 01:56:00,English,United States of America,"Crime Fiction, Thriller, Erotic Drama, Erotica, Crime Drama, Erotic thriller, Drama, Romance Film, New Hollywood",6.3,30397.0,False,1980
+217982.0,caddyshack,1980-07-25,39846344.0,0 days 01:38:00,English,United States of America,"Sports, Gross-out film, Cult, Satire, Comedy, Gross out, Slapstick",7.2,129654.0,False,1980
+513149.0,cannibal holocaust,1980-02-07,,0 days 01:35:00,"Italian, English, Spanish",Italy,"Mockumentary, Jungle Film, Horror, World cinema",5.8,63199.0,False,1980
+4362592.0,defiance,1980-03-14,,0 days 01:43:00,English,United States of America,"Crime Fiction, Drama",7.1,157481.0,False,1980
+8481.0,dressed to kill,1980-06-23,31899000.0,0 days 01:45:00,English,United States of America,"Thriller, Horror, Erotica, Mystery, Psychological thriller, Erotic thriller, Suspense, Crime Thriller, Slasher, Indie",7.1,51334.0,False,1980
+3524282.0,dressed to kill,1980-01-01,,0 days 01:12:00,English,United States of America,"Thriller, Mystery, Drama, Crime Thriller, Film adaptation",7.1,51334.0,False,1980
+25506.0,raging bull,1980-11-14,23380203.0,0 days 02:09:00,English,United States of America,"Biography, Black-and-white, Sports, Period piece, Drama, Boxing, Biopic [feature], Biographical film, New Hollywood, Neo-noir",8.1,388929.0,True,1980
+920296.0,somewhere in time,1980-10-03,,0 days 01:48:00,English,United States of America,"Science Fiction, Indie, Tragedy, Romantic fantasy, Fantasy, Drama, Romantic drama, Time travel, Romance Film",7.2,33665.0,False,1980
+53964.0,star wars episode v: the empire strikes back,1980-05-21,538375067.0,0 days 02:04:00,English,United States of America,"Science Fiction, Adventure, Space opera, Fantasy, Family Film, Action",8.7,1413571.0,True,1980
+1814329.0,stir crazy,1980-12-12,,0 days 01:37:00,English,United States of America,"Action/Adventure, Buddy film, Prison film, Cult, Comedy, Comedy of Errors, Action, Prison",6.7,31127.0,False,1980
+4558294.0,the blues brothers,1980-06-16,115229890.0,0 days 02:13:00,English,United States of America,"Action/Adventure, Buddy film, Absurdism, Screwball comedy, Action Comedy, Cult, Musical, Adventure Comedy, Comedy, Action",7.9,218785.0,False,1980
+1803595.0,the changeling,1980-03-28,,0 days 01:47:00,English,Canada,"Thriller, Mystery, Horror, Suspense, Supernatural",7.1,41688.0,False,1980
+261237.0,the gods must be crazy,1980-01-01,34331783.0,0 days 01:49:00,"Afrikaans, English",South Africa,"Adventure, Action/Adventure, Indie, World cinema, Cult, Adventure Comedy, Comedy, Slapstick",7.3,60538.0,False,1980
+1186616.0,the shining,1980-05-23,44017374.0,0 days 02:23:00,English,"United States of America, United Kingdom","Horror, Supernatural, Surrealism, Psychological thriller, Drama, Film adaptation, Slasher, New Hollywood",8.4,1142380.0,True,1980
+471370.0,an american werewolf in london,1981-08-21,61973249.0,0 days 01:32:00,English,"United States of America, United Kingdom","Fantasy, Horror, Creature Film, Horror Comedy",7.5,126084.0,False,1981
+8994.0,das boot,1981-09-17,84970337.0,0 days 03:30:00,"French, English, German","West Germany, Germany","Thriller, World cinema, History, Action/Adventure, Drama, War film, Action",8.4,271332.0,False,1981
+9835.0,escape from new york,1981-05-23,50000000.0,0 days 01:39:00,English,"United States of America, United Kingdom","Thriller, Crime Fiction, Science Fiction, Indie, Doomsday film, Action/Adventure, Western, Escape Film, Action, Dystopia",7.1,162427.0,False,1981
+250699.0,excalibur,1981-04-10,34967437.0,0 days 02:20:00,English,"United States of America, United Kingdom","Fantasy Adventure, Adventure, Costume drama, Action/Adventure, Fantasy, Mythological Fantasy, Drama, Sword and sorcery, Sword and sorcery films",7.3,68846.0,False,1981
+6446044.0,for your eyes only,1981-06-24,195300000.0,0 days 02:07:00,"Greek, Italian, English",United Kingdom,"Thriller, Action/Adventure, Glamorized Spy Film, Action, Spy",6.7,110631.0,False,1981
+2274938.0,friday the 13th part 2,1981-05-01,22722776.0,0 days 01:26:00,English,United States of America,"Cult, Horror, Slasher, Teen",6.1,81172.0,False,1981
+2002104.0,halloween ii,1981-10-30,25533818.0,0 days 01:30:00,English,United States of America,"Cult, Horror, Slasher, Teen",6.5,105671.0,False,1981
+54166.0,indiana jones and the raiders of the lost ark,1981-06-12,389925971.0,0 days 01:55:00,"Arabic, Nepali, Spanish, Hebrew, English, German",United States of America,"Adventure, Costume Adventure, Action/Adventure, Action, New Hollywood, Airplanes and airports",8.4,1057018.0,True,1981
+10645970.0,rocky,1981-04-26,,0 days 02:28:00,Hindi,India,"World cinema, Musical, Drama, Romantic drama, Romance Film, Bollywood",8.1,646660.0,True,1981
+15693005.0,soul,1981-01-01,,0 days 01:33:00,Russian,"Soviet Union, Russia","Musical, Horror, Tragedy",8.0,396460.0,True,1981
+560511.0,stripes,1981-06-26,85297000.0,0 days 01:46:00,"Czech, English",United States of America,"Parody, Action/Adventure, Action, Buddy film, Comedy",6.8,81761.0,False,1981
+1059280.0,superman ii,1981-03-20,108185706.0,0 days 01:56:00,"French, Russian, English","United States of America, United Kingdom","Science Fiction, Adventure, Superhero movie, Superhero, Action/Adventure, Alien Film, Family Film, Action",6.8,116851.0,False,1981
+9294.0,the evil dead,1981-10-15,29400000.0,0 days 01:25:00,English,United States of America,"Cult, B-movie, Horror, Haunted House Film, Indie",7.4,239290.0,False,1981
+1371138.0,the fox and the hound,1981-07-10,63456988.0,0 days 01:23:00,English,United States of America,,7.2,104531.0,False,1981
+157172.0,time bandits,1981-07-13,42365581.0,0 days 01:55:00,English,United Kingdom,"Science Fiction, Fantasy Adventure, Indie, Costume drama, Existentialism, Fantasy, Comedy, Family Film, Fantasy Comedy, Time travel, Adventure",6.9,70765.0,False,1981
+2436406.0,48 hrs.,1982-12-08,78868508.0,0 days 01:36:00,English,United States of America,"Thriller, Crime Fiction, Buddy film, Action Comedy, Buddy cop, Action/Adventure, Drama, Comedy, Action",6.9,87899.0,False,1982
+242539.0,an officer and a gentleman,1982-07-28,129795554.0,0 days 02:02:00,"Filipino language, English",United States of America,"Romantic drama, Romance Film, Drama",7.1,64218.0,False,1982
+3746.0,blade runner,1982-06-25,33139618.0,0 days 01:56:00,"Japanese, Cantonese, English, German, Hungarian language","United States of America, Hong Kong","Thriller, Cyberpunk, Science Fiction, Future noir, Existentialism, Cult, Drama, Film noir, Crime Thriller, Chinese Movies, Dystopia, Neo-noir",8.1,840420.0,True,1982
+73441.0,e.t. the extra-terrestrial,1982-05-26,792910554.0,0 days 02:00:00,English,United States of America,,7.9,447158.0,True,1982
+487300.0,fanny and alexander,1982-12-17,6783304.0,0 days 05:12:00,"Swedish, Yiddish, English, German","France, West Germany, Sweden, Germany","Fantasy, Family Drama, Drama, World cinema, Mystery",8.1,68418.0,False,1982
+453236.0,fast times at ridgemont high,1982-08-13,27092880.0,0 days 01:30:00,English,United States of America,"Ensemble Film, Sex comedy, Screwball comedy, Cult, Coming of age, Comedy, Drama, Stoner film, Romance Film, Teen",7.1,119047.0,False,1982
+872441.0,first blood,1982-10-22,125212904.0,0 days 01:33:00,English,United States of America,"Thriller, Adventure, Psychological thriller, Action Thrillers, Drama, Action",7.7,283481.0,False,1982
+369508.0,gandhi,1982-11-30,52767889.0,0 days 03:08:00,"Hindi, English","India, United Kingdom","British Empire Film, History, Historical fiction, Epic, Drama, Biopic [feature], Biographical film, Historical Epic",8.0,242153.0,False,1982
+1539714.0,pink floyd the wall,1982-05-23,22244207.0,0 days 01:35:00,English,United Kingdom,"Live action, Musical, Drama, Animation",8.0,86836.0,False,1982
+152328.0,rocky iii,1982-05-28,270000000.0,0 days 01:40:00,English,United States of America,"Sports, Melodrama, Drama, Boxing",6.8,216129.0,False,1982
+27098.0,star trek ii: the wrath of khan,1982-06-04,97000000.0,0 days 01:52:00,English,United States of America,"Thriller, Science Fiction, Family Film, Action, Adventure",7.7,131262.0,False,1982
+348292.0,the dark crystal,1982-12-17,40577001.0,0 days 01:33:00,English,"United States of America, United Kingdom",,7.1,73397.0,False,1982
+27871452.0,the elephant man,1982-01-04,,0 days 01:30:00,English,United States of America,"Biographical film, Drama",8.2,264909.0,False,1982
+76394.0,tootsie,1982-12-01,177200000.0,0 days 01:56:00,English,United States of America,"Romantic comedy, Romance Film, Comedy of Errors, Drama, Comedy",7.4,117025.0,False,1982
+312757.0,tron,1982-07-09,74000000.0,0 days 01:31:00,English,United States of America,"Cyberpunk, Thriller, Science Fiction, Adventure, Computer Animation, Family Film, Action",6.7,131748.0,False,1982
+932424.0,a christmas story,1983-11-18,19294144.0,0 days 01:33:00,English,"United States of America, Canada","Christmas movie, Family Film, Comedy",7.9,170780.0,False,1983
+5966549.0,a few good men,1983-06-24,,0 days 01:20:00,English,United States of America,"Gay pornography, Pornographic movie",7.7,295884.0,False,1983
+18749527.0,beauty and the beast,1983-11-11,,0 days 01:30:00,Danish,Denmark,Drama,8.0,487133.0,True,1983
+23265233.0,independence day,1983-01-21,,0 days 01:50:00,English,United States of America,Drama,7.0,619105.0,False,1983
+205512.0,monty python's the meaning of life,1983-03-31,18059552.0,0 days 01:48:00,English,United Kingdom,"Cult, Parody, Satire, Comedy, Black comedy",7.5,126654.0,False,1983
+541642.0,octopussy,1983-06-06,187500000.0,0 days 02:11:00,"Russian, German, English, Spanish","United States of America, United Kingdom","Thriller, Action/Adventure, Adventure, Action Thrillers, Glamorized Spy Film, Crime Fiction, Action, Spy",6.5,115340.0,False,1983
+76331.0,scarface,1983-01-01,,0 days 01:34:00,"Italian, English",United States of America,"Crime Fiction, Gangster Film, Black-and-white, Drama, Pre-Code, Film noir",8.3,943043.0,True,1983
+267848.0,scarface,1983-12-01,65884703.0,0 days 02:50:00,"English, Spanish",United States of America,"Crime Fiction, Thriller, Gangster Film, Action/Adventure, Drama, Crime Thriller, Action",8.3,943043.0,True,1983
+50744.0,star wars episode vi: return of the jedi,1983-05-25,475106177.0,0 days 02:15:00,English,United States of America,"Science Fiction, Adventure, Space opera, Fantasy, Family Film, Action",8.3,1145760.0,True,1983
+1059701.0,superman iii,1983-06-16,,0 days 02:05:00,"Italian, English, Spanish","United States of America, United Kingdom","Thriller, Science Fiction, Adventure, Superhero movie, Superhero, Action/Adventure, Fantasy, Comedy, Family Film, Action",5.0,76316.0,False,1983
+451062.0,the dead zone,1983-10-21,20766616.0,0 days 01:43:00,"Polish, Russian, English",United States of America,"Thriller, Science Fiction, Horror, Indie, Supernatural, Psychological thriller, Political thriller, Crime Thriller",7.2,79661.0,False,1983
+482383.0,the king of comedy,1983-02-18,2536242.0,0 days 01:45:00,English,United States of America,"Black comedy, Drama, Comedy, Documentary",7.8,123376.0,False,1983
+520990.0,trading places,1983-06-08,90404800.0,0 days 01:58:00,English,United States of America,"Satire, Comedy, Comedy of manners",7.5,170105.0,False,1983
+511622.0,vacation,1983-07-29,61399552.0,0 days 01:39:00,English,United States of America,"Romance Film, Comedy, Adventure",7.3,122647.0,False,1983
+456587.0,videodrome,1983-02-04,2120439.0,0 days 01:27:00,English,Canada,"Thriller, Mystery, Science Fiction, Horror",7.2,106503.0,False,1983
+34130.0,wargames,1983-06-03,79567667.0,0 days 01:54:00,English,United States of America,"Thriller, Science Fiction",7.1,114108.0,False,1983
+1065214.0,amadeus,1984-09-06,51973029.0,0 days 03:00:00,"English, Italian, Latin, German",United States of America,"Biography, Costume drama, Comedy-drama, Period piece, Drama, Biopic [feature], Music, Biographical film, Musical Drama",8.4,439694.0,True,1984
+680398.0,beverly hills cop,1984-12-01,316360478.0,0 days 01:46:00,English,United States of America,"Thriller, Crime Fiction, Buddy film, Action/Adventure, Drama, Comedy, Action",7.4,220411.0,False,1984
+71415.0,dune,1984-12-14,30925690.0,0 days 02:20:00,"Italian, English",United States of America,"LGBT, Thriller, Science Fiction, Adventure, Cult, Drama, Film adaptation, Action",6.3,184012.0,False,1984
+205013.0,ghostbusters,1984-06-07,291632124.0,0 days 01:47:00,English,United States of America,"Science Fiction, Fantasy Comedy, Supernatural, Stop motion, Action/Adventure, Fantasy, Comedy, Family Film, Action",7.8,463625.0,True,1984
+382387.0,gremlins,1984-06-08,153083102.0,0 days 01:46:00,"English, Spanish",United States of America,"Horror, Creature Film, Cult, Fantasy, Comedy, Black comedy, Horror Comedy",7.3,255470.0,False,1984
+81503.0,indiana jones and the temple of doom,1984-05-23,333107271.0,0 days 01:58:00,"Sinhala, English",United States of America,"Action/Adventure, Costume Adventure, Action, Adventure",7.5,544378.0,True,1984
+92689.0,nausicaä of the valley of the wind,1984-03-11,,0 days 01:35:00,Japanese,Japan,"Science Fiction, Japanese Movies, Adventure, Animation, Anime, Fantasy, Action",8.0,187364.0,False,1984
+442308.0,once upon a time in america,1984-06-01,5321508.0,0 days 04:29:00,"French, Italian, English","United States of America, Italy","Crime Fiction, Ensemble Film, Gangster Film, Period piece, Drama, Film adaptation",8.3,387053.0,True,1984
+237134.0,"paris, texas",1984-05-19,2181987.0,0 days 02:25:00,English,"France, United States of America, West Germany, United Kingdom","Mystery, Romance Film, Drama, Indie, Road movie",8.1,126719.0,False,1984
+6043780.0,police academy,1984-03-23,81198894.0,0 days 01:35:00,English,United States of America,"Crime Fiction, Comedy",6.7,141286.0,False,1984
+685977.0,sixteen candles,1984-05-04,23686027.0,0 days 01:33:00,English,United States of America,"Romantic comedy, Cult, Coming of age, Comedy, Romance Film, Teen",7.0,129666.0,False,1984
+91133.0,the karate kid,1984-06-22,90815558.0,0 days 02:07:00,"Japanese, English","United States of America, Japan","Action/Adventure, Japanese Movies, Adventure, Family Drama, Sports, Martial Arts Film, Coming of age, Drama, Family Film, Action, Romance Film, Teen",7.3,252788.0,False,1984
+2829485.0,the neverending story,1984-04-06,20158808.0,0 days 01:34:00,English,"United States of America, West Germany",,7.3,161321.0,False,1984
+30327.0,the terminator,1984-10-26,78371200.0,0 days 01:47:00,"English, Spanish",United States of America,"Thriller, Science Fiction, Indie, Doomsday film, Stop motion, Action/Adventure, Time travel, Action",8.1,947697.0,True,1984
+99545.0,this is spinal tap,1984-03-02,4736202.0,0 days 01:22:00,English,United States of America,"Parody, Mockumentary, Indie, Cult, Musical, Satire, Comedy",7.9,149687.0,False,1984
+583932.0,a view to a kill,1985-05-22,152400000.0,0 days 02:11:00,English,"United States of America, United Kingdom","Thriller, Action Thrillers, Action/Adventure, Glamorized Spy Film, Action, Spy",6.3,107153.0,False,1985
+42993.0,back to the future,1985-07-03,383874862.0,0 days 01:56:00,English,United States of America,"Science Fiction, Adventure, Americana, Humour, Comedy, Time travel, Sci-Fi Adventure, Family Film",8.5,1346857.0,True,1985
+74537.0,brazil,1985-02-20,9929135.0,0 days 02:23:00,English,United Kingdom,"Science Fiction, Future noir, Cult, Satire, Fantasy, Comedy, Drama, Black comedy, Dystopia, Kafkaesque",7.8,214204.0,False,1985
+7865906.0,bridge to terabithia,1985-02-04,,0 days 01:00:00,English,Canada,"Family Film, Adventure, Television movie",7.2,178543.0,False,1985
+4492505.0,come and see,1985-01-01,,0 days 02:13:00,"Belarusian language, German, Russian","Soviet Union, Russia","Action/Adventure, Coming of age, Drama, World cinema, War film",8.3,105378.0,False,1985
+922084.0,legend,1985-08-28,15502112.0,0 days 01:29:00,"Italian, English","United States of America, United Kingdom","Science Fiction, Fantasy Adventure, Adventure, Costume drama, Action/Adventure, Fantasy, Fantasy Drama, Romance Film, Sword and sorcery films",6.9,209128.0,False,1985
+598868.0,mad max beyond thunderdome,1985-07-10,36230219.0,0 days 01:47:00,English,"United States of America, Australia, New Zealand","Science Fiction, Indie, World cinema, Doomsday film, Apocalyptic and post-apocalyptic fiction, Action",6.2,156093.0,False,1985
+583012.0,rambo: first blood part ii,1985-05-22,,0 days 01:36:00,"Vietnamese, English",United States of America,"Thriller, Action/Adventure, Action Thrillers, Action, War film",6.5,186719.0,False,1985
+75984.0,ran,1985-06-01,,0 days 02:42:00,Japanese,"France, Japan","Tragedy, Japanese Movies, Art film, World cinema, Family Drama, Epic, Drama, War film, Samurai cinema, Historical Epic, Action",8.2,140087.0,False,1985
+104984.0,rocky iv,1985-11-27,300473716.0,0 days 01:31:00,"English, Russian",United States of America,"Sports, Action, Drama, Political drama, Boxing",6.9,231679.0,False,1985
+29943.0,the breakfast club,1985-02-07,51525171.0,0 days 01:33:00,English,United States of America,"Ensemble Film, Comedy-drama, Drama, Comedy, Coming of age, Teen",7.8,448603.0,True,1985
+3185575.0,the color purple,1985-12-18,142000000.0,0 days 02:33:00,English,United States of America,"LGBT, Period piece, Marriage Drama, Drama, Film adaptation, Feminist Film",7.7,99437.0,False,1985
+89631.0,the goonies,1985-06-07,61389680.0,0 days 01:54:00,"Cantonese, Italian, English, Spanish",United States of America,,7.7,306469.0,True,1985
+241171.0,weird science,1985-08-02,38934048.0,0 days 01:34:00,English,United States of America,"Science Fiction, Buddy film, Cult, Fantasy, Comedy, Romance Film, Teen",6.6,100421.0,False,1985
+84931.0,witness,1985-02-08,68706993.0,0 days 01:52:00,"German, English",United States of America,"Thriller, Drama, Suspense, Romantic drama, Romance Film, Courtroom Drama",7.4,107342.0,False,1985
+26015247.0,witness,1985-01-01,,,Malayalam,India,"Thriller, Mystery, Action, Comedy",7.4,107342.0,False,1985
+213472.0,aliens,1986-07-18,131060248.0,0 days 02:17:00,English,"United States of America, United Kingdom","Thriller, Science Fiction, Horror, Adventure, Stop motion, Sci-Fi Horror, Creature Film, Action/Adventure, Action",8.4,793829.0,True,1986
+697113.0,big trouble in little china,1986-07-02,11100000.0,0 days 01:39:00,"English, Cantonese",United States of America,"Fantasy Comedy, Adventure, Action Comedy, Martial Arts Film, Fantasy, Comedy, Romance Film, Action",7.2,158016.0,False,1986
+3947.0,blue velvet,1986-01-01,8551228.0,0 days 02:00:00,English,United States of America,"Thriller, Mystery, Crime Fiction",7.7,221491.0,False,1986
+147697.0,castle in the sky,1986-08-02,,0 days 02:04:00,Japanese,Japan,,8.0,187479.0,False,1986
+331586.0,crocodile dundee,1986-04-24,328203506.0,0 days 01:33:00,English,"United States of America, Australia, New Zealand","Adventure, World cinema, Action/Adventure, Adventure Comedy, Comedy, Action",6.6,118278.0,False,1986
+88326.0,ferris bueller's day off,1986-06-11,70136369.0,0 days 01:43:00,English,United States of America,"Cult, Drama, Coming of age, Comedy, Teen",7.8,396567.0,True,1986
+4440277.0,highlander,1986-01-01,12885193.0,0 days 01:56:00,English,"United States of America, United Kingdom","Cult, Action/Adventure, Science Fiction, Fantasy, Superhero movie",7.0,150790.0,False,1986
+24456545.0,highlander,1986-01-01,,,English,,Action,7.0,150790.0,False,1986
+34607936.0,labyrinth,1986-01-01,,,,,,7.3,154357.0,False,1986
+177906.0,labyrinth,1986-06-27,12729917.0,0 days 01:42:00,English,"United States of America, United Kingdom","Coming of age, Family Film, Fantasy, Comedy, Adventure",7.3,154357.0,False,1986
+113460.0,platoon,1986-12-19,138530565.0,0 days 02:00:00,"Vietnamese, English","United States of America, United Kingdom","Anti-war, Indie, Drama, War film, Action, Anti-war film, Combat Films",8.1,448307.0,True,1986
+87983.0,stand by me,1986-08-08,52287414.0,0 days 01:29:00,English,United States of America,"Adventure, Period piece, Coming of age, Film adaptation, Drama, Teen",8.1,454276.0,True,1986
+168561.0,the color of money,1986-10-17,52293982.0,0 days 02:00:00,"English, Spanish",United States of America,"Sports, Drama",7.0,95424.0,False,1986
+6332878.0,the fly,1986-01-01,,,English,United States of America,"Science Fiction, Horror",7.6,210248.0,False,1986
+553101.0,the fly,1986-01-01,,0 days 01:33:00,English,United States of America,"Cult, Science Fiction, Horror",7.6,210248.0,False,1986
+456601.0,the fly,1986-08-15,60629159.0,0 days 01:36:00,English,United States of America,"Monster movie, Tragedy, Horror, Science Fiction, Drama, Film adaptation, Romance Film",7.6,210248.0,False,1986
+1107088.0,"the karate kid, part ii",1986-06-19,115103979.0,0 days 01:53:00,English,United States of America,"Action/Adventure, Adventure, Family Drama, Sports, Martial Arts Film, Drama, Family Film, Action, Romance Film",6.1,101847.0,False,1986
+5788437.0,the name of the rose,1986-09-24,77153487.0,0 days 02:10:00,"Latin, English","France, Italy, West Germany, Germany","Crime Fiction, Thriller, Detective fiction, Detective, World cinema, Costume drama, Gothic Film, Mystery, Period piece, Drama, Film adaptation, Crime Thriller, Whodunit",7.7,120249.0,False,1986
+32809350.0,top gun,1986-01-01,,0 days 01:13:00,English,United States of America,Western,6.9,516657.0,False,1986
+179825.0,top gun,1986-05-12,353816701.0,0 days 01:50:00,English,United States of America,"Action/Adventure, Drama, War film, Romantic drama, Romance Film, Action, Airplanes and airports",6.9,516657.0,False,1986
+680361.0,dirty dancing,1987-05-12,213954274.0,0 days 01:37:00,English,United States of America,"Dance, Indie, Period piece, Musical, Coming of age, Drama, Romantic drama, Romance Film, Musical Drama, Teen",7.1,264216.0,False,1987
+10487.0,evil dead ii,1987-03-13,10900000.0,0 days 01:24:00,English,United States of America,"Horror, Stop motion, Cult, Comedy, Splatter film, Zombie Film, Black comedy",7.7,187102.0,False,1987
+11701.0,full metal jacket,1987-06-17,46300000.0,0 days 01:52:00,"Vietnamese, English","United States of America, United Kingdom","Anti-war, War film, Period piece, Drama, Film adaptation, Action, Anti-war film, Combat Films",8.2,808532.0,True,1987
+168593.0,"good morning, vietnam",1987-12-23,123922370.0,0 days 02:01:00,English,United States of America,"Comedy-drama, Comedy, War film",7.3,157684.0,False,1987
+235418.0,lethal weapon,1987-03-06,120207127.0,0 days 01:57:00,English,United States of America,"Crime Fiction, Albino bias, Buddy film, Buddy cop, Action/Adventure, Thriller, Comedy, Action",7.6,282424.0,False,1987
+3727473.0,man on fire,1987-09-04,519596.0,0 days 01:32:00,"French, Italian, English","France, Italy","Thriller, Action, Drama, Indie",7.7,398174.0,True,1987
+1397377.0,"planes, trains and automobiles",1987-11-25,150823000.0,0 days 01:32:00,English,United States of America,"Buddy film, Road movie, Screwball comedy, Drama, Comedy, Comedy of Errors, Airplanes and airports",7.6,166357.0,False,1987
+230481.0,predator,1987-06-12,98267558.0,0 days 01:48:00,"English, Spanish",United States of America,"Monster movie, Science Fiction, Horror, Creature Film, Action/Adventure, Alien Film, Action",7.8,468541.0,True,1987
+445066.0,robocop,1987-07-17,53424681.0,0 days 01:43:00,English,United States of America,"Thriller, Crime Fiction, Science Fiction, Superhero movie, Stop motion, Action/Adventure, Satire, Action",7.6,290789.0,False,1987
+75222.0,spaceballs,1987-06-24,38119483.0,0 days 01:36:00,English,United States of America,"Parody, Science Fiction, Adventure, Absurdism, Cult, Comedy, Slapstick",7.1,212145.0,False,1987
+673472.0,the lost boys,1987-07-31,32222567.0,0 days 01:36:00,English,United States of America,"Cult, Horror, Coming of age, Comedy, Teen",7.2,166983.0,False,1987
+31153.0,the princess bride,1987-09-18,30857814.0,0 days 01:38:00,English,United States of America,,8.0,459665.0,True,1987
+7668793.0,the running man,1987-11-13,38122105.0,0 days 01:41:00,English,United States of America,"Thriller, Science Fiction, Action, Dystopia, Film adaptation",6.6,171921.0,False,1987
+20379620.0,the running man,1987-01-01,,0 days 01:43:00,English,United Kingdom,"Crime Fiction, Drama",6.6,171921.0,False,1987
+3842730.0,the untouchables,1987-01-01,76270454.0,0 days 02:00:00,English,United States of America,"Thriller, Crime Fiction, Biography, Gangster Film, Action/Adventure, Period piece, Drama, Crime Thriller, Action",7.8,337776.0,True,1987
+58865.0,wall street,1987-12-11,43848100.0,0 days 02:06:00,English,United States of America,"Crime Fiction, Drama",7.3,167860.0,False,1987
+308898.0,a fish called wanda,1988-07-07,62493712.0,0 days 01:49:00,"Italian, Russian, English","United States of America, United Kingdom","Crime Fiction, Heist, Crime Comedy, Caper story, Screwball comedy, Comedy",7.5,156946.0,False,1988
+605939.0,akira,1988-01-01,63000000.0,0 days 02:05:00,Japanese,Japan,"Science Fiction, Japanese Movies, Epic, Animation, Anime, Fantasy, Dystopia",8.0,211335.0,False,1988
+293524.0,beetlejuice,1988-03-29,73707461.0,0 days 01:32:00,English,United States of America,"Heaven-Can-Wait Fantasies, Horror, Fantasy, Haunted House Film, Black comedy, Fantasy Comedy, Comedy",7.5,392482.0,True,1988
+54540.0,coming to america,1988-06-29,288752301.0,0 days 01:57:00,English,United States of America,"Romantic comedy, Comedy of manners, Drama, Comedy, Romance Film, Comedy of Errors",7.1,228854.0,False,1988
+97646.0,die hard,1988-07-15,140767956.0,0 days 02:12:00,"Italian, German, English",United States of America,"Crime Fiction, Thriller, Action, Action/Adventure",8.2,966528.0,True,1988
+182164.0,grave of the fireflies,1988-04-16,,0 days 01:28:00,"Japanese, Italian, German, English, Spanish",Japan,,8.5,331273.0,True,1988
+13901.0,heathers,1988-01-01,1108462.0,0 days 01:43:00,English,United States of America,"Black comedy, Comedy, Teen",7.1,120454.0,False,1988
+20669.0,my neighbor totoro,1988-04-16,,0 days 01:28:00,Japanese,Japan,,8.1,395476.0,True,1988
+129368.0,rain man,1988-12-12,354825435.0,0 days 02:13:00,"Italian, English",United States of America,"Road movie, Family Drama, Drama, Melodrama",8.0,556414.0,True,1988
+1160412.0,rambo iii,1988-01-01,189015611.0,0 days 01:42:00,"English, Russian",United States of America,"Thriller, Action/Adventure, Action Thrillers, Action, War film",5.8,143009.0,False,1988
+3988444.0,starship troopers,1988-10-25,,0 days 02:30:00,Japanese,Japan,"Science Fiction, Animation",7.3,329598.0,False,1988
+228355.0,the naked gun: from the files of police squad!,1988-12-02,78756177.0,0 days 01:25:00,English,United States of America,"Parody, Crime Fiction, Screwball comedy, Comedy, Romance Film, Action",7.6,190366.0,False,1988
+342556.0,they live,1988-11-04,13008928.0,0 days 01:34:00,English,United States of America,"Thriller, Alien invasion, Science Fiction, Horror, Alien Film, Political satire, Satire, Black comedy, Action, Dystopia",7.2,151306.0,False,1988
+76018.0,who framed roger rabbit,1988-06-21,329803958.0,0 days 01:44:00,English,United States of America,"Parody, Crime Fiction, Fantasy Comedy, Buddy film, Animation, Action/Adventure, Mystery, Fantasy, Comedy, Black comedy, Family Film, Action",7.7,222024.0,False,1988
+198313.0,willow,1988-05-20,57269863.0,0 days 02:06:00,English,United States of America,"Fantasy Adventure, Sword and sorcery films, Stop motion, Costume drama, Action/Adventure, Fantasy, Comedy, Drama, Sword and sorcery, Family Film, Action, Romance Film, Adventure",7.2,132095.0,False,1988
+213270.0,back to the future part ii,1989-11-20,331950002.0,0 days 01:48:00,English,United States of America,"Science Fiction, Adventure, Comedy, Time travel, Family Film, Sci-Fi Adventure, Humour",7.8,587434.0,True,1989
+23808966.0,bill & ted's excellent adventure,1989-02-17,40485039.0,0 days 01:28:00,"French, German, English",United States of America,"Science Fiction, Buddy film, Adventure, Fantasy, Comedy, Time travel, Sci-Fi Adventure, Family Film, Teen",6.9,144193.0,False,1989
+30045070.0,catch me if you can,1989-10-14,,,,United States of America,"Action, Drama, Comedy",8.1,1133814.0,True,1989
+129493.0,dead poets society,1989-06-09,235860116.0,0 days 02:09:00,English,United States of America,"Ensemble Film, School story, Period piece, Drama, Coming of age, Teen",8.1,571511.0,True,1989
+129524.0,field of dreams,1989-04-21,84431625.0,0 days 01:47:00,English,United States of America,"Americana, Family Drama, Baseball, Sports, Fantasy, Film adaptation, Drama, Family Film",7.5,132028.0,False,1989
+618929.0,ghostbusters ii,1989-06-16,215394738.0,0 days 01:48:00,English,United States of America,"Science Fiction, Supernatural, Action/Adventure, Satire, Fantasy, Comedy, Action",6.6,230633.0,False,1989
+509676.0,glory,1989-01-01,26828365.0,0 days 02:04:00,English,United States of America,"Costume drama, Epic, Period piece, Drama, War film, Action, Political drama",7.8,147321.0,False,1989
+31093111.0,glory,1989-01-01,,0 days 01:40:00,English,United States of America,Drama,7.8,147321.0,False,1989
+1032620.0,"honey, i shrunk the kids",1989-06-23,222724172.0,0 days 01:30:00,English,United States of America,"Stop motion, Science Fiction, Family Film, Comedy, Adventure",6.4,169767.0,False,1989
+3184269.0,indiana jones and the last crusade,1989-05-24,,0 days 02:07:00,"Greek, German, English",United States of America,"Costume Adventure, Action, Adventure Comedy, Adventure",8.2,826049.0,True,1989
+51888.0,indiana jones and the last crusade,1989-05-24,474171806.0,0 days 02:07:00,,,Adventure,8.2,826049.0,True,1989
+490623.0,kiki's delivery service,1989-07-29,,0 days 01:43:00,Japanese,Japan,,7.8,172601.0,False,1989
+695227.0,lethal weapon 2,1989-07-07,227853986.0,0 days 01:53:00,"Afrikaans, English",United States of America,"Thriller, Crime Fiction, Buddy film, Buddy cop, Action/Adventure, Comedy, Action Thrillers, Action",7.3,192865.0,False,1989
+1125221.0,national lampoon's christmas vacation,1989-12-01,71319546.0,0 days 01:37:00,English,United States of America,"Christmas movie, Family Film, Comedy, Holiday Film, Slapstick",7.5,225545.0,False,1989
+45568.0,the abyss,1989-08-09,90000098.0,0 days 02:25:00,English,United States of America,"Thriller, Science Fiction, Drama",7.5,198360.0,False,1989
+32840140.0,the abyss,1989-01-01,,0 days 00:38:00,,Denmark,Short Film,7.5,198360.0,False,1989
+301574.0,the little mermaid,1989-11-17,211343479.0,0 days 01:22:00,"French, English",United States of America,"Costume drama, Animation, Musical, Fantasy, Romance Film, Family Film",7.6,297082.0,False,1989
+10721471.0,the little mermaid,1989-01-01,,0 days 01:24:00,Czech,Czechoslovakia,"Drama, Family Film, Fantasy, Romance Film",7.6,297082.0,False,1989
+19820692.0,the little mermaid,1989-01-01,,0 days 00:29:00,Russian,Soviet Union,"Short Film, Family Film, Animation",7.6,297082.0,False,1989
+5586296.0,the little mermaid,1989-01-01,,0 days 00:49:00,English,"United States of America, Japan","Japanese Movies, Fantasy, Adventure, Animation",7.6,297082.0,False,1989
+33270.0,when harry met sally...,1989-07-12,92823546.0,0 days 01:29:00,English,United States of America,"Romantic comedy, Romance Film, Drama, Comedy",7.7,249529.0,False,1989
+129602.0,awakenings,1990-12-12,52096475.0,0 days 02:00:00,English,United States of America,"Drama, Medical fiction, Docudrama",7.8,163415.0,False,1990
+213275.0,back to the future part iii,1990-05-25,244527583.0,0 days 01:58:00,English,United States of America,"Science Fiction, Adventure, Western, Comedy, Family Film, Hybrid Western",7.4,492289.0,False,1990
+129585.0,dances with wolves,1990-10-19,424208848.0,0 days 03:44:00,"Sioux language, Pawnee, English","United States of America, United Kingdom","Adventure, Epic Western, Costume drama, Indian Western, Film adaptation, Epic, Action/Adventure, Revisionist Western, Western, Drama, Period piece, War film",8.0,297055.0,False,1990
+433824.0,die hard 2,1990-07-02,240031094.0,0 days 02:00:00,"English, Spanish",United States of America,"Thriller, Crime Fiction, Action Thrillers, Action/Adventure, Action, Airplanes and airports",7.1,389642.0,False,1990
+302970.0,edward scissorhands,1990-12-06,86024005.0,0 days 01:29:00,English,United States of America,"Comedy-drama, Fantasy, Comedy, Drama, Romance Film, Fantasy Comedy, Romantic fantasy, Teen",7.9,538608.0,True,1990
+129619.0,ghost,1990-07-13,505702588.0,0 days 02:08:00,English,United States of America,"Thriller, Supernatural, Mystery, Drama, Comedy, Romantic drama, Romance Film, Fantasy",7.1,242557.0,False,1990
+64394.0,goodfellas,1990-09-12,46836394.0,0 days 02:26:00,"Italian, English",United States of America,"Thriller, Crime Fiction, Gangster Film, Crime Drama, Drama, Film adaptation, Biographical film",8.7,1294754.0,True,1990
+216072.0,home alone,1990-11-10,476684675.0,0 days 01:40:00,English,United States of America,,7.7,671293.0,True,1990
+997939.0,kindergarten cop,1990-12-21,201957688.0,0 days 02:03:00,"English, Spanish",United States of America,"Thriller, Indie, Comedy Thriller, Action/Adventure, Comedy, Family Film, Action",6.2,165907.0,False,1990
+7074043.0,misery,1990-11-30,61276872.0,0 days 01:44:00,English,United States of America,"Thriller, Black comedy, Psychological thriller, Suspense, Film adaptation",7.8,244468.0,False,1990
+620034.0,predator 2,1990-11-19,57120318.0,0 days 01:33:00,English,United States of America,"Thriller, Science Fiction, Horror, Creature Film, Alien Film, Action",6.3,188297.0,False,1990
+156745.0,pretty woman,1990-03-23,463407268.0,0 days 02:05:00,"Japanese, Italian, English",United States of America,"Romantic comedy, Romance Film, Comedy",7.1,376154.0,False,1990
+129644.0,the godfather part iii,1990-12-20,136766062.0,0 days 02:49:00,"Italian, German, English",United States of America,"Crime Fiction, Thriller, Gangster Film, Crime Drama, Family Drama, Ensemble Film, Mystery, Period piece, Drama, Film adaptation",7.6,432792.0,True,1990
+3557540.0,the hunt for red october,1990-03-02,200512643.0,0 days 02:15:00,"Russian, English",United States of America,"Thriller, Action Thrillers, Action/Adventure, Drama, Political thriller, Action",7.5,219564.0,False,1990
+433414.0,tremors,1990-01-19,48572000.0,0 days 01:36:00,English,United States of America,"Action/Adventure, Science Fiction, Horror, Adventure, Creature Film, Cult, Horror Comedy, Monster, Action, Comedy",7.2,155631.0,False,1990
+320401.0,barton fink,1991-01-01,6153939.0,0 days 01:57:00,English,"United States of America, United Kingdom","Thriller, Indie, Comedy-drama, Mystery, Period piece, Drama, Comedy, Black comedy",7.6,130904.0,False,1991
+155997.0,boyz n the hood,1991-07-02,57504069.0,0 days 01:47:00,English,United States of America,"Crime Fiction, Drama, Coming of age, Teen",7.8,159239.0,False,1991
+443972.0,hook,1991-12-13,300854823.0,0 days 02:22:00,English,United States of America,,6.8,278565.0,False,1991
+1048388.0,hot shots!,1991-07-31,181096164.0,0 days 01:23:00,English,United States of America,"Parody, Absurdism, Action/Adventure, Comedy, War film, Action, Slapstick",6.7,118996.0,False,1991
+39311.0,jfk,1991-12-20,205400000.0,0 days 03:26:00,"English, Spanish","France, United States of America","Thriller, Mystery, Biography, Drama, History",8.0,173829.0,False,1991
+483274.0,point break,1991-07-12,83531958.0,0 days 02:03:00,English,"United States of America, Japan","Crime Fiction, Heist, Japanese Movies, Action Thrillers, Action/Adventure, Thriller, Action, Sports",7.3,209290.0,False,1991
+261402.0,robin hood: prince of thieves,1991-06-14,390493908.0,0 days 02:23:00,English,United States of America,"Swashbuckler films, Adventure, Costume drama, Costume Adventure, Action/Adventure, Period piece, Drama, Romantic drama, Romance Film",6.9,212694.0,False,1991
+2485659.0,rush,1991-12-22,7241350.0,0 days 02:00:00,English,United States of America,"Crime Fiction, Crime Thriller, Action, Drama, Film adaptation",8.1,525032.0,True,1991
+34344124.0,terminator 2: judgment day,1991-07-01,519843345.0,0 days 02:34:00,"English, Spanish","United States of America, France","Thriller, Science Fiction, Doomsday film, Action/Adventure, Time travel, Action",8.6,1206949.0,True,1991
+26742350.0,the addams family,1991-11-22,191502246.0,0 days 01:42:00,English,United States of America,"Black comedy, Family Film, Fantasy, Comedy, Domestic Comedy",6.9,188035.0,False,1991
+604150.0,the doors,1991-03-01,34416893.0,0 days 02:15:00,English,United States of America,"Biography, Period piece, Musical, Drama, Biopic [feature], Biographical film, Musical Drama",7.2,100954.0,False,1991
+706878.0,the last boy scout,1991-12-13,59509925.0,0 days 01:45:00,English,United States of America,"Thriller, Crime Fiction, Buddy film, Action/Adventure, Comedy, Crime Thriller, Action",7.0,114630.0,False,1991
+924771.0,the naked gun 2½: the smell of fear,1991-06-28,86930411.0,0 days 01:21:00,English,United States of America,"Parody, Comedy",6.9,124810.0,False,1991
+30006.0,the silence of the lambs,1991-02-14,272742922.0,0 days 01:58:00,English,United States of America,"Thriller, LGBT, Horror, Psychological thriller, Crime Fiction, Suspense, Drama, Crime Thriller",8.6,1596712.0,True,1991
+106117.0,thelma & louise,1991-01-01,45360915.0,0 days 02:08:00,English,"United States of America, France","Crime Fiction, Female buddy film, Buddy film, Chase Movie, Road movie, Comedy-drama, Drama, Comedy, Outlaw, Feminist Film",7.6,178841.0,False,1991
+73170.0,aladdin,1992-11-11,504050219.0,0 days 01:30:00,English,United States of America,,8.0,479836.0,True,1992
+5587473.0,aladdin,1992-01-01,,0 days 00:49:00,English,"United States of America, Japan","Family Film, Japanese Movies, Adventure, Animation",8.0,479836.0,True,1992
+213251.0,alien³,1992-05-22,159773545.0,0 days 02:25:00,English,United States of America,"Thriller, Science Fiction, Horror, Adventure, Action/Adventure, Action",6.4,334973.0,False,1992
+3217.0,army of darkness,1992-10-09,21502796.0,0 days 01:21:00,English,United States of America,"Cult, Horror, Stop motion, Costume drama, Action/Adventure, Fantasy, Horror Comedy, Zombie Film, Black comedy, Time travel, Action, Comedy",7.4,199694.0,False,1992
+481649.0,basic instinct,1992-03-20,352927224.0,0 days 02:07:00,English,"United States of America, France","LGBT, Thriller, Mystery, Psychological thriller, Erotic thriller, Drama, Crime Thriller",7.1,225317.0,False,1992
+4728.0,batman returns,1992-06-16,266822354.0,0 days 02:06:00,English,"United States of America, United Kingdom","Crime Fiction, Thriller, Superhero movie, Master Criminal Films, Superhero, Action/Adventure, Fantasy, Action",7.1,335308.0,False,1992
+337740.0,bram stoker's dracula,1992-11-13,215862692.0,0 days 02:03:00,"Italian, French, Latin, Bulgarian, Greek, English, Japanese, Romanian",United States of America,"Thriller, Horror, Costume drama, Gothic Film, Cult, Period piece, Fantasy, Film adaptation, Drama, Romance Film, Costume Horror",7.4,248096.0,False,1992
+294998.0,home alone 2: lost in new york,1992-11-15,358994850.0,0 days 02:00:00,"French, English",United States of America,,6.9,414242.0,False,1992
+695266.0,lethal weapon 3,1992-05-15,321731527.0,0 days 01:58:00,English,United States of America,"Thriller, Crime Fiction, Buddy film, Buddy cop, Action/Adventure, Comedy, Action Thrillers, Action",6.7,181812.0,False,1992
+15385105.0,marriage story,1992-07-04,,,Korean,South Korea,"Romantic comedy, Comedy",7.9,355141.0,True,1992
+324616.0,my cousin vinny,1992-03-13,64088552.0,0 days 02:00:00,English,United States of America,"Crime Fiction, Comedy of manners, Comedy, Courtroom Comedy",7.6,146131.0,False,1992
+297111.0,reservoir dogs,1992-01-21,14661007.0,0 days 01:39:00,English,United States of America,"Thriller, Crime Fiction, Gangster Film, Indie, Mystery, Drama, Crime Thriller",8.3,1113891.0,True,1992
+133648.0,scent of a woman,1992-12-23,,0 days 02:17:00,English,United States of America,"Drama, Coming of age",8.0,339811.0,True,1992
+74864.0,the last of the mohicans,1992-01-01,,0 days 00:39:00,English,United States of America,"Action/Adventure, Silent film, Indie, Black-and-white, Short Film, Drama, War film",7.6,193362.0,False,1992
+35291873.0,the last of the mohicans,1992-01-01,,0 days 01:20:00,Romanian,Romania,"Western, Adventure",7.6,193362.0,False,1992
+1428048.0,the last of the mohicans,1992-08-26,75505856.0,0 days 01:52:00,"French, Mohawk, English",United States of America,"Costume drama, War film, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",7.6,193362.0,False,1992
+133574.0,unforgiven,1992-08-03,159157447.0,0 days 02:11:00,English,United States of America,"Western, Drama",8.2,445589.0,True,1992
+77744.0,wayne's world,1992-02-14,183097323.0,0 days 01:34:00,"English, Cantonese",United States of America,"Buddy film, Absurdism, Cult, Satire, Comedy, Music",7.0,174930.0,False,1992
+692661.0,carlito's way,1993-11-10,63848322.0,0 days 02:23:00,"English, Spanish",United States of America,"Crime Fiction, Gangster Film, Drama, Thriller, Crime Drama",7.9,236830.0,False,1993
+503573.0,dazed and confused,1993-09-10,7993039.0,0 days 01:43:00,English,United States of America,"Ensemble Film, Indie, Comedy-drama, Cult, Period piece, Drama, Comedy, Coming of age, Stoner film, Teen",7.6,204828.0,False,1993
+548669.0,demolition man,1993-10-07,159055768.0,0 days 01:55:00,English,United States of America,"Thriller, Action/Adventure, Science Fiction, Action, Crime Fiction",6.7,198781.0,False,1993
+19625929.0,falling down,1993-02-26,40903593.0,0 days 01:53:00,"Korean, English, Spanish","United States of America, France, United Kingdom","Thriller, Crime Fiction, Crime Drama, Psychological thriller, Drama, Comedy, Crime Thriller, Black comedy, Action",7.6,212808.0,False,1993
+142327.0,groundhog day,1993-02-12,70906973.0,0 days 01:41:00,"French, Italian, English",United States of America,"Romantic comedy, Drama, Comedy, Fantasy, Time travel, Fantasy Comedy, Romantic fantasy, Romance Film",8.0,701455.0,True,1993
+14683214.0,in the name of the father,1993-12-12,,0 days 02:07:00,English,"Ireland, United Kingdom","Biographical film, Drama",8.1,192216.0,False,1993
+68485.0,jurassic park,1993-06-09,914691118.0,0 days 02:07:00,"English, Spanish",United States of America,"Thriller, Natural horror films, Science Fiction, Horror, Adventure, Film adaptation, Action/Adventure, Monster, Action",8.2,1095943.0,True,1993
+348737.0,mrs. doubtfire,1993-11-24,441286195.0,0 days 02:05:00,English,United States of America,"LGBT, Domestic Comedy, Drama, Comedy, Comedy of Errors, Family Film",7.1,299189.0,False,1993
+468293.0,philadelphia,1993-01-01,206678440.0,0 days 02:05:00,English,United States of America,"LGBT, Tragedy, Gay, Gay Interest, Drama, Medical fiction, Gay Themed, Courtroom Drama",7.7,263099.0,False,1993
+65834.0,schindler's list,1993-11-30,321306305.0,0 days 03:06:00,"French, Polish, Hebrew, German, English",United States of America,"Tragedy, Biography, History, War film, Biopic [feature], Black-and-white, Period piece, Drama, Film adaptation, Biographical film",9.0,1490401.0,True,1993
+226198.0,sleepless in seattle,1993-06-25,227799884.0,0 days 01:45:00,English,United States of America,"Romantic comedy, Comedy-drama, Romance Film, Drama, Comedy",6.8,195001.0,False,1993
+403227.0,the nightmare before christmas,1993-10-09,75082668.0,0 days 01:15:00,English,United States of America,,7.9,388247.0,True,1993
+525113.0,tombstone,1993-12-25,56505065.0,0 days 02:10:00,"Latin, English",United States of America,"Crime Fiction, Costume drama, Action/Adventure, Western, Drama, History, Romance Film, Action",7.8,172707.0,False,1993
+441315.0,true romance,1993-09-10,12281551.0,0 days 02:00:00,"Italian, English",United States of America,"Thriller, Crime Fiction, Indie, Action/Adventure, Drama, Crime Thriller, Romance Film, Action",7.9,247788.0,False,1993
+656608.0,what's eating gilbert grape,1993-01-01,10032765.0,0 days 01:57:00,English,United States of America,"Indie, Slice of life story, Americana, Coming of age, Comedy, Film adaptation, Drama, Romantic drama, Romance Film",7.7,258728.0,False,1993
+336808.0,ace ventura: pet detective,1994-02-04,107217396.0,0 days 01:25:00,English,United States of America,"Thriller, Detective, Mystery, Gross-out film, Comedy, Gross out, Action, Slapstick",6.9,333516.0,False,1994
+200694.0,clerks.,1994-01-01,3151130.0,,English,United States of America,"Buddy film, Indie, Black-and-white, Cult, Drama, Comedy",7.7,235139.0,False,1994
+12307863.0,dumb and dumber,1994-01-01,,,,,,7.3,422003.0,False,1994
+41528.0,forrest gump,1994-06-23,677387716.0,0 days 02:16:00,English,United States of America,"Coming of age, Comedy film, Drama, War film, Romantic drama, Romance Film",8.8,2326220.0,True,1994
+654530.0,legends of the fall,1994-12-16,66502573.0,0 days 02:10:00,English,United States of America,"Family Drama, War film, Western, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",7.5,187925.0,False,1994
+40672.0,léon: the professional,1994-09-14,45284974.0,0 days 01:40:00,English,France,"Thriller, Crime Fiction, Buddy film, Indie, World cinema, Action/Adventure, Coming of age, Drama, Crime Thriller, Action",8.5,1278422.0,True,1994
+21180.0,natural born killers,1994-08-26,61615296.0,0 days 02:02:00,"Japanese, English, Navajo",United States of America,"Thriller, Crime Fiction, Crime Drama, Road movie, Drama, Media Satire, Romance Film",7.2,256794.0,False,1994
+54173.0,pulp fiction,1994-01-01,213928762.0,0 days 02:48:00,"French, English, Spanish",United States of America,"Crime Fiction, Thriller, Crime Comedy, Indie, Gangster Film, Ensemble Film, Drama, Crime Thriller, Black comedy",8.9,2282173.0,True,1994
+22091537.0,speed,1994-01-01,,,English,United States of America,Auto racing,7.3,401395.0,False,1994
+607022.0,speed,1994-01-01,,0 days 00:30:00,English,United States of America,"Short Film, Sports, Documentary",7.3,401395.0,False,1994
+99123.0,speed,1994-06-10,350448145.0,0 days 01:55:00,"English, American English",United States of America,"Thriller, Action/Adventure, Action, Crime Fiction, Adventure",7.3,401395.0,False,1994
+28327.0,stargate,1994-10-28,196567262.0,0 days 02:01:00,"Norwegian, English","United States of America, France","Thriller, Science Fiction, Action, Sci-Fi Adventure, Adventure",7.0,209709.0,False,1994
+406339.0,the crow,1994-05-11,144693129.0,0 days 01:41:00,English,United States of America,"Thriller, Indie, Superhero movie, Action/Adventure, Fantasy, Action",7.5,217414.0,False,1994
+726161.0,the jungle book,1994-12-23,43229904.0,0 days 01:52:00,English,United States of America,"Family Film, Adventure",7.6,203093.0,False,1994
+1485962.0,the mask,1994-07-29,351583407.0,0 days 01:41:00,English,United States of America,"Crime Fiction, Romance Film, Action, Fantasy, Comedy",7.0,435607.0,False,1994
+7618765.0,the mask,1994-01-01,,0 days 01:23:00,English,Canada,Horror,7.0,435607.0,False,1994
+23791857.0,the mask,1994-01-01,,0 days 01:30:00,Italian,Italy,Romance Film,7.0,435607.0,False,1994
+30625.0,the shawshank redemption,1994-09-10,28341469.0,0 days 02:22:00,English,United States of America,"Crime Fiction, Buddy film, Prison film, Drama, Escape Film, Prison",9.3,2972813.0,True,1994
+68374.0,true lies,1994-07-15,378882411.0,0 days 02:21:00,"French, Arabic, German, English",United States of America,"Thriller, Action Comedy, Action Thrillers, Glamorized Spy Film, Action, Spy",7.3,287417.0,False,1994
+537416.0,ace ventura: when nature calls,1995-11-10,212385533.0,0 days 01:40:00,English,United States of America,"Detective fiction, Adventure, Detective, Mystery, Gross-out film, Comedy, Gross out, Action, Slapstick",6.4,238399.0,False,1995
+142417.0,apollo 13,1995-06-22,355237933.0,0 days 02:20:00,English,United States of America,"History, Drama, Adventure",7.7,321863.0,True,1995
+4730.0,batman forever,1995-06-09,336529844.0,0 days 02:02:00,English,"United States of America, United Kingdom","Thriller, Crime Fiction, Buddy film, Superhero movie, Master Criminal Films, Superhero, Action/Adventure, Fantasy, Action",5.4,271201.0,False,1995
+805053.0,before sunrise,1995-01-27,5535405.0,0 days 01:40:00,"French, German, English","Switzerland, United States of America, Austria","Romantic comedy, Romantic drama, Romance Film, Comedy-drama, Drama",8.1,350268.0,True,1995
+4560.0,braveheart,1995-05-18,211409945.0,0 days 02:55:00,"French, Latin, English, Gaelic",United States of America,"Biography, Adventure, History, War film, Action/Adventure, Period piece, Drama, Costume drama, Action",8.3,1112516.0,True,1995
+695780.0,casino,1995-11-14,116112375.0,0 days 02:51:00,"French, Persian, English","United States of America, France","Crime Fiction, Biography, Gangster Film, Period piece, Drama, Film adaptation",8.2,579291.0,True,1995
+105872.0,clueless,1995-07-19,56631572.0,0 days 01:37:00,"English, Spanish",United States of America,"Romantic comedy, LGBT, Comedy of manners, Coming of age, Comedy, Romance Film, Teen",6.9,256050.0,False,1995
+357473.0,die hard: with a vengeance,1995-05-19,366101666.0,0 days 02:11:00,"English, German, Romanian",United States of America,"Crime Fiction, Thriller, Action, Action/Adventure",7.6,414754.0,True,1995
+268833.0,goldeneye,1995-11-13,356400000.0,0 days 02:10:00,"Russian, English, Spanish","United States of America, United Kingdom","Thriller, Action Thrillers, Adventure, Action/Adventure, Glamorized Spy Film, Action, Spy",7.2,274808.0,False,1995
+43566.0,heat,1995-12-15,187436818.0,0 days 02:50:00,"English, Spanish",United States of America,"Thriller, Crime Fiction, Heist, Psychological thriller, Action/Adventure, Drama, Crime Thriller, Action",8.3,738636.0,True,1995
+12555863.0,heat,1995-01-01,2793214.0,0 days 01:32:00,English,United States of America,"Thriller, Crime Fiction, Gangster Film, Action/Adventure, Drama, Crime Thriller, Action",8.3,738636.0,True,1995
+3700174.0,jumanji,1995-12-15,262797249.0,0 days 01:44:00,"French, English","United States of America, Japan",,7.1,387992.0,False,1995
+399433.0,pocahontas,1995-06-15,346079773.0,0 days 01:31:00,English,United States of America,,6.7,207523.0,False,1995
+167857.0,the usual suspects,1995-01-01,23272306.0,0 days 01:48:00,"French, Hungarian language, English, Spanish","United States of America, Germany","Thriller, Ensemble Film, Mystery, Crime Fiction, Crime Thriller, Neo-noir",8.5,1169334.0,True,1995
+53085.0,toy story,1995-11-19,361958736.0,0 days 01:17:00,English,United States of America,,8.3,1099057.0,True,1995
+637256.0,waterworld,1995-07-28,264218220.0,0 days 02:15:00,English,United States of America,"Thriller, Science Fiction, Adventure, Doomsday film, Apocalyptic and post-apocalyptic fiction, Action",6.3,214659.0,False,1995
+3600824.0,a time to kill,1996-07-24,152266007.0,0 days 02:29:00,English,United States of America,"Thriller, Crime Fiction, Drama",7.5,186734.0,False,1996
+19161766.0,a time to kill,1996-01-01,,0 days 01:05:00,English,United Kingdom,"Crime Fiction, Drama",7.5,186734.0,False,1996
+24759927.0,don't look up,1996-03-02,,,Japanese,,Horror,7.2,624166.0,False,1996
+142430.0,fargo,1996-03-08,60611975.0,0 days 01:37:00,English,"United States of America, United Kingdom","Crime Fiction, Thriller, Indie, Drama, Comedy, Black comedy, Neo-noir",8.1,741274.0,True,1996
+447299.0,from dusk till dawn,1996-01-19,25836616.0,0 days 01:47:00,"English, Spanish",United States of America,"Crime Fiction, Cult, Horror, Supernatural, Action/Adventure, Satire, Thriller, Horror Comedy, Crime Thriller, Action, Comedy",7.2,348962.0,False,1996
+400797.0,happy gilmore,1996-02-16,41205099.0,0 days 01:32:00,English,United States of America,"Sports, Comedy, Slapstick",7.0,257097.0,False,1996
+142435.0,jerry maguire,1996-12-13,273552592.0,0 days 02:18:00,"English, American Sign",United States of America,"Romantic comedy, Slice of life story, Comedy-drama, Sports, Drama, Comedy, Romantic drama, Romance Film",7.3,293261.0,False,1996
+3565461.0,mars attacks!,1996-12-12,101370000.0,0 days 01:46:00,"French, English",United States of America,"Thriller, Parody, Science Fiction, Ensemble Film, Alien Film, Fantasy, Comedy, Action",6.4,249122.0,False,1996
+724258.0,mission: impossible,1996-05-22,457696359.0,0 days 01:50:00,"French, Czech, English",United States of America,"Thriller, Action/Adventure, Action, Spy",7.2,480501.0,False,1996
+1055466.0,primal fear,1996-04-03,102616183.0,0 days 02:09:00,English,United States of America,"Thriller, Mystery, Crime Fiction, Drama",7.7,253840.0,False,1996
+202652.0,romeo + juliet,1996-11-01,147554999.0,0 days 02:10:00,English,United States of America,"Crime Fiction, Thriller, Romance Film, Drama",6.7,248887.0,False,1996
+725103.0,sleepers,1996-10-18,165615285.0,0 days 02:27:00,English,United States of America,"Crime Fiction, Thriller, Period piece, Coming of age, Drama, Courtroom Drama",7.5,242076.0,False,1996
+265033.0,space jam,1996-11-10,,0 days 01:23:00,English,United States of America,,6.5,218845.0,False,1996
+101954.0,the english patient,1996-11-06,231976425.0,0 days 02:35:00,"Arabic, Italian, German, English","United States of America, United Kingdom","War film, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",7.4,206409.0,False,1996
+105434.0,trainspotting,1996-02-23,72000000.0,0 days 01:34:00,English,United Kingdom,"Crime Fiction, Buddy film, Indie, Comedy-drama, Addiction Drama, Cult, Drama, Comedy, Film adaptation, Black comedy",8.1,739518.0,True,1996
+8930957.0,twister,1996-01-01,,0 days 01:33:00,English,United States of America,"Black comedy, Film adaptation, Drama, Comedy, Indie",6.5,239559.0,False,1996
+303933.0,twister,1996-05-10,494471524.0,0 days 01:53:00,English,United States of America,"Action/Adventure, Disaster",6.5,239559.0,False,1996
+11081144.0,12 angry men,1997-08-17,,0 days 01:57:00,English,United States of America,Drama,9.0,897199.0,True,1997
+1995696.0,donnie brasco,1997-02-28,,0 days 02:06:00,"Japanese, Italian, English",United States of America,"Crime Fiction, Thriller, Biography, Gangster Film, Crime Drama, Period piece, Drama",7.7,339315.0,True,1997
+33828691.0,downfall,1997-09-13,,0 days 01:45:00,,South Korea,Drama,8.2,382516.0,True,1997
+648921.0,face/off,1997-06-27,245676146.0,0 days 02:20:00,"Latin, English",United States of America,"Thriller, Crime Fiction, Tragedy, Chase Movie, Science Fiction, Action Thrillers, Action",7.3,409216.0,False,1997
+42886.0,gattaca,1997-09-07,12532777.0,0 days 01:48:00,"Esperanto, English",United States of America,"Thriller, Science Fiction, Future noir, Drama, Film noir, Romance Film, Dystopia",7.7,330614.0,True,1997
+142456.0,good will hunting,1997-12-02,225933435.0,0 days 02:06:00,English,United States of America,"Drama, Romantic drama, Romance Film, Coming of age, Indie",8.3,1106439.0,True,1997
+394792.0,jackie brown,1997-12-25,39673162.0,0 days 02:31:00,English,United States of America,"Thriller, Crime Fiction, Indie, Action/Adventure, Blaxploitation, Drama, Comedy, Crime Thriller, Action",7.5,383636.0,True,1997
+142457.0,l.a. confidential,1997-05-14,126216940.0,0 days 02:16:00,English,United States of America,"Thriller, Mystery, Crime Fiction, Drama",8.2,631904.0,True,1997
+657446.0,liar liar,1997-03-21,302710615.0,0 days 01:26:00,English,United States of America,"Slapstick, Fantasy Comedy, Fantasy, Comedy, Domestic Comedy",6.9,341538.0,False,1997
+31156551.0,life is beautiful,1997-01-01,,,Malayalam,India,Drama,8.6,761828.0,True,1997
+142463.0,life is beautiful,1997-12-20,229163264.0,0 days 01:54:00,"Italian, German, English",Italy,"Romance Film, Drama, Comedy film, War film",8.6,761828.0,True,1997
+15298947.0,men in black,1997-01-01,,,English,United States of America,"Short Film, Black-and-white",7.3,627819.0,False,1997
+167599.0,men in black,1997-07-01,589390539.0,0 days 01:37:00,"English, Spanish",United States of America,"Action/Adventure, Science Fiction, Action, Buddy film, Comedy",7.3,627819.0,False,1997
+24653.0,princess mononoke,1997-07-12,,0 days 02:14:00,Japanese,Japan,"Fantasy Adventure, Anime, Fantasy, Adventure, Japanese Movies",8.3,448160.0,True,1997
+143809.0,the fifth element,1997-05-07,263920180.0,0 days 02:07:00,"Swedish, English, German","France, United States of America","Thriller, Science Fiction, Action, Fantasy, Adventure",7.6,518462.0,True,1997
+666923.0,the lost world: jurassic park,1997-05-19,618638999.0,0 days 02:09:00,"English, Spanish",United States of America,"Thriller, Science Fiction, Action, Adventure, Film adaptation",6.6,452473.0,False,1997
+52371.0,titanic,1997-11-01,2185372302.0,0 days 03:14:00,"Italian, English, French, Swedish, Russian, German",United States of America,"Tragedy, Costume drama, Historical fiction, Action/Adventure, Period piece, Drama, Disaster, Romantic drama, Romance Film",7.9,1315575.0,True,1997
+460442.0,a bug's life,1998-11-14,363398565.0,0 days 01:35:00,English,United States of America,,7.2,321681.0,False,1998
+171562.0,american history x,1998-10-30,23875127.0,0 days 01:58:00,English,United States of America,"Crime Fiction, Indie, Crime Drama, Drama, Crime Thriller, Coming of age, Action",8.5,1212052.0,True,1998
+471544.0,blade,1998-08-19,131183530.0,0 days 01:36:00,"Russian, English",United States of America,"Thriller, Horror, Superhero movie, Action/Adventure, Fantasy, Archives and records, Action",7.1,311193.0,False,1998
+684771.0,enemy of the state,1998-11-16,,0 days 02:20:00,English,United States of America,"Thriller, Action Thrillers, Chase Movie, Action/Adventure, Drama, Suspense, Political thriller, Crime Thriller, Action",7.3,263732.0,False,1998
+5842075.0,fear and loathing in las vegas,1998-05-15,10680275.0,0 days 01:59:00,English,United States of America,"Buddy film, Adventure, Absurdism, Road movie, Experimental film, Cult, Drama, Comedy, Black comedy, Avant-garde",7.5,306836.0,True,1998
+210151.0,"lock, stock and two smoking barrels",1998-08-28,25297569.0,0 days 01:45:00,English,United Kingdom,"Thriller, Caper story, Crime Fiction, Buddy film, Crime Comedy",8.1,627020.0,True,1998
+716738.0,meet joe black,1998-11-13,142940100.0,0 days 03:01:00,English,United States of America,"Heaven-Can-Wait Fantasies, Mystery, Fantasy, Drama, Romantic drama, Romance Film, Romantic fantasy",7.2,273310.0,False,1998
+25652572.0,mulan,1998-01-01,,0 days 01:54:00,Standard Mandarin,China,"Adventure, World cinema, Action/Adventure, Drama, Romance Film, Chinese Movies",7.7,325394.0,True,1998
+55720.0,mulan,1998-06-05,304320254.0,0 days 01:28:00,"Standard Mandarin, English",United States of America,,7.7,325394.0,True,1998
+28728982.0,mulan,1998-01-01,,,,,,7.7,325394.0,True,1998
+4681397.0,rear window,1998-11-22,,0 days 01:29:00,English,United States of America,"Thriller, Television movie, Psychological thriller, Mystery, Drama, Crime Thriller",8.5,536141.0,True,1998
+489800.0,rush hour,1998-09-18,244386864.0,0 days 01:33:00,"Japanese, English, Cantonese",United States of America,"Thriller, Crime Fiction, Action, Comedy",7.0,303930.0,False,1998
+28362384.0,rush hour,1998-01-01,,0 days 00:06:00,English,United Kingdom,Short Film,7.0,303930.0,False,1998
+28269.0,saving private ryan,1998-07-24,481840909.0,0 days 02:49:00,"French, Czech, German, English",United States of America,"Ensemble Film, History, Drama, War film, Action, Combat Films",8.6,1537045.0,True,1998
+633411.0,the avengers,1998-08-14,48585416.0,0 days 01:29:00,English,United States of America,"Thriller, Adventure, Action/Adventure, Comedy, Action, Spy",8.0,1485732.0,True,1998
+29782.0,the big lebowski,1998-02-15,46189568.0,0 days 01:57:00,"Spanish, English, German, Hebrew","United States of America, United Kingdom","Crime Fiction, Buddy film, Indie, Screwball comedy, Cult, Comedy, Crime Comedy, Stoner film",8.1,877263.0,True,1998
+232711.0,the truman show,1998-06-01,264118201.0,0 days 01:43:00,English,United States of America,"Parody, Media Satire, Science Fiction, Existentialism, Comedy-drama, Fantasy, Comedy, Drama",8.2,1242250.0,True,1998
+277149.0,there's something about mary,1998-07-15,369884651.0,0 days 01:59:00,English,United States of America,"Romantic comedy, Gross-out film, Comedy, Gross out, Romance Film, Slapstick",7.1,334938.0,False,1998
+398934.0,10 things i hate about you,1999-03-31,53478166.0,0 days 01:37:00,"French, English",United States of America,"Romantic comedy, Romance Film, Coming of age, Comedy, Teen",7.3,404278.0,False,1999
+44122.0,american beauty,1999-09-08,356296601.0,0 days 01:40:00,English,United States of America,"LGBT, Existentialism, Satire, Drama, Comedy, Romantic drama, Black comedy, Romance Film",8.3,1232068.0,True,1999
+2580403.0,american pie,1999-07-09,235483004.0,0 days 01:36:00,English,United States of America,"Romantic comedy, Sex comedy, Coming of age, Comedy, Romance Film, Teen",7.0,444238.0,False,1999
+349941.0,being john malkovich,1999-09-02,32382381.0,0 days 01:53:00,English,United States of America,"Workplace Comedy, Fantasy, Drama, Comedy, Black comedy, Fantasy Comedy",7.7,358739.0,True,1999
+9979.0,eyes wide shut,1999-07-13,162091208.0,0 days 02:39:00,English,"United States of America, United Kingdom","Thriller, Erotic Drama, Erotica, Mystery, Surrealism, Psychological thriller, Erotic thriller, Marriage Drama, Drama, Romance Film",7.5,388089.0,True,1999
+1009041.0,fight club,1999-09-10,100900000.0,0 days 02:12:00,English,"United States of America, Germany","Thriller, Action/Adventure, Existentialism, Psychological thriller, Cult, Satire, Drama, Black comedy, Action, Airplanes and airports",8.8,2402927.0,True,1999
+231829.0,magnolia,1999-12-08,48451803.0,0 days 03:09:00,"French, English, German",United States of America,Drama,8.0,334022.0,True,1999
+204019.0,notting hill,1999-05-13,363889700.0,0 days 02:04:00,"English, Spanish","United States of America, United Kingdom","Romantic comedy, Romance Film, Comedy",7.2,354493.0,False,1999
+55601.0,sleepy hollow,1999-11-17,206071502.0,0 days 01:44:00,"English, Latin","United States of America, Germany","Thriller, Period Horror, Detective fiction, Horror, Detective, Supernatural, Costume drama, Gothic Film, Mystery, Fantasy, Crime Fiction, Steampunk, Costume Horror",7.3,394017.0,False,1999
+50793.0,star wars episode i: the phantom menace,1999-05-19,1027044677.0,0 days 02:16:00,English,United States of America,"Science Fiction, Action, Fantasy, Adventure, Family Film",6.5,877307.0,False,1999
+18841979.0,the blair witch project,1999-01-25,248639099.0,0 days 01:45:00,English,United States of America,"Horror, Indie, Supernatural, Cult, Mystery, Archives and records, Point of view shot, Documentary",6.5,296559.0,False,1999
+946164.0,the green mile,1999-12-06,290701374.0,0 days 03:09:00,"French, English",United States of America,"Crime Fiction, Mystery, Period piece, Fantasy, Film adaptation, Drama, Prison",8.6,1450145.0,True,1999
+30007.0,the matrix,1999-03-31,463517383.0,0 days 02:15:00,English,"United States of America, Australia","Thriller, Science Fiction, Adventure, Doomsday film, Existentialism, Action/Adventure, Martial Arts Film, Action",8.7,2109922.0,True,1999
+30582.0,the sixth sense,1999-08-06,672806292.0,0 days 01:46:00,English,United States of America,"Thriller, Horror, Supernatural, Childhood Drama, Psychological thriller, Drama, Suspense",8.2,1079571.0,True,1999
+335298.0,toy story 2,1999-11-19,485015179.0,0 days 01:22:00,English,United States of America,,7.9,634452.0,True,1999
+431562.0,almost famous,2000-09-08,47383689.0,0 days 02:32:00,English,United States of America,"Road movie, Comedy-drama, Period piece, Musical, Coming of age, Comedy, Drama, Musical Drama",7.9,299430.0,False,2000
+4846576.0,american psycho,2000-01-21,34266564.0,0 days 01:42:00,"Spanish, English, Cantonese",United States of America,"Thriller, Crime Thriller, Horror, Psychological thriller, Period piece, Satire, Drama, Comedy, Film adaptation, Crime Fiction, Black comedy, Slasher",7.6,753601.0,True,2000
+44501.0,cast away,2000-12-07,429632142.0,0 days 02:23:00,"English, Russian",United States of America,"Action/Adventure, Drama, Adventure, Airplanes and airports",7.8,653694.0,True,2000
+219712.0,final destination,2000-03-16,112880294.0,0 days 01:35:00,"French, English","United States of America, Canada","Thriller, Horror, Supernatural, Cult, Slasher, Teen",6.7,290227.0,False,2000
+3616797.0,gladiator,2000-05-01,457640427.0,0 days 02:35:00,English,"United States of America, United Kingdom","Tragedy, Adventure, Costume drama, Epic, Drama, War film, Action, Movies About Gladiators, Historical drama",8.5,1696447.0,True,2000
+6804043.0,gladiator,2000-01-01,9223441.0,0 days 01:41:00,American English,United States of America,"Crime Fiction, Sports, Drama, Boxing, Teen",8.5,1696447.0,True,2000
+24055607.0,meet the parents,2000-01-01,,0 days 01:16:00,,United States of America,Comedy,7.0,362731.0,False,2000
+695023.0,meet the parents,2000-10-06,330444045.0,0 days 01:47:00,"French, Spanish, Hebrew, English, Thai",United States of America,"Romantic comedy, Romance Film, Screwball comedy, Comedy",7.0,362731.0,False,2000
+2750041.0,memento,2000-09-05,39723096.0,0 days 01:53:00,English,United States of America,"Thriller, Crime Fiction, Indie, Existentialism, Psychological thriller, Mystery, Drama, Suspense, Crime Thriller",8.4,1353261.0,True,2000
+451866.0,mission: impossible ii,2000-05-24,546388200.0,0 days 02:01:00,English,"United States of America, Australia, Germany","Thriller, Action Thrillers, Action/Adventure, Glamorized Spy Film, Action, Spy",6.1,385370.0,False,2000
+22216.0,"o brother, where art thou?",2000-05-13,71868327.0,0 days 01:47:00,English,"France, United States of America, United Kingdom","Parody, Crime Fiction, Buddy film, Adventure, Crime Comedy, Road movie, Americana, Action/Adventure, Comedy, Music, Action",7.7,337251.0,True,2000
+23830211.0,requiem for a dream,2000-10-27,7390108.0,0 days 01:41:00,English,United States of America,"Tragedy, Drama, Indie, Addiction Drama",8.3,921652.0,True,2000
+277667.0,scary movie,2000-07-07,278019771.0,0 days 01:28:00,English,United States of America,"Parody, Gross-out film, Comedy, Gross out, Slasher, Teen",6.3,296794.0,False,2000
+707808.0,snatch,2000-08-23,83557872.0,0 days 01:43:00,"English, Russian","United States of America, United Kingdom","Crime Fiction, Thriller, Gangster Film, Heist, Action/Adventure, Comedy, Crime Thriller, Black comedy, Action",8.2,930071.0,True,2000
+2216381.0,the intern,2000-01-21,,0 days 01:30:00,English,United States of America,"Romantic comedy, Romance Film, Comedy, Indie",7.1,285722.0,False,2000
+32252.0,unbreakable,2000-01-01,248118121.0,0 days 01:47:00,English,United States of America,"Thriller, Science Fiction, Superhero movie, Supernatural, Psychological thriller, Superhero, Action/Adventure, Suspense",7.3,451331.0,False,2000
+19479460.0,x-men,2000-07-13,296339527.0,0 days 01:44:00,English,United States of America,"Thriller, Science Fiction, Superhero movie, Superhero, Action/Adventure, Fantasy, Action",7.3,664965.0,False,2000
+3569822.0,a beautiful mind,2001-12-13,313542341.0,0 days 02:20:00,English,United States of America,"Biography, Psychological thriller, Period piece, Marriage Drama, Drama, Biopic [feature], Romantic drama, Romance Film, Biographical film",8.2,1006960.0,True,2001
+44302.0,amélie,2001-04-25,173921954.0,0 days 02:00:00,"French, Russian","France, Germany","Romantic comedy, World cinema, Fantasy, Comedy, Drama, Romantic drama, Romance Film",8.3,808145.0,True,2001
+57820.0,donnie darko,2001-01-19,4116307.0,0 days 01:52:00,English,United States of America,"Thriller, Science Fiction, Indie, Doomsday film, Tragedy, Comedy-drama, Psychological thriller, Mystery, Period piece, Satire, Fantasy, Drama, Coming of age, Time travel, Teen",8.0,868570.0,True,2001
+473273.0,jurassic park iii,2001-07-18,368780809.0,0 days 01:30:00,English,United States of America,"Thriller, Natural horror films, Science Fiction, Horror, Adventure, Action/Adventure, Monster, Action",5.9,347278.0,False,2001
+197558.0,"monsters, inc.",2001-10-28,526366597.0,0 days 01:35:00,English,United States of America,,8.1,1007071.0,True,2001
+20786.0,mulholland drive,2001-05-16,20112339.0,0 days 02:27:00,"English, Spanish","France, United States of America","LGBT, Crime Fiction, Indie, Erotic thriller, Surrealism, Psychological thriller, Mystery, Thriller, Drama, Crime Thriller, Neo-noir",7.9,393122.0,True,2001
+2251266.0,ocean's eleven,2001-12-05,450717150.0,0 days 01:57:00,"Italian, English, Cantonese",United States of America,"Crime Fiction, Heist, Remake, Action/Adventure, Thriller, Comedy, Action",7.7,634267.0,True,2001
+99304.0,pearl harbor,2001-05-21,449220945.0,0 days 03:04:00,"French, Japanese, English",United States of America,"Action/Adventure, Period piece, Drama, War film, Romantic drama, Romance Film, Action, Airplanes and airports",6.2,357530.0,False,2001
+18717177.0,shrek,2001-04-22,484409218.0,0 days 01:32:00,English,"United States of America, Canada",,7.9,756157.0,True,2001
+70091.0,spirited away,2001-07-20,,0 days 02:03:00,Japanese,Japan,"Japanese Movies, Adventure, World cinema, Animation, Fantasy, Family Film",8.6,883181.0,True,2001
+407293.0,the fast and the furious,2001-01-01,,0 days 01:13:00,English,United States of America,"Crime Fiction, Detective, Action/Adventure, Mystery, Drama, Action",6.8,429714.0,False,2001
+248222.0,the fast and the furious,2001-06-18,207283925.0,0 days 01:47:00,English,"United States of America, Germany","Crime Fiction, Thriller, Sports, Action/Adventure, Action, Auto racing",6.8,429714.0,False,2001
+173941.0,the lord of the rings: the fellowship of the ring,2001-12-10,871530324.0,0 days 02:58:00,English,"United States of America, New Zealand","Fantasy Adventure, Adventure, Epic, Fantasy, Film adaptation, Drama, Action, Sword and sorcery films",8.9,2064367.0,True,2001
+957359.0,the mummy returns,2001-04-29,433013274.0,0 days 02:05:00,"Arabic, English",United States of America,"Thriller, Monster movie, Horror, Adventure, Supernatural, Costume drama, Costume Adventure, Creature Film, Action/Adventure, Fantasy, Adventure Comedy, Action",6.4,352973.0,False,2001
+1267713.0,the others,2001-08-02,218947037.0,0 days 01:44:00,"French, English","United States of America, Spain, Italy, France","Thriller, Horror, Supernatural, Mystery, Period piece, Drama, Suspense",7.6,403264.0,True,2001
+22571163.0,the others,2001-01-01,,0 days 02:07:00,,France,Drama,7.6,403264.0,True,2001
+171623.0,training day,2001-09-02,104876233.0,0 days 02:02:00,"Russian, English, Standard Mandarin, Spanish","United States of America, Australia","Crime Fiction, Crime Thriller, Drama, Adventure, Thriller",7.8,486018.0,True,2001
+145892.0,28 days later,2002-11-01,82719885.0,0 days 01:53:00,"Korean Sign, Italian, Spanish, French, English, Finnish","United States of America, United Kingdom, Netherlands","Thriller, Science Fiction, Horror, Doomsday film, Sci-Fi Horror, Plague, Zombie Film",7.5,458377.0,True,2002
+11014779.0,8 mile,2002-09-08,242875078.0,0 days 01:58:00,English,"United States of America, Germany","Coming of age, Musical, Drama, Musical Drama, Hip hop movies",7.2,331776.0,False,2002
+234537.0,equilibrium,2002-12-06,5359645.0,0 days 01:47:00,English,United States of America,"Thriller, Science Fiction, Future noir, Drama, Action, Dystopia",7.3,351972.0,False,2002
+33851920.0,gangs of new york,2002-01-01,,,,United States of America,"Crime Fiction, Drama",7.5,481716.0,True,2002
+188902.0,gangs of new york,2002-12-09,193772504.0,0 days 02:47:00,"Irish, Chinese language, English, Latin","United States of America, Italy","Crime Fiction, Gangster Film, Costume drama, Historical fiction, Epic, Period piece, Drama, Political drama, Historical drama",7.5,481716.0,True,2002
+667368.0,harry potter and the chamber of secrets,2002-11-03,878979634.0,0 days 02:54:00,English,"United States of America, United Kingdom, Germany",,7.4,712401.0,False,2002
+673599.0,men in black ii,2002-07-03,441818803.0,0 days 01:28:00,English,United States of America,"Science Fiction, Buddy film, Action/Adventure, Alien Film, Comedy, Action",6.2,412619.0,False,2002
+142049.0,minority report,2002-06-17,358372926.0,0 days 02:19:00,"Swedish, English",United States of America,"Crime Fiction, Thriller, Science Fiction, Future noir, Chase Movie, Action/Adventure, Mystery, Drama, Dystopia, Film adaptation, Action, Film noir",7.6,594824.0,True,2002
+72453.0,signs,2002-07-29,408247917.0,0 days 01:47:00,"Portuguese, English",United States of America,"Thriller, Science Fiction, Horror, Alien Film, Mystery, Drama, Suspense",6.8,396275.0,False,2002
+146947.0,spider-man,2002-05-03,821708551.0,0 days 02:01:00,English,United States of America,"Adventure, Superhero movie, Action/Adventure, Fantasy, Coming of age, Action",7.4,904200.0,False,2002
+50957.0,star wars episode ii: attack of the clones,2002-05-16,649398328.0,0 days 02:22:00,English,United States of America,"Science Fiction, Adventure, Space opera, Fantasy, Romance Film, Action, Movies About Gladiators, Family Film",6.6,775932.0,False,2002
+8778124.0,the bourne identity,2002-01-01,,0 days 03:05:00,"French, English, German",United States of America,"Thriller, Action, Spy",7.8,587342.0,True,2002
+963986.0,the bourne identity,2002-06-06,214034224.0,0 days 01:58:00,"French, Dutch, Italian, German, English","United States of America, Czech Republic, Germany","Crime Fiction, Thriller, Adventure, Action/Adventure, Mystery, Drama, Film adaptation, Action",7.8,587342.0,True,2002
+173944.0,the lord of the rings: the two towers,2002-12-05,926047111.0,0 days 02:59:00,"Old English language, English","United States of America, New Zealand","Fantasy Adventure, Adventure, Epic, Action/Adventure, Fantasy, Film adaptation, Drama, Action, Sword and sorcery films",8.8,1834754.0,True,2002
+1897341.0,the pianist,2002-05-24,120072577.0,0 days 02:22:00,"Russian, German, English","France, Poland, United Kingdom, Germany","History, Biographical film, Drama, War film",8.5,942853.0,True,2002
+221270.0,the pianist,2002-01-01,,0 days 01:52:00,English,Canada,"Romantic drama, Romance Film, Drama, Indie, Film adaptation",8.5,942853.0,True,2002
+32381746.0,the ring,2002-01-01,,0 days 01:19:00,English,United States of America,"Sports, Drama, Boxing",7.1,384401.0,False,2002
+62668.0,the ring,2002-10-02,249348933.0,0 days 02:25:00,English,"United States of America, Japan","Thriller, Horror, Supernatural, Mystery, Suspense, Japanese Movies",7.1,384401.0,False,2002
+1610940.0,the ring,2002-01-01,,0 days 02:16:00,"Silent film, English",United Kingdom,"Silent film, Drama, Indie, Black-and-white",7.1,384401.0,False,2002
+972958.0,the transporter,2002-10-02,43928932.0,0 days 01:34:00,"French, Standard Mandarin, English","France, United States of America","Thriller, Action Thrillers, Action/Adventure, Martial Arts Film, Crime Thriller, Action",6.8,326460.0,False,2002
+407288.0,2 fast 2 furious,2003-06-03,236350661.0,0 days 01:41:00,"English, Spanish","United States of America, Germany","Thriller, Crime Fiction, Action/Adventure, Crime Thriller, Action Thrillers, Action, Sports",5.9,304552.0,False,2003
+431014.0,big fish,2003-01-01,122919055.0,0 days 02:06:00,English,United States of America,"Family Drama, Adventure, Film adaptation, Comedy-drama, Period piece, Fantasy, Comedy, War film, Drama, Fantasy Comedy",8.0,464991.0,True,2003
+237303.0,bruce almighty,2003-05-23,484592874.0,0 days 01:42:00,English,United States of America,"Heavenly Comedy, Drama, Comedy, Fantasy, Fantasy Comedy, Religious Film",6.8,444316.0,False,2003
+448735.0,elf,2003-10-09,220443451.0,0 days 01:35:00,English,"United States of America, Germany",,7.1,318270.0,False,2003
+239587.0,finding nemo,2003-05-30,921111197.0,0 days 01:40:00,English,"United States of America, Australia",,8.2,1139218.0,True,2003
+369682.0,lost in translation,2003-08-29,119723856.0,0 days 01:44:00,"French, Japanese, German, English","United States of America, Japan","Romantic comedy, Japanese Movies, Indie, Comedy of manners, Comedy-drama, Drama, Comedy, Romantic drama, Romance Film",7.7,503407.0,True,2003
+370064.0,love actually,2003-09-07,246942017.0,0 days 02:16:00,"French, Italian, Portuguese, English","United States of America, France, United Kingdom","Romantic comedy, Ensemble Film, Comedy-drama, Holiday Film, Drama, Comedy, Romance Film",7.6,541238.0,True,2003
+460052.0,mystic river,2003-05-23,156822020.0,0 days 02:18:00,English,"United States of America, Australia","Thriller, Crime Fiction, Tragedy, Psychological thriller, Mystery, Drama, Film adaptation, Crime Thriller",7.9,496084.0,True,2003
+734207.0,oldboy,2003-11-21,14980005.0,0 days 01:59:00,Korean,"Korea, South Korea","Thriller, World cinema, Mystery, Martial Arts Film, Drama, Kafkaesque, Action",8.3,658874.0,True,2003
+321496.0,pirates of the caribbean: the curse of the black pearl,2003-07-09,654264015.0,0 days 02:23:00,English,United States of America,"Swashbuckler films, Fantasy Adventure, Adventure, Action/Adventure, Fantasy, Comedy, Adventure Comedy, Action",8.1,1241416.0,True,2003
+225615.0,terminator 3: rise of the machines,2003-06-30,433371112.0,0 days 01:48:00,English,"United States of America, United Kingdom, Germany","Thriller, Science Fiction, Doomsday film, Action/Adventure, Time travel, Action",6.3,424484.0,False,2003
+228274.0,the last samurai,2003-11-22,456758981.0,0 days 02:33:00,"Japanese, English",United States of America,"Costume drama, Action/Adventure, Period piece, Drama, War film, Action, Historical drama",7.8,481301.0,True,2003
+174251.0,the lord of the rings: the return of the king,2003-12-17,1119929521.0,0 days 04:10:00,"Old English language, English","United States of America, New Zealand","Fantasy Adventure, Adventure, Epic, Action/Adventure, Drama, Film adaptation, Fantasy, Sword and sorcery films",9.0,2034710.0,True,2003
+123417.0,the matrix reloaded,2003-05-07,742128461.0,0 days 02:18:00,"French, English","United States of America, Australia","Action/Adventure, Thriller, Science Fiction, Action, Adventure",7.2,643236.0,False,2003
+210998.0,the matrix revolutions,2003-10-27,427343298.0,0 days 02:09:00,"French, English","United States of America, Australia","Thriller, Science Fiction, Adventure, Action/Adventure, Martial Arts Film, Action",6.7,553549.0,False,2003
+537024.0,eternal sunshine of the spotless mind,2004-03-19,72258126.0,0 days 01:48:00,English,United States of America,"Romantic comedy, Science Fiction, Comedy-drama, Drama, Romance Film, Romantic fantasy",8.3,1110118.0,True,2004
+667371.0,harry potter and the prisoner of azkaban,2004-06-04,796688549.0,0 days 02:21:00,English,"United States of America, United Kingdom",,7.9,712213.0,True,2004
+3903364.0,howl's moving castle,2004-09-05,,0 days 01:59:00,Japanese,Japan,,8.2,468687.0,True,2004
+564947.0,"i, robot",2004-07-15,347234916.0,0 days 01:41:00,English,"United States of America, Germany","Thriller, Science Fiction, Mystery, Drama, Film adaptation, Action",7.1,587828.0,False,2004
+22050579.0,million dollar baby,2004-01-01,,0 days 01:40:00,English,United States of America,Black-and-white,8.1,734856.0,True,2004
+1287385.0,million dollar baby,2004-12-15,216763646.0,0 days 02:13:00,"Irish, English",United States of America,"Sports, Tragedy, Drama, Boxing",8.1,734856.0,True,2004
+1025150.0,saw,2004-01-19,103000000.0,0 days 01:43:00,English,"United States of America, Australia","Thriller, Crime Fiction, Horror, Indie, Psychological thriller, Mystery, Slasher",7.6,481571.0,True,2004
+3210534.0,saw,2004-01-01,,0 days 00:09:30,English,Australia,"Thriller, Horror, Indie, Psychological thriller, Short Film, Slasher",7.6,481571.0,True,2004
+598397.0,shaun of the dead,2004-03-29,30039392.0,0 days 01:34:00,English,United Kingdom,"Parody, Romantic comedy, Horror, Doomsday film, Cult, Comedy, Zombie Film, Black comedy, Horror Comedy",7.9,609896.0,True,2004
+525314.0,shrek 2,2004-05-15,919838758.0,0 days 01:33:00,English,United States of America,,7.4,519051.0,False,2004
+612052.0,spider-man 2,2004-06-25,783766341.0,0 days 02:07:00,"Chinese language, English, Russian",United States of America,"Thriller, Science Fiction, Superhero movie, Superhero, Action/Adventure, Drama, Fantasy, Action",7.5,730101.0,True,2004
+870946.0,the bourne supremacy,2004-07-15,288500217.0,0 days 01:50:00,"Italian, Russian, English, German","United States of America, Germany","Thriller, Crime Fiction, Action/Adventure, Mystery, Martial Arts Film, Drama, Film adaptation, Action Thrillers, Action, Spy",7.7,494783.0,True,2004
+454208.0,the butterfly effect,2004-01-23,96060858.0,0 days 02:00:00,English,"United States of America, Canada","Thriller, Science Fiction, Time travel, Psychological thriller",7.6,532324.0,True,2004
+407178.0,the day after tomorrow,2004-05-17,544272402.0,0 days 02:03:00,"French, Japanese, Arabic, English, Spanish",United States of America,"Thriller, Science Fiction, Doomsday film, Action/Adventure, Apocalyptic and post-apocalyptic fiction, Drama, Disaster, Action, Natural disaster",6.5,489344.0,False,2004
+17917662.0,the notebook,2004-11-20,115603229.0,0 days 02:03:00,English,United States of America,"Coming of age, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",7.8,640335.0,True,2004
+676909.0,the terminal,2004-06-09,219417255.0,0 days 02:08:00,"French, English, Russian, Bulgarian",United States of America,"Romantic comedy, Comedy-drama, Drama, Comedy, Romantic drama, Romance Film, Comedy of Errors",7.4,506594.0,False,2004
+323715.0,troy,2004-05-13,497409852.0,0 days 01:26:00,English,"United States of America, Malta, United Kingdom","Sword and Sandal, Adventure, Costume drama, Historical fiction, Epic, Action/Adventure, History, War film, Romance Film, Action, Historical Epic, Documentary",7.3,583681.0,False,2004
+481605.0,batman begins,2005-06-10,372710015.0,0 days 02:21:00,"Standard Mandarin, Urdu, English","United States of America, United Kingdom","Crime Fiction, Thriller, Superhero movie, Crime Drama, Superhero, Action/Adventure, Drama, Reboot, Action Thrillers, Action",8.2,1616765.0,True,2005
+1623960.0,brokeback mountain,2005-12-09,178062759.0,0 days 02:14:00,English,United States of America,"LGBT, Gay, Western, Gay Interest, Drama, Gay Themed, Romantic drama, Romance Film",7.7,394318.0,True,2005
+1277918.0,charlie and the chocolate factory,2005-07-10,474968763.0,0 days 01:55:00,English,"United States of America, United Kingdom",,6.7,542199.0,False,2005
+1210303.0,constantine,2005-02-08,230884728.0,0 days 02:01:00,"Tagalog language, Filipino language, English","United States of America, Germany","Fantasy, Horror, Action, Drama, Mystery",7.0,384566.0,False,2005
+1519783.0,fantastic four,2005-06-29,330579719.0,0 days 01:46:00,English,"United States of America, Germany","Action/Adventure, Science Fiction, Action, Fantasy, Superhero movie",5.7,350869.0,False,2005
+667372.0,harry potter and the goblet of fire,2005-11-06,896911078.0,0 days 02:36:00,"French, English, Spanish","United States of America, United Kingdom",,7.7,700801.0,True,2005
+2643692.0,lord of war,2005-09-16,72617068.0,0 days 01:56:00,"Arabic, Russian, Spanish, French, Ukrainian, Turkish, English, German","United States of America, France, Germany","Thriller, Crime Fiction, Action/Adventure, Drama, War film, Crime Thriller, Action, Political drama",7.6,343854.0,True,2005
+1745050.0,mr. & mrs. smith,2005-06-07,478336279.0,0 days 01:59:00,"English, Spanish",United States of America,"Thriller, Romantic comedy, Action/Adventure, Comedy, Black comedy, Romance Film, Action",6.5,555581.0,False,2005
+2312056.0,pride & prejudice,2005-09-16,121147947.0,0 days 02:09:00,English,"France, United Kingdom","Costume drama, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",7.8,341620.0,True,2005
+1336308.0,sin city,2005-03-28,158753820.0,0 days 02:05:00,English,United States of America,"Thriller, Crime Fiction, Gangster Film, Superhero movie, Black-and-white, Action/Adventure, Drama, Crime Thriller, Action, Dystopia, Neo-noir",8.0,801362.0,True,2005
+55447.0,star wars episode iii: revenge of the sith,2005-05-15,848754768.0,0 days 02:20:00,English,United States of America,"Science Fiction, Action, Fantasy, Tragedy, Adventure",7.6,864532.0,True,2005
+2021400.0,the 40-year-old virgin,2005-08-11,109449237.0,0 days 01:52:00,"English, Spanish",United States of America,"Romantic comedy, Romance Film, Sex comedy, Buddy film, Comedy",7.1,478172.0,False,2005
+1880660.0,"the chronicles of narnia: the lion, the witch and the wardrobe",2005-12-07,,0 days 02:30:00,"English, German","United States of America, New Zealand, United Kingdom",,6.9,436816.0,False,2005
+535335.0,war of the worlds,2005-06-13,591745550.0,0 days 01:52:00,English,United States of America,"Thriller, Science Fiction, Horror, Adventure, Doomsday film, Alien Film, Drama, Disaster, Action",6.5,484018.0,False,2005
+1385251.0,wedding crashers,2005-07-13,285176741.0,0 days 02:08:00,English,United States of America,"Romantic comedy, Sex comedy, Romance Film, Comedy",7.0,382080.0,False,2005
+2465797.0,300,2006-12-09,,0 days 01:56:00,English,United States of America,"Historical fiction, Adventure, Superhero movie, Costume drama, Film adaptation, Epic, Action/Adventure, Fantasy, War film, Historical Epic, Action",7.6,879358.0,True,2006
+16700486.0,argo,2006-08-13,,0 days 00:23:00,English,United States of America,Short Film,7.7,646710.0,True,2006
+4453691.0,blood diamond,2006-12-08,171407179.0,0 days 02:18:00,"Afrikaans, Mende, English, Krio","United States of America, Germany","Crime Fiction, Thriller, Tragedy, Adventure, Private military company, Action/Adventure, Drama, War film, Action, Political drama",8.0,598320.0,True,2006
+920613.0,cars,2006-06-08,461983149.0,0 days 01:56:00,"Japanese, Italian, Yiddish, English",United States of America,,7.3,488555.0,False,2006
+2461592.0,casino royale,2006-01-01,41700000.0,0 days 02:10:00,English,"United States of America, United Kingdom","Parody, Action/Adventure, Satire, Comedy, Action, Spy",8.0,708264.0,True,2006
+9019882.0,casino royale,2006-01-01,,0 days 00:50:00,English,United States of America,"Thriller, Television movie, Drama, Film adaptation, Action, Spy",8.0,708264.0,True,2006
+930379.0,casino royale,2006-11-14,596400000.0,0 days 02:25:00,English,"United States of America, Bahamas, Czech Republic, United Kingdom, Germany","Thriller, Crime Fiction, Parkour in popular culture, Adventure, Action/Adventure, Drama, Reboot, Action",8.0,708264.0,True,2006
+3793631.0,children of men,2006-09-03,69959751.0,0 days 01:54:00,"Arabic, Italian, Spanish, English, Romanian, German","United States of America, United Kingdom","Thriller, Action Thrillers, Science Fiction, Future noir, Adventure, Doomsday film, Action/Adventure, Mystery, Drama, Film adaptation, Action, Dystopia",7.9,540112.0,True,2006
+7047921.0,little miss sunshine,2006-01-20,,0 days 01:42:00,English,United States of America,"LGBT, Ensemble Film, Adventure, Road movie, Comedy-drama, Drama, Comedy, Domestic Comedy, Indie",7.8,528864.0,True,2006
+3261733.0,pan's labyrinth,2006-05-27,83258226.0,0 days 01:59:00,Spanish,"Mexico, Spain","Horror, World cinema, Supernatural, Fairy tale, Period piece, Fantasy, War film, Drama",8.2,715316.0,True,2006
+999394.0,pirates of the caribbean: dead man's chest,2006-06-24,,0 days 02:31:00,"Greek, Turkish, Standard Mandarin, English",United States of America,"Swashbuckler films, Fantasy Adventure, Adventure, Fantasy, Adventure Comedy, Action",7.4,784633.0,False,2006
+1349086.0,the departed,2006-09-26,289847354.0,0 days 02:31:00,"English, Cantonese","United States of America, Hong Kong","Thriller, Crime Fiction, Gangster Film, Remake, Mystery, Drama, Crime Thriller, Action, Chinese Movies",8.5,1457488.0,True,2006
+4597853.0,the devil wears prada,2006-06-29,326551094.0,0 days 01:48:00,"French, English",United States of America,"Parody, Comedy-drama, Workplace Comedy, Drama, Comedy, Film adaptation, Romance Film",6.9,487033.0,False,2006
+2809621.0,the prestige,2006-10-17,109676311.0,0 days 02:10:00,English,"United States of America, United Kingdom","Thriller, Science Fiction, Psychological thriller, Mystery, Period piece, Fantasy, Film adaptation, Drama, Steampunk",8.5,1481174.0,True,2006
+2162986.0,the pursuit of happyness,2006-12-15,307077300.0,0 days 02:25:00,English,United States of America,"Inspirational Drama, Family Drama, Drama, Biographical film",8.0,578229.0,True,2006
+1891886.0,v for vendetta,2006-02-13,132511035.0,0 days 02:13:00,English,"United States of America, United Kingdom, Germany","Thriller, LGBT, Science Fiction, Future noir, Superhero movie, Film adaptation, Action/Adventure, Drama, Political thriller, Action, Dystopia",8.1,1199853.0,True,2006
+2029825.0,x-men: the last stand,2006-05-23,459359555.0,0 days 01:43:00,English,"United States of America, Canada, United Kingdom","Thriller, Science Fiction, Superhero movie, Superhero, Action/Adventure, Fantasy, Action, Sci-Fi Adventure",6.6,553444.0,False,2006
+11383001.0,ex machina,2007-10-20,,0 days 01:44:00,"Japanese, English",Japan,"Thriller, Action Thrillers, Science Fiction, Japanese Movies, Computer Animation, Animation, Action/Adventure, Anime, Action",7.7,607552.0,True,2007
+670407.0,harry potter and the order of the phoenix,2007-06-28,939885929.0,0 days 02:17:00,English,"United States of America, United Kingdom","Mystery, Family Film, Fantasy Adventure, Fantasy, Adventure",7.5,651181.0,True,2007
+3006708.0,hot fuzz,2007-02-14,80573774.0,0 days 02:00:00,English,"France, United States of America, United Kingdom","Parody, Crime Fiction, Buddy film, Action Comedy, Action/Adventure, Mystery, Satire, Comedy, Black comedy, Action",7.8,545822.0,True,2007
+6641931.0,i am legend,2007-12-12,585349010.0,0 days 01:40:00,English,United States of America,"Thriller, Albino bias, Science Fiction, Horror, Doomsday film, Plague, Action/Adventure, Zombie Film, Apocalyptic and post-apocalyptic fiction, Drama, Film adaptation, Disaster, Dystopia",7.2,835839.0,False,2007
+11893755.0,into the wild,2007-09-01,56255142.0,0 days 02:28:00,"English, Danish",United States of America,"Biography, Drama, Adventure, Docudrama, Film adaptation",8.1,669565.0,True,2007
+11862690.0,juno,2007-09-01,231411584.0,0 days 01:31:00,English,"United States of America, Canada","Ensemble Film, Indie, Comedy-drama, Coming of age, Comedy, Drama, Romance Film, Domestic Comedy, Teen",7.4,557252.0,False,2007
+3920193.0,no country for old men,2007-11-04,171627166.0,0 days 02:03:00,"English, Spanish",United States of America,"Thriller, Crime Fiction, Gangster Film, Drama, Suspense, Film adaptation, Crime Thriller",8.2,1094054.0,True,2007
+1689394.0,pirates of the caribbean: at world's end,2007-05-19,963420425.0,0 days 02:49:00,English,United States of America,"Swashbuckler films, Fantasy Adventure, Adventure, Action/Adventure, Fantasy, Comedy, Adventure Comedy, Action",7.1,708424.0,False,2007
+14941280.0,ratatouille,2007-06-22,623722818.0,0 days 01:51:00,"French, English",United States of America,"Computer Animation, Animation, Coming of age, Comedy, Drama, Fantasy, Family Film",8.1,859398.0,True,2007
+702117.0,spider-man 3,2007-04-16,890871626.0,0 days 02:19:00,"French, English",United States of America,"Thriller, Action Thrillers, Science Fiction, Adventure, Superhero movie, Superhero, Action/Adventure, Fantasy, Drama, Action",6.3,655178.0,False,2007
+6254878.0,superbad,2007-08-17,169871719.0,0 days 01:54:00,English,United States of America,"Sex comedy, Buddy film, Cult, Coming of age, Comedy, Teen",7.6,650813.0,True,2007
+1854000.0,the bourne ultimatum,2007-07-25,442824138.0,0 days 01:56:00,"French, Arabic, English, Russian, Spanish","United States of America, Germany","Thriller, Crime Fiction, Action/Adventure, Mystery, Martial Arts Film, Drama, Film adaptation, Action Thrillers, Action, Spy",8.0,666165.0,True,2007
+3213691.0,there will be blood,2007-09-27,76181545.0,0 days 02:38:00,"English, American Sign",United States of America,"Period piece, Family Drama, Drama",8.2,656883.0,True,2007
+2236472.0,transformers,2007-06-12,709709780.0,0 days 02:24:00,"English, Spanish",United States of America,"Thriller, Science Fiction, Doomsday film, Alien Film, Disaster, Action",7.1,687576.0,False,2007
+2654186.0,zodiac,2007-03-02,,0 days 02:42:00,English,United States of America,"Thriller, Crime Fiction, History, Docudrama, Mystery, Drama",7.7,620026.0,True,2007
+12064359.0,cloverfield,2008-01-16,170764026.0,0 days 01:24:00,"English, Russian",United States of America,"Thriller, Monster movie, Science Fiction, Horror, Doomsday film, Sci-Fi Horror, Creature Film, Action/Adventure, Mystery, Archives and records, Monster, Disaster, Action",7.0,428676.0,False,2008
+17016725.0,gran torino,2008-12-09,269958228.0,0 days 02:00:00,"Hmong language, English","United States of America, Germany","Tragedy, Drama, Indie",8.1,828165.0,True,2008
+20926377.0,hancock,2008-07-02,624386746.0,0 days 01:42:00,"Japanese, English",United States of America,"Crime Fiction, Science Fiction, Superhero movie, Action Comedy, Superhero, Fantasy, Comedy, Action",6.4,521792.0,False,2008
+9541497.0,in bruges,2008-01-17,33394440.0,0 days 01:42:00,"English, German","United States of America, Belgium, Ireland, United Kingdom","Crime Fiction, Thriller, Buddy film, Crime Drama, Comedy-drama, Action/Adventure, Drama, Comedy, Crime Thriller, Black comedy, Action",7.9,471792.0,True,2008
+1252914.0,indiana jones and the kingdom of the crystal skull,2008-05-22,786636033.0,0 days 02:01:00,"English, Russian, German",United States of America,"Thriller, Adventure, Costume Adventure, Action/Adventure, Fantasy, Adventure Comedy, Family Film, Action",6.2,497865.0,False,2008
+5676692.0,iron man,2008-04-14,585174222.0,0 days 02:06:00,"Persian, Arabic, Urdu, English",United States of America,"Thriller, Science Fiction, Superhero movie, Action/Adventure, War film, Action",7.9,1151510.0,True,2008
+3248340.0,kung fu panda,2008-05-15,631744560.0,0 days 01:30:00,English,United States of America,,7.6,538586.0,True,2008
+15053838.0,passengers,2008-09-26,4763917.0,0 days 01:34:00,English,"United States of America, Canada","Thriller, Supernatural, Psychological thriller, Mystery, Drama, Disaster, Romance Film",7.0,464255.0,False,2008
+2969247.0,quantum of solace,2008-10-29,591700000.0,0 days 01:47:00,"French, Italian, German, English, Spanish","United States of America, United Kingdom","Thriller, Crime Fiction, Adventure, Action Thrillers, Glamorized Spy Film, Action, Spy",6.5,478568.0,False,2008
+15233369.0,slumdog millionaire,2008-08-30,377910544.0,0 days 02:00:00,"Hindi, French, English",United Kingdom,"Thriller, Crime Fiction, Indie, Inspirational Drama, Coming of age, Film adaptation, Drama, Romantic drama, Romance Film",8.0,887483.0,True,2008
+8031432.0,the curious case of benjamin button,2008-12-10,333932083.0,0 days 02:46:00,"French, Russian, English",United States of America,"Romantic drama, Film adaptation, Mystery, Period piece, Fantasy, Fantasy Drama, Drama, Romance Film",7.8,710468.0,True,2008
+4276475.0,the dark knight,2008-07-16,1004558444.0,0 days 02:33:00,"Standard Mandarin, English","United States of America, United Kingdom","Crime Fiction, Thriller, Superhero movie, Crime Drama, Superhero, Action/Adventure, Drama, Action",9.0,2953990.0,True,2008
+16733548.0,the hurt locker,2008-09-04,49230772.0,0 days 02:10:00,"Arabic, English, Turkish",United States of America,"Thriller, Action Thrillers, Action/Adventure, Drama, War film, Combat Films",7.5,479915.0,True,2008
+5476946.0,the incredible hulk,2008-06-06,263427551.0,0 days 01:52:00,"Portuguese, English, Spanish",United States of America,"Thriller, Science Fiction, Superhero movie, Action/Adventure, Reboot, Action",6.6,534303.0,False,2008
+11942501.0,tropic thunder,2008-08-13,188072649.0,0 days 01:47:00,"Standard Mandarin, English","United States of America, United Kingdom, Germany","Parody, Adventure, Action Comedy, Action/Adventure, Satire, Comedy, Action",7.1,459422.0,False,2008
+18057739.0,(500) days of summer,2009-07-17,60722734.0,0 days 01:35:00,"French, Swedish, English",United States of America,"Romantic comedy, Indie, Comedy-drama, Drama, Comedy, Romance Film",7.7,577108.0,True,2009
+4273140.0,avatar,2009-12-10,2782275172.0,0 days 02:58:00,"English, Spanish","United States of America, United Kingdom","Thriller, Science Fiction, Adventure, Computer Animation, Epic, Nature, Fantasy, Action",7.9,1411103.0,True,2009
+29448256.0,avatar,2009-01-01,,,,,Silent film,7.9,1411103.0,True,2009
+15945267.0,avatar,2009-01-01,,0 days 01:30:00,English,Singapore,"Thriller, Science Fiction, Adventure",7.9,1411103.0,True,2009
+20777420.0,district 9,2009-08-13,210816205.0,0 days 01:52:00,"Zulu, Xhosa, Afrikaans, Sotho language, English, Chewa language","United States of America, South Africa, Canada, New Zealand","Thriller, Science Fiction, World cinema, Drama, Action, Sci-Fi Adventure",7.9,727891.0,True,2009
+858575.0,harry potter and the half-blood prince,2009-07-06,934416487.0,0 days 02:33:00,"Croatian language, English","United States of America, United Kingdom",,7.6,612962.0,True,2009
+633052.0,inglourious basterds,2009-05-20,320389438.0,0 days 02:32:00,"French, Italian, German, English","United States of America, France, Germany","Thriller, Black comedy, Action/Adventure, Drama, War film",8.4,1635449.0,True,2009
+7146793.0,sherlock holmes,2009-01-01,,0 days 01:08:00,English,United States of America,Detective fiction,7.6,682506.0,True,2009
+19596597.0,sherlock holmes,2009-12-24,524028679.0,0 days 02:08:00,"French, English","United States of America, United Kingdom, Germany","Crime Fiction, Thriller, Detective fiction, Action/Adventure, Period piece, Drama, Comedy, Crime Thriller, Action",7.6,682506.0,True,2009
+25357930.0,sherlock holmes,2009-01-01,,0 days 01:25:00,English,"United States of America, United Kingdom","Monster movie, Crime Fiction, Supernatural, Action/Adventure, Mystery, Period piece, Thriller, Suspense, Drama, Crime Thriller",7.6,682506.0,True,2009
+3071743.0,star trek,2009-04-06,385494555.0,0 days 02:06:00,English,"United States of America, Germany","Reboot, Science Fiction, Action, Adventure",7.9,625737.0,True,2009
+15593618.0,taken,2009-01-30,226830568.0,0 days 01:33:00,"French, Albanian language, Arabic, English","France, United States of America, United Kingdom","Thriller, Crime Fiction, Psychological thriller, Action/Adventure, Martial Arts Film, Suspense, Action",7.7,646480.0,True,2009
+21918632.0,the hangover,2009-06-05,467483912.0,0 days 01:40:00,English,"United States of America, Germany","Screwball comedy, Buddy film, Comedy, Absurdism",7.7,868962.0,True,2009
+22771725.0,the revenant,2009-09-26,,0 days 01:55:00,,United States of America,"Horror, Adventure, Comedy, Zombie Film, B-movie, Action",8.0,894943.0,True,2009
+17594593.0,up,2009-01-01,,0 days 00:14:00,English,United States of America,"Short Film, Indie",8.3,1156865.0,True,2009
+11659396.0,up,2009-05-13,731342744.0,0 days 01:36:00,English,United States of America,"Adventure, Animation, Drama, Comedy, Fantasy, Family Film",8.3,1156865.0,True,2009
+5016250.0,watchmen,2009-02-23,185258983.0,0 days 02:41:00,English,United States of America,"Thriller, Crime Fiction, Science Fiction, Superhero movie, Superhero, Action/Adventure, Mystery, Drama, Film adaptation, Action",7.6,591808.0,True,2009
+18305011.0,wonder woman,2009-03-03,6898033.0,0 days 01:14:00,English,United States of America,"Action/Adventure, Superhero movie, Animation",7.3,710601.0,False,2009
+2982688.0,x-men origins: wolverine,2009-04-28,373062864.0,0 days 01:47:00,English,United States of America,"Thriller, Action Thrillers, Science Fiction, Superhero movie, Superhero, Action/Adventure, Fantasy, Action",6.5,548045.0,False,2009
+21835208.0,zombieland,2009-09-25,102391540.0,0 days 01:28:00,English,United States of America,"Horror, Adventure, Doomsday film, Road movie, Comedy horror, Apocalyptic and post-apocalyptic fiction, Comedy, Zombie Film, Black comedy, Action, Horror Comedy",7.5,636109.0,True,2009
+24480838.0,black swan,2010-09-01,329398046.0,0 days 01:43:00,"French, Italian, English",United States of America,"Thriller, Horror, Psychological thriller, Mystery, Drama, Suspense",8.0,844106.0,True,2010
+23614710.0,despicable me,2010-06-20,543113985.0,0 days 01:33:00,English,United States of America,,7.6,599827.0,True,2010
+23438736.0,easy a,2010-09-16,74952305.0,0 days 01:33:00,English,United States of America,"Romantic comedy, Black comedy, Romance Film, Comedy, Teen",7.0,426427.0,False,2010
+30382519.0,frozen,2010-09-02,,,,,"Romance Film, Fantasy",7.4,677430.0,False,2010
+25447258.0,frozen,2010-01-24,3151086.0,0 days 01:34:00,English,United States of America,"Thriller, Drama, Horror, Indie, Psychological thriller",7.4,677430.0,False,2010
+9834441.0,harry potter and the deathly hallows: part i,2010-11-17,956399711.0,0 days 02:26:00,English,"United States of America, United Kingdom","Adventure, Mystery, Drama, Fantasy, Family Film, Action",7.7,616613.0,True,2010
+18394730.0,how to train your dragon,2010-03-18,494878759.0,0 days 01:38:00,English,United States of America,"Adventure, Computer Animation, Animation, Fantasy, Comedy, Family Film, Action",8.1,823862.0,True,2010
+23270459.0,inception,2010-07-08,825532764.0,0 days 02:28:00,"French, Japanese, English","United States of America, United Kingdom","Thriller, Science Fiction, Adventure, Psychological thriller, Mystery, Action",8.8,2621473.0,True,2010
+22144721.0,iron man 2,2010-04-26,623933331.0,0 days 02:04:00,"Russian, English",United States of America,"Action/Adventure, Thriller, Science Fiction, Action, Superhero movie",6.9,887394.0,False,2010
+21282769.0,kick-ass,2010-03-12,96188903.0,0 days 01:57:00,English,"United States of America, United Kingdom","Superhero movie, Superhero, Action/Adventure, Comedy, Black comedy, Action",7.6,603111.0,True,2010
+17574075.0,scott pilgrim vs. the world,2010-07-27,47664559.0,0 days 01:52:00,English,"United States of America, Canada, United Kingdom","Romantic comedy, Adventure, Superhero movie, Action Comedy, Action/Adventure, Martial Arts Film, Fantasy, Comedy, Romance Film, Action",7.6,475177.0,True,2010
+13950959.0,shutter island,2010-02-13,294804195.0,0 days 02:18:00,"English, German",United States of America,"Thriller, Crime Fiction, Horror, Psychological thriller, Mystery, Period piece, Drama, Film adaptation, Crime Thriller",8.2,1508872.0,True,2010
+31256556.0,tangled,2010-01-01,,0 days 01:29:00,English,United States of America,"Thriller, Mystery, Drama",7.7,509675.0,True,2010
+619728.0,tangled,2010-11-24,590721936.0,0 days 01:40:00,English,United States of America,"Computer Animation, Animation, Revisionist Fairy Tale, Musical, Fantasy, Comedy, Family Film, Romance Film",7.7,509675.0,True,2010
+25080984.0,the king's speech,2010-11-26,,0 days 01:59:00,English,"Australia, United Kingdom","Biography, History, Historical fiction, Period piece, Drama, Biographical film, Historical drama",8.0,715701.0,True,2010
+24319139.0,the social network,2010-09-24,224920315.0,0 days 02:00:00,"French, English",United States of America,"Biography, History, Film adaptation, Drama, Comedy, Biopic [feature]",7.8,776078.0,True,2010
+1213838.0,toy story 3,2010-06-12,1063171911.0,0 days 01:42:00,"English, Spanish",United States of America,,8.3,914524.0,True,2010
+26999426.0,captain america: the first avenger,2011-07-22,368608363.0,0 days 02:04:00,"English, Norwegian",United States of America,"Thriller, Science Fiction, Superhero movie, Action/Adventure, Sci-Fi Thriller, Action, Sci-Fi Adventure",6.9,915942.0,False,2011
+29816420.0,city of god,2011-04-23,,0 days 02:25:00,Malayalam,India,"Thriller, Crime Fiction, Drama",8.6,821285.0,True,2011
+28880684.0,"crazy, stupid, love.",2011-07-28,142851197.0,0 days 02:20:00,English,United States of America,"Romantic comedy, Comedy-drama, Drama, Comedy, Romantic drama, Romance Film",7.4,579891.0,False,2011
+30273553.0,drive,2011-05-20,76175166.0,0 days 01:40:00,"English, American English",United States of America,"Thriller, Crime Fiction, Crime Drama, Action/Adventure, Drama, Crime Thriller, Action, Neo-noir",7.8,722814.0,True,2011
+31941988.0,harry potter and the deathly hallows – part 2,2011-07-07,1328111219.0,0 days 02:10:00,English,"United States of America, United Kingdom","Drama, Mystery, Fantasy, Adventure",8.1,974653.0,True,2011
+32786862.0,inside out,2011-09-09,,0 days 01:33:00,English,United States of America,"Crime Fiction, Drama",8.1,843022.0,True,2011
+27372372.0,limitless,2011-03-17,,0 days 01:45:00,"Italian, Russian, English",United States of America,"Thriller, Mystery, Science Fiction, Psychological thriller, Crime Thriller",7.4,622163.0,False,2011
+17298593.0,mission: impossible – ghost protocol,2011-12-14,694713380.0,0 days 02:12:00,English,United States of America,"Thriller, Action Thrillers, Adventure, Action/Adventure, Glamorized Spy Film, Action, Spy",7.4,536648.0,False,2011
+24314116.0,pirates of the caribbean: on stranger tides,2011-05-07,1043871802.0,0 days 02:16:00,English,United States of America,"Swashbuckler films, Adventure, Costume Adventure, Fantasy, Adventure Comedy, Action",6.6,576368.0,False,2011
+27279709.0,rise of the planet of the apes,2011-08-03,481800873.0,0 days 01:45:00,"English, American Sign",United States of America,"Thriller, Science Fiction, Adventure, Drama, Reboot, Action",7.6,586562.0,True,2011
+25920477.0,source code,2011-03-11,147332697.0,0 days 01:33:00,English,"France, United States of America","Thriller, Science Fiction, Action/Adventure, Mystery, Drama, Suspense, Action",7.5,560719.0,True,2011
+23295795.0,the hangover: part ii,2011-05-25,581464305.0,0 days 01:42:00,"English, Thai",United States of America,"Buddy film, Comedy, Absurdism",6.5,546891.0,False,2011
+29454281.0,the help,2011-08-10,211608112.0,0 days 02:25:00,English,"United States of America, United Arab Emirates, India","Drama, Period piece, Comedy-drama",8.1,503968.0,True,2011
+12673434.0,thor,2011-05-06,449300000.0,0 days 01:54:00,English,United States of America,"Fantasy Adventure, Adventure, Superhero movie, Superhero, Action/Adventure, Fantasy, Mythological Fantasy, Drama, Action",7.0,918174.0,False,2011
+28648635.0,x-men: first class,2011-05-25,353624124.0,0 days 02:12:00,"French, German, English, Russian, Spanish",United States of America,"Thriller, Science Fiction, Adventure, Superhero movie, Superhero, Action/Adventure, Fantasy, Drama, Action",7.7,738745.0,True,2011
+33509716.0,21 jump street,2012-03-12,201585328.0,0 days 01:49:00,English,United States of America,"Crime Fiction, Comedy film, Action",7.2,612876.0,False,2012
+31638720.0,django unchained,2012-12-25,,,,United States of America,"Western, Spaghetti Western, Drama",8.5,1746899.0,True,2012
+29769807.0,joker,2012-08-30,,,Hindi,India,"Fantasy, Adventure",8.4,1565657.0,True,2012
+30952655.0,life of pi,2012-11-21,,0 days 02:00:00,English,United States of America,"Drama, Adventure",7.9,677284.0,True,2012
+27383563.0,looper,2012-09-28,136513833.0,0 days 01:58:00,English,United States of America,"Science Fiction, Action",7.4,611730.0,False,2012
+31775043.0,prometheus,2012-05-30,402480000.0,0 days 02:04:00,"Gaelic, English",United States of America,"Thriller, Science Fiction, Horror, Adventure, Drama, Action",7.0,668035.0,False,2012
+12252836.0,skyfall,2012-10-23,,,English,"United States of America, United Kingdom","Thriller, Action, Adventure",7.8,743007.0,True,2012
+31201599.0,ted,2012-06-29,488965740.0,0 days 01:46:00,English,United States of America,Comedy,6.9,671742.0,False,2012
+25862453.0,the amazing spider-man,2012-06-13,752216557.0,0 days 02:16:00,English,United States of America,"Thriller, Science Fiction, Adventure, Superhero movie, Superhero, Action/Adventure, Drama, Reboot, Action",6.9,719926.0,False,2012
+29075630.0,the dark knight rises,2012-07-16,1078008948.0,0 days 02:45:00,English,"United States of America, United Kingdom","Crime Fiction, Thriller, Action, Drama",8.4,1876577.0,True,2012
+17608105.0,the hobbit: an unexpected journey,2012-11-28,,,English,"United States of America, New Zealand","Fantasy, Adventure",7.8,891178.0,True,2012
+31186339.0,the hunger games,2012-03-12,686533290.0,0 days 02:22:00,English,United States of America,"Action/Adventure, Science Fiction, Action, Drama",7.2,1025200.0,False,2012
+30265620.0,the perks of being a wallflower,2012-09-08,,,English,United States of America,"Romance Film, Drama",7.9,560902.0,True,2012
+33502433.0,the silver linings playbook,2012-11-21,,0 days 02:00:00,,United States of America,Comedy,7.7,752153.0,True,2012
+32071439.0,wreck-it ralph,2012-11-01,,,English,United States of America,"Family Film, Comedy, Animation",7.7,470813.0,True,2012

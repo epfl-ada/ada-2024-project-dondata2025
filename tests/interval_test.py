@@ -21,7 +21,6 @@ def outside_interval(predicted, up, down, real_data, tolerance):
     points_beneath = real_data < predicted
     
     # We return true if >tolerance% of the points are outside the interval and no points are beneath the predicted
-
     return (outside.sum() / len(outside) > tolerance) & (points_beneath.sum() == 0)
 
     

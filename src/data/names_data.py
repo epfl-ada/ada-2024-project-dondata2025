@@ -53,6 +53,7 @@ class NamesData(DataClass):
         # Check that the names contain only letters
         # allowed regex for name : '^[A-Z-\s\']+$' -> space and - are allowed and ' in case of names like O'Brien
         # allowed regex for sexe (only M/F) : '^[MF]$'
+
         assert all(self.clean_df['Name'].str.match("^[A-Z-\s\']+$")), f'{self.name} : Not all the names are composed of uppercased letters'
         assert all(self.clean_df['Sex'].str.match('^[MF]$')), f'{self.name} : The sex column contains values different from M/F'
 
@@ -69,6 +70,71 @@ class NamesData(DataClass):
     def clean_raw_data(self):
         raise NotImplementedError
     
+    # If a name appears as both M and F in the same year, we will keep only the most frequent 
+    def sex_handling(self):
+        # Group by Year, Name, and Sex, and sum the counts to find total occurrences
+        group = self.clean_df.groupby(['Year', 'Name', 'Sex'], as_index=False)['Count'].sum()
+
+        # For each (Year, Name), find the sex with the maximum count
+        # idxmax finds the index of the maximum Count per (Year, Name) group
+        winners = group.loc[group.groupby(['Year', 'Name'])['Count'].idxmax()]
+
+        # 'winners' now contains the (Year, Name, Sex) combination for the most frequent sex in that year-name pair.
+        # Merge back to self.clean_df to keep only the winning sex rows
+        self.clean_df = pd.merge(self.clean_df, winners[['Year', 'Name', 'Sex']], on=['Year','Name','Sex'], how='inner')
+
+        return self.clean_df
+
+    # Fill missing years with 0 count (1917, ..., 1919 has to be filled in 1918 with a 0) ! /!\ HAS TO BE CALLED AFTER SEX HANDLING
+    def fill_missing_years(self):
+
+        # Determine min and max year
+        min_year = self.clean_df['Year'].min()
+        max_year = self.clean_df['Year'].max()
+
+        # Get all unique names
+        unique_names = self.clean_df['Name'].dropna().unique()
+
+        # Create a DataFrame with a full range of years
+        all_years = pd.DataFrame({'Year': range(min_year, max_year + 1)})
+
+        # Create all combinations of (Year, Name)
+        all_combinations = (
+            all_years.assign(key=1)
+            .merge(pd.DataFrame({'Name': unique_names, 'key': 1}), on='key', how='outer')
+            .drop('key', axis=1)
+        )
+
+        # Merge to ensure all (Year, Name) pairs are present
+        self.clean_df = pd.merge(
+            all_combinations, 
+            self.clean_df, 
+            on=['Year', 'Name'], 
+            how='left',
+            validate='one_to_one'
+        )
+
+        # Fill missing Count with 0
+        self.clean_df['Count'] = self.clean_df['Count'].fillna(0)
+
+        # Now, fill the Sex column by propagating existing values. (This is possible due to sex_handling)
+        self.clean_df['Sex'] = self.clean_df.groupby('Name')['Sex'].ffill().bfill()
+
+        # This changed the type of the column to float -> cast to int64
+        self.clean_df['Count'] = self.clean_df['Count'].astype('int64')
+        
+        # same for the year
+        self.clean_df['Year'] = self.clean_df['Year'].astype('int64')
+
+        return self.clean_df
+
+    def load_clean_data(self):
+
+        # call the parent class method
+        super().load_clean_data()
+
+        #Drop NaN -> pandas bug (I manually checked that there are no NaN in the dataset, and still one is added when reading the big files)
+        self.clean_df = self.clean_df.dropna()
 
 # Class for the US data
 class USNamesData(NamesData):
@@ -81,6 +147,9 @@ class USNamesData(NamesData):
         self.clean_df.columns = self.columns
         # Rewrite the names in upper case
         self.clean_df['Name'] = self.clean_df['Name'].str.upper()
+
+        self.sex_handling()      
+        #self.fill_missing_years()
         # Check the data
         self.check_clean_data() #Nothing more has to be done, this dataset is already clean and of good quality
 
@@ -111,6 +180,9 @@ class UKNamesData(NamesData):
         self.clean_df = self.clean_df[self.clean_df['Name'].str.match('^[A-Z-\s\']+$')]
         # Dataset contains 1 missing values out of 565817 rows -> drop the row
         self.clean_df.dropna(inplace=True)
+
+        #self.sex_handling()
+        #self.fill_missing_years() # Nice idea but makes the computation way too long
         # Check the data
         self.check_clean_data()
 
@@ -153,6 +225,8 @@ class FranceNamesData(NamesData):
         # There is only 1 name not matching the regex -> drop
         self.clean_df = self.clean_df[self.clean_df['Name'].str.match('^[A-Z-\s\']+$')]      
 
+        #self.sex_handling()
+        #self.fill_missing_years()
         # Check the data
         self.check_clean_data()
 
@@ -197,6 +271,8 @@ class NovergianNamesData(NamesData):
         duplicates = df[df.duplicated()]
         df = df.groupby(['Year', 'Name', 'Sex']).sum().reset_index()
 
-        # Check the data
         self.clean_df = df
+        #self.sex_handling()
+        #self.fill_missing_years()
+        # Check the data
         self.check_clean_data()
