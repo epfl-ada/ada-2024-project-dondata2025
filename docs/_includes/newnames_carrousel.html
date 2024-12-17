@@ -146,7 +146,7 @@
     <div class="carousel-wrapper">
         <div class="carousel-container">
             <div class="carousel carousel-instance">
-                <div class="carousel-slide">
+                <div class="carousel-slide" id="carousel-2">
                     <div class="carousel-content">
                         <section>
                             <h3>Neo from <i>The Matrix</i></h3>
@@ -179,8 +179,8 @@ const totalSlides2 = carousel2.children.length;
 let currentSlide_newname = 0;
 
 function updateCarousel2() {
-    const offset = -currentSlide_newname * 100;
-    carousel2.style.transform = `translateX(${offset}%)`;
+    const offset2 = -currentSlide_newname * 100;
+    carousel2.style.transform = `translateX(${offset2}%)`;
 }
 
 function prevSlide2() {
