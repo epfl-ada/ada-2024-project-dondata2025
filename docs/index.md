@@ -36,12 +36,17 @@ Our dataset contains movies released up to 2014 and informations such as their *
 In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average rating** and **number of voters** coming from the [IMDB data files](https://datasets.imdbws.com).
 We pretreated this dataset to only keep one weighted mean of votes per movie and the number of voters. We created an information 
 
+
 ### What makes a movie popular ?
 Blockbuster movies are far more likely to influence baby name trends than obscure short films from the 1940s. To focus on culturally impactful films, we filtered out less popular ones. This was done by evaluating a movie's popularity using its average IMDb rating and the number of votes it received.
 {% include rating-votes.html %}
 ### Genre representation
+The genre of a movie is a key indicator of themes and storytelling style of a movie. We will look at its distribution in the dataset.
 {% include top_10_genres.html %}
 **NB:** A movie can belong to multiple genres.
+
+Characters in movie genres often follow archetypes, including how they are named. Here are the most common names by genre.
+{% include top_10_names_by_genres.html %}
 ### Important characters
 Some characters retain the attention of spectators whereas others will be forgotten after a day. To account for this disparity and for simplicity, we decided to keep only the most important characters in every movie in the dataset. 
 
@@ -51,19 +56,22 @@ In order to measure character importance, we count the number of citation of the
 
 
 ## The baby names collection
-Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events. A cultural event can even create a new name, as for [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)). 
+Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events.
 
 We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Norway to acccount for name trends.
 ### Most given names in the dataset
 <img src="assets/img/wordcloud.png" alt="Word Cloud">
 
 # Processes
+
+<img src="assets/img/laplace_citation.jpg" alt="laplace citation" height=300>
+
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
 ## The naïve approach
 At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
 
 
-<img src="assets/img/trend_formula.png">
+<img src="assets/img/trend_formula.png" alt="trend formula">
 
 
 Unfortunately, this is not so simple. This model doesn't account for the inverse effect, i.e. the name trend influencing the filmmakers for the name of their characters. 
@@ -71,11 +79,18 @@ Unfortunately, this is not so simple. This model doesn't account for the inverse
 To illustrate this, let's take the example of [Michael from Peter Pan](https://disney.fandom.com/wiki/Michael_Darling). According to our model, the 1953 film Peter Pan had a great impact on people naming their child Michael. Let's look at the trend graph : 
 
 
-<img src="assets/img/Michael_name_trend.png">
+{% include michael_trend.html %}
 
 
 It is clear that the film was released during a peak of popularity for the name Michael, and therefore most likely didn't play a role in its usage.
 
+
+# Birth of a new name
+Some films have such a cultural impact that they leave a lasting impression on the audience with their characters and make them remember their name, even when they don't even exist. These events lead to the creation of a new name. Ever heard of children named [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)) ?
+
+These names did not exist and were invented by the scriptwriters. They left a mark on popular culture, and people started naming their child like their favorite character !
+
+{% include newnames_carrousel.html %}
 
 
 
@@ -89,6 +104,13 @@ It is clear that the film was released during a peak of popularity for the name 
     <p>Paragraph on the right for additional content or details.</p>
   </div>
 </div>
+
+
+# Is there a movie genre that have a stronger influence on names ?
+
+
+
+# Are women names more influenced than man's ?
 
 
 # Bibliography
