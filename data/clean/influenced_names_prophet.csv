@@ -8,17 +8,17 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 1048695,dracula,1979,Jonathan,6,Jonathan Harker,JONATHAN,13219.566666666668,1
 751724,i spit on your grave,1978,Matthew,13,Matthew hides,MATTHEW,12837.433333333334,0
 5735396,invasion of the body snatchers,1978,Matthew,16,Matthew Bennell,MATTHEW,12837.433333333334,0
-142417,apollo 13,1995,Jack,8,Jack Swigert,JACK,12508.133333333335,1
-268833,goldeneye,1995,Jack,4,Jack Wade,JACK,12508.133333333335,1
-167857,the usual suspects,1995,Jack,3,Jack Baer,JACK,12508.133333333335,1
+142417,apollo 13,1995,Jack,8,Jack Swigert,JACK,12508.133333333337,1
+268833,goldeneye,1995,Jack,4,Jack Wade,JACK,12508.133333333337,1
+167857,the usual suspects,1995,Jack,3,Jack Baer,JACK,12508.133333333337,1
 52371,titanic,1997,Jack,27,Jack Dawson,JACK,12348.266666666668,1
-29943,the breakfast club,1985,Andrew,3,Andrew Clark,ANDREW,11099.766666666663,0
+29943,the breakfast club,1985,Andrew,3,Andrew Clark,ANDREW,11099.766666666665,0
 17049621,the andromeda strain,1971,Jeremy,2,Jeremy Stone,JEREMY,10936.266666666666,0
 362719,superman,1978,Jonathan,2,Jonathan Kent's,JONATHAN,10878.166666666668,1
 685977,sixteen candles,1984,Samantha,14,"Samantha ""Sam"" Baker",SAMANTHA,10643.533333333333,1
 30327,the terminator,1984,Kyle,14,Kyle Reese,KYLE,10607.133333333331,1
 99123,speed,1994,Jack,35,Jack Traven,JACK,10288.2,1
-196176,straw dogs,1971,Amy,17,Amy,AMY,10136.900000000001,0
+196176,straw dogs,1971,Amy,17,Amy,AMY,10136.9,0
 447299,from dusk till dawn,1996,Jacob,10,Jacob,JACOB,8951.533333333336,0
 97646,die hard,1988,Alexander,2,Alexander,ALEXANDER,8733.633333333331,1
 261237,the gods must be crazy,1980,Andrew,2,Andrew Steyn,ANDREW,8704.033333333333,0
@@ -30,7 +30,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 1267713,the others,2001,Grace,7,Grace Stewart,GRACE,6960.4,0
 62668,the ring,2002,Aidan,7,Aidan,AIDAN,6771.033333333334,0
 706878,the last boy scout,1991,Alexander,17,"James ""Jimmy"" Alexander Dix",ALEXANDER,6737.200000000001,0
-654530,legends of the fall,1994,Samuel,11,Samuel,SAMUEL,6672.5666666666675,0
+654530,legends of the fall,1994,Samuel,11,Samuel,SAMUEL,6672.566666666668,0
 1854000,the bourne ultimatum,2007,Noah,15,Noah Vosen,NOAH,6662.5,0
 171562,american history x,1998,Cameron,3,Cameron Alexander,CAMERON,6534.799999999999,0
 17917662,the notebook,2004,Noah,24,Noah Calhoun,NOAH,6105.4,1
@@ -63,7 +63,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 62668,the ring,2002,Noah,6,Noah,NOAH,4297.633333333331,0
 451062,the dead zone,1983,Sarah,5,Sarah Bracknell,SARAH,4290.5,0
 129493,dead poets society,1989,Cameron,2,Charlie punches Cameron,CAMERON,4120.3,1
-1210303,constantine,2005,Gabriel,8,Gabriel,GABRIEL,4042.7333333333318,0
+1210303,constantine,2005,Gabriel,8,Gabriel,GABRIEL,4042.733333333332,0
 12064359,cloverfield,2008,Lily,2,Lily,LILY,3949.633333333333,0
 26742350,the addams family,1991,Abigail,11,Abigail Craven,ABIGAIL,3876.333333333333,1
 666923,the lost world: jurassic park,1997,Owen,6,Nick Van Owen,OWEN,3865.2,1
@@ -74,16 +74,16 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 445066,robocop,1987,Alex,6,Alex Murphy,ALEX,3639.9,1
 676909,the terminal,2004,Amelia,3,Amelia Warren,AMELIA,3591.133333333333,1
 4560,braveheart,1995,Isabella,6,Isabella,ISABELLA,3563.166666666667,1
-1145761,where eagles dare,1968,Jonathan,8,Jonathan Smith,JONATHAN,3555.8999999999996,1
+1145761,where eagles dare,1968,Jonathan,8,Jonathan Smith,JONATHAN,3555.9,1
 133574,unforgiven,1992,Logan,7,Ned Logan,LOGAN,3517.7,1
-237303,bruce almighty,2003,Grace,5,Grace Connelly,GRACE,3503.8999999999996,0
+237303,bruce almighty,2003,Grace,5,Grace Connelly,GRACE,3503.9,0
 487300,fanny and alexander,1982,Emilie,5,Emilie,EMILIE,3472.8,0
 3213691,there will be blood,2007,Henry,3,Henry,HENRY,3397.833333333334,0
 88326,ferris bueller's day off,1986,Cameron,6,Cameron Frye,CAMERON,3354.2,1
 210151,"lock, stock and two smoking barrels",1998,Harry,9,"Harry ""The Hatchet"" Lonsdale's",HARRY,3336.266666666667,1
 5842075,fear and loathing in las vegas,1998,Lucy,5,Lucy,LUCY,3314.9,1
 654530,legends of the fall,1994,Tristan,16,Tristan,TRISTAN,3297.966666666667,1
-30000,taxi driver,1976,Travis,16,Travis Bickle,TRAVIS,3293.3999999999996,0
+30000,taxi driver,1976,Travis,16,Travis Bickle,TRAVIS,3293.4,0
 473273,jurassic park iii,2001,Ellie,3,Ellie Sattler,ELLIE,3286.666666666667,1
 3600824,a time to kill,1996,Hailey,11,Carl Lee Hailey,HAILEY,3286.5,1
 3600824,a time to kill,1996,Hailey,3,Tonya Hailey,HAILEY,3286.5,1
@@ -95,10 +95,10 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 431014,big fish,2003,Ashton,2,Ashton,ASHTON,3228.433333333333,0
 1277918,charlie and the chocolate factory,2005,Charlie,14,Charlie Bucket,CHARLIE,3171.7,1
 77744,wayne's world,1992,Noah,3,Noah Vanderhoff,NOAH,3097.233333333333,0
-685977,sixteen candles,1984,Ryan,7,Jake Ryan,RYAN,3092.7999999999993,0
+685977,sixteen candles,1984,Ryan,7,Jake Ryan,RYAN,3092.7999999999997,0
 525314,shrek 2,2004,Lillian,2,Queen Lillian,LILLIAN,3073.6,1
-68374,true lies,1994,Harry,25,Harry Tasker,HARRY,3034.3333333333335,0
-99123,speed,1994,Harry,12,Harry hostage,HARRY,3034.3333333333335,0
+68374,true lies,1994,Harry,25,Harry Tasker,HARRY,3034.333333333333,0
+99123,speed,1994,Harry,12,Harry hostage,HARRY,3034.333333333333,0
 30327,the terminator,1984,Sarah,12,Sarah Connor,SARAH,3031.5999999999985,0
 11077335,doctor zhivago,1965,Tonya,2,Tonya Gromeko,TONYA,3025.466666666667,1
 97758,doctor zhivago,1965,Tonya,3,Tonya Komarovskaya,TONYA,3025.466666666667,1
@@ -110,7 +110,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 1428048,the last of the mohicans,1992,Cameron,2,Cameron,CAMERON,2881.833333333334,0
 142049,minority report,2002,Leo,8,Leo Crow,LEO,2831.166666666667,1
 228274,the last samurai,2003,Nathan,22,Nathan Algren,NATHAN,2790.666666666668,0
-236691,cabaret,1972,Brian,18,Brian Roberts,BRIAN,2750.8333333333358,0
+236691,cabaret,1972,Brian,18,Brian Roberts,BRIAN,2750.833333333336,0
 23808966,bill & ted's excellent adventure,1989,Logan,16,"Ted"" Theodore Logan",LOGAN,2695.166666666667,1
 219712,final destination,2000,Carter,6,Carter Horton,CARTER,2685.533333333333,1
 302970,edward scissorhands,1990,Kevin,2,Kevin,KEVIN,2683.7333333333336,0
@@ -118,7 +118,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 73170,aladdin,1992,Jasmine,13,Jasmine,JASMINE,2646.4333333333343,0
 210151,"lock, stock and two smoking barrels",1998,Tom,7,Tom,TOM,2614.6,1
 301574,the little mermaid,1989,Ariel,27,Ariel spends,ARIEL,2508.0333333333338,1
-177906,labyrinth,1986,Sarah,22,Sarah,SARAH,2483.4000000000015,0
+177906,labyrinth,1986,Sarah,22,Sarah,SARAH,2483.400000000001,0
 84931,witness,1985,Samuel,9,Samuel,SAMUEL,2451.666666666666,0
 4608223,west side story,1961,Maria,42,Maria,MARIA,2451.0,0
 6984559,the guns of navarone,1961,Maria,5,Maria,MARIA,2451.0,0
@@ -126,7 +126,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 186856,the omen,1976,Damien,15,Damien Thorn,DAMIEN,2352.733333333333,0
 186856,the omen,1976,Katherine,3,Katherine,KATHERINE,2308.4333333333334,1
 29943,the breakfast club,1985,Allison,3,Allison Reynolds,ALLISON,2270.3,0
-312757,tron,1982,Kevin,15,Kevin Flynn,KEVIN,2235.9000000000015,1
+312757,tron,1982,Kevin,15,Kevin Flynn,KEVIN,2235.900000000001,1
 99304,pearl harbor,2001,Evelyn,10,Evelyn Johnson,EVELYN,2195.466666666667,1
 957359,the mummy returns,2001,Evelyn,6,Evelyn O'Connell,EVELYN,2195.466666666667,1
 3156200,hang 'em high,1968,Adam,4,Adam Fenton,ADAM,2157.966666666667,0
@@ -139,28 +139,28 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 204019,notting hill,1999,William,4,"William ""Will",WILLIAM,2050.333333333332,0
 228355,the naked gun: from the files of police squad!,1988,Spencer,9,Jane Spencer,SPENCER,2019.2,1
 489800,rush hour,1998,Carter,22,Detective James Carter,CARTER,2012.2333333333336,1
-725459,the exorcist,1973,Damien,10,Damien Karras,DAMIEN,1975.5333333333335,1
+725459,the exorcist,1973,Damien,10,Damien Karras,DAMIEN,1975.5333333333333,1
 724258,mission: impossible,1996,Max,8,Max,MAX,1961.1,1
 84931,witness,1985,Rachel,14,Rachel Lapp,RACHEL,1939.5333333333328,0
-702117,spider-man 3,2007,Harry,14,Harry Osborn,HARRY,1927.6333333333332,0
-28269,saving private ryan,1998,George,2,George Marshall,GEORGE,1917.8000000000002,1
-171562,american history x,1998,Seth,2,Seth Ryan,SETH,1883.1333333333332,0
-724258,mission: impossible,1996,Alexander,3,Alexander Golitsyn,ALEXANDER,1881.1666666666679,0
-4846576,american psycho,2000,Evelyn,2,Evelyn,EVELYN,1876.3666666666666,1
+702117,spider-man 3,2007,Harry,14,Harry Osborn,HARRY,1927.6333333333328,0
+28269,saving private ryan,1998,George,2,George Marshall,GEORGE,1917.8,1
+171562,american history x,1998,Seth,2,Seth Ryan,SETH,1883.1333333333328,0
+724258,mission: impossible,1996,Alexander,3,Alexander Golitsyn,ALEXANDER,1881.166666666668,0
+4846576,american psycho,2000,Evelyn,2,Evelyn,EVELYN,1876.3666666666663,1
 21180,natural born killers,1994,Owen,2,Owen Traft,OWEN,1841.4,1
 370064,love actually,2003,Natalie,4,Natalie  ,NATALIE,1831.166666666666,0
 348737,mrs. doubtfire,1993,Miranda,6,Miranda,MIRANDA,1814.666666666667,0
 666923,the lost world: jurassic park,1997,Carter,3,Carter,CARTER,1782.8,1
 52371,titanic,1997,Dawson,27,Jack Dawson,DAWSON,1779.3666666666668,1
 52371,titanic,1997,Dawson,33,Rose Dawson Calvert,DAWSON,1779.3666666666668,1
-28269,saving private ryan,1998,Charlie,3,Charlie Company,CHARLIE,1770.8333333333335,1
+28269,saving private ryan,1998,Charlie,3,Charlie Company,CHARLIE,1770.8333333333337,1
 268833,goldeneye,1995,Valentin,2,Valentin Zukovsky,VALENTIN,1742.9666666666672,0
 920613,cars,2006,Hudson,7,Doc Hudson,HUDSON,1718.0666666666666,0
 146236,close encounters of the third kind,1977,Jillian,3,Jillian,JILLIAN,1700.6333333333332,1
 525113,tombstone,1993,Wyatt,16,Wyatt Earp,WYATT,1685.2666666666664,1
 473273,jurassic park iii,2001,Cooper,4,Cooper,COOPER,1683.4666666666665,1
 9541497,in bruges,2008,Harry,53,Harry shoots Ray,HARRY,1660.8000000000002,0
-52549,star wars episode iv: a new hope,1977,Luke,16,Luke Skywalker,LUKE,1653.1666666666665,1
+52549,star wars episode iv: a new hope,1977,Luke,16,Luke Skywalker,LUKE,1653.1666666666663,1
 188902,gangs of new york,2002,Jack,3,Jack Mulraney,JACK,1649.3666666666686,0
 54173,pulp fiction,1994,Mia,5,Mia Wallace,MIA,1611.9333333333334,1
 2173342,two mules for sister sara,1970,Sara,2,Sara,SARA,1579.7333333333336,0
@@ -180,7 +180,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 18952889,"it's a mad, mad, mad, mad world",1963,Monica,3,Monica,MONICA,1478.5,0
 471370,an american werewolf in london,1981,Alex,2,Alex Price,ALEX,1475.7,1
 23270459,inception,2010,Arthur,7,Arthur,ARTHUR,1467.1000000000004,0
-6268880,on her majesty's secret service,1969,Tracy,10,Tracy,TRACY,1462.9666666666653,0
+6268880,on her majesty's secret service,1969,Tracy,10,Tracy,TRACY,1462.966666666665,0
 2750041,memento,2000,Natalie,3,Natalie,NATALIE,1453.7333333333336,0
 29942,the graduate,1967,Benjamin,49,Elaine confronts Benjamin,BENJAMIN,1449.5333333333333,1
 1353086,the fearless vampire killers,1967,Sarah,9,Sarah,SARAH,1443.6333333333332,1
@@ -211,7 +211,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 695780,casino,1995,Sam,26,"Sam ""Ace"" Rothstein",SAM,1240.3333333333333,1
 3700174,jumanji,1995,Sam,6,Sam,SAM,1240.3333333333333,1
 3565461,mars attacks!,1996,James,6,"James ""Jimmy"" Dale",JAMES,1234.7999999999993,0
-268833,goldeneye,1995,Alec,11,Alec Trevelyan,ALEC,1227.6666666666665,0
+268833,goldeneye,1995,Alec,11,Alec Trevelyan,ALEC,1227.6666666666663,0
 447299,from dusk till dawn,1996,Kate,13,Kate,KATE,1227.1333333333334,0
 3733842,seconds,1966,Marcus,2,Nora Marcus,MARCUS,1199.7333333333336,0
 6984559,the guns of navarone,1961,Andrea,7,Andrea Stavrou,ANDREA,1193.666666666667,0
@@ -221,34 +221,34 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 670407,harry potter and the order of the phoenix,2007,Arthur,2,Arthur Weasley,ARTHUR,1137.9666666666672,0
 197558,"monsters, inc.",2001,Henry,5,Henry J. Waternoose III,HENRY,1129.8666666666668,0
 695780,casino,1995,Amy,4,Amy,AMY,1107.5333333333328,0
-920296,somewhere in time,1980,Elise,5,Elise McKenna,ELISE,1106.8333333333335,1
+920296,somewhere in time,1980,Elise,5,Elise McKenna,ELISE,1106.8333333333337,1
 924771,the naked gun 2½: the smell of fear,1991,Spencer,10,Jane Spencer,SPENCER,1091.9333333333334,0
 226198,sleepless in seattle,1993,Jonah,9,Jonah,JONAH,1080.6,1
 407288,2 fast 2 furious,2003,Roman,3,Roman Pearce,ROMAN,1079.7,1
 1428048,the last of the mohicans,1992,Nathaniel,2,Nathaniel Hawkeye,NATHANIEL,1079.0,0
-695227,lethal weapon 2,1989,Martin,9,Martin Riggs,MARTIN,1078.1999999999998,1
+695227,lethal weapon 2,1989,Martin,9,Martin Riggs,MARTIN,1078.1999999999998,0
 12319656,paint your wagon,1969,Jacob,2,Jacob Woodling,JACOB,1077.5333333333333,1
 3557540,the hunt for red october,1990,Jack,8,Jack Ryan,JACK,1074.2333333333336,1
 99123,speed,1994,Sam,4,Sam,SAM,1056.3333333333333,0
 648921,face/off,1997,Eve,4,Eve,EVE,1044.7333333333331,1
 695780,casino,1995,McKenna,7,Ginger McKenna,MCKENNA,1034.3333333333333,1
 673472,the lost boys,1987,Max,12,Max,MAX,1032.5,1
-431562,almost famous,2000,Ben,2,Ben Fong-Torres,BEN,1032.3333333333335,0
+431562,almost famous,2000,Ben,2,Ben Fong-Torres,BEN,1032.3333333333337,0
 370064,love actually,2003,Colin,3,Colin meets Stacey,COLIN,1020.8000000000002,0
 5878044,picnic at hanging rock,1975,Miranda,2,Miranda,MIRANDA,1002.6333333333332,1
 213275,back to the future part iii,1990,Clara,10,Clara Clayton,CLARA,1001.3666666666668,1
-899442,charade,1963,Adam,9,Adam Canfield,ADAM,987.6666666666667,0
+899442,charade,1963,Adam,9,Adam Canfield,ADAM,987.6666666666669,0
 4440277,highlander,1986,Connor,13,Connor MacLeod,CONNOR,980.6,1
 648921,face/off,1997,Adam,4,Adam,ADAM,975.3999999999996,0
 321496,pirates of the caribbean: the curse of the black pearl,2003,Jack,33,Jack Sparrow,JACK,968.4666666666672,0
 5016250,watchmen,2009,Blake,3,Edward Blake,BLAKE,964.0,0
 618929,ghostbusters ii,1989,Oscar,7,Oscar,OSCAR,953.7666666666664,1
-129619,ghost,1990,Molly,9,Molly Jensen,MOLLY,947.6666666666665,0
+129619,ghost,1990,Molly,9,Molly Jensen,MOLLY,947.6666666666664,0
 1428048,the last of the mohicans,1992,Alice,7,Alice,ALICE,935.3000000000002,0
 1145761,where eagles dare,1968,Heidi,3,Heidi,HEIDI,929.833333333333,0
 157172,time bandits,1981,Kevin,23,Kevin,KEVIN,923.0333333333328,1
 9979,eyes wide shut,1999,Arthur,3,Arthur Schnitzler's,ARTHUR,916.8000000000002,0
-241171,weird science,1985,Ian,9,Ian,IAN,915.0666666666671,0
+241171,weird science,1985,Ian,9,Ian,IAN,915.0666666666672,0
 2216381,the intern,2000,Jocelyn,4,Jocelyn Bennett,JOCELYN,910.0666666666666,0
 129524,field of dreams,1989,Jackson,4,Joe Jackson,JACKSON,901.7,1
 43566,heat,1995,Hanna,5,Vincent Hanna,HANNA,898.6666666666665,1
@@ -353,33 +353,33 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 57820,donnie darko,2001,Rose,2,Rose,ROSE,494.26666666666665,0
 473273,jurassic park iii,2001,Alan,3,Alan Grant,ALAN,492.9000000000001,0
 716738,meet joe black,1998,Joe,6,Joe,JOE,491.13333333333344,0
-25080984,the king's speech,2010,George,3,George VI,GEORGE,479.23333333333267,0
-13950959,shutter island,2010,George,3,George Noyce,GEORGE,479.23333333333267,0
-9834441,harry potter and the deathly hallows: part i,2010,George,2,George Weasley,GEORGE,479.23333333333267,0
+25080984,the king's speech,2010,George,3,George VI,GEORGE,479.2333333333327,0
+13950959,shutter island,2010,George,3,George Noyce,GEORGE,479.2333333333327,0
+9834441,harry potter and the deathly hallows: part i,2010,George,2,George Weasley,GEORGE,479.2333333333327,0
 456587,videodrome,1983,Max,21,Max Renn,MAX,476.1333333333333,1
 29943,the breakfast club,1985,Claire,4,Claire Standish,CLAIRE,468.4333333333334,0
 335298,toy story 2,1999,Andy,9,Andy,ANDY,465.96666666666647,1
 471544,blade,1998,Abraham,4,Abraham Whistler,ABRAHAM,460.83333333333326,0
 97646,die hard,1988,Marco,3,Marco,MARCO,460.1,0
-99454,patton,1970,Omar,3,Omar Bradley,OMAR,459.96666666666664,0
-525113,tombstone,1993,Josephine,6,Josephine Marcus,JOSEPHINE,458.73333333333323,1
+99454,patton,1970,Omar,3,Omar Bradley,OMAR,459.9666666666666,0
+525113,tombstone,1993,Josephine,6,Josephine Marcus,JOSEPHINE,458.7333333333332,1
 31201599,ted,2012,Bennett,32,John Bennett,BENNETT,455.0,0
 6804043,gladiator,2000,Abraham,2,Abraham,ABRAHAM,453.9666666666667,0
 51906,breakfast at tiffany's,1961,José,5,José da Silva Pereira,JOSE,449.66666666666697,1
 1048388,hot shots!,1991,Harley,3,Buzz Harley,HARLEY,448.53333333333336,1
 513149,cannibal holocaust,1980,Alan,4,Alan Yates,ALAN,445.6999999999998,1
-54175,saturday night fever,1977,Pauline,2,Pauline,PAULINE,445.66666666666674,0
+54175,saturday night fever,1977,Pauline,2,Pauline,PAULINE,445.66666666666674,1
 441315,true romance,1993,Elliot,6,Elliot,ELLIOT,444.5333333333333,0
 142049,minority report,2002,Iris,2,Iris Hineman,IRIS,436.6333333333332,1
-99123,speed,1994,Annie,11,Annie Porter,ANNIE,435.76666666666677,0
+99123,speed,1994,Annie,11,Annie Porter,ANNIE,435.7666666666668,0
 357473,die hard: with a vengeance,1995,Simon,17,Simon,SIMON,435.2666666666664,0
 348292,the dark crystal,1982,Kira,15,Kira,KIRA,432.83333333333337,0
-5735396,invasion of the body snatchers,1978,Geoffrey,2,Geoffrey Howell,GEOFFREY,432.29999999999995,0
-920296,somewhere in time,1980,William,5,William Fawcett Robinson,WILLIAM,431.03333333333285,1
-2982688,x-men origins: wolverine,2009,Logan,20,Thomas Logan,LOGAN,420.10000000000036,0
-9979,eyes wide shut,1999,Alice,5,Alice,ALICE,419.46666666666715,0
+5735396,invasion of the body snatchers,1978,Geoffrey,2,Geoffrey Howell,GEOFFREY,432.3,0
+920296,somewhere in time,1980,William,5,William Fawcett Robinson,WILLIAM,431.0333333333329,1
+2982688,x-men origins: wolverine,2009,Logan,20,Thomas Logan,LOGAN,420.1000000000004,0
+9979,eyes wide shut,1999,Alice,5,Alice,ALICE,419.4666666666672,0
 997939,kindergarten cop,1990,Rachel,10,Rachel Myatt Crisp,RACHEL,418.6333333333314,0
-30006,the silence of the lambs,1991,Martin,2,Catherine Martin,MARTIN,418.60000000000036,0
+30006,the silence of the lambs,1991,Martin,2,Catherine Martin,MARTIN,418.6000000000004,0
 612052,spider-man 2,2004,Jameson,3,John Jameson,JAMESON,417.26666666666665,1
 473273,jurassic park iii,2001,Ben,3,Ben Hildebrand,BEN,414.4666666666667,0
 706878,the last boy scout,1991,Darian,5,Darian,DARIAN,410.1333333333334,1
@@ -390,24 +390,24 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 11383001,ex machina,2007,Xander,3,Elizabeth Xander,XANDER,397.66666666666674,0
 619728,tangled,2010,Flynn,26,Flynn Rider,FLYNN,393.33333333333337,0
 23808966,bill & ted's excellent adventure,1989,Preston,11,Bill S. Preston,PRESTON,390.83333333333326,0
-25080984,the king's speech,2010,Prince,12,Prince Albert,PRINCE,385.96666666666664,0
-1065214,amadeus,1984,Antonio,5,Antonio Salieri,ANTONIO,385.83333333333303,0
+25080984,the king's speech,2010,Prince,12,Prince Albert,PRINCE,385.9666666666666,0
+1065214,amadeus,1984,Antonio,5,Antonio Salieri,ANTONIO,385.833333333333,0
 43566,heat,1995,Lauren,2,Lauren,LAUREN,383.1333333333314,0
 725103,sleepers,1996,Tommy,5,Tommy,TOMMY,382.0333333333333,1
 105434,trainspotting,1996,Tommy,3,Tommy,TOMMY,382.0333333333333,1
-2969247,quantum of solace,2008,Felix,3,Felix Leiter,FELIX,381.06666666666683,0
-468293,philadelphia,1993,Joe,11,Joe Miller,JOE,379.70000000000005,0
+2969247,quantum of solace,2008,Felix,3,Felix Leiter,FELIX,381.0666666666668,0
+468293,philadelphia,1993,Joe,11,Joe Miller,JOE,379.7000000000001,0
 676909,the terminal,2004,Cruz,2,Enrique Cruz,CRUZ,379.0666666666666,1
 433414,tremors,1990,Valentine,6,Valentine,VALENTINE,379.03333333333336,1
 17574075,scott pilgrim vs. the world,2010,Gideon,3,Gideon Graves,GIDEON,374.5,0
 1125221,national lampoon's christmas vacation,1989,Ruby,2,Ruby Sue,RUBY,373.4666666666666,1
 42313,the wicker man,1973,Neil,17,Neil Howie,NEIL,362.76666666666665,1
-167857,the usual suspects,1995,Keaton,10,Dean Keaton,KEATON,361.46666666666664,1
+167857,the usual suspects,1995,Keaton,10,Dean Keaton,KEATON,361.4666666666666,1
 320401,barton fink,1991,Ben,2,Ben Geisler,BEN,358.3,0
 564947,"i, robot",2004,Sonny,15,Sonny of Lanning's,SONNY,355.7,1
 3600824,a time to kill,1996,Billy,2,Billy Ray Cobb,BILLY,355.0,0
 503573,dazed and confused,1993,Sabrina,2,Sabrina Davis,SABRINA,354.76666666666733,0
-53085,toy story,1995,Andy,18,Andy Davis,ANDY,352.16666666666674,1
+53085,toy story,1995,Andy,18,Andy Davis,ANDY,352.16666666666674,0
 1125221,national lampoon's christmas vacation,1989,Ellen,2,Ellen,ELLEN,351.3666666666668,1
 451866,mission: impossible ii,2000,Nyah,3,Nyah,NYAH,349.0333333333333,0
 666923,the lost world: jurassic park,1997,Ian,16,Ian Malcolm,IAN,347.6999999999998,0
@@ -422,7 +422,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 1349086,the departed,2006,Madden,3,Madolyn Madden,MADDEN,327.1,0
 255898,mad max,1979,Jessie,3,Jessie,JESSIE,325.4666666666667,1
 336808,ace ventura: pet detective,1994,Lois,3,Lois Einhorn,LOIS,323.7,0
-5871867,logan's run,1976,Logan,6,Logan,LOGAN,318.23333333333335,1
+5871867,logan's run,1976,Logan,6,Logan,LOGAN,318.2333333333333,1
 1287385,million dollar baby,2004,Frankie,17,Frankie Dunn,FRANKIE,314.9,1
 77744,wayne's world,1992,Kane,10,Benjamin Kane,KANE,313.4,1
 9979,eyes wide shut,1999,Victor,9,Victor Ziegler,VICTOR,313.33333333333303,0
@@ -446,89 +446,89 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 68485,jurassic park,1993,Ian,7,Ian Malcolm,IAN,287.3000000000002,0
 75261,national lampoon's animal house,1978,Mandy,2,Mandy Pepperidge,MANDY,282.13333333333344,0
 213275,back to the future part iii,1990,Clayton,10,Clara Clayton,CLAYTON,281.96666666666647,0
-1814329,stir crazy,1980,Meredith,4,Meredith,MEREDITH,281.43333333333317,0
+1814329,stir crazy,1980,Meredith,4,Meredith,MEREDITH,281.4333333333332,0
 106117,thelma & louise,1991,Sawyer,12,Louise Sawyer,SAWYER,281.26666666666665,1
 320401,barton fink,1991,Charlie,3,Charlie Meadows,CHARLIE,281.1,0
-146947,spider-man,2002,Jameson,12,Jameson dubs Norman's,JAMESON,280.73333333333335,0
+146947,spider-man,2002,Jameson,12,Jameson dubs Norman's,JAMESON,280.7333333333333,0
 3746,blade runner,1982,Tyrell,4,Tyrell,TYRELL,279.7,1
 2251266,ocean's eleven,2001,Reuben,3,Reuben Tishkoff,REUBEN,279.1333333333334,1
 31557,"the good, the bad and the ugly",1966,Angel,16,Angel Eyes's,ANGEL,277.66666666666663,0
 25491,the rocky horror picture show,1975,Brad,13,Brad Majors,BRAD,277.13333333333367,0
-1213838,toy story 3,2010,Bonnie,8,Bonnie,BONNIE,273.26666666666665,1
+1213838,toy story 3,2010,Bonnie,8,Bonnie,BONNIE,273.26666666666665,0
 51888,indiana jones and the last crusade,1989,Henry,4,Henry Jones,HENRY,273.0666666666666,1
 503573,dazed and confused,1993,Davis,2,Sabrina Davis,DAVIS,271.8,1
 52371,titanic,1997,Brock,3,Brock Lovett,BROCK,270.5,0
 167857,the usual suspects,1995,Dean,10,Dean Keaton,DEAN,267.79999999999995,1
 202652,romeo + juliet,1996,Juliet,22,Juliet,JULIET,266.76666666666665,1
 7870124,the lion in winter,1968,Geoffrey,2,Prince Geoffrey,GEOFFREY,264.70000000000005,0
-277149,there's something about mary,1998,Tucker,5,Tucker,TUCKER,262.20000000000005,1
+277149,there's something about mary,1998,Tucker,5,Tucker,TUCKER,262.20000000000005,0
 213472,aliens,1986,Ellen,15,Ellen Ripley,ELLEN,261.0999999999999,1
 3600824,a time to kill,1996,Lee,2,Lee Cobb,LEE,258.3666666666668,0
 3600824,a time to kill,1996,Lee,11,Carl Lee Hailey,LEE,258.3666666666668,0
 4728,batman returns,1992,Selina,2,Selina Kyle,SELINA,257.26666666666665,0
 4453691,blood diamond,2006,Archer,7,Danny Archer,ARCHER,255.4333333333333,1
-213251,alien³,1992,Ellen,12,Ellen Ripley,ELLEN,253.16666666666674,0
+213251,alien³,1992,Ellen,12,Ellen Ripley,ELLEN,253.16666666666677,0
 74537,brazil,1985,Ida,2,Ida,IDA,251.53333333333336,1
 53085,toy story,1995,Davis,18,Andy Davis,DAVIS,251.2,1
-24480838,black swan,2010,Nina,2,Nina,NINA,250.26666666666642,0
+24480838,black swan,2010,Nina,2,Nina,NINA,250.2666666666664,0
 202652,romeo + juliet,1996,Romeo,4,Romeo,ROMEO,249.76666666666668,1
 101954,the english patient,1996,Hana,4,Hana,HANA,244.9333333333333,1
-19625929,falling down,1993,Adele,3,Adele,ADELE,243.39999999999998,0
-6446062,moonraker,1979,Holly,2,Holly Goodhead,HOLLY,243.10000000000036,0
+19625929,falling down,1993,Adele,3,Adele,ADELE,243.4,0
+6446062,moonraker,1979,Holly,2,Holly Goodhead,HOLLY,243.1000000000004,0
 8031432,the curious case of benjamin button,2008,Daisy,18,Daisy,DAISY,242.89999999999964,0
 337740,bram stoker's dracula,1992,Abraham,9,Abraham Van Helsing,ABRAHAM,241.9666666666667,0
 697113,big trouble in little china,1986,Jack,17,Jack Burton,JACK,241.76666666666665,1
-226198,sleepless in seattle,1993,Reed,16,Annie Reed,REED,240.86666666666662,1
+226198,sleepless in seattle,1993,Reed,16,Annie Reed,REED,240.86666666666665,1
 343408,the aristocats,1970,Abigail,2,Abigail Gabble,ABIGAIL,240.5333333333333,1
 725103,sleepers,1996,Reilly,6,John Reilly,REILLY,240.4333333333333,0
-142456,good will hunting,1997,Will,2,Will Hunting,WILL,238.06666666666666,1
+142456,good will hunting,1997,Will,2,Will Hunting,WILL,238.06666666666663,1
 5016250,watchmen,2009,Nixon,2,Richard Nixon,NIXON,237.0333333333333,0
-695266,lethal weapon 3,1992,Martin,5,Martin Riggs,MARTIN,235.30000000000018,0
-5016250,watchmen,2009,Edward,3,Edward Blake,EDWARD,233.60000000000036,0
-29454281,the help,2011,Clark,8,Aibileen Clark,CLARK,233.60000000000002,0
-1160412,rambo iii,1988,Sam,9,Sam Trautman,SAM,233.36666666666662,1
+695266,lethal weapon 3,1992,Martin,5,Martin Riggs,MARTIN,235.30000000000015,0
+5016250,watchmen,2009,Edward,3,Edward Blake,EDWARD,233.6000000000004,0
+29454281,the help,2011,Clark,8,Aibileen Clark,CLARK,233.6,0
+1160412,rambo iii,1988,Sam,9,Sam Trautman,SAM,233.36666666666665,1
 673472,the lost boys,1987,Sam,16,Sam,SAM,230.46666666666664,1
 32071439,wreck-it ralph,2012,Ralph,6,Ralph,RALPH,227.5666666666666,0
 1048695,dracula,1979,Abraham,8,Abraham Van Helsing,ABRAHAM,227.36666666666667,0
-2312056,pride & prejudice,2005,Darcy,23,Darcy,DARCY,226.36666666666662,1
-87983,stand by me,1986,Teddy,3,Teddy Duchamp,TEDDY,226.16666666666674,0
+2312056,pride & prejudice,2005,Darcy,23,Darcy,DARCY,226.36666666666665,1
+87983,stand by me,1986,Teddy,3,Teddy Duchamp,TEDDY,226.16666666666677,0
 2216381,the intern,2000,Bennett,4,Jocelyn Bennett,BENNETT,225.66666666666663,1
-129619,ghost,1990,Sam,29,Sam taunts,SAM,223.86666666666662,1
+129619,ghost,1990,Sam,29,Sam taunts,SAM,223.86666666666665,1
 297111,reservoir dogs,1992,Joe,7,Joe Cabot,JOE,223.70000000000005,1
 525314,shrek 2,2004,King,12,King Harold,KING,223.5666666666667,1
-101914,dog day afternoon,1975,Angie,3,Angie,ANGIE,223.23333333333335,0
+101914,dog day afternoon,1975,Angie,3,Angie,ANGIE,223.23333333333332,0
 537024,eternal sunshine of the spotless mind,2004,Joel,9,Joel beckons Clementine,JOEL,222.53333333333285,0
 4836572,oliver!,1968,Noah,3,Noah Claypole,NOAH,219.5666666666667,1
 3600824,a time to kill,1996,Ellen,2,Ellen Roark,ELLEN,216.5333333333333,0
 352795,jaws 2,1978,Martin,13,Martin Brody,MARTIN,215.5,1
-899442,charade,1963,Alexander,6,Alexander Dyle,ALEXANDER,214.83333333333326,0
+899442,charade,1963,Alexander,6,Alexander Dyle,ALEXANDER,214.8333333333333,0
 113460,platoon,1986,Elias,6,Sergeant Elias,ELIAS,214.5666666666666,1
 443972,hook,1991,Wendy,4,Wendy Darling,WENDY,212.6333333333332,0
 656608,what's eating gilbert grape,1993,Ellen,3,Ellen,ELLEN,212.0333333333333,0
 20179415,halloween,1978,Annie,8,Annie Brackett,ANNIE,208.79999999999995,1
 68374,true lies,1994,Helen,3,Helen,HELEN,208.56666666666672,0
-99123,speed,1994,Helen,2,Helen,HELEN,208.56666666666672,1
+99123,speed,1994,Helen,2,Helen,HELEN,208.56666666666672,0
 525113,tombstone,1993,Fabian,2,Fabian,FABIAN,207.9333333333334,0
 200694,clerks.,1994,Jay,3,Jay,JAY,207.06666666666683,0
-174251,the lord of the rings: the return of the king,2003,Arwen,3,Arwen,ARWEN,204.33333333333334,1
+174251,the lord of the rings: the return of the king,2003,Arwen,3,Arwen,ARWEN,204.33333333333331,1
 73441,e.t. the extra-terrestrial,1982,Elliott,21,Elliott feigns,ELLIOTT,204.2,1
 1488066,lolita,1962,Lolita,5,Lolita,LOLITA,203.5,0
 173944,the lord of the rings: the two towers,2002,Arwen,2,Arwen,ARWEN,198.75,1
-205013,ghostbusters,1984,Louis,3,Louis Tully,LOUIS,198.0666666666666,1
-560511,stripes,1981,Louise,4,Louise,LOUISE,197.76666666666677,0
+205013,ghostbusters,1984,Louis,3,Louis Tully,LOUIS,198.0666666666666,0
+560511,stripes,1981,Louise,4,Louise,LOUISE,197.7666666666668,0
 8481,dressed to kill,1980,Elliott,12,Robert Elliott,ELLIOTT,196.9333333333333,0
 146947,spider-man,2002,Ben,5,Ben,BEN,196.83333333333348,0
-22771725,the revenant,2009,Joey,17,Joey Leubner,JOEY,191.96666666666658,0
+22771725,the revenant,2009,Joey,17,Joey Leubner,JOEY,191.96666666666655,0
 52371,titanic,1997,Ruth,4,Ruth DeWitt Bukater,RUTH,191.8666666666668,0
-399433,pocahontas,1995,Willow,3,Grandmother Willow,WILLOW,190.06666666666666,1
+399433,pocahontas,1995,Willow,3,Grandmother Willow,WILLOW,190.06666666666663,1
 2162986,the pursuit of happyness,2006,Chris,13,Chris Gardner,CHRIS,189.13333333333333,1
-3947,blue velvet,1986,Sandy,2,Sandy,SANDY,187.83333333333326,0
+3947,blue velvet,1986,Sandy,2,Sandy,SANDY,187.8333333333333,0
 4730,batman forever,1995,Robin,7,Robin,ROBIN,186.3666666666668,1
-32252,unbreakable,2000,Audrey,5,Audrey,AUDREY,185.80000000000018,0
+32252,unbreakable,2000,Audrey,5,Audrey,AUDREY,185.80000000000015,0
 1814329,stir crazy,1980,Rory,3,Rory Schultebrand,RORY,184.33333333333337,0
 73170,aladdin,1992,Ali,2,Ali,ALI,184.20000000000005,0
 76018,who framed roger rabbit,1988,Baby,3,Baby Herman's,BABY,183.16666666666669,1
-210151,"lock, stock and two smoking barrels",1998,Chris,6,Big Chris,CHRIS,182.89999999999998,1
+210151,"lock, stock and two smoking barrels",1998,Chris,6,Big Chris,CHRIS,182.9,1
 297111,reservoir dogs,1992,Marvin,6,Marvin Nash,MARVIN,182.56666666666683,0
 2465797,300,2006,Leonidas,18,Leonidas,LEONIDAS,181.36666666666665,1
 303928,escape from the planet of the apes,1971,Armando,2,Señor Armando,ARMANDO,180.9333333333334,1
@@ -540,7 +540,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 54175,saturday night fever,1977,Joey,5,Joey,JOEY,173.33333333333326,0
 657159,conquest of the planet of the apes,1972,Armando,3,Armando,ARMANDO,172.26666666666665,0
 433824,die hard 2,1990,Lorenzo,3,Carmine Lorenzo,LORENZO,172.23333333333335,0
-2236472,transformers,2007,Lennox,2,William Lennox,LENNOX,170.4,0
+2236472,transformers,2007,Lennox,2,William Lennox,LENNOX,170.4,1
 18951054,apocalypse now,1979,Lance,2,Lance Johnson,LANCE,170.3666666666668,0
 6446062,moonraker,1979,Hugo,5,Hugo Drax,HUGO,170.0,0
 31201599,ted,2012,Ted,28,Ted around,TED,169.36666666666667,0
@@ -588,7 +588,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 1048695,dracula,1979,Lucy,15,Lucy Seward,LUCY,141.5666666666666,1
 303928,escape from the planet of the apes,1971,Cornelius,4,Cornelius,CORNELIUS,141.3,1
 13901,heathers,1988,Sawyer,16,Veronica Sawyer,SAWYER,139.53333333333333,0
-725459,the exorcist,1973,Regan,12,Regan,REGAN,138.3,0
+725459,the exorcist,1973,Regan,12,Regan,REGAN,138.3,1
 4453691,blood diamond,2006,Van,2,Rudolph Van de Kaap,VAN,138.1,0
 920613,cars,2006,Van,2,Van,VAN,138.1,0
 12555863,heat,1995,Cyrus,3,Cyrus Kinnick,CYRUS,137.9,1
@@ -614,58 +614,58 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 7668793,the running man,1987,Killian,2,Damon Killian,KILLIAN,123.4,1
 18305011,wonder woman,2009,Ares,17,Ares,ARES,122.56666666666666,0
 997939,kindergarten cop,1990,Phoebe,8,Phoebe O'Hara,PHOEBE,122.5333333333333,1
-179825,top gun,1986,Tom,3,"Tom ""Iceman"" Kasansky &mdash;who",TOM,121.33333333333337,1
+179825,top gun,1986,Tom,3,"Tom ""Iceman"" Kasansky &mdash;who",TOM,121.33333333333336,1
 6268880,on her majesty's secret service,1969,Hilary,2,Hilary Bray,HILARY,120.83333333333331,0
 20286230,house,1977,Melody,2,Melody,MELODY,120.79999999999995,0
 267848,scarface,1983,Alberto,2,Alberto,ALBERTO,117.4333333333334,0
 6816597,la notte,1961,Roberto,4,Roberto,ROBERTO,116.66666666666674,1
 1349086,the departed,2006,Sullivan,28,Colin Sullivan,SULLIVAN,116.36666666666667,0
 370064,love actually,2003,Harry,9,Harry,HARRY,115.80000000000018,0
-241171,weird science,1985,Lucy,2,Lucy,LUCY,115.76666666666665,1
+241171,weird science,1985,Lucy,2,Lucy,LUCY,115.76666666666664,0
 158052,"aguirre, the wrath of god",1972,Pedro,8,Don Pedro de Ursúa,PEDRO,115.16666666666674,0
 1854000,the bourne ultimatum,2007,Albert,4,Albert Hirsch,ALBERT,114.93333333333317,0
 261402,robin hood: prince of thieves,1991,Scarlett,3,Will Scarlett,SCARLETT,114.73333333333332,1
 1540319,the pink panther strikes again,1976,Hugo,4,Hugo Fassbender,HUGO,114.5333333333333,0
-725103,sleepers,1996,Sullivan,4,Michael Sullivan,SULLIVAN,114.06666666666669,0
+725103,sleepers,1996,Sullivan,4,Michael Sullivan,SULLIVAN,114.06666666666668,0
 66870,annie hall,1977,Annie,8,Soon Annie,ANNIE,113.23333333333323,1
 39311,jfk,1991,Clay,10,Clay Shaw,CLAY,113.0,0
-3700174,jumanji,1995,Alan,19,Alan Parrish,ALAN,112.86666666666633,0
-43566,heat,1995,Alan,2,Alan Marciano,ALAN,112.86666666666633,0
-129619,ghost,1990,Oda,7,Oda Mae's,ODA,112.73333333333335,1
-74868,the last picture show,1971,Sonny,11,Sonny Crawford,SONNY,110.93333333333331,0
-3723140,army of shadows,1969,Mathilde,8,Mathilde,MATHILDE,110.76666666666665,0
-6446071,from russia with love,1963,Ali,9,Ali Kerim Bey,ALI,109.66666666666663,0
-321496,pirates of the caribbean: the curse of the black pearl,2003,Will,2,Will Turner,WILL,109.33333333333337,0
-7024876,hello dolly!,1969,Cornelius,9,Cornelius Hackl,CORNELIUS,106.80000000000001,0
+3700174,jumanji,1995,Alan,19,Alan Parrish,ALAN,112.86666666666632,0
+43566,heat,1995,Alan,2,Alan Marciano,ALAN,112.86666666666632,0
+129619,ghost,1990,Oda,7,Oda Mae's,ODA,112.73333333333336,1
+74868,the last picture show,1971,Sonny,11,Sonny Crawford,SONNY,110.93333333333332,0
+3723140,army of shadows,1969,Mathilde,8,Mathilde,MATHILDE,110.76666666666664,0
+6446071,from russia with love,1963,Ali,9,Ali Kerim Bey,ALI,109.66666666666664,0
+321496,pirates of the caribbean: the curse of the black pearl,2003,Will,2,Will Turner,WILL,109.33333333333336,0
+7024876,hello dolly!,1969,Cornelius,9,Cornelius Hackl,CORNELIUS,106.8,1
 513149,cannibal holocaust,1980,Anders,3,Jack Anders,ANDERS,105.60000000000002,0
 323715,troy,2004,Achilles,31,Achilles,ACHILLES,105.43333333333332,1
-167599,men in black,1997,James,4,James Darrell Edwards III,JAMES,103.56666666666933,0
-460052,mystic river,2003,Harris,7,Brendan Harris,HARRIS,103.30000000000001,1
+167599,men in black,1997,James,4,James Darrell Edwards III,JAMES,103.56666666666932,0
+460052,mystic river,2003,Harris,7,Brendan Harris,HARRIS,103.3,1
 483274,point break,1991,Angelo,6,Angelo Pappas,ANGELO,103.0666666666666,0
 441315,true romance,1993,Presley,2,Elvis Presley,PRESLEY,102.16666666666666,1
 370064,love actually,2003,Juliet,6,Juliet,JULIET,101.5,0
 171562,american history x,1998,Alexander,3,Cameron Alexander,ALEXANDER,100.90000000000146,0
-471544,blade,1998,Deacon,9,Deacon Frost,DEACON,100.83333333333333,1
-460052,mystic river,2003,Celeste,2,Celeste Boyle,CELESTE,100.09999999999991,0
-673472,the lost boys,1987,Lucy,12,Lucy,LUCY,98.86666666666667,1
+471544,blade,1998,Deacon,9,Deacon Frost,DEACON,100.83333333333331,1
+460052,mystic river,2003,Celeste,2,Celeste Boyle,CELESTE,100.09999999999992,0
+673472,the lost boys,1987,Lucy,12,Lucy,LUCY,98.86666666666667,0
 358367,pete's dragon,1977,Elliott,26,Elliott,ELLIOTT,98.5333333333333,1
 142456,good will hunting,1997,Sullivan,3,Chuckie Sullivan,SULLIVAN,97.23333333333332,0
 43452,lawrence of arabia,1962,Ali,5,Sherif Ali,ALI,97.16666666666669,1
 101910,the towering inferno,1974,Duncan,13,James Duncan,DUNCAN,97.13333333333334,1
 2270205,viridiana,1961,Jorge,3,Jorge,JORGE,97.0,1
 1645634,the big sleep,1978,Rusty,2,Rusty Regan,RUSTY,96.63333333333333,1
-40672,léon: the professional,1994,Mathilda,9,Mathilda Lando,MATHILDA,96.53333333333333,1
-2422489,yellow submarine,1968,Hillary,5,Jeremy Hillary Boob,HILLARY,95.69999999999999,0
+40672,léon: the professional,1994,Mathilda,9,Mathilda Lando,MATHILDA,96.53333333333332,1
+2422489,yellow submarine,1968,Hillary,5,Jeremy Hillary Boob,HILLARY,95.7,0
 4453691,blood diamond,2006,Solomon,13,Solomon Vandy,SOLOMON,95.46666666666658,0
 2466773,the godfather,1972,Sonny,6,Sonny,SONNY,95.4,0
 612052,spider-man 2,2004,Otto,5,Otto Octavius,OTTO,95.3,1
 303933,twister,1996,Meg,2,Meg,MEG,95.13333333333334,0
 43566,heat,1995,Chris,6,Chris Shiherlis,CHRIS,95.0,1
 667372,harry potter and the goblet of fire,2005,Viktor,2,Viktor Krum,VIKTOR,94.1,1
-909006,1900,1976,Alfredo,5,Alfredo Berlinghieri,ALFREDO,93.23333333333335,0
-1428048,the last of the mohicans,1992,Cora,11,Cora,CORA,92.19999999999999,1
+909006,1900,1976,Alfredo,5,Alfredo Berlinghieri,ALFREDO,93.23333333333336,0
+1428048,the last of the mohicans,1992,Cora,11,Cora,CORA,92.2,1
 337740,bram stoker's dracula,1992,Mina,17,Mina,MINA,91.66666666666666,0
-255898,mad max,1979,Max,16,Max Rockatansky,MAX,91.23333333333335,1
+255898,mad max,1979,Max,16,Max Rockatansky,MAX,91.23333333333336,1
 14941280,ratatouille,2007,Colette,13,Skinner assigns Colette,COLETTE,91.16666666666669,0
 2809621,the prestige,2006,Alfred,2,Magician Alfred Borden,ALFRED,90.96666666666658,1
 99025,romeo and juliet,1968,Juliet,6,Juliet,JULIET,89.9,0
@@ -679,7 +679,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 28648635,x-men: first class,2011,McCoy,2,Hank McCoy,MCCOY,87.0,0
 216072,home alone,1990,Marley,5,Marley,MARLEY,86.8,1
 9830229,rosemary's baby,1968,Abraham,4,Abraham Sapirstein,ABRAHAM,86.16666666666669,1
-323715,troy,2004,Briseis,11,Briseis,BRISEIS,85.2,0
+323715,troy,2004,Briseis,11,Briseis,BRISEIS,85.2,1
 87983,stand by me,1986,Charlie,2,Charlie Hogan,CHARLIE,85.10000000000002,1
 654530,legends of the fall,1994,William,6,William Ludlow,WILLIAM,84.70000000000073,0
 30625,the shawshank redemption,1994,Hadley,4,Byron Hadley,HADLEY,84.03333333333335,1
@@ -694,7 +694,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 1745050,mr. & mrs. smith,2005,Jane,8,Jane Smith,JANE,77.33333333333337,0
 2312056,pride & prejudice,2005,Jane,12,Jane accepts Bingley's,JANE,77.33333333333337,0
 520990,trading places,1983,Valentine,15,Billy Ray Valentine,VALENTINE,76.6,0
-39311,jfk,1991,Garrison,26,Jim Garrison,GARRISON,76.43333333333334,1
+39311,jfk,1991,Garrison,26,Jim Garrison,GARRISON,76.43333333333334,0
 198313,willow,1988,Elora,4,Elora Danan,ELORA,76.33333333333333,1
 433824,die hard 2,1990,Ramon,2,Ramon Esperanza,RAMON,76.23333333333323,0
 999394,pirates of the caribbean: dead man's chest,2006,Swann,11,Elizabeth Swann,SWANN,76.16666666666666,0
@@ -730,8 +730,8 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 6492614,the odd couple,1968,Oscar,20,Oscar Madison,OSCAR,61.5333333333333,1
 489800,rush hour,1998,Tania,3,Tania Johnson,TANIA,61.46666666666658,0
 161897,cool hand luke,1967,Luke,43,Believing Luke,LUKE,61.333333333333314,0
-4276475,the dark knight,2008,Bruce,7,Rachel to Bruce,BRUCE,61.299999999999955,0
-5476946,the incredible hulk,2008,Bruce,12,Bruce Banner,BRUCE,61.299999999999955,0
+4276475,the dark knight,2008,Bruce,7,Rachel to Bruce,BRUCE,61.29999999999996,0
+5476946,the incredible hulk,2008,Bruce,12,Bruce Banner,BRUCE,61.29999999999996,0
 4453691,blood diamond,2006,Bowen,4,Maddy Bowen,BOWEN,61.23333333333335,0
 11862690,juno,2007,Juno,19,Juno MacGuff,JUNO,59.26666666666667,1
 18618306,planet of the apes,1968,Cornelius,25,Cornelius free Taylor,CORNELIUS,59.19999999999999,1
@@ -742,7 +742,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 14941280,ratatouille,2007,Anton,6,Anton Ego,ANTON,58.60000000000002,0
 6641931,i am legend,2007,Shepherd,6,Shepherd Samantha,SHEPHERD,57.96666666666667,0
 618929,ghostbusters ii,1989,Winston,3,Winston Zeddemore,WINSTON,57.93333333333331,0
-129493,dead poets society,1989,Anderson,10,Todd Anderson,ANDERSON,57.033333333333346,1
+129493,dead poets society,1989,Anderson,10,Todd Anderson,ANDERSON,57.03333333333335,1
 58147,the manchurian candidate,1962,Jocelyn,7,Jocelyn Jordan,JOCELYN,56.666666666666686,0
 1397377,"planes, trains and automobiles",1987,Page,8,Neal Page,PAGE,56.4,1
 99123,speed,1994,Porter,11,Annie Porter,PORTER,56.3,1
@@ -768,7 +768,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 1287385,million dollar baby,2004,Mack,2,Mickey Mack,MACK,50.86666666666666,1
 232711,the truman show,1998,Truman,16,Truman Burbank,TRUMAN,50.63333333333334,1
 309070,the dirty dozen,1967,Jefferson,2,Robert Jefferson,JEFFERSON,50.19999999999999,0
-74930,manhattan,1979,Davis,14,Isaac Davis,DAVIS,50.033333333333346,1
+74930,manhattan,1979,Davis,14,Isaac Davis,DAVIS,50.03333333333335,1
 598397,shaun of the dead,2004,Liz,11,Liz,LIZ,49.900000000000006,0
 152058,beneath the planet of the apes,1970,Taylor,17,Hoping Taylor,TAYLOR,49.63333333333334,0
 6306820,cleopatra,1963,Antony,3,Marc Antony,ANTONY,49.5,0
@@ -781,15 +781,15 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 105872,clueless,1995,Dionne,5,Dionne Davenport,DIONNE,48.23333333333335,0
 28269,saving private ryan,1998,Marshall,2,George Marshall,MARSHALL,47.866666666666674,0
 19625929,falling down,1993,Foster,30,William Foster,FOSTER,47.83333333333333,1
-5476946,the incredible hulk,2008,Betty,2,Betty,BETTY,47.599999999999994,0
-101954,the english patient,1996,Tiger,2,the Tiger Moth,TIGER,47.416666666666664,1
+5476946,the incredible hulk,2008,Betty,2,Betty,BETTY,47.6,0
+101954,the english patient,1996,Tiger,2,the Tiger Moth,TIGER,47.41666666666666,1
 45481,soylent green,1973,Solomon,6,"Solomon ""Sol"" Roth",SOLOMON,47.03333333333333,1
 525113,tombstone,1993,Billy,2,Billy Clanton,BILLY,46.9666666666667,0
 248222,the fast and the furious,2001,Vince,7,Vince,VINCE,46.93333333333334,0
-1584998,black christmas,1974,Bradford,6,Jess Bradford,BRADFORD,46.799999999999955,0
+1584998,black christmas,1974,Bradford,6,Jess Bradford,BRADFORD,46.79999999999996,0
 706878,the last boy scout,1991,Mike,4,Mike Matthews,MIKE,46.700000000000045,1
-637256,waterworld,1995,Gregor,5,Gregor,GREGOR,46.599999999999994,0
-22091537,speed,1994,Lawson,4,Engineer Frank Lawson,LAWSON,46.06666666666667,1
+637256,waterworld,1995,Gregor,5,Gregor,GREGOR,46.6,0
+22091537,speed,1994,Lawson,4,Engineer Frank Lawson,LAWSON,46.06666666666667,0
 5788437,the name of the rose,1986,Bernardo,7,Bernardo Gui,BERNARDO,46.06666666666666,0
 186856,the omen,1976,Brennan,4,Brennan,BRENNAN,45.66666666666667,0
 30327,the terminator,1984,Reese,14,Kyle Reese,REESE,44.76666666666667,1
@@ -808,13 +808,13 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 29075630,the dark knight rises,2012,Bane,14,Bane,BANE,42.93333333333334,0
 268833,goldeneye,1995,Tiger,2,Eurocopter Tiger,TIGER,42.083333333333336,1
 2982688,x-men origins: wolverine,2009,Creed,9,Victor Creed,CREED,41.96666666666667,0
-11893755,into the wild,2007,Jan,3,Jan Burres  ,JAN,41.76666666666671,1
+11893755,into the wild,2007,Jan,3,Jan Burres  ,JAN,41.76666666666671,0
 870946,the bourne supremacy,2004,Vladimir,3,Vladimir Neski,VLADIMIR,41.23333333333335,0
 347000,suspiria,1977,Helena,2,Helena Markos,HELENA,40.80000000000001,0
 660343,"one, two, three",1961,Scarlett,3,Scarlett Hazeltine,SCARLETT,40.66666666666667,0
 633411,the avengers,1998,Wynter,8,De Wynter - controlling,WYNTER,40.56666666666667,0
 1048695,dracula,1979,Mina,7,Mina Van Helsing,MINA,40.43333333333332,0
-370064,love actually,2003,Mack,4,Billy Mack,MACK,40.3,0
+370064,love actually,2003,Mack,4,Billy Mack,MACK,40.3,1
 6043780,police academy,1984,Reed,2,Reed,REED,40.26666666666665,0
 2270205,viridiana,1961,Jaime,5,Don Jaime,JAIME,39.83333333333337,0
 74868,the last picture show,1971,Jackson,9,Duane Jackson,JACKSON,39.0,0
@@ -828,7 +828,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 18951054,apocalypse now,1979,Johnson,2,Lance Johnson,JOHNSON,37.93333333333333,1
 88326,ferris bueller's day off,1986,Sloane,3,Sloane Peterson,SLOANE,37.7,1
 105872,clueless,1995,Tai,11,Tai Frasier,TAI,37.6,0
-920296,somewhere in time,1980,McKenna,5,Elise McKenna,MCKENNA,37.2,0
+920296,somewhere in time,1980,McKenna,5,Elise McKenna,MCKENNA,37.2,1
 24314116,pirates of the caribbean: on stranger tides,2011,Sparrow,22,Jack Sparrow,SPARROW,37.2,0
 451062,the dead zone,1983,Sam,2,Sam Weizak,SAM,36.89999999999998,1
 18952889,"it's a mad, mad, mad, mad world",1963,Fitzgerald,2,Tyler Fitzgerald,FITZGERALD,36.833333333333336,0
@@ -867,49 +867,49 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 74830,jaws,1975,Chrissie,2,Chrissie Watkins,CHRISSIE,29.966666666666665,0
 999394,pirates of the caribbean: dead man's chest,2006,Will,3,Will Turner,WILL,29.866666666666674,0
 161912,true grit,1969,Reuben,5,"Reuben ""Rooster"" J. Cogburn",REUBEN,29.76666666666665,1
-168593,"good morning, vietnam",1987,Jimmy,3,Jimmy Wah's,JIMMY,29.699999999999818,0
+168593,"good morning, vietnam",1987,Jimmy,3,Jimmy Wah's,JIMMY,29.699999999999815,0
 1689394,pirates of the caribbean: at world's end,2007,Turner,3,Bootstrap Bill Turner,TURNER,29.53333333333333,0
 1689394,pirates of the caribbean: at world's end,2007,Turner,2,Will Turner,TURNER,29.53333333333333,0
 17917662,the notebook,2004,Duke,3,Duke,DUKE,29.5,0
 724258,mission: impossible,1996,Job,4,Job,JOB,29.46666666666667,0
 74830,jaws,1975,Brody,6,Martin Brody,BRODY,29.33333333333333,0
-19596597,sherlock holmes,2009,Watson,9,John Watson,WATSON,29.233333333333334,0
-25357930,sherlock holmes,2009,Watson,10,John Watson,WATSON,29.233333333333334,0
+19596597,sherlock holmes,2009,Watson,9,John Watson,WATSON,29.23333333333333,0
+25357930,sherlock holmes,2009,Watson,10,John Watson,WATSON,29.23333333333333,0
 1880660,"the chronicles of narnia: the lion, the witch and the wardrobe",2005,Aslan,20,Aslan,ASLAN,28.966666666666665,1
-648921,face/off,1997,Archer,26,Sean Archer,ARCHER,28.933333333333337,0
+648921,face/off,1997,Archer,26,Sean Archer,ARCHER,28.933333333333337,1
 113460,platoon,1986,Harris,2,Harris,HARRIS,28.599999999999994,1
 7074043,misery,1990,Annie,13,Annie,ANNIE,28.5,0
 28269,saving private ryan,1998,Miller,16,John H. Miller,MILLER,28.233333333333327,1
 97646,die hard,1988,Ellis,2,Harry Ellis,ELLIS,28.19999999999999,0
-9979,eyes wide shut,1999,Nick,9,Nick Nightingale,NICK,28.133333333333354,1
+9979,eyes wide shut,1999,Nick,9,Nick Nightingale,NICK,28.133333333333358,1
 133648,scent of a woman,1992,Slade,8,Army Ranger Lieutenant Colonel Frank Slade,SLADE,27.866666666666674,0
 31201599,ted,2012,Jones,3,Sam Jones,JONES,27.800000000000004,0
 7047921,little miss sunshine,2006,Dwayne,4,Dwayne,DWAYNE,27.69999999999999,1
 8138535,barefoot in the park,1967,Corie,18,Corie,CORIE,27.6,1
-29943,the breakfast club,1985,Clark,3,Andrew Clark,CLARK,27.166666666666686,1
-261402,robin hood: prince of thieves,1991,Will,3,Will Scarlett,WILL,27.133333333333326,0
+29943,the breakfast club,1985,Clark,3,Andrew Clark,CLARK,27.16666666666669,1
+261402,robin hood: prince of thieves,1991,Will,3,Will Scarlett,WILL,27.13333333333333,0
 1745050,mr. & mrs. smith,2005,Smith,8,Jane Smith,SMITH,27.0,1
 870946,the bourne supremacy,2004,Yuri,3,Yuri Gretkov,YURI,26.56666666666667,0
 431014,big fish,2003,Amos,4,Amos Calloway,AMOS,26.19999999999999,0
 468293,philadelphia,1993,Miller,11,Joe Miller,MILLER,26.133333333333336,1
 4453691,blood diamond,2006,Maddy,4,Maddy Bowen,MADDY,26.1,0
-1210303,constantine,2005,Hennessy,2,Hennessy,HENNESSY,25.766666666666673,0
+1210303,constantine,2005,Hennessy,2,Hennessy,HENNESSY,25.766666666666676,0
 1252914,indiana jones and the kingdom of the crystal skull,2008,Irina,5,Irina Spalko,IRINA,25.66666666666667,0
 39311,jfk,1991,Fidel,2,Fidel Castro,FIDEL,25.566666666666663,0
 308898,a fish called wanda,1988,Ken,21,George gives Ken the task,KEN,25.46666666666667,0
 1689394,pirates of the caribbean: at world's end,2007,Jones,17,Davy Jones,JONES,25.433333333333337,0
-101910,the towering inferno,1974,Ramsey,2,Ramsey,RAMSEY,25.299999999999997,0
+101910,the towering inferno,1974,Ramsey,2,Ramsey,RAMSEY,25.3,0
 12673434,thor,2011,Thor,6,Thor,THOR,25.166666666666657,0
 142049,minority report,2002,Agatha,9,Anne Lively&mdash;which Agatha,AGATHA,25.03333333333334,0
 22144721,iron man 2,2010,Rhodes,5,James Rhodes,RHODES,24.4,0
-6152265,thunderball,1965,Fiona,3,Fiona Volpe,FIONA,23.733333333333334,0
+6152265,thunderball,1965,Fiona,3,Fiona Volpe,FIONA,23.73333333333333,0
 58147,the manchurian candidate,1962,Jordan,7,Jocelyn Jordan,JORDAN,23.666666666666657,0
-1623960,brokeback mountain,2005,Alma,6,Alma Jr.,ALMA,23.633333333333326,0
+1623960,brokeback mountain,2005,Alma,6,Alma Jr.,ALMA,23.63333333333333,0
 6816597,la notte,1961,Giovanni,26,Giovanni,GIOVANNI,23.333333333333343,0
-445066,robocop,1987,Murphy,6,Alex Murphy,MURPHY,23.233333333333334,0
-8031432,the curious case of benjamin button,2008,Queenie,3,Queenie,QUEENIE,23.033333333333335,0
+445066,robocop,1987,Murphy,6,Alex Murphy,MURPHY,23.23333333333333,0
+8031432,the curious case of benjamin button,2008,Queenie,3,Queenie,QUEENIE,23.03333333333333,0
 1449256,point blank,1967,Carter,3,Carter,CARTER,22.96666666666667,0
-673472,the lost boys,1987,Emerson,26,Michael Emerson,EMERSON,22.633333333333326,0
+673472,the lost boys,1987,Emerson,26,Michael Emerson,EMERSON,22.63333333333333,0
 692661,carlito's way,1993,Carlito,32,Carlito Brigante,CARLITO,22.5,1
 2492199,winter light,1963,Jonas,4,Jonas Persson,JONAS,22.33333333333333,0
 26999426,captain america: the first avenger,2011,Peggy,2,Peggy Carter,PEGGY,22.03333333333333,0
@@ -918,14 +918,14 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 999394,pirates of the caribbean: dead man's chest,2006,Turner,3,Will Turner,TURNER,21.599999999999994,0
 6043780,police academy,1984,Harris,10,Thaddeus Harris,HARRIS,21.599999999999994,1
 999394,pirates of the caribbean: dead man's chest,2006,Turner,2,Bootstrap Bill Turner,TURNER,21.599999999999994,0
-171562,american history x,1998,Murray,5,Murray,MURRAY,21.566666666666677,0
+171562,american history x,1998,Murray,5,Murray,MURRAY,21.56666666666668,0
 146236,close encounters of the third kind,1977,Barry,3,Barry Guiler,BARRY,21.466666666666697,1
 1059280,superman ii,1981,Kent,8,Clark Kent,KENT,21.366666666666674,1
-167857,the usual suspects,1995,Edie,2,Edie Finneran,EDIE,20.9,0
-3213691,there will be blood,2007,Sunday,2,Paul Sunday,SUNDAY,20.733333333333334,0
-23270459,inception,2010,Fischer,5,Maurice Fischer,FISCHER,20.299999999999997,0
-23270459,inception,2010,Fischer,2,Robert Fischer,FISCHER,20.299999999999997,0
-4453691,blood diamond,2006,Dia,3,Dia,DIA,20.233333333333334,0
+167857,the usual suspects,1995,Edie,2,Edie Finneran,EDIE,20.9,1
+3213691,there will be blood,2007,Sunday,2,Paul Sunday,SUNDAY,20.73333333333333,0
+23270459,inception,2010,Fischer,5,Maurice Fischer,FISCHER,20.3,0
+23270459,inception,2010,Fischer,2,Robert Fischer,FISCHER,20.3,0
+4453691,blood diamond,2006,Dia,3,Dia,DIA,20.23333333333333,0
 15593618,taken,2009,Kim,16,Kim,KIM,19.933333333333337,0
 1689394,pirates of the caribbean: at world's end,2007,Cutler,10,Cutler Beckett,CUTLER,19.866666666666664,0
 2312056,pride & prejudice,2005,Collins,5,Collins,COLLINS,19.8,0
@@ -933,24 +933,24 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 963986,the bourne identity,2002,Eamon,3,Eamon,EAMON,19.666666666666657,0
 42147,midnight cowboy,1969,Buck,42,Joe Buck,BUCK,19.5,0
 42147,midnight cowboy,1969,Buck,2,Sally Buck,BUCK,19.5,0
-210151,"lock, stock and two smoking barrels",1998,Nick,4,"Nick """,NICK,19.400000000000006,1
+210151,"lock, stock and two smoking barrels",1998,Nick,4,"Nick """,NICK,19.40000000000001,1
 22216,"o brother, where art thou?",2000,Teague,2,Big Dan Teague,TEAGUE,19.333333333333336,0
 481605,batman begins,2005,Bruce,3,Bruce and Batman,BRUCE,19.299999999999955,0
 481605,batman begins,2005,Bruce,13,Bruce confronts Falcone,BRUCE,19.299999999999955,0
-1645634,the big sleep,1978,Brody,3,Joe Brody,BRODY,19.266666666666673,0
-352795,jaws 2,1978,Brody,13,Martin Brody,BRODY,19.266666666666673,0
+1645634,the big sleep,1978,Brody,3,Joe Brody,BRODY,19.266666666666676,0
+352795,jaws 2,1978,Brody,13,Martin Brody,BRODY,19.266666666666676,0
 303928,escape from the planet of the apes,1971,Heloise,2,Heloise,HELOISE,19.166666666666668,0
 11945073,hera pheri,1976,Vijay,3,Vijay,VIJAY,19.133333333333336,0
-101910,the towering inferno,1974,Parker,4,Parker,PARKER,19.133333333333326,0
+101910,the towering inferno,1974,Parker,4,Parker,PARKER,19.13333333333333,0
 518615,king kong,1976,Dwan,18,Dwan,DWAN,19.1,0
 284676,once upon a time in the west,1968,Cheyenne,6,Cheyenne,CHEYENNE,19.1,0
-123417,the matrix reloaded,2003,Smith,2,Smith,SMITH,19.033333333333335,1
+123417,the matrix reloaded,2003,Smith,2,Smith,SMITH,19.03333333333333,1
 471544,blade,1998,Blade,15,Blade,BLADE,19.0,0
-3185575,the color purple,1985,Johnson,19,Albert Johnson,JOHNSON,18.733333333333334,0
-29943,the breakfast club,1985,Johnson,4,Brian Johnson,JOHNSON,18.733333333333334,0
+3185575,the color purple,1985,Johnson,19,Albert Johnson,JOHNSON,18.73333333333333,0
+29943,the breakfast club,1985,Johnson,4,Brian Johnson,JOHNSON,18.73333333333333,0
 1949083,the cincinnati kid,1965,Jefferson,4,William Jefferson Slade,JEFFERSON,18.566666666666663,0
 213472,aliens,1986,Hudson,2,Hudson,HUDSON,18.4,1
-451866,mission: impossible ii,2000,Vladimir,2,Vladimir Nekhorvich,VLADIMIR,18.366666666666646,0
+451866,mission: impossible ii,2000,Vladimir,2,Vladimir Nekhorvich,VLADIMIR,18.36666666666665,0
 335298,toy story 2,1999,Woody,4,Woody,WOODY,18.333333333333336,0
 55601,sleepy hollow,1999,Van,2,Lady Van Tassel,VAN,18.266666666666666,0
 1689394,pirates of the caribbean: at world's end,2007,Sparrow,26,Jack Sparrow,SPARROW,18.166666666666668,0
@@ -960,7 +960,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 71415,dune,1984,Alia,2,Alia,ALIA,18.033333333333346,0
 999394,pirates of the caribbean: dead man's chest,2006,Cutler,3,Cutler Beckett,CUTLER,17.966666666666665,0
 872441,first blood,1982,Sam,4,Sam Trautman,SAM,17.833333333333314,1
-3876620,all the president's men,1976,Bradlee,4,Ben Bradlee,BRADLEE,17.8,1
+3876620,all the president's men,1976,Bradlee,4,Ben Bradlee,BRADLEE,17.8,0
 633052,inglourious basterds,2009,Wilhelm,3,Sergeant Wilhelm,WILHELM,17.799999999999997,0
 73425,the deer hunter,1978,Michael,3,Michael Cimino's,MICHAEL,17.633333333331393,1
 20179415,halloween,1978,Michael,32,Michael Myers,MICHAEL,17.633333333331393,1
@@ -979,27 +979,27 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 301798,dirty harry,1971,Chico,4,Chico Gonzalez,CHICO,16.333333333333332,0
 77744,wayne's world,1992,Finley,2,Russell Finley,FINLEY,16.2,0
 431014,big fish,2003,Price,4,Don Price,PRICE,16.1,0
-55447,star wars episode iii: revenge of the sith,2005,Mace,4,Jedi Master Mace Windu,MACE,16.066666666666663,0
-97646,die hard,1988,Eddie,2,Eddie,EDDIE,15.933333333333167,0
-76018,who framed roger rabbit,1988,Eddie,12,Eddie Valiant,EDDIE,15.933333333333167,1
+55447,star wars episode iii: revenge of the sith,2005,Mace,4,Jedi Master Mace Windu,MACE,16.066666666666663,1
+97646,die hard,1988,Eddie,2,Eddie,EDDIE,15.933333333333168,1
+76018,who framed roger rabbit,1988,Eddie,12,Eddie Valiant,EDDIE,15.933333333333168,1
 434089,the man who shot liberty valance,1962,Hallie,14,Hallie,HALLIE,15.666666666666671,0
 198313,willow,1988,Raziel,3,Fin Raziel,RAZIEL,15.666666666666668,0
-30273553,drive,2011,Benicio,6,Benicio,BENICIO,15.566666666666663,0
+30273553,drive,2011,Benicio,6,Benicio,BENICIO,15.566666666666665,0
 31186339,the hunger games,2012,Rue,2,Rue,RUE,15.5,0
 204019,notting hill,1999,Spike,4,Spike,SPIKE,15.499999999999998,1
 99454,patton,1970,Rommel,4,Erwin Rommel,ROMMEL,15.333333333333332,0
 5676692,iron man,2008,Rhodes,3,James Rhodes,RHODES,15.333333333333332,0
-11077335,doctor zhivago,1965,Yuri,2,Yuri Zhivago,YURI,15.333333333333332,0
-97758,doctor zhivago,1965,Yuri,5,Yuri Andreyevich Zhivago,YURI,15.333333333333332,0
-239587,finding nemo,2003,Darla,2,Darla,DARLA,15.299999999999997,0
+11077335,doctor zhivago,1965,Yuri,2,Yuri Zhivago,YURI,15.333333333333332,1
+97758,doctor zhivago,1965,Yuri,5,Yuri Andreyevich Zhivago,YURI,15.333333333333332,1
+239587,finding nemo,2003,Darla,2,Darla,DARLA,15.299999999999995,0
 145892,28 days later,2002,Farrell,4,a Sergeant Farrell,FARRELL,15.2,1
 39311,jfk,1991,Harvey,8,Lee Harvey Oswald,HARVEY,15.099999999999994,0
 25862453,the amazing spider-man,2012,Gwen,3,Gwen,GWEN,14.633333333333354,0
 68245,bonnie and clyde,1967,Buck,2,Buck,BUCK,14.633333333333333,1
-725103,sleepers,1996,King,2,King Benny,KING,14.566666666666663,0
+725103,sleepers,1996,King,2,King Benny,KING,14.566666666666665,0
 6816597,la notte,1961,Valentina,4,Valentina Gherardini,VALENTINA,14.166666666666671,1
-473273,jurassic park iii,2001,Nash,2,Nash,NASH,14.166666666666657,0
-3569822,a beautiful mind,2001,Nash,13,John Nash,NASH,14.166666666666657,0
+473273,jurassic park iii,2001,Nash,2,Nash,NASH,14.166666666666655,0
+3569822,a beautiful mind,2001,Nash,13,John Nash,NASH,14.166666666666655,0
 73170,aladdin,1992,Abu,4,Abu bites,ABU,13.8,0
 6722354,the secret of my success,1965,Tate,10,Arthur Tate,TATE,13.8,0
 1949083,the cincinnati kid,1965,Slade,4,William Jefferson Slade,SLADE,13.733333333333333,0
@@ -1008,48 +1008,48 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 451866,mission: impossible ii,2000,Ambrose,16,Sean Ambrose,AMBROSE,13.5,0
 2969247,quantum of solace,2008,Yusef,3,Yusef Kabira,YUSEF,13.400000000000006,0
 25920477,source code,2011,Colter,21,Colter Stevens,COLTER,13.400000000000006,0
-17917662,the notebook,2004,Hamilton,30,Allie Hamilton,HAMILTON,13.399999999999999,0
+17917662,the notebook,2004,Hamilton,30,Allie Hamilton,HAMILTON,13.4,0
 35919373,from here to eternity,1979,Judson,2,Fatso Judson,JUDSON,13.36666666666666,0
 620034,predator 2,1990,King,2,King Willie,KING,13.3,0
 1059701,superman iii,1983,Webster,12,Ross Webster,WEBSTER,13.26666666666667,0
 11014779,8 mile,2002,Smith,25,Jimmy Smith,SMITH,13.266666666666666,0
-10507423,marathon man,1976,Elsa,7,Elsa Opel,ELSA,13.200000000000045,0
-53085,toy story,1995,Sid,5,Sid Phillips,SID,13.166666666666668,1
+10507423,marathon man,1976,Elsa,7,Elsa Opel,ELSA,13.200000000000044,0
+53085,toy story,1995,Sid,5,Sid Phillips,SID,13.166666666666668,0
 1519783,fantastic four,2005,von,13,Victor von Doom,VON,13.166666666666664,0
 235418,lethal weapon,1987,Rianne,5,Rianne,RIANNE,13.133333333333333,0
-76018,who framed roger rabbit,1988,Teddy,3,Teddy,TEDDY,13.033333333333303,0
-44122,american beauty,1999,Jane,5,Angela tell Jane,JANE,12.899999999999977,0
+76018,who framed roger rabbit,1988,Teddy,3,Teddy,TEDDY,13.033333333333305,0
+44122,american beauty,1999,Jane,5,Angela tell Jane,JANE,12.899999999999975,0
 101899,deliverance,1972,Drew,6,Drew,DREW,12.866666666666674,0
 2492199,winter light,1963,Fredrik,3,Fredrik,FREDRIK,12.666666666666668,0
 349941,being john malkovich,1999,Lotte,7,Lotte,LOTTE,12.666666666666664,0
 3700174,jumanji,1995,Bentley,6,Carl Bentley,BENTLEY,12.666666666666664,0
 702117,spider-man 3,2007,Watson,9,Mary Jane Watson,WATSON,12.666666666666664,0
 324616,my cousin vinny,1992,Vinny,29,Vinny,VINNY,12.6,0
-9378717,the spy who came in from the cold,1965,Alec,15,Alec Leamas,ALEC,12.566666666666677,0
-1854000,the bourne ultimatum,2007,Daniels,6,Neal Daniels,DANIELS,12.5,0
-10457303,the conformist,1970,Marcello,5,Marcello Clerici,MARCELLO,12.466666666666661,0
+9378717,the spy who came in from the cold,1965,Alec,15,Alec Leamas,ALEC,12.566666666666675,0
+1854000,the bourne ultimatum,2007,Daniels,6,Neal Daniels,DANIELS,12.5,1
+10457303,the conformist,1970,Marcello,5,Marcello Clerici,MARCELLO,12.46666666666666,0
 1485962,the mask,1994,Tyrell,14,Dorian Tyrell,TYRELL,12.433333333333394,0
 101914,dog day afternoon,1975,Sonny,33,Sonny,SONNY,12.266666666666652,0
 999394,pirates of the caribbean: dead man's chest,2006,Sparrow,2,Jack Sparrow,SPARROW,12.166666666666668,0
 922084,legend,1985,Lili,7,Lili,LILI,12.133333333333333,0
 2270205,viridiana,1961,Lucia,2,Lucia,LUCIA,12.0,0
 268833,goldeneye,1995,Xenia,3,Xenia Onatopp,XENIA,12.0,0
-633052,inglourious basterds,2009,Aldo,8,Aldo Raine,ALDO,11.933333333333337,0
+633052,inglourious basterds,2009,Aldo,8,Aldo Raine,ALDO,11.933333333333335,0
 29769807,joker,2012,Agastya,6,Agastya,AGASTYA,11.833333333333336,0
 77744,wayne's world,1992,Garth,13,Garth Algar,GARTH,11.666666666666671,0
 87983,stand by me,1986,Hogan,2,Charlie Hogan,HOGAN,11.666666666666668,1
-26999426,captain america: the first avenger,2011,Stark,2,Howard Stark,STARK,11.600000000000001,0
+26999426,captain america: the first avenger,2011,Stark,2,Howard Stark,STARK,11.6,0
 22144721,iron man 2,2010,Anton,15,Anton Vanko,ANTON,11.5,0
 41528,forrest gump,1994,Blue,3,"Benjamin Buford ""Bubba"" Blue",BLUE,11.466666666666669,1
-17298593,mission: impossible – ghost protocol,2011,Benji,7,Benji Dunn,BENJI,11.433333333333337,0
+17298593,mission: impossible – ghost protocol,2011,Benji,7,Benji Dunn,BENJI,11.433333333333335,0
 342556,they live,1988,Thompson,4,Holly Thompson,THOMPSON,11.433333333333332,0
-219712,final destination,2000,Chaney,3,Terry Chaney,CHANEY,11.066666666666663,0
+219712,final destination,2000,Chaney,3,Terry Chaney,CHANEY,11.066666666666665,0
 1930290,barbarella,1968,Durand,2,Durand Durand,DURAND,11.0,0
 706878,the last boy scout,1991,Milo,34,Joe knocks Milo,MILO,11.0,0
 1930290,barbarella,1968,Durand,2,Durand Durand,DURAND,11.0,0
 2750041,memento,2000,Sammy,6,Sammy Jankis,SAMMY,11.0,0
-8481,dressed to kill,1980,Liz,8,Liz Blake,LIZ,10.899999999999999,0
-707808,snatch,2000,Franky,11,Franky,FRANKY,10.899999999999999,0
+8481,dressed to kill,1980,Liz,8,Liz Blake,LIZ,10.9,0
+707808,snatch,2000,Franky,11,Franky,FRANKY,10.9,0
 331586,crocodile dundee,1986,Mick,4,Mick,MICK,10.866666666666664,0
 870946,the bourne supremacy,2004,Kirill,9,Kirill,KIRILL,10.833333333333332,0
 171623,training day,2001,Alonzo,2,Alonzo,ALONZO,10.833333333333314,0
@@ -1057,20 +1057,20 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 3217,army of darkness,1992,Ash,7,Ash Williams,ASH,10.666666666666666,0
 179825,top gun,1986,Duke,2,Duke Mitchell,DUKE,10.666666666666664,0
 54173,pulp fiction,1994,Honey,3,Honey Bunny,HONEY,10.566666666666668,0
-196176,straw dogs,1971,Niles,4,Henry Niles,NILES,10.566666666666663,0
-7024876,hello dolly!,1969,Tucker,12,Barnaby Tucker,TUCKER,10.433333333333337,0
-481649,basic instinct,1992,Curran,33,Nick Curran,CURRAN,10.433333333333337,0
+196176,straw dogs,1971,Niles,4,Henry Niles,NILES,10.566666666666665,0
+7024876,hello dolly!,1969,Tucker,12,Barnaby Tucker,TUCKER,10.433333333333335,0
+481649,basic instinct,1992,Curran,33,Nick Curran,CURRAN,10.433333333333335,0
 171623,training day,2001,Hoyt,12,Jake Hoyt,HOYT,10.4,1
 503573,dazed and confused,1993,Kerr,2,Simone Kerr,KERR,10.166666666666668,0
-75270,the outlaw josey wales,1976,Josey,2,Josey Wales,JOSEY,10.0,0
-2021400,the 40-year-old virgin,2005,Andy,36,Andy Stitzer,ANDY,9.966666666666697,0
-97646,die hard,1988,Kristoff,2,knocks Kristoff,KRISTOFF,9.866666666666667,0
+75270,the outlaw josey wales,1976,Josey,2,Josey Wales,JOSEY,10.0,1
+2021400,the 40-year-old virgin,2005,Andy,36,Andy Stitzer,ANDY,9.966666666666695,0
+97646,die hard,1988,Kristoff,2,knocks Kristoff,KRISTOFF,9.866666666666667,1
 13950959,shutter island,2010,Daniels,11,Daniels,DANIELS,9.833333333333332,0
-407178,the day after tomorrow,2004,Becker,3,Raymond Becker,BECKER,9.833333333333332,1
+407178,the day after tomorrow,2004,Becker,3,Raymond Becker,BECKER,9.833333333333332,0
 6446044,for your eyes only,1981,Aris,5,Aris Kristatos,ARIS,9.666666666666668,0
 1485962,the mask,1994,Brandt,2,Peggy Brandt,BRANDT,9.5,0
-982180,robin hood,1973,Prince,16,Prince John's,PRINCE,9.466666666666661,0
-2312056,pride & prejudice,2005,Bennet,6,Bennet,BENNET,9.433333333333337,0
+982180,robin hood,1973,Prince,16,Prince John's,PRINCE,9.46666666666666,0
+2312056,pride & prejudice,2005,Bennet,6,Bennet,BENNET,9.433333333333335,0
 17016725,gran torino,2008,Walt,17,Walt Kowalski,WALT,9.4,0
 74537,brazil,1985,Layton,7,Jill Layton,LAYTON,9.333333333333336,0
 210219,irma la douce,1963,la,15,Irma la Douce,LA,9.333333333333334,0
@@ -1096,11 +1096,11 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 123417,the matrix reloaded,2003,Bane,4,Bane,BANE,8.166666666666668,0
 50793,star wars episode i: the phantom menace,1999,Queen,6,Queen Amidala,QUEEN,8.166666666666664,0
 676909,the terminal,2004,Dixon,8,Frank Dixon,DIXON,8.166666666666664,0
-695780,casino,1995,Frankie,2,Frankie Marino,FRANKIE,8.100000000000023,0
+695780,casino,1995,Frankie,2,Frankie Marino,FRANKIE,8.100000000000023,1
 75222,spaceballs,1987,Lone,12,Lone Starr,LONE,7.966666666666669,0
 870946,the bourne supremacy,2004,Abbott,8,Ward Abbott,ABBOTT,7.833333333333334,1
-142457,l.a. confidential,1997,Bracken,2,Lynn Bracken,BRACKEN,7.7333333333333325,0
-142417,apollo 13,1995,Odyssey,3,Odyssey,ODYSSEY,7.7333333333333325,0
+142457,l.a. confidential,1997,Bracken,2,Lynn Bracken,BRACKEN,7.733333333333332,0
+142417,apollo 13,1995,Odyssey,3,Odyssey,ODYSSEY,7.733333333333332,0
 230481,predator,1987,Eliot,2,Mac Eliot,ELIOT,7.700000000000003,0
 3071743,star trek,2009,Vega,2,Delta Vega,VEGA,7.699999999999999,0
 11014779,8 mile,2002,Papa,5,Papa Doc,PAPA,7.666666666666668,0
@@ -1113,8 +1113,8 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 3569822,a beautiful mind,2001,Hansen,4,Martin Hansen,HANSEN,7.433333333333332,0
 362719,superman,1978,Lane,2,Lois Lane,LANE,7.400000000000006,0
 460052,mystic river,2003,Dave,21,Dave Boyle,DAVE,7.366666666666674,0
-54166,indiana jones and the raiders of the lost ark,1981,René,2,René Belloq,RENE,7.2333333333333485,0
-448735,elf,2003,Wells,3,Susan Wells,WELLS,7.2333333333333325,1
+54166,indiana jones and the raiders of the lost ark,1981,René,2,René Belloq,RENE,7.233333333333348,0
+448735,elf,2003,Wells,3,Susan Wells,WELLS,7.233333333333332,0
 511228,the poseidon adventure,1972,Manny,4,Manny Rosen,MANNY,7.133333333333336,1
 10487,evil dead ii,1987,Williams,10,Ash Williams,WILLIAMS,7.100000000000001,0
 1411169,andrei rublev,1966,Andrei,38,Andrei Rublev's,ANDREI,7.066666666666668,1
@@ -1141,11 +1141,11 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 10193,enter the dragon,1973,Mei,3,Mei Ling,MEI,5.833333333333334,0
 399433,pocahontas,1995,Smith,2,John Smith,SMITH,5.833333333333332,0
 68374,true lies,1994,Juno,4,Juno Skinner,JUNO,5.8,0
-62440,the sting,1973,Shaw,3,Shaw,SHAW,5.7666666666666675,0
-1345521,high plains drifter,1973,Shaw,3,Shaw,SHAW,5.7666666666666675,0
+62440,the sting,1973,Shaw,3,Shaw,SHAW,5.766666666666668,0
+1345521,high plains drifter,1973,Shaw,3,Shaw,SHAW,5.766666666666668,0
 899442,charade,1963,Bartholomew,4,Hamilton Bartholomew,BARTHOLOMEW,5.666666666666671,0
-352795,jaws 2,1978,Peterson,2,Len Peterson,PETERSON,5.666666666666668,0
-963986,the bourne identity,2002,Abbott,3,Abbott,ABBOTT,5.666666666666667,1
+352795,jaws 2,1978,Peterson,2,Len Peterson,PETERSON,5.666666666666668,1
+963986,the bourne identity,2002,Abbott,3,Abbott,ABBOTT,5.666666666666667,0
 605939,akira,1988,Kaori,3,Kaori,KAORI,5.666666666666666,0
 179044,the jerk,1979,Navin,18,Navin R. Johnson,NAVIN,5.533333333333333,0
 308898,a fish called wanda,1988,Otto,13,Otto want George,OTTO,5.5,0
@@ -1169,16 +1169,16 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 336808,ace ventura: pet detective,1994,Ace,3,Ace Ventura,ACE,5.0333333333333385,0
 31557,"the good, the bad and the ugly",1966,Stevens,4,Stevens,STEVENS,5.033333333333333,0
 161912,true grit,1969,La,11,La Boeuf,LA,5.033333333333331,0
-146947,spider-man,2002,Daily,12,Spider-Man to Daily Bugle,DAILY,5.0,0
+146947,spider-man,2002,Daily,12,Spider-Man to Daily Bugle,DAILY,5.0,1
 1277918,charlie and the chocolate factory,2005,Wilbur,5,Wilbur Wonka,WILBUR,5.0,0
-684771,enemy of the state,1998,Banks,3,Rachel Banks,BANKS,5.0,0
+684771,enemy of the state,1998,Banks,3,Rachel Banks,BANKS,5.0,1
 583012,rambo: first blood part ii,1985,Rambo,12,John Rambo,RAMBO,4.833333333333334,0
 31775043,prometheus,2012,Shaw,10,Elizabeth Shaw,SHAW,4.800000000000001,0
 55601,sleepy hollow,1999,Lady,2,Lady Van Tassel,LADY,4.7333333333333325,0
 1659954,a clockwork orange,1971,Ludwig,3,Ludwig van Beethoven,LUDWIG,4.6,0
 676909,the terminal,2004,Benny,3,Benny Golson,BENNY,4.599999999999994,0
 250699,excalibur,1981,Lancelot,2,Lancelot,LANCELOT,4.500000000000001,0
-8695,dr. strangelove or: how i learned to stop worrying and love the bomb,1964,Alexei,4,Alexei de Sadeski,ALEXEI,4.5,0
+8695,dr. strangelove or: how i learned to stop worrying and love the bomb,1964,Alexei,4,Alexei de Sadeski,ALEXEI,4.5,1
 293524,beetlejuice,1988,Maitland,3,Adam Maitland,MAITLAND,4.5,0
 3261733,pan's labyrinth,2006,Ofelia,13,Ofelia,OFELIA,4.433333333333337,0
 451062,the dead zone,1983,Smith,13,Johnny Smith,SMITH,4.433333333333334,0
@@ -1196,49 +1196,49 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 6446062,moonraker,1979,Chang,3,Chang,CHANG,4.066666666666667,0
 2436406,48 hrs.,1982,Hammond,34,Reggie Hammond,HAMMOND,4.0,0
 8656796,fiddler on the roof,1971,Lazar,5,Lazar Wolf's,LAZAR,4.0,0
-145892,28 days later,2002,a,4,a Sergeant Farrell,A,4.0,0
+145892,28 days later,2002,a,4,a Sergeant Farrell,A,4.0,1
 97758,doctor zhivago,1965,Katya,2,Katya,KATYA,4.0,0
-10645970,rocky,1981,Shankar,3,Shankar,SHANKAR,4.0,0
-667371,harry potter and the prisoner of azkaban,2004,a,30,Harry a Firebolt,A,4.0,0
+10645970,rocky,1981,Shankar,3,Shankar,SHANKAR,4.0,1
+667371,harry potter and the prisoner of azkaban,2004,a,30,Harry a Firebolt,A,4.0,1
 28648635,x-men: first class,2011,Klaus,4,Klaus Schmidt,KLAUS,4.0,0
 3793631,children of men,2006,Syd,2,Syd,SYD,4.0,0
-697113,big trouble in little china,1986,the,3,the Chang Sing,THE,4.0,0
+697113,big trouble in little china,1986,the,3,the Chang Sing,THE,4.0,1
 468293,philadelphia,1993,Beckett,17,Andrew Beckett,BECKETT,4.0,0
 5842075,fear and loathing in las vegas,1998,Raoul,10,Raoul Duke,RAOUL,3.866666666666667,1
-453236,fast times at ridgemont high,1982,Hamilton,7,Brad Hamilton,HAMILTON,3.8333333333333357,0
+453236,fast times at ridgemont high,1982,Hamilton,7,Brad Hamilton,HAMILTON,3.833333333333336,0
 34344124,terminator 2: judgment day,1991,Dyson,4,Miles Dyson,DYSON,3.833333333333334,1
 179351,one hundred and one dalmatians,1961,De,2,Cruella De Vil,DE,3.833333333333334,0
 17049621,the andromeda strain,1971,Nash,2,Jack Nash,NASH,3.833333333333332,0
 4608223,west side story,1961,Bernardo,22,Bernardo Nuñez,BERNARDO,3.8333333333333286,1
-2492199,winter light,1963,Tomas,16,Tomas,TOMAS,3.8333333333333144,0
+2492199,winter light,1963,Tomas,16,Tomas,TOMAS,3.8333333333333135,0
 5676692,iron man,2008,Coulson,2,Phil Coulson,COULSON,3.8,0
-20669,my neighbor totoro,1988,Mei,10,Mei,MEI,3.7666666666666675,0
+20669,my neighbor totoro,1988,Mei,10,Mei,MEI,3.766666666666668,0
 30582,the sixth sense,1999,Collins,8,Kyra Collins,COLLINS,3.7666666666666657,0
 3920193,no country for old men,2007,Moss,8,Llewelyn Moss,MOSS,3.75,0
 43566,heat,1995,Marciano,2,Alan Marciano,MARCIANO,3.7333333333333343,0
-525113,tombstone,1993,Marcus,6,Josephine Marcus,MARCUS,3.7333333333326664,0
+525113,tombstone,1993,Marcus,6,Josephine Marcus,MARCUS,3.7333333333326655,0
 7024876,hello dolly!,1969,Barnaby,12,Barnaby Tucker,BARNABY,3.666666666666667,0
 51906,breakfast at tiffany's,1961,Silva,5,José da Silva Pereira,SILVA,3.666666666666666,0
-920613,cars,2006,Carrera,2,Sally Carrera,CARRERA,3.6333333333333346,0
+920613,cars,2006,Carrera,2,Sally Carrera,CARRERA,3.633333333333335,0
 347000,suspiria,1977,Markos,2,Helena Markos,MARKOS,3.6333333333333337,0
 24653,princess mononoke,1997,Lady,3,Lady Eboshi,LADY,3.5333333333333314,0
 352795,jaws 2,1978,Andrews,3,Tom Andrews,ANDREWS,3.500000000000001,1
 15593618,taken,2009,Mills,26,Bryan Mills,MILLS,3.5,0
-3700174,jumanji,1995,Shepherd,8,Peter Shepherd,SHEPHERD,3.5,0
+3700174,jumanji,1995,Shepherd,8,Peter Shepherd,SHEPHERD,3.5,1
 702117,spider-man 3,2007,Osborn,14,Harry Osborn,OSBORN,3.5,0
 155997,boyz n the hood,1991,Devereaux,2,Reva Devereaux,DEVEREAUX,3.5,0
 612052,spider-man 2,2004,Doc,5,Doc Ock,DOC,3.466666666666666,0
 605939,akira,1988,Kei,9,Saving Kei,KEI,3.3666666666666663,0
-3217,army of darkness,1992,Williams,7,Ash Williams,WILLIAMS,3.3333333333333357,0
+3217,army of darkness,1992,Williams,7,Ash Williams,WILLIAMS,3.333333333333336,0
 697113,big trouble in little china,1986,Chang,3,the Chang Sing,CHANG,3.333333333333334,0
 142417,apollo 13,1995,Moon,3,Moon,MOON,3.333333333333333,0
-12555863,heat,1995,DeMarco,42,"Danny"" DeMarco",DEMARCO,3.3000000000000114,0
-88326,ferris bueller's day off,1986,Ferris,24,Ferris Bueller,FERRIS,3.3000000000000007,0
+12555863,heat,1995,DeMarco,42,"Danny"" DeMarco",DEMARCO,3.300000000000012,0
+88326,ferris bueller's day off,1986,Ferris,24,Ferris Bueller,FERRIS,3.3000000000000007,1
 620034,predator 2,1990,Cantrell,4,Leona Cantrell,CANTRELL,3.2666666666666657,0
 19479460,x-men,2000,Rogue,5,Rogue,ROGUE,3.25,0
 6446044,for your eyes only,1981,Bibi,2,Bibi Dahl,BIBI,3.25,0
 1854000,the bourne ultimatum,2007,Webb,2,David Webb,WEBB,3.25,0
-431014,big fish,2003,Winslow,4,Norther Winslow,WINSLOW,3.1999999999999993,0
+431014,big fish,2003,Winslow,4,Norther Winslow,WINSLOW,3.1999999999999997,0
 6984559,the guns of navarone,1961,Miller,10,Corporal Miller,MILLER,3.166666666666668,0
 21282769,kick-ass,2010,Red,2,Red Mist,RED,3.166666666666666,0
 55720,mulan,1998,Li,11,Li Shang's,LI,3.166666666666666,0
@@ -1255,7 +1255,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 350629,altered states,1980,Jessup,2,Edward Jessup,JESSUP,3.0,0
 68485,jurassic park,1993,Hammond,2,John Hammond,HAMMOND,3.0,0
 382387,gremlins,1984,Hanson,2,Hanson,HANSON,3.0,0
-648216,sholay,1975,Radha,3,Radha,RADHA,2.999999999999999,1
+648216,sholay,1975,Radha,3,Radha,RADHA,2.999999999999999,0
 335298,toy story 2,1999,Rex,2,Rex,REX,2.9000000000000057,0
 155997,boyz n the hood,1991,Styles,2,Furious Styles,STYLES,2.833333333333334,0
 583932,a view to a kill,1985,Achille,2,Achille Aubergine,ACHILLE,2.833333333333333,0
@@ -1264,10 +1264,10 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 17016725,gran torino,2008,Thao,13,Thao Vang Lor,THAO,2.7333333333333343,0
 23270459,inception,2010,Browning,3,Peter Browning,BROWNING,2.666666666666667,0
 24480838,black swan,2010,Macintyre,3,Beth Macintyre,MACINTYRE,2.666666666666667,0
-76630,the wild bunch,1969,Deke,7,Deke Thornton,DEKE,2.666666666666667,0
+76630,the wild bunch,1969,Deke,7,Deke Thornton,DEKE,2.666666666666667,1
 3565461,mars attacks!,1996,Kessler,2,Donald Kessler,KESSLER,2.666666666666667,0
 398934,10 things i hate about you,1999,Verona,14,Patrick Verona,VERONA,2.666666666666666,0
-205013,ghostbusters,1984,Tully,3,Louis Tully,TULLY,2.5999999999999996,0
+205013,ghostbusters,1984,Tully,3,Louis Tully,TULLY,2.6,0
 1854000,the bourne ultimatum,2007,Paz,4,Paz,PAZ,2.583333333333334,0
 158052,"aguirre, the wrath of god",1972,Gaspar,2,Gaspar de Carvajal,GASPAR,2.5,0
 29942,the graduate,1967,Robinson,12,Robinson,ROBINSON,2.5,0
@@ -1276,7 +1276,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 2312056,pride & prejudice,2005,Lady,3,Lady Catherine's,LADY,2.3999999999999986,0
 2312056,pride & prejudice,2005,Lady,2,Lady Catherine de Bourgh,LADY,2.3999999999999986,0
 1397377,"planes, trains and automobiles",1987,Del,7,Del,DEL,2.3999999999999986,0
-2465797,300,2006,Queen,2,Queen Gorgo,QUEEN,2.3333333333333357,0
+2465797,300,2006,Queen,2,Queen Gorgo,QUEEN,2.333333333333336,0
 1160412,rambo iii,1988,Mousa,4,Mousa Ghanin,MOUSA,2.333333333333334,0
 70091,spirited away,2001,Chihiro,9,Chihiro Ogino,CHIHIRO,2.333333333333334,0
 97646,die hard,1988,Powell,5,Al Powell,POWELL,2.333333333333333,0
@@ -1287,31 +1287,31 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 667945,persona,1966,Elisabet,5,Elisabet Vogler,ELISABET,2.2333333333333307,0
 1213838,toy story 3,2010,Barbie,2,Barbie,BARBIE,2.2333333333333307,0
 2251266,ocean's eleven,2001,Benedict,20,Terry Benedict,BENEDICT,2.1999999999999886,0
-105872,clueless,1995,Frasier,11,Tai Frasier,FRASIER,2.166666666666666,1
+105872,clueless,1995,Frasier,11,Tai Frasier,FRASIER,2.166666666666666,0
 30582,the sixth sense,1999,Gray,4,Vincent Gray,GRAY,2.1666666666666643,0
-7074043,misery,1990,Buster,2,Buster,BUSTER,2.0999999999999996,0
+7074043,misery,1990,Buster,2,Buster,BUSTER,2.1,0
 920613,cars,2006,Doc,7,Doc Hudson,DOC,2.033333333333334,0
 525113,tombstone,1993,Doc,8,Doc Holliday,DOC,2.0,0
 2162986,the pursuit of happyness,2006,Gardner,13,Chris Gardner,GARDNER,2.0,0
-23487440,alien,1979,Ash,4,Ash,ASH,2.0,0
-321496,pirates of the caribbean: the curse of the black pearl,2003,Sparrow,33,Jack Sparrow,SPARROW,2.0,0
+23487440,alien,1979,Ash,4,Ash,ASH,2.0,1
+321496,pirates of the caribbean: the curse of the black pearl,2003,Sparrow,33,Jack Sparrow,SPARROW,2.0,1
 667194,american gigolo,1980,Stratton,4,Michelle Stratton,STRATTON,2.0,0
 697113,big trouble in little china,1986,Sing,3,the Chang Sing,SING,2.0,0
 443972,hook,1991,Darling,4,Wendy Darling,DARLING,1.9666666666666668,0
-267848,scarface,1983,Manny,29,Manny kills Frank,MANNY,1.9666666666666615,0
-481649,basic instinct,1992,Gus,11,Gus Moran,GUS,1.9333333333333371,1
+267848,scarface,1983,Manny,29,Manny kills Frank,MANNY,1.9666666666666612,0
+481649,basic instinct,1992,Gus,11,Gus Moran,GUS,1.933333333333337,1
 174251,the lord of the rings: the return of the king,2003,Merry,2,Merry,MERRY,1.9333333333333336,0
 76630,the wild bunch,1969,Dutch,5,Dutch Engstrom,DUTCH,1.9333333333333336,0
 42313,the wicker man,1973,Rowan,8,Rowan Morrison's,ROWAN,1.916666666666666,0
-23487440,alien,1979,Kane,6,Kane,KANE,1.8999999999999986,0
+23487440,alien,1979,Kane,6,Kane,KANE,1.8999999999999984,0
 434089,the man who shot liberty valance,1962,Liberty,6,Liberty Valance,LIBERTY,1.833333333333333,0
-97758,doctor zhivago,1965,Pasha,7,Pasha Antipov,PASHA,1.7999999999999998,0
-1399119,assault on precinct 13,1976,Anderson,4,Anderson,ANDERSON,1.7666666666666657,0
-25652572,mulan,1998,Wei,6,Wei,WEI,1.7333333333333343,0
-2046252,le samouraï,1967,Rey,2,Rey,REY,1.7333333333333343,0
+97758,doctor zhivago,1965,Pasha,7,Pasha Antipov,PASHA,1.7999999999999998,1
+1399119,assault on precinct 13,1976,Anderson,4,Anderson,ANDERSON,1.7666666666666655,0
+25652572,mulan,1998,Wei,6,Wei,WEI,1.7333333333333345,0
+2046252,le samouraï,1967,Rey,2,Rey,REY,1.7333333333333345,0
 11942501,tropic thunder,2008,Les,5,Les Grossman,LES,1.7000000000000002,0
 5587473,aladdin,1992,Roc,2,Roc,ROC,1.666666666666667,0
-68245,bonnie and clyde,1967,Moss,2,C.W. Moss,MOSS,1.666666666666667,0
+68245,bonnie and clyde,1967,Moss,2,C.W. Moss,MOSS,1.666666666666667,1
 697113,big trouble in little china,1986,Yin,7,Miao Yin,YIN,1.6666666666666667,0
 5016250,watchmen,2009,Manhattan,9,Manhattan,MANHATTAN,1.6500000000000004,0
 433414,tremors,1990,Chang,4,Walter Chang,CHANG,1.6333333333333346,0
@@ -1331,7 +1331,7 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 982180,robin hood,1973,Little,5,Little John,LITTLE,1.4666666666666686,0
 23487440,alien,1979,Lambert,4,Lambert,LAMBERT,1.4666666666666686,0
 237303,bruce almighty,2003,Connelly,5,Grace Connelly,CONNELLY,1.4666666666666668,0
-8481,dressed to kill,1980,Miller,10,Kate Miller,MILLER,1.4333333333333336,1
+8481,dressed to kill,1980,Miller,10,Kate Miller,MILLER,1.4333333333333336,0
 406339,the crow,1994,Myca,5,Myca,MYCA,1.4333333333333336,0
 152328,rocky iii,1982,Lang,11,"James ""Clubber"" Lang",LANG,1.416666666666666,0
 303933,twister,1996,Reeves,4,Melissa Reeves,REEVES,1.4000000000000004,0
@@ -1342,21 +1342,21 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 2609169,the pink panther,1963,Princess,4,Princess Dala,PRINCESS,1.3333333333333428,0
 129644,the godfather part iii,1990,Lamberto,2,Lamberto,LAMBERTO,1.333333333333334,0
 29943,the breakfast club,1985,Reynolds,3,Allison Reynolds,REYNOLDS,1.333333333333334,0
-460442,a bug's life,1998,Atta,4,Atta,ATTA,1.3333333333333335,0
+460442,a bug's life,1998,Atta,4,Atta,ATTA,1.3333333333333337,0
 1428048,the last of the mohicans,1992,Heyward,10,Duncan Heyward,HEYWARD,1.333333333333333,0
 57820,donnie darko,2001,Sparrow,3,Roberta Sparrow,SPARROW,1.333333333333333,0
 6446061,live and let die,1973,Johnson,2,Tee Hee Johnson,JOHNSON,1.3000000000000007,0
 55720,mulan,1998,Shan,8,Shan Yu's,SHAN,1.2999999999999972,0
-133648,scent of a woman,1992,Ranger,8,Army Ranger Lieutenant Colonel Frank Slade,RANGER,1.25,0
+133648,scent of a woman,1992,Ranger,8,Army Ranger Lieutenant Colonel Frank Slade,RANGER,1.25,1
 77856,mary poppins,1964,Nanna,2,Katie Nanna,NANNA,1.25,0
 922084,legend,1985,Brown,2,Brown Tom,BROWN,1.25,0
-1210303,constantine,2005,Lucifer,9,Lucifer,LUCIFER,1.25,0
+1210303,constantine,2005,Lucifer,9,Lucifer,LUCIFER,1.25,1
 15233369,slumdog millionaire,2008,Kumar,2,Prem Kumar,KUMAR,1.2000000000000002,0
 1833819,red desert,1964,Valerio,3,Valerio,VALERIO,1.166666666666667,0
 605939,akira,1988,Takashi,4,Takashi,TAKASHI,1.166666666666666,0
 695266,lethal weapon 3,1992,Murphy,4,Murphy,MURPHY,1.1333333333333329,0
 62440,the sting,1973,Lucky,3,"Lucky Dan""",LUCKY,1.1000000000000014,0
-51888,indiana jones and the last crusade,1989,Schneider,10,Elsa Schneider,SCHNEIDER,1.0666666666666673,0
+51888,indiana jones and the last crusade,1989,Schneider,10,Elsa Schneider,SCHNEIDER,1.066666666666667,0
 198313,willow,1988,Kael,5,Kael,KAEL,1.0666666666666664,0
 3733842,seconds,1966,Hamilton,10,Arthur Hamilton,HAMILTON,1.0666666666666629,0
 1715414,in the heat of the night,1967,Colbert,3,Colbert,COLBERT,1.0,0
@@ -1366,15 +1366,15 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 198313,willow,1988,Danan,4,Elora Danan,DANAN,1.0,0
 26742350,the addams family,1991,Craven,11,Abigail Craven,CRAVEN,1.0,0
 105872,clueless,1995,Hall,2,Hall,HALL,1.0,0
-950929,the haunting,1963,Hill,4,Hill House,HILL,1.0,0
+950929,the haunting,1963,Hill,4,Hill House,HILL,1.0,1
 24314116,pirates of the caribbean: on stranger tides,2011,Gibbs,2,Joshamee Gibbs,GIBBS,1.0,0
-697113,big trouble in little china,1986,Lo,12,Lo Pan's,LO,1.0,0
+697113,big trouble in little china,1986,Lo,12,Lo Pan's,LO,1.0,1
 5718787,the sons of katie elder,1965,Elder,3,Katie Elder,ELDER,1.0,0
 4608223,west side story,1961,Doc,8,Doc,DOC,1.0,0
 26999426,captain america: the first avenger,2011,Erskine,5,Abraham Erskine,ERSKINE,1.0,0
 228355,the naked gun: from the files of police squad!,1988,Ludwig,24,Frank shot Ludwig,LUDWIG,1.0,0
 51906,breakfast at tiffany's,1961,Doc,3,Doc,DOC,1.0,0
-213251,alien³,1992,Ripley,12,Ellen Ripley,RIPLEY,0.9999999999999991,0
+213251,alien³,1992,Ripley,12,Ellen Ripley,RIPLEY,0.9999999999999992,0
 1055466,primal fear,1996,Shaughnessy,2,John Shaughnessy,SHAUGHNESSY,0.9666666666666668,0
 99454,patton,1970,Patton,2,George S. Patton,PATTON,0.9500000000000002,0
 318810,8½,1963,Guido,2,Guido Anselmi,GUIDO,0.8333333333333357,0
@@ -1403,26 +1403,26 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 1449256,point blank,1967,Walker,3,Walker,WALKER,0.5333333333333385,1
 242539,an officer and a gentleman,1982,Sid,10,Sid Worley,SID,0.5333333333333332,0
 30000,taxi driver,1976,Iris,6,Iris,IRIS,0.533333333333303,0
-3917873,chitty chitty bang bang,1968,Jemima,2,Jemima Potts,JEMIMA,0.5,0
+3917873,chitty chitty bang bang,1968,Jemima,2,Jemima Potts,JEMIMA,0.5,1
 75261,national lampoon's animal house,1978,Stratton,2,"Eric ""Otter"" Stratton",STRATTON,0.5,0
 667368,harry potter and the chamber of secrets,2002,Ginny,6,Harry finds Ginny,GINNY,0.5,0
 73875,the godfather part ii,1974,Fredo,6,Fredo,FREDO,0.4500000000000002,0
 920296,somewhere in time,1980,Collier,29,Richard Collier,COLLIER,0.4499999999999993,0
-400797,happy gilmore,1996,Peterson,5,Chubbs Peterson,PETERSON,0.43333333333333357,0
+400797,happy gilmore,1996,Peterson,5,Chubbs Peterson,PETERSON,0.4333333333333335,0
 3650653,the sword in the stone,1963,Ector,2,Ector,ECTOR,0.4166666666666661,0
 143809,the fifth element,1997,Vito,3,Vito Cornelius,VITO,0.4000000000000057,0
-155997,boyz n the hood,1991,Ferris,5,Ferris,FERRIS,0.40000000000000036,1
-1287385,million dollar baby,2004,Fitzgerald,6,"Margaret ""Maggie"" Fitzgerald",FITZGERALD,0.40000000000000036,0
-73467,five easy pieces,1970,Rayette,6,Rayette,RAYETTE,0.40000000000000036,0
-312757,tron,1982,Flynn,15,Kevin Flynn,FLYNN,0.36666666666666536,0
-186856,the omen,1976,Jennings,4,Keith Jennings,JENNINGS,0.36666666666666536,0
-4440277,highlander,1986,Ramirez,5,Lobos Ramirez,RAMIREZ,0.3333333333333339,0
+155997,boyz n the hood,1991,Ferris,5,Ferris,FERRIS,0.4000000000000003,1
+1287385,million dollar baby,2004,Fitzgerald,6,"Margaret ""Maggie"" Fitzgerald",FITZGERALD,0.4000000000000003,0
+73467,five easy pieces,1970,Rayette,6,Rayette,RAYETTE,0.4000000000000003,0
+312757,tron,1982,Flynn,15,Kevin Flynn,FLYNN,0.3666666666666653,0
+186856,the omen,1976,Jennings,4,Keith Jennings,JENNINGS,0.3666666666666653,0
+4440277,highlander,1986,Ramirez,5,Lobos Ramirez,RAMIREZ,0.3333333333333339,1
 1917925,what ever happened to baby jane?,1962,Hudson,38,Baby Jane Hudson,HUDSON,0.3333333333333339,1
-1107088,"the karate kid, part ii",1986,Kumiko,8,Kumiko,KUMIKO,0.33333333333333304,0
-31557,"the good, the bad and the ugly",1966,Blondie,37,Blondie,BLONDIE,0.33333333333333304,0
-255898,mad max,1979,Bubba,3,Bubba Zanetti,BUBBA,0.33333333333333304,0
-88326,ferris bueller's day off,1986,Rooney,9,Edward Rooney,ROONEY,0.33333333333333304,0
-11701,full metal jacket,1987,Doc,3,Doc Jay,DOC,0.33333333333333304,0
+1107088,"the karate kid, part ii",1986,Kumiko,8,Kumiko,KUMIKO,0.333333333333333,0
+31557,"the good, the bad and the ugly",1966,Blondie,37,Blondie,BLONDIE,0.333333333333333,1
+255898,mad max,1979,Bubba,3,Bubba Zanetti,BUBBA,0.333333333333333,0
+88326,ferris bueller's day off,1986,Rooney,9,Edward Rooney,ROONEY,0.333333333333333,0
+11701,full metal jacket,1987,Doc,3,Doc Jay,DOC,0.333333333333333,0
 3569822,a beautiful mind,2001,Herman,4,Charles Herman,HERMAN,0.3333333333333144,0
 26742350,the addams family,1991,Tully,3,Tully Alford,TULLY,0.3000000000000007,0
 5667453,the flight of the phoenix,1965,Heinrich,7,Heinrich Dorfmann,HEINRICH,0.2666666666666666,0
@@ -1431,18 +1431,18 @@ Wikipedia ID,Movie Name,Year,Character Name,Count,Full name,Normalized_name,Mean
 2274938,friday the 13th part 2,1981,Holt,5,Paul Holt,HOLT,0.25,0
 323715,troy,2004,Odysseus,4,Odysseus,ODYSSEUS,0.25,0
 370064,love actually,2003,Fitzgerald,3,Michael Fitzgerald,FITZGERALD,0.2333333333333334,0
-42993,back to the future,1985,Doc,13,Doc,DOC,0.20000000000000018,0
-3616797,gladiator,2000,Juba,4,Juba,JUBA,0.20000000000000018,0
+42993,back to the future,1985,Doc,13,Doc,DOC,0.2000000000000001,0
+3616797,gladiator,2000,Juba,4,Juba,JUBA,0.2000000000000001,0
 31153,the princess bride,1987,Montoya,2,Inigo Montoya,MONTOYA,0.1999999999999993,0
-541642,octopussy,1983,Khan,17,Kamal Khan,KHAN,0.16666666666666696,0
-431562,almost famous,2000,Roswell,2,Dick Roswell,ROSWELL,0.16666666666666696,0
-167599,men in black,1997,Edwards,4,James Darrell Edwards III,EDWARDS,0.16666666666666696,0
-1107088,"the karate kid, part ii",1986,Taro,2,Taro,TARO,0.16666666666666696,0
-31186339,the hunger games,2012,Abernathy,3,Haymitch Abernathy,ABERNATHY,0.16666666666666696,0
-456587,videodrome,1983,Masha,2,Masha,MASHA,0.16666666666666696,0
-2580403,american pie,1999,Klein,2,Chris Klein,KLEIN,0.09999999999999964,0
-50957,star wars episode ii: attack of the clones,2002,Knight,9,Jedi Knight Count Dooku,KNIGHT,0.09999999999999964,0
-27098,star trek ii: the wrath of khan,1982,McCoy,2,McCoy,MCCOY,0.06666666666666732,0
-5735396,invasion of the body snatchers,1978,Howell,2,Geoffrey Howell,HOWELL,0.06666666666666643,0
-1059280,superman ii,1981,Lex,4,Lex Luthor,LEX,0.033333333333333215,1
-9835,escape from new york,1981,Romero,2,Romero,ROMERO,0.03333333333333144,0
+541642,octopussy,1983,Khan,17,Kamal Khan,KHAN,0.1666666666666669,0
+431562,almost famous,2000,Roswell,2,Dick Roswell,ROSWELL,0.1666666666666669,0
+167599,men in black,1997,Edwards,4,James Darrell Edwards III,EDWARDS,0.1666666666666669,0
+1107088,"the karate kid, part ii",1986,Taro,2,Taro,TARO,0.1666666666666669,0
+31186339,the hunger games,2012,Abernathy,3,Haymitch Abernathy,ABERNATHY,0.1666666666666669,0
+456587,videodrome,1983,Masha,2,Masha,MASHA,0.1666666666666669,0
+2580403,american pie,1999,Klein,2,Chris Klein,KLEIN,0.0999999999999996,0
+50957,star wars episode ii: attack of the clones,2002,Knight,9,Jedi Knight Count Dooku,KNIGHT,0.0999999999999996,0
+27098,star trek ii: the wrath of khan,1982,McCoy,2,McCoy,MCCOY,0.0666666666666673,0
+5735396,invasion of the body snatchers,1978,Howell,2,Geoffrey Howell,HOWELL,0.0666666666666664,0
+1059280,superman ii,1981,Lex,4,Lex Luthor,LEX,0.0333333333333332,1
+9835,escape from new york,1981,Romero,2,Romero,ROMERO,0.0333333333333314,0

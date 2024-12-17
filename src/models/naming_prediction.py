@@ -182,7 +182,16 @@ def predict_naming_prophet(data: NamesData, name: str, stop_year: int, nb_years:
     # Filter for the specified name and aggregate counts if needed
     name_data = input_data[input_data['Name'] == name]
     name_data = name_data.groupby(['Year']).sum().reset_index()
-    name_data = name_data.drop(columns=['Name', 'Sex'])
+    name_data = name_data.drop(columns=['Name', 'Sex']) # no need for them
+
+    
+    # Fill missing values in the interval with 0
+    full_years = range(name_data['Year'].min(), stop_year + nb_years + 1)
+    name_data = name_data.set_index('Year').reindex(full_years)
+    name_data = name_data.reset_index().rename(columns={'index': 'Year'})
+    name_data["Count"] = name_data["Count"].fillna(0)
+    # Set the type back to int
+    name_data['Count'] = name_data['Count'].astype(int)
 
     # Split the dataset at the stop_year
     train_data = name_data[name_data['Year'] <= stop_year].rename(columns={'Year': 'ds', 'Count': 'y'})
@@ -236,13 +245,7 @@ def predict_naming_prophet(data: NamesData, name: str, stop_year: int, nb_years:
 
     y_true = y_true[1:]
 
-    # Make sure true_data has 'Year' aligned with forecast
-    # For missing years, fill them with zero in true_data as well.
-    all_years_for_true = pd.DataFrame({'Year': range(stop_year + 1, stop_year + 1 + nb_years)})
-    true_data_aligned = pd.merge(all_years_for_true, true_data[['Year', 'Count']], on='Year', how='left').fillna(0)
-
-    # Now you can assign directly since both have the same index and number of rows
-    forecast['True Count'] = true_data_aligned['Count'].values
+    forecast['True Count'] = y_true
 
     return forecast
 
