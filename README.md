@@ -98,3 +98,8 @@ Obviously bound to change according to necessities
 
 - Is it a reasonable assumption that blockbusters will have no missing datas (NaN values) and thus we don't have to worry about discarding data entries with missing values in important fields such as Revenue ?
 - How can we elaborately determine how a movie is a blockbuster ? For now we only sort by Revenue but should we use a more refined metric ? Same question for iconic actors
+
+## Updated ReadMe
+Contribution of Group Members 
+- Jeremy : building the website based on Jekyll, data analysis
+- 
