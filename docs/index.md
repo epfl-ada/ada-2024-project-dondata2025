@@ -86,9 +86,7 @@ It is clear that the film was released during a peak of popularity for the name 
 
 
 # Birth of a new name
-Some films have such a cultural impact that they leave a lasting impression on the audience with their characters and make them remember their name, even when they don't even exist. These events lead to the creation of a new name. Ever heard of children named [Anakin](https://en.wikipedia.org/wiki/Anakin_(given_name)) or [Neo](https://en.wikipedia.org/wiki/Neo_(The_Matrix)) ?
-
-These names did not exist and were invented by the scriptwriters. They left a mark on popular culture, and people started naming their child like their favorite character !
+Some films have such a cultural impact that they leave a lasting impression on the audience with their characters and make them remember their name, even when they don't even exist or are practically unused. These events lead to the resurgence of an unpopular name or even the creation of a new one.
 
 {% include newnames_carrousel.html %}
 
