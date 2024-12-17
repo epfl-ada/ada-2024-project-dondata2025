@@ -106,6 +106,7 @@ Some films have such a cultural impact that they leave a lasting impression on t
 
 # Is there a movie genre that have a stronger influence on names ?
 
+{% include top3_influenced_names_by_genres.html %}
 
 
 # Are women names more influenced than man's ?
