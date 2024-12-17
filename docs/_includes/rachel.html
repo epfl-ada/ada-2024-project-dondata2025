@@ -145,7 +145,7 @@
 <div class="body">
         <div class="carousel-wrapper">
             <div class="carousel-container">
-                <div class="carousel" id="carousel">
+                <div class="carousel carousel-instance">
                     <div class="carousel-slide">
                         <div class="carousel-content">
                             <img src="https://tierneysalons.com/wp-content/uploads/2023/12/0e461a848663146e13e5444687934cb0.jpg" alt="Rachel haircut" width="225px" style="margin: 0px 20px 20px 20px;"> 
@@ -194,32 +194,38 @@
 {% raw %}
 
 <script>
-    const carousel = document.getElementById('carousel');
+    document.querySelectorAll('.carousel-instance').forEach((carousel, index) => {
     const totalSlides = carousel.children.length;
     let currentSlide = 0;
 
-    function updateCarousel() {
+    const updateCarousel = () => {
         const offset = -currentSlide * 100;
         carousel.style.transform = `translateX(${offset}%)`;
-    }
+    };
 
-    function prevSlide() {
+    const prevSlide = () => {
         currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
         updateCarousel();
-    }
+    };
 
-    function nextSlide() {
+    const nextSlide = () => {
         currentSlide = (currentSlide + 1) % totalSlides;
         updateCarousel();
-    }
+    };
 
-    document.addEventListener('keydown', (event) => {
+    const wrapper = carousel.closest('.carousel-wrapper');
+    wrapper.querySelector('.prev-slide').addEventListener('click', prevSlide);
+    wrapper.querySelector('.next-slide').addEventListener('click', nextSlide);
+
+    // Optional: Add keydown support scoped to this carousel
+    wrapper.addEventListener('keydown', (event) => {
         if (event.key === 'ArrowLeft') {
             prevSlide();
         } else if (event.key === 'ArrowRight') {
             nextSlide();
         }
     });
+});
 
 </script>
 
