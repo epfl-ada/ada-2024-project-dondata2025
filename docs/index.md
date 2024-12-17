@@ -84,6 +84,13 @@ To illustrate this, let's take the example of [Michael from Peter Pan](https://d
 
 It is clear that the film was released during a peak of popularity for the name Michael, and therefore most likely didn't play a role in its usage.
 
+## Using Machine Learning predicitions
+blabla
+
+# Movie influence over time
+Now that we produced our results, let's take a look at them. (paragraphe pas fini je vais manger)
+{% include influenced_names_per_year.html %}
+
 
 # Birth of a new name
 Some films have such a cultural impact that they leave a lasting impression on the audience with their characters and make them remember their name, even when they don't even exist or are practically unused. These events lead to the resurgence of an unpopular name or even the creation of a new one.
