@@ -174,37 +174,31 @@
 {% raw %}
 
 <script>
-document.querySelectorAll('.carousel-instance').forEach((carousel, index) => {
-    const totalSlides = carousel.children.length;
-    let currentSlide = 0;
+const carousel = document.getElementById('carousel-2');
+const totalSlides = carousel.children.length;
+let currentSlide_newname = 0;
 
-    const updateCarousel = () => {
-        const offset = -currentSlide * 100;
-        carousel.style.transform = `translateX(${offset}%)`;
-    };
+function updateCarousel2() {
+    const offset = -currentSlide_newname * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+}
 
-    const prevSlide = () => {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        updateCarousel();
-    };
+function prevSlide2() {
+    currentSlide_newname = (currentSlide_newname - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+}
 
-    const nextSlide = () => {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateCarousel();
-    };
+function nextSlide2() {
+    currentSlide_newname = (currentSlide_newname + 1) % totalSlides;
+    updateCarousel();
+}
 
-    const wrapper = carousel.closest('.carousel-wrapper');
-    wrapper.querySelector('.prev-slide').addEventListener('click', prevSlide);
-    wrapper.querySelector('.next-slide').addEventListener('click', nextSlide);
-
-    // Optional: Add keydown support scoped to this carousel
-    wrapper.addEventListener('keydown', (event) => {
-        if (event.key === 'ArrowLeft') {
-            prevSlide();
-        } else if (event.key === 'ArrowRight') {
-            nextSlide();
-        }
-    });
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') {
+        prevSlide2();
+    } else if (event.key === 'ArrowRight') {
+        nextSlide2();
+    }
 });
 
 </script>
