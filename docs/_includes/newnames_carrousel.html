@@ -185,12 +185,12 @@ function updateCarousel2() {
 
 function prevSlide2() {
     currentSlide_newname = (currentSlide_newname - 1 + totalSlides) % totalSlides;
-    updateCarousel();
+    updateCarousel2();
 }
 
 function nextSlide2() {
     currentSlide_newname = (currentSlide_newname + 1) % totalSlides;
-    updateCarousel();
+    updateCarousel2();
 }
 
 document.addEventListener('keydown', (event) => {
