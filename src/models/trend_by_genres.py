@@ -175,6 +175,7 @@ def plot_treemap(top_names_by_genre):
     """
     Plot a treemap of the top 3 influential names per genre and save it as an HTML file.
     """
+    top_names_by_genre['Movie_name'] = top_names_by_genre['Movie_name'].str.title()
     # Create the treemap
     fig = px.treemap(
         top_names_by_genre,
@@ -188,10 +189,7 @@ def plot_treemap(top_names_by_genre):
     
     # Update hover template to display movie names
     fig.update_traces(
-        hovertemplate= (
-            "<b>%{label}</b><br>%{customdata[0]}<extra></extra>"
-            if 'parent' in fig.data[0].ids else "" 
-        )
+        hovertemplate= "<b>%{label}</b><br>%{customdata[0]}<extra></extra>"
     )
     
     # Show and save the figure

@@ -45,8 +45,7 @@ Our dataset contains movies released up to 2014 and informations such as their *
 In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average rating** and **number of voters** coming from the [IMDB data files](https://datasets.imdbws.com).
 We pretreated this dataset to only keep one weighted mean of votes per movie and the number of voters. We created an information 
 
-**option 2**: 
-Movies are more than just entertainment, they inspire us, shape our culture, and sometimes even change the way we see the world. Think about it: would you have known about macaws if [Rio](https://en.wikipedia.org/wiki/Rio_(2011_film) hadn’t brought them to life on screen?
+*option 2:Movies are more than just entertainment, they inspire us, shape our culture, and sometimes even change the way we see the world. Think about it: would you have known about macaws if [Rio](https://en.wikipedia.org/wiki/Rio_(2011_film)) hadn’t brought them to life on screen?*
 To explore these connections, our dataset includes a collection of films released up to 2014. It’s packed with details such as:
 <ul>
   <li><strong>Movie IDs</strong> to uniquely identify each film.</li>
@@ -55,7 +54,7 @@ To explore these connections, our dataset includes a collection of films release
   <li><strong>Character Names</strong> — the stars of our analysis! — to connect the dots between movies and baby name trends.</li>
 </ul>
 
-To make the dataset even more insightful, we added extra details from [IMDB](https://www.imdb.com), including average ratings and the number of votes each movie received. After some preprocessing, we ensured movie has a single weighted rating and vote count.
+*To make the dataset even more insightful, we added extra details from [IMDB](https://www.imdb.com), including average ratings and the number of votes each movie received. After some preprocessing, we ensured movie has a single weighted rating and vote count.*
 
 
 
