@@ -27,7 +27,7 @@ def process_genres(df, subset_cols=None):
 
 
 # Étape 1 : Obtenir les 10 genres principaux
-def get_top_10_genres(expanded_imdb_mov_char_data):
+def get_top_10_genres(expanded_imdb_mov_char_data,):
     """
     Determines the top 10 movie genres based on unique movie occurrences.
     """
