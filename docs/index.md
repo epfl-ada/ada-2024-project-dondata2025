@@ -87,9 +87,23 @@ It is clear that the film was released during a peak of popularity for the name 
 ## Using Machine Learning predicitions
 blabla
 
-# Movie influence over time
-Now that we produced our results, let's take a look at them. (paragraphe pas fini je vais manger)
-{% include influenced_names_per_year.html %}
+# Results
+Using this method, we can generate a list of films that have influenced the general trend for first names. Now that we produced our results, let's take a look at them. 
+
+## Movie influence over time
+One might come to the idea that cultural and cinematic impact fluctuates over time. Here are the number of names influenced by movie characters over decades from the 60s to the 00s.
+
+{% include influenced_names_per_era.html %}
+
+#### Several observations :
+A steady growth is observed in the 60s and 70s, corresponding to the late stage of the [Golden Age of Hollywood](https://en.wikipedia.org/wiki/Classical_Hollywood_cinema#1927–1960:_Sound_era_and_the_Golden_Age_of_Hollywood). This period marks the rise of popular movies and the increase in revenue the cinema industry generates.
+
+The 80s exhibit a significant increase, influencing over a **hundred** names. With the release of iconic movies such as [Alien](https://en.wikipedia.org/wiki/Alien_(film)), 
+[E.T.](https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial) and the first three [Indiana Jones](https://en.wikipedia.org/wiki/Indiana_Jones) movies, this era represents the start of the Blockbuster age, giving Hollywood a worldwide reach and a foothold on Pop Culture icons.
+
+Cinema reached its peak influence over baby names in the 90s. This apogee can be linked with the [Disney Renaissance](https://en.wikipedia.org/wiki/Disney_Renaissance) period and the emergence of globally beloved characters accross various animated and live-action films. During this era, cinema was the main medium for conveying stories and entertaining the people.
+
+Y2K brings a noticeable decline in influenced names, dropping back to similar levels as the 70s despite having a much more developped industry. This indicates a shift in cultural trends, where people turn to the rising internet and streaming services, giving less attention to feature-length films. This period reflects the fragmentation of media influence and the appearance of new ways of telling stories.
 
 
 # Birth of a new name
@@ -111,12 +125,12 @@ Some films have such a cultural impact that they leave a lasting impression on t
 </div>
 
 
-# Is there a movie genre that have a stronger influence on names ?
+# Is there a movie genre that has a stronger influence on names ?
 
 {% include top3_influenced_names_by_genres.html %}
 
 
-# Are women names more influenced than man's ?
+# Are women names more influenced than men's ?
 
 
 # Bibliography
