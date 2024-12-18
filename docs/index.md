@@ -151,16 +151,18 @@ Does an adventurous film, where the hero embodies all the traits we aspire to—
 
 In this part, we set out to explore which movie genres resonate the most, in other words, whether certain movie genres have a stronger influence on baby names than others. 
 To measure this, we used the difference-mean metric—a score that represents the gap between a name’s real trend curve after a movie’s release and its predicted curve if the movie had never existed. Simply put, the higher the score, the greater the movie’s impact on that name.
+The results are clear: Action, Thriller, and Drama stand out as the most influential genres. These types of movies, often featuring intense storytelling and memorable characters, seem to leave a stronger mark on audiences. The treemap confirms this, highlighting names like Ethan and Emma that dominate multiple categories, particularly in high-stakes genres like Action and Thriller.
 
 
 {% include top_10_influenced_genres.html %}
 
 
-**Description**
 
 {% include treemap_top3_by_genre.html %}
 
-**Description**
+
+
+While we might expect romantic films or period pieces to lead the charge, it’s the fast-paced, emotionally gripping genres that truly shape naming trends. It’s as if the excitement and tension of these stories spill over into real life, inspiring parents to choose names that reflect the bold and impactful characters they’ve seen on screen.
 
 
 
