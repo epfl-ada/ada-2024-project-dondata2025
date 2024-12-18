@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -89,7 +88,7 @@
 
     // Function to load a graph
     function loadGraph(graphFile) {
-        graphpath = "https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/" + graphFile + "_graph.html";
+        graphpath = `https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/${graphFile}_graph.html`;
         fetch(graphFile)
             .then(response => {
                 if (!response.ok) {
