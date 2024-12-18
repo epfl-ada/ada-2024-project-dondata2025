@@ -60,7 +60,7 @@
 <script>
     // Example data - replace this with your own
     const movies = [
-        { id: "1", name: "Mission: Impossible II", year: "2000", graph: "mission:_impossible_ii_graph.html" },
+        { id: "1", name: "Mission: Impossible II", year: "2000", graph: "mission_impossible_ii_graph.html" },
         { id: "2", name: "Love Actually", year: "2003", graph: "love_actually_graph.html" },
         { id: "3", name: "Pulp Fiction", year: "1994", graph: "pulp_fiction_graph.html" },
     ];
@@ -89,6 +89,7 @@
 
     // Function to load a graph
     function loadGraph(graphFile) {
+        graphpath = "https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/" + graphFile;
         fetch(graphFile)
             .then(response => {
                 if (!response.ok) {
