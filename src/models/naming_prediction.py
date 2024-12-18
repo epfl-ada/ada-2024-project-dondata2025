@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from prophet import Prophet
 from causalimpact import CausalImpact
 import numpy as np
+import seaborn as sns
 
 
 
@@ -262,6 +263,8 @@ def compute_distance_abs(df_pred):
     distance_pred['Distance'] = abs(distance_pred['Predicted Count'] - distance_pred['True Count'])
     return distance_pred
 
+
+
 def compute_distance(df_pred):
     """
     Computes the distance between the true count and the predicted count for each year.
@@ -276,6 +279,7 @@ def compute_distance(df_pred):
                                          abs(distance_pred['Predicted Count'] - distance_pred['True Count']))
     return distance_pred
 
+
 def compute_area(distance_df):
     """
     Computes the area under the curve for the distance using the trapezoidal rule.
@@ -286,6 +290,7 @@ def compute_area(distance_df):
     # Use the trapezoidal rule to compute the area under the curve
     area = np.trapz(distance_df['Distance'], x=distance_df['Year'])
     return area
+
 
 def plot_distance(distance_df, label1='Distance 1', distance_df2=None, label2='Distance 2'):
     """
@@ -306,50 +311,3 @@ def plot_distance(distance_df, label1='Distance 1', distance_df2=None, label2='D
     plt.ylabel('Count Difference')
     plt.legend()
     plt.show()
-
-def causal_impact(data: NamesData, name: str, stop_year: int, nb_years: int) :
-    """
-    Predict the evolution of a name's count by year using Facebook's Prophet model.
-    :param data: the name dataset
-    :param name: the name from which we predict the evolution
-    :param stop_year: the year of the event, we will predict the evolution from stop_year + 1
-    :param nb_years: the number of years we want to predict
-    :return: a dataframe with
-    - the magnitude of the effect (absolute and relative)
-    - the probability that the observed effect is not due to random chance
-    """
-    
-    data.check_clean_data()
-    input_data = data().copy()
-
-    # Filter for the specified name and aggregate counts if needed
-    name_data = input_data[input_data['Name'] == name]
-    name_data = name_data.groupby(['Year']).sum().reset_index()
-    name_data = name_data.drop(columns=['Name', 'Sex'])
-
-    # Split the dataset at the stop_year
-    pre_period = name_data[name_data['Year'] <= stop_year]
-    post_period = name_data[name_data['Year'] >= stop_year]  # the = is for visualisation -> connected points on the graph
-    post_period = post_period[post_period['Year'] <= stop_year + nb_years]
-
-    # Prepare data for CausalImpact
-    # Ensure time_series is a pandas DataFrame with correct structure
-    time_series = input_data[['Year', 'Count']]  # Assuming 'Year' and 'Count' are the columns in data
-    time_series = time_series.set_index('Year')  # If 'Year' is the time index
-    print(type(time_series))
-    print(pre_period)
-    print(post_period)
-
-    #time_series = input_data['Count']  # Your time series data
-    impact = CausalImpact(time_series, pre_period, post_period)
-
-    # Summarize results
-    print(impact.summary())
-    print(impact.summary(output='report'))
-
-    # Visualize results
-    impact.plot()
-
-
-
-
