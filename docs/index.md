@@ -18,16 +18,25 @@ Movies and TV shows have always been a major influence in our daily, shaping our
 
 For example, the famous sitcom *Friends* created "The Rachel" phenomenon. In this show, the character played by Jenifer Aniston wore an original haircut that became one of the most requested styles at hair salons across the world. It symbolized a moment where people were identifying as Rachel, were marked by the show and wanted to be just like her. Which is just what we are looking for: media influence !
 
+
+
 {% include rachel.html %}
 
 The case illustrates how a single person's appearance captivated the audience and shaped the tastes of thousands of people, displaying how far the power of storytelling and character design reaches. That effect is what intrigued us for our project and guided us toward its subject.
 In this article, we will see how the character names in movies induce trends in baby names, particularly the years immediately following the movie release. 
 
+*option 2 : This case is exactly what captured our curiosity for this project. If a hairstyle can spark a global movement, what about something as personal and enduring as a name? In this article, we dive into the fascinating connection between movies and baby name trends, exploring how characters leave their mark not just on screens, but on birth certificates in the years following their rise to fame.*
+
+
 # Try it yourself !
-Before diving in deeper, let's give you a taste of our results. Enter any name, and see what movie potentially impacted its popularity.
+But enough talking—now it’s your turn to explore! Ever wondered if your favorite movie left its mark on baby name trends? Enter the name of a film below, and watch as the data unfolds. See for yourself how the power of storytelling might have influenced real-life names !
+
 {% include names_prediction.html %}
 
 # Our *datasets* :
+To find out how movies influence baby name trends, we worked with 2 datasets. The first one is all about movies. It’s our link to the big screen and helps us track the cultural buzz created by blockbuster hits. The second dataset dives into baby names across four countries: the United States, United Kingdom, France, and Norway. It lets us see how names rise and fall in popularity over time, giving us the some insight to on what’s happening in cinemas to real-world trends. Now, let’s dive into the data !
+
+
 ## The film corpus
 First and most important, movies are what inspire people. They tell stories and affect our culture and lifestyle. For example, had you heard of macaws before [Rio](https://en.wikipedia.org/wiki/Rio_(2011_film)) ?
 
@@ -35,6 +44,19 @@ Our dataset contains movies released up to 2014 and informations such as their *
 
 In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average rating** and **number of voters** coming from the [IMDB data files](https://datasets.imdbws.com).
 We pretreated this dataset to only keep one weighted mean of votes per movie and the number of voters. We created an information 
+
+**option 2**: 
+Movies are more than just entertainment, they inspire us, shape our culture, and sometimes even change the way we see the world. Think about it: would you have known about macaws if [Rio](https://en.wikipedia.org/wiki/Rio_(2011_film) hadn’t brought them to life on screen?
+To explore these connections, our dataset includes a collection of films released up to 2014. It’s packed with details such as:
+<ul>
+  <li><strong>Movie IDs</strong> to uniquely identify each film.</li>
+  <li><strong>Release Dates</strong> to trace when the hype began.</li>
+  <li><strong>Genres</strong> to explore trends across action, comedy, drama, and more.</li>
+  <li><strong>Character Names</strong> — the stars of our analysis! — to connect the dots between movies and baby name trends.</li>
+</ul>
+
+To make the dataset even more insightful, we added extra details from [IMDB](https://www.imdb.com), including average ratings and the number of votes each movie received. After some preprocessing, we ensured movie has a single weighted rating and vote count.
+
 
 
 ### What makes a movie popular ?
@@ -126,10 +148,23 @@ Some films have such a cultural impact that they leave a lasting impression on t
 
 
 # Is there a movie genre that has a stronger influence on names ?
+Does an adventurous film, where the hero embodies all the traits we aspire to—bravery, charisma, and triumph—leave a stronger mark than a heart-wrenching drama? Or is it the tension and excitement of a thriller that makes a name stick in our minds?
+
+In this part, we set out to explore which movie genres resonate the most, in other words, whether certain movie genres have a stronger influence on baby names than others. 
+To measure this, we used the difference-mean metric—a score that represents the gap between a name’s real trend curve after a movie’s release and its predicted curve if the movie had never existed. Simply put, the higher the score, the greater the movie’s impact on that name.
+
 
 {% include top_10_influenced_genres.html %}
 
+
+**Description**
+
 {% include treemap_top3_by_genre.html %}
+
+**Description**
+
+
+
 
 
 # Are women names more influenced than men's ?
