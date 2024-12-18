@@ -89,7 +89,7 @@
     // Function to load a graph
     function loadGraph(graphFile) {
         graphpath = `https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/${graphFile}_graph.html`;
-        fetch(graphFile)
+        fetch(graphpath)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok ' + response.statusText);
