@@ -77,8 +77,7 @@ In order to measure character importance, we count the number of citation of the
 
 **A VENIR : exemple avec les 2-3 persos d'un film connu, fourni par Coco**
 
-{% plots_carrousel.html %}
-
+{% include plots_carrousel.html %}
 
 ## The baby names collection
 Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events.
