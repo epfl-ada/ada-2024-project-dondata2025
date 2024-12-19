@@ -306,6 +306,13 @@ def compute_all_influence_prophet(mean_df, namesData):
 
     return prophet_df
 
+def load_influenced_prophet():
+    """
+    Function to load the influenced names generate by the prophet method
+    :return: DataFrame : The DataFrame containing the influenced names
+    """
+    return pd.read_csv(RESULTS_PATH_PROPHET)
+
 def load_influenced_sarima():
     """
     Function to load the influenced names generate by Sarima

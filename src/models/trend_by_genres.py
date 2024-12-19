@@ -87,7 +87,22 @@ def visualize_top_names(top_names_df):
 
 
 
+#####  Based on proportion of influence (count) ######
+def count_top_genres(df, top_n=10):
+    """
+    Group data by genres and calculate the total mean difference (influence score).
+    Returns the top N influential genres.
+    """
+    df = df[df['Genres'] != 'Action/Adventure']
 
+    genre_influence = (
+        df.groupby('Genres')[['Movie-name', Normalized_name]]
+        .sum()
+        .reset_index()
+        .sort_values(by='', ascending=False)
+    )
+
+    return genre_influence.head(top_n)
 
 
 
@@ -106,6 +121,8 @@ def load(filepath):
     # Rename the column and drop unnecessary ones
     df = df.rename(columns={"Movie Name": "Movie_name"})
     df = df.drop(columns=['Influenced', 'Character Name', 'Wikipedia_movie_ID'])
+    df = df[df['Genres'] != 'Action/Adventure']
+
     
     # Explode Genres
     df['Genres'] = df['Genres'].str.split(', ')
@@ -131,14 +148,14 @@ def get_top_genre_influence(df, top_n=10):
 
     return genre_influence.head(top_n)
 
-def plot_top_genres(genre_influence):
+def plot_top_genres(genre_influence, metric):
     """
     Create a bar chart for the top N genres and save it as an HTML file.
     """
     fig = px.bar(
         genre_influence,
         x='Genres',
-        y='Mean Difference',
+        y=metric,
         title='Top 10 Most Influential Movie Genres on Names',
         labels={'Mean Difference': 'Total Influence Score'},
         template='plotly_white'
@@ -175,6 +192,7 @@ def plot_treemap(top_names_by_genre):
     """
     Plot a treemap of the top 3 influential names per genre and save it as an HTML file.
     """
+    top_names_by_genre['Movie_name'] = top_names_by_genre['Movie_name'].str.title()
     # Create the treemap
     fig = px.treemap(
         top_names_by_genre,
@@ -188,12 +206,11 @@ def plot_treemap(top_names_by_genre):
     
     # Update hover template to display movie names
     fig.update_traces(
-        hovertemplate= (
-            "<b>%{label}</b><br>%{customdata[0]}<extra></extra>"
-            if 'parent' in fig.data[0].ids else "" 
-        )
+        hovertemplate= "<b>%{label}</b><br>%{customdata[0]}<extra></extra>"
     )
     
     # Show and save the figure
     fig.show()
     fig.write_html("docs/_includes/treemap_top3_by_genre.html")
+
+

@@ -31,7 +31,7 @@ In this article, we will see how the character names in movies induce trends in 
 # Try it yourself !
 But enough talking—now it’s your turn to explore! Ever wondered if your favorite movie left its mark on baby name trends? Enter the name of a film below, and watch as the data unfolds. See for yourself how the power of storytelling might have influenced real-life names !
 
-{% include names_prediction.html %}
+{% include results_display.html %}
 
 # Our *datasets* :
 To find out how movies influence baby name trends, we worked with 2 datasets. The first one is all about movies. It’s our link to the big screen and helps us track the cultural buzz created by blockbuster hits. The second dataset dives into baby names across four countries: the United States, United Kingdom, France, and Norway. It lets us see how names rise and fall in popularity over time, giving us the some insight to on what’s happening in cinemas to real-world trends. Now, let’s dive into the data !
@@ -45,8 +45,7 @@ Our dataset contains movies released up to 2014 and informations such as their *
 In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average rating** and **number of voters** coming from the [IMDB data files](https://datasets.imdbws.com).
 We pretreated this dataset to only keep one weighted mean of votes per movie and the number of voters. We created an information 
 
-**option 2**: 
-Movies are more than just entertainment, they inspire us, shape our culture, and sometimes even change the way we see the world. Think about it: would you have known about macaws if [Rio](https://en.wikipedia.org/wiki/Rio_(2011_film) hadn’t brought them to life on screen?
+*option 2:Movies are more than just entertainment, they inspire us, shape our culture, and sometimes even change the way we see the world. Think about it: would you have known about macaws if [Rio](https://en.wikipedia.org/wiki/Rio_(2011_film)) hadn’t brought them to life on screen?*
 To explore these connections, our dataset includes a collection of films released up to 2014. It’s packed with details such as:
 <ul>
   <li><strong>Movie IDs</strong> to uniquely identify each film.</li>
@@ -55,7 +54,7 @@ To explore these connections, our dataset includes a collection of films release
   <li><strong>Character Names</strong> — the stars of our analysis! — to connect the dots between movies and baby name trends.</li>
 </ul>
 
-To make the dataset even more insightful, we added extra details from [IMDB](https://www.imdb.com), including average ratings and the number of votes each movie received. After some preprocessing, we ensured movie has a single weighted rating and vote count.
+*To make the dataset even more insightful, we added extra details from [IMDB](https://www.imdb.com), including average ratings and the number of votes each movie received. After some preprocessing, we ensured movie has a single weighted rating and vote count.*
 
 
 
@@ -86,15 +85,48 @@ We used a dataset consisting of baby names each year for the United States, Unit
 
 # Processes
 
-<img src="assets/img/laplace_citation.jpg" alt="laplace citation" height=300>
+<div style="display: flex; justify-content: center; align-items:center; width:100%;">
+<div>
+  <blockquote>
+    <p>Give me the <strong>positions and velocities</strong> of all the particles in the universe, and <strong>I will predict the future.</strong></p>
+  </blockquote>
+  <p>—Marquis Pierre Simon de Laplace</p>
+</div>
+</div>
+<style>
+
+  div:has(> blockquote) {
+    background-color: #ededed;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  blockquote p::before {
+    content: '\201C';
+  }
+
+  blockquote p::after {
+    content: '\201D';
+  }
+
+  blockquote + p {
+    text-align: right;
+  }
+
+</style>
+
 
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
+
 ## The naïve approach
 At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<img src="assets/img/trend_formula.png" alt="trend formula">
-
+$$ metric = \text{average count of a name 5 years after} \\ - \text{average count of a name 5 years before} $$ 
 
 Unfortunately, this is not so simple. This model doesn't account for the inverse effect, i.e. the name trend influencing the filmmakers for the name of their characters. 
 
@@ -152,19 +184,34 @@ Does an adventurous film, where the hero embodies all the traits we aspire to—
 
 In this part, we set out to explore which movie genres resonate the most, in other words, whether certain movie genres have a stronger influence on baby names than others. 
 To measure this, we used the difference-mean metric—a score that represents the gap between a name’s real trend curve after a movie’s release and its predicted curve if the movie had never existed. Simply put, the higher the score, the greater the movie’s impact on that name.
+The results are clear: Action, Thriller, and Drama stand out as the most influential genres. These types of movies, often featuring intense storytelling and memorable characters, seem to leave a stronger mark on audiences. The treemap confirms this, highlighting names like Ethan and Emma that dominate multiple categories, particularly in high-stakes genres like Action and Thriller.
 
 
 {% include top_10_influenced_genres.html %}
 
 
-**Description**
+
+This treemap is a representation of the amplitude of the influence of movie genre:
 
 {% include treemap_top3_by_genre.html %}
 
-**Description**
+
+this other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
+
+{% include treemap_top3_by_genre_by_count.html %}
 
 
 
+
+
+While we might expect romantic films or period pieces to lead the charge, it’s the fast-paced, emotionally gripping genres that truly shape naming trends. It’s as if the excitement and tension of these stories spill over into real life, inspiring parents to choose names that reflect the bold and impactful characters they’ve seen on screen.
+The two treemaps reveal interesting insights about the influence of movie genres on baby names. The top three genres—Action, Drama, and Thriller—consistently dominate both in amplitude (the magnitude of influence) and in occurrence (the number of names impacted). However, the patterns start to diverge beyond these top genres.
+
+For instance, Comedy ranks 5th in influence by amplitude but climbs to 4th in occurrence. This suggests that while comedic movies impact a larger number of names, their influence on each name's trend is relatively smaller compared to genres like Action or Drama.
+
+On the other hand, Adventure stands out for its higher influence in amplitude than in occurrence. This indicates that while fewer names are impacted by Adventure movies, the magnitude of the impact on those names is significant—suggesting strong but targeted influence.
+
+Overall, the three most influential genres—Action, Drama, and Thriller—not only reach a broad range of names but also leave a strong mark on each name’s trend. They balance both breadth (occurrence) and depth (amplitude) in their cultural impact on naming trends.
 
 
 # Are women names more influenced than men's ?
