@@ -29,7 +29,7 @@ In this article, we will see how the character names in movies induce trends in 
 
 
 # Try it yourself !
-But enough talking—now it’s your turn to explore! Ever wondered if your favorite movie left its mark on baby name trends? Enter the name of a film below, and watch as the data unfolds. See for yourself how the power of storytelling might have influenced real-life names !
+But enough talking—now it’s your turn to explore! Ever wondered if your favorite movie left its mark on baby name trends? We used Meta's [Prophet](https://facebook.github.io/prophet/docs/quick_start.html) AI model to predict what the trend of a name would look like, and compare it to the actual trend to see if the release of a movie influenced it. Here is a selection of some cases for you to preview :
 
 {% include results_display.html %}
 
