@@ -163,7 +163,7 @@ This treemap is a representation of the amplitude of the influence of movie genr
 {% include treemap_top3_by_genre.html %}
 
 
-this other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
+This other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
 
 {% include treemap_top3_by_genre_by_count.html %}
 
