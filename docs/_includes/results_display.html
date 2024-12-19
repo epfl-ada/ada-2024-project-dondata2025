@@ -63,10 +63,16 @@
 <script>
     // Example data - replace this with your own
     const movies = [
-        { id: "1", name: "Mission: Impossible II", year: "2000", graph: "mission_impossible_ii" },
-        { id: "2", name: "Love Actually", year: "2003", graph: "love_actually" },
-        { id: "3", name: "Pulp Fiction", year: "1994", graph: "pulp_fiction" },
+        { id: "1", name: "Mission: Impossible II", year: "2000", graph: "mission_impossible_ii"},
+        { id: "2", name: "Pulp Fiction", year: "1994", graph: "pulp_fiction"},
+        { id: "3", name: "Star Wars Episode IV: A New Hope", year: "1977", graph: "star_wars_episode_iv_a_new_hope"},
+        { id: "4", name: "Titanic", year: "1997", graph: "titanic"},
+        { id: "5", name: "The Little Mermaid", year: "1989", graph: "the_little_mermaid"},
+        { id: "6", name: "Doctor Zhivago", year: "1965", graph: "doctor_zhivago"},
+        { id: "7", name: "Charlie and the Chocolate Factory", year: "2005", graph: "charlie_and_the_chocolate_factory"},
+        { id: "8", name: "The Nightmare Before Christmas", year: "1993", graph: "the_nightmare_before_christmas"}
     ];
+
 
     const movieList = document.getElementById('movie-list');
     const graphContainer = document.getElementById('graph-container');
@@ -92,7 +98,7 @@
 
     // Function to load a graph
     function loadGraph(graphFile) {
-        graphpath = `https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/${graphFile}_graph.html`;
+        graphpath = `https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/graphs/${graphFile}_graph.html`;
         fetch(graphpath)
             .then(response => {
                 if (!response.ok) {
