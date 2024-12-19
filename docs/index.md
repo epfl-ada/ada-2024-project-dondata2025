@@ -81,7 +81,10 @@ Even if it remains a simple word, your name is what you are referred as for your
 
 We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Norway to acccount for name trends.
 ### Most given names in the dataset
-<img src="assets/img/wordcloud.png" alt="Word Cloud">
+<div style="display: flex; justify-content: center; align-items:center; width:100%;">
+  <img src="assets/img/wordcloud.png" width="80%" alt="Word Cloud">
+</div>
+Here is a word cloud plot representing the most given names in the dataset. The bigger the name is, the more it has been given to newborns
 
 # Processes
 
