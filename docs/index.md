@@ -82,20 +82,58 @@ In order to measure character importance, we count the number of citation of the
 Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events.
 
 We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Norway to acccount for name trends.
+
 ### Most given names in the dataset
-<img src="assets/img/wordcloud.png" alt="Word Cloud">
+
+Here is a word cloud plot representing the most given names in the dataset. The bigger the name is, the more it has been given to newborns
+<div style="display: flex; justify-content: center; align-items:center; width:100%;">
+  <img src="assets/img/wordcloud.png" width="80%" alt="Word Cloud">
+</div>
 
 # Processes
 
-<img src="assets/img/laplace_citation.jpg" alt="laplace citation" height=300>
+<div style="display: flex; justify-content: center; align-items:center; width:100%;">
+<div>
+  <blockquote>
+    <p>Give me the <strong>positions and velocities</strong> of all the particles in the universe, and <strong>I will predict the future.</strong></p>
+  </blockquote>
+  <p>—Marquis Pierre Simon de Laplace</p>
+</div>
+</div>
+<style>
+
+  div:has(> blockquote) {
+    background-color: #ededed;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  blockquote p::before {
+    content: '\201C';
+  }
+
+  blockquote p::after {
+    content: '\201D';
+  }
+
+  blockquote + p {
+    text-align: right;
+  }
+
+</style>
+
 
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
+
 ## The naïve approach
 At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<img src="assets/img/trend_formula.png" alt="trend formula">
-
+$$ metric = \text{average count of a name 5 years after} \\ - \text{average count of a name 5 years before} $$ 
 
 Unfortunately, this is not so simple. This model doesn't account for the inverse effect, i.e. the name trend influencing the filmmakers for the name of their characters. 
 
@@ -134,20 +172,6 @@ Some films have such a cultural impact that they leave a lasting impression on t
 
 {% include newnames_carrousel.html %}
 
-
-
-
-# Test 2 colonnes de texte
-<div class="two-col">
-  <div>
-    <p>Text a gauche lorem fidsfjiji j idfisi ii ii ifii ii fi i ifjwionfnenfo nn nef iewi omeiofm owmefiom io</p>
-  </div>
-  <div>
-    <p>Paragraph on the right for additional content or details.</p>
-  </div>
-</div>
-
-
 # Is there a movie genre that has a stronger influence on names ?
 Does an adventurous film, where the hero embodies all the traits we aspire to—bravery, charisma, and triumph—leave a stronger mark than a heart-wrenching drama? Or is it the tension and excitement of a thriller that makes a name stick in our minds?
 
@@ -168,9 +192,6 @@ This treemap is a representation of the amplitude of the influence of movie genr
 This other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
 
 {% include treemap_top3_by_genre_by_count.html %}
-
-
-
 
 
 While we might expect romantic films or period pieces to lead the charge, it’s the fast-paced, emotionally gripping genres that truly shape naming trends. It’s as if the excitement and tension of these stories spill over into real life, inspiring parents to choose names that reflect the bold and impactful characters they’ve seen on screen.
