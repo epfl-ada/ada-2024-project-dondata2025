@@ -80,11 +80,13 @@ In order to measure character importance, we count the number of citation of the
 Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events.
 
 We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Norway to acccount for name trends.
+
 ### Most given names in the dataset
+
+Here is a word cloud plot representing the most given names in the dataset. The bigger the name is, the more it has been given to newborns
 <div style="display: flex; justify-content: center; align-items:center; width:100%;">
   <img src="assets/img/wordcloud.png" width="80%" alt="Word Cloud">
 </div>
-Here is a word cloud plot representing the most given names in the dataset. The bigger the name is, the more it has been given to newborns
 
 # Processes
 
@@ -168,20 +170,6 @@ Some films have such a cultural impact that they leave a lasting impression on t
 
 {% include newnames_carrousel.html %}
 
-
-
-
-# Test 2 colonnes de texte
-<div class="two-col">
-  <div>
-    <p>Text a gauche lorem fidsfjiji j idfisi ii ii ifii ii fi i ifjwionfnenfo nn nef iewi omeiofm owmefiom io</p>
-  </div>
-  <div>
-    <p>Paragraph on the right for additional content or details.</p>
-  </div>
-</div>
-
-
 # Is there a movie genre that has a stronger influence on names ?
 Does an adventurous film, where the hero embodies all the traits we aspire to—bravery, charisma, and triumph—leave a stronger mark than a heart-wrenching drama? Or is it the tension and excitement of a thriller that makes a name stick in our minds?
 
@@ -202,9 +190,6 @@ This treemap is a representation of the amplitude of the influence of movie genr
 this other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
 
 {% include treemap_top3_by_genre_by_count.html %}
-
-
-
 
 
 While we might expect romantic films or period pieces to lead the charge, it’s the fast-paced, emotionally gripping genres that truly shape naming trends. It’s as if the excitement and tension of these stories spill over into real life, inspiring parents to choose names that reflect the bold and impactful characters they’ve seen on screen.
