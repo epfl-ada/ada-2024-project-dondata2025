@@ -85,15 +85,48 @@ We used a dataset consisting of baby names each year for the United States, Unit
 
 # Processes
 
-<img src="assets/img/laplace_citation.jpg" alt="laplace citation" height=300>
+<div style="display: flex; justify-content: center; align-items:center; width:100%;">
+<div>
+  <blockquote>
+    <p>Give me the <strong>positions and velocities</strong> of all the particles in the universe, and <strong>I will predict the future.</strong></p>
+  </blockquote>
+  <p>—Marquis Pierre Simon de Laplace</p>
+</div>
+</div>
+<style>
+
+  div:has(> blockquote) {
+    background-color: #ededed;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  blockquote p::before {
+    content: '\201C';
+  }
+
+  blockquote p::after {
+    content: '\201D';
+  }
+
+  blockquote + p {
+    text-align: right;
+  }
+
+</style>
+
 
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
+
 ## The naïve approach
 At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<img src="assets/img/trend_formula.png" alt="trend formula">
-
+$$ metric = \text{average count of a name 5 years after} \\ - \text{average count of a name 5 years before} $$ 
 
 Unfortunately, this is not so simple. This model doesn't account for the inverse effect, i.e. the name trend influencing the filmmakers for the name of their characters. 
 

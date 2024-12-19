@@ -101,5 +101,9 @@ Obviously bound to change according to necessities
 
 ## Updated ReadMe
 Contribution of Group Members 
-- Jeremy : building the website based on Jekyll, data analysis
+- Jeremy : 
+    - Names datasets -> cleaning and structuring them in data classes 
+    - Name count prediction with Prophet and SARIMA + determining if a name was influenced using the confidence interval.
+    - setting up Jekyll to host the website and making carousel shaped as movie film
+    - Creating the pipelines to link all of the different parts together
 - 
