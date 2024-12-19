@@ -278,13 +278,14 @@ def is_name_influenced_prophet(name, names_data, year, plot=False):
         return 0
 
 
-def compute_all_influence_prophet(mean_df, namesData):
+def compute_all_influence_prophet(mean_df, namesData, output_path=None):
     """
     Function to compute the influenced names by the movies using the prophet method
 
     :param main_characters: DataFrame : The names of the main character in the top movies
     :param namesData: NamesData : The names data of the country we want / or global
     :param mean_df: DataFrame : The DataFrame containing the mean difference of the names -> will allow to speed up the process
+    :param output_path: str : The path where to save the results (optional)
     """
 
     print_step("Using the mean difference results to speed up the Prophet method...")
@@ -300,8 +301,11 @@ def compute_all_influence_prophet(mean_df, namesData):
     prophet_df["Influenced"] = prophet_df.apply(lambda x: is_name_influenced_prophet( x["Normalized_name"], namesData, x["Year"]), axis=1)
 
     # Write the data
-    prophet_df.to_csv(RESULTS_PATH_PROPHET, index=False)
-
+    if(output_path is not None):
+        prophet_df.to_csv(output_path, index=False)
+    else:
+        prophet_df.to_csv(RESULTS_PATH_PROPHET, index=False)
+        
     print(f"Influenced names computed and saved in {RESULTS_PATH_PROPHET}")
 
     return prophet_df
@@ -321,12 +325,13 @@ def load_influenced_sarima():
     return pd.read_csv(RESULTS_PATH_SARIMA)
 
 
-def compute_all_influence_mean(main_characters, namesData):
+def compute_all_influence_mean(main_characters, namesData, output_path=None):
     """
     Function to compute the influenced names by the movies using the mean comparison method
 
     :param main_characters: DataFrame : The names of the main character in the top movies
     :param namesData: NamesData : The names data of the country we want / or global
+    :param output_path: str : The path where to save the results (optional)
     """
 
     print_step("Computing the influenced names using the mean difference...")
@@ -356,7 +361,10 @@ def compute_all_influence_mean(main_characters, namesData):
     intersection  = intersection.sort_values(by="Influence", ascending=False)
 
     # Write the data
-    intersection.to_csv(RESULTS_PATH_MEANS, index=False)
+    if(output_path is not None):
+        intersection.to_csv(output_path, index=False)
+    else:
+        intersection.to_csv(RESULTS_PATH_MEANS, index=False)
 
     print(f"Influenced names computed and saved in {RESULTS_PATH_MEANS}")
 
