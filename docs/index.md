@@ -90,7 +90,7 @@ We used a dataset consisting of baby names each year for the United States, Unit
   <blockquote>
     <p>Give me the <strong>positions and velocities</strong> of all the particles in the universe, and <strong>I will predict the future.</strong></p>
   </blockquote>
-  <p>— Marquis Pierre Simon de Laplace</p>
+  <p>—Marquis Pierre Simon de Laplace</p>
 </div>
 </div>
 <style>
@@ -100,7 +100,8 @@ We used a dataset consisting of baby names each year for the United States, Unit
     margin: 10px auto;
     padding: 15px;
     border-radius: 5px;
-    width: 70%
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   blockquote p::before {
