@@ -172,9 +172,13 @@ this other treemap shows the most influent genre and the top 3 names for each of
 
 
 While we might expect romantic films or period pieces to lead the charge, it’s the fast-paced, emotionally gripping genres that truly shape naming trends. It’s as if the excitement and tension of these stories spill over into real life, inspiring parents to choose names that reflect the bold and impactful characters they’ve seen on screen.
+The two treemaps reveal interesting insights about the influence of movie genres on baby names. The top three genres—Action, Drama, and Thriller—consistently dominate both in amplitude (the magnitude of influence) and in occurrence (the number of names impacted). However, the patterns start to diverge beyond these top genres.
 
+For instance, Comedy ranks 5th in influence by amplitude but climbs to 4th in occurrence. This suggests that while comedic movies impact a larger number of names, their influence on each name's trend is relatively smaller compared to genres like Action or Drama.
 
+On the other hand, Adventure stands out for its higher influence in amplitude than in occurrence. This indicates that while fewer names are impacted by Adventure movies, the magnitude of the impact on those names is significant—suggesting strong but targeted influence.
 
+Overall, the three most influential genres—Action, Drama, and Thriller—not only reach a broad range of names but also leave a strong mark on each name’s trend. They balance both breadth (occurrence) and depth (amplitude) in their cultural impact on naming trends.
 
 
 # Are women names more influenced than men's ?
