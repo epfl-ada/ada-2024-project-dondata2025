@@ -40,6 +40,10 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+            width: auto;
+            height: auto;
+            overflow: auto; /* Allow scroll if content overflows */
         }
     </style>
 </head>
@@ -97,7 +101,19 @@
                 return response.text();
             })
             .then(htmlContent => {
-                graphContainer.innerHTML = htmlContent;
+                // Use an iframe to embed the graph content
+                graphContainer.innerHTML = ''; // Clear loading message
+                const iframe = document.createElement('iframe');
+                iframe.srcdoc = htmlContent;
+                iframe.style.width = '100%';
+                iframe.style.border = 'none';
+
+                // Set iframe height after loading content
+                iframe.onload = function () {
+                    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                };
+
+                graphContainer.appendChild(iframe);
             })
             .catch(error => {
                 console.error('Error loading graph:', error);

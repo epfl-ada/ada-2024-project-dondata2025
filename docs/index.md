@@ -61,9 +61,11 @@ To explore these connections, our dataset includes a collection of films release
 ### What makes a movie popular ?
 Blockbuster movies are far more likely to influence baby name trends than obscure short films from the 1940s. To focus on culturally impactful films, we filtered out less popular ones. This was done by evaluating a movie's popularity using its average IMDb rating and the number of votes it received.
 {% include rating-votes.html %}
+
 ### Genre representation
 The genre of a movie is a key indicator of themes and storytelling style of a movie. We will look at its distribution in the dataset.
-{% include top_10_genres.html %}
+{% include top_10_names_by_genres.html %}
+
 **NB:** A movie can belong to multiple genres.
 
 Characters in movie genres often follow archetypes, including how they are named. Here are the most common names by genre.
@@ -160,7 +162,7 @@ This treemap is a representation of the amplitude of the influence of movie genr
 {% include treemap_top3_by_genre.html %}
 
 
-this other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
+This other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
 
 {% include treemap_top3_by_genre_by_count.html %}
 
