@@ -86,22 +86,21 @@ We used a dataset consisting of baby names each year for the United States, Unit
 # Processes
 
 <div style="display: flex; justify-content: center; align-items:center; width:100%;">
-  <img src="assets/img/laplace_citation.jpg" alt="laplace citation" height=300>
-</div>
-
 <div>
   <blockquote>
-    <p>Give me the positions and velocities of all the particles in the universe, and I will predict the future.</p>
+    <p>Give me the <strong>positions and velocities</strong> of all the particles in the universe, and <strong>I will predict the future.</strong></p>
   </blockquote>
   <p>— Marquis Pierre Simon de Laplace</p>
 </div>
+</div>
 <style>
-  
+
   div:has(> blockquote) {
     background-color: #ededed;
     margin: 10px auto;
     padding: 15px;
     border-radius: 5px;
+    width: 70%
   }
 
   blockquote p::before {
