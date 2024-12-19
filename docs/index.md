@@ -90,40 +90,6 @@ Here is a word cloud plot representing the most given names in the dataset. The 
 
 # Processes
 
-<div style="display: flex; justify-content: center; align-items:center; width:100%;">
-<div>
-  <blockquote>
-    <p>Give me the <strong>positions and velocities</strong> of all the particles in the universe, and <strong>I will predict the future.</strong></p>
-  </blockquote>
-  <p>—Marquis Pierre Simon de Laplace</p>
-</div>
-</div>
-<style>
-
-  div:has(> blockquote) {
-    background-color: #ededed;
-    margin: 10px auto;
-    padding: 15px;
-    border-radius: 5px;
-    width: 80%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-
-  blockquote p::before {
-    content: '\201C';
-  }
-
-  blockquote p::after {
-    content: '\201D';
-  }
-
-  blockquote + p {
-    text-align: right;
-  }
-
-</style>
-
-
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
 
 ## The naïve approach
@@ -143,8 +109,15 @@ To illustrate this, let's take the example of [Michael from Peter Pan](https://d
 
 It is clear that the film was released during a peak of popularity for the name Michael, and therefore most likely didn't play a role in its usage.
 
+This computed score is not totally useless, since it still allows us to elimate all the character names were there is no chances of influence (decrease in the mean after the movie release). When doing this computation, you can also check if a name was **invented** by the movie by checking that there is no record of the name before the release date. 
+
 ## Using Machine Learning predicitions
-blabla
+
+The metric given in the section above identifies which names are potential candidates, but we still need to fin a way to know if the name was actually influenced.
+
+To do so, we use a technique called **Interrupted Time Series**. Basically, what we do is taking the data about a name **before a movie was released**, and trying to deduce **what would a normal evolution for the name be** with machine a learning model. 
+
+This will leave us with two curves that represent the names evolution after the release of the movie. One containing the actual data from the datasets and one that was predicted based on the previous counts (predicted). If the **actual curve is much higher than the predicted one**, we can assume that the movie has influenced this name! 
 
 # Results
 Using this method, we can generate a list of films that have influenced the general trend for first names. Now that we produced our results, let's take a look at them. 
@@ -203,6 +176,43 @@ Overall, the three most influential genres—Action, Drama, and Thriller—not o
 
 
 # Are women names more influenced than men's ?
+
+# Limitations of our project
+
+<div style="display: flex; justify-content: center; align-items:center; width:100%;">
+<div>
+  <blockquote>
+    <p>Give me the <strong>positions and velocities</strong> of all the particles in the universe, and <strong>I will predict the future.</strong></p>
+  </blockquote>
+  <p>—Marquis Pierre Simon de Laplace</p>
+</div>
+</div>
+<style>
+
+  div:has(> blockquote) {
+    background-color: #ededed;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  blockquote p::before {
+    content: '\201C';
+  }
+
+  blockquote p::after {
+    content: '\201D';
+  }
+
+  blockquote + p {
+    text-align: right;
+  }
+
+</style>
+
+TODO : COMPLETER AVEC LES COFOUNDERS
 
 
 # Bibliography
