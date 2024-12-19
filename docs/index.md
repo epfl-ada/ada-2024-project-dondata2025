@@ -29,7 +29,7 @@ In this article, we will see how the character names in movies induce trends in 
 
 
 # Try it yourself !
-But enough talking—now it’s your turn to explore! Ever wondered if your favorite movie left its mark on baby name trends? Enter the name of a film below, and watch as the data unfolds. See for yourself how the power of storytelling might have influenced real-life names !
+But enough talking—now it’s your turn to explore! Ever wondered if your favorite movie left its mark on baby name trends? We used Meta's [Prophet](https://facebook.github.io/prophet/docs/quick_start.html) AI model to predict what the trend of a name would look like, and compare it to the actual trend to see if the release of a movie influenced it. Here is a selection of some cases for you to preview :
 
 {% include results_display.html %}
 
@@ -61,9 +61,11 @@ To explore these connections, our dataset includes a collection of films release
 ### What makes a movie popular ?
 Blockbuster movies are far more likely to influence baby name trends than obscure short films from the 1940s. To focus on culturally impactful films, we filtered out less popular ones. This was done by evaluating a movie's popularity using its average IMDb rating and the number of votes it received.
 {% include rating-votes.html %}
+
 ### Genre representation
 The genre of a movie is a key indicator of themes and storytelling style of a movie. We will look at its distribution in the dataset.
-{% include top_10_genres.html %}
+{% include top_10_names_by_genres.html %}
+
 **NB:** A movie can belong to multiple genres.
 
 Characters in movie genres often follow archetypes, including how they are named. Here are the most common names by genre.
@@ -75,15 +77,110 @@ In order to measure character importance, we count the number of citation of the
 
 **A VENIR : exemple avec les 2-3 persos d'un film connu, fourni par Coco**
 
+{% include plots_carrousel.html %}
 
 ## The baby names collection
 Even if it remains a simple word, your name is what you are referred as for your entire life. It represents your whole identity and often mirrors cultural trends, family traditions or historical events.
 
 We used a dataset consisting of baby names each year for the United States, United Kingdom, France and Norway to acccount for name trends.
+
 ### Most given names in the dataset
-<img src="assets/img/wordcloud.png" alt="Word Cloud">
+
+Here is a word cloud plot representing the most given names in the dataset. The bigger the name is, the more it has been given to newborns
+<div style="display: flex; justify-content: center; align-items:center; width:100%;">
+  <img src="assets/img/wordcloud.png" width="80%" alt="Word Cloud">
+</div>
 
 # Processes
+
+Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
+
+## The naïve approach
+At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+$$ metric = \text{average count of a name 5 years after} \\ - \text{average count of a name 5 years before} $$ 
+
+Unfortunately, this is not so simple. This model doesn't account for the inverse effect, i.e. the name trend influencing the filmmakers for the name of their characters. 
+
+To illustrate this, let's take the example of [Michael from Peter Pan](https://disney.fandom.com/wiki/Michael_Darling). According to our model, the 1953 film Peter Pan had a great impact on people naming their child Michael. Let's look at the trend graph : 
+
+
+{% include michael_trend.html %}
+
+
+It is clear that the film was released during a peak of popularity for the name Michael, and therefore most likely didn't play a role in its usage.
+
+This computed score is not totally useless, since it still allows us to elimate all the character names were there is no chances of influence (decrease in the mean after the movie release). When doing this computation, you can also check if a name was **invented** by the movie by checking that there is no record of the name before the release date. 
+
+## Using Machine Learning predicitions
+
+The metric given in the section above identifies which names are potential candidates, but we still need to fin a way to know if the name was actually influenced.
+
+To do so, we use a technique called **Interrupted Time Series**. Basically, what we do is taking the data about a name **before a movie was released**, and trying to deduce **what would a normal evolution for the name be** with machine a learning model. 
+
+This will leave us with two curves that represent the names evolution after the release of the movie. One containing the actual data from the datasets and one that was predicted based on the previous counts (predicted). If the **actual curve is much higher than the predicted one**, we can assume that the movie has influenced this name! 
+
+# Results
+Using this method, we can generate a list of films that have influenced the general trend for first names. Now that we produced our results, let's take a look at them. 
+
+## Movie influence over time
+One might come to the idea that cultural and cinematic impact fluctuates over time. Here are the number of names influenced by movie characters over decades from the 60s to the 00s.
+
+{% include influenced_names_per_era.html %}
+
+#### Several observations :
+A steady growth is observed in the 60s and 70s, corresponding to the late stage of the [Golden Age of Hollywood](https://en.wikipedia.org/wiki/Classical_Hollywood_cinema#1927–1960:_Sound_era_and_the_Golden_Age_of_Hollywood). This period marks the rise of popular movies and the increase in revenue the cinema industry generates.
+
+The 80s exhibit a significant increase, influencing over a **hundred** names. With the release of iconic movies such as [Alien](https://en.wikipedia.org/wiki/Alien_(film)), 
+[E.T.](https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial) and the first three [Indiana Jones](https://en.wikipedia.org/wiki/Indiana_Jones) movies, this era represents the start of the Blockbuster age, giving Hollywood a worldwide reach and a foothold on Pop Culture icons.
+
+Cinema reached its peak influence over baby names in the 90s. This apogee can be linked with the [Disney Renaissance](https://en.wikipedia.org/wiki/Disney_Renaissance) period and the emergence of globally beloved characters accross various animated and live-action films. During this era, cinema was the main medium for conveying stories and entertaining the people.
+
+Y2K brings a noticeable decline in influenced names, dropping back to similar levels as the 70s despite having a much more developped industry. This indicates a shift in cultural trends, where people turn to the rising internet and streaming services, giving less attention to feature-length films. This period reflects the fragmentation of media influence and the appearance of new ways of telling stories.
+
+
+# Birth of a new name
+Some films have such a cultural impact that they leave a lasting impression on the audience with their characters and make them remember their name, even when they don't even exist or are practically unused. These events lead to the resurgence of an unpopular name or even the creation of a new one.
+
+{% include newnames_carrousel.html %}
+
+# Is there a movie genre that has a stronger influence on names ?
+Does an adventurous film, where the hero embodies all the traits we aspire to—bravery, charisma, and triumph—leave a stronger mark than a heart-wrenching drama? Or is it the tension and excitement of a thriller that makes a name stick in our minds?
+
+In this part, we set out to explore which movie genres resonate the most, in other words, whether certain movie genres have a stronger influence on baby names than others. 
+To measure this, we used the difference-mean metric—a score that represents the gap between a name’s real trend curve after a movie’s release and its predicted curve if the movie had never existed. Simply put, the higher the score, the greater the movie’s impact on that name.
+The results are clear: Action, Thriller, and Drama stand out as the most influential genres. These types of movies, often featuring intense storytelling and memorable characters, seem to leave a stronger mark on audiences. The treemap confirms this, highlighting names like Ethan and Emma that dominate multiple categories, particularly in high-stakes genres like Action and Thriller.
+
+
+{% include top_10_influenced_genres.html %}
+
+
+
+This treemap is a representation of the amplitude of the influence of movie genre:
+
+{% include treemap_top3_by_genre.html %}
+
+
+This other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
+
+{% include treemap_top3_by_genre_by_count.html %}
+
+
+While we might expect romantic films or period pieces to lead the charge, it’s the fast-paced, emotionally gripping genres that truly shape naming trends. It’s as if the excitement and tension of these stories spill over into real life, inspiring parents to choose names that reflect the bold and impactful characters they’ve seen on screen.
+The two treemaps reveal interesting insights about the influence of movie genres on baby names. The top three genres—Action, Drama, and Thriller—consistently dominate both in amplitude (the magnitude of influence) and in occurrence (the number of names impacted). However, the patterns start to diverge beyond these top genres.
+
+For instance, Comedy ranks 5th in influence by amplitude but climbs to 4th in occurrence. This suggests that while comedic movies impact a larger number of names, their influence on each name's trend is relatively smaller compared to genres like Action or Drama.
+
+On the other hand, Adventure stands out for its higher influence in amplitude than in occurrence. This indicates that while fewer names are impacted by Adventure movies, the magnitude of the impact on those names is significant—suggesting strong but targeted influence.
+
+Overall, the three most influential genres—Action, Drama, and Thriller—not only reach a broad range of names but also leave a strong mark on each name’s trend. They balance both breadth (occurrence) and depth (amplitude) in their cultural impact on naming trends.
+
+
+# Are women names more influenced than men's ?
+
+# Limitations of our project
 
 <div style="display: flex; justify-content: center; align-items:center; width:100%;">
 <div>
@@ -118,103 +215,7 @@ We used a dataset consisting of baby names each year for the United States, Unit
 
 </style>
 
-
-Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
-
-## The naïve approach
-At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-$$ metric = \text{average count of a name 5 years after} \\ - \text{average count of a name 5 years before} $$ 
-
-Unfortunately, this is not so simple. This model doesn't account for the inverse effect, i.e. the name trend influencing the filmmakers for the name of their characters. 
-
-To illustrate this, let's take the example of [Michael from Peter Pan](https://disney.fandom.com/wiki/Michael_Darling). According to our model, the 1953 film Peter Pan had a great impact on people naming their child Michael. Let's look at the trend graph : 
-
-
-{% include michael_trend.html %}
-
-
-It is clear that the film was released during a peak of popularity for the name Michael, and therefore most likely didn't play a role in its usage.
-
-## Using Machine Learning predicitions
-blabla
-
-# Results
-Using this method, we can generate a list of films that have influenced the general trend for first names. Now that we produced our results, let's take a look at them. 
-
-## Movie influence over time
-One might come to the idea that cultural and cinematic impact fluctuates over time. Here are the number of names influenced by movie characters over decades from the 60s to the 00s.
-
-{% include influenced_names_per_era.html %}
-
-#### Several observations :
-A steady growth is observed in the 60s and 70s, corresponding to the late stage of the [Golden Age of Hollywood](https://en.wikipedia.org/wiki/Classical_Hollywood_cinema#1927–1960:_Sound_era_and_the_Golden_Age_of_Hollywood). This period marks the rise of popular movies and the increase in revenue the cinema industry generates.
-
-The 80s exhibit a significant increase, influencing over a **hundred** names. With the release of iconic movies such as [Alien](https://en.wikipedia.org/wiki/Alien_(film)), 
-[E.T.](https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial) and the first three [Indiana Jones](https://en.wikipedia.org/wiki/Indiana_Jones) movies, this era represents the start of the Blockbuster age, giving Hollywood a worldwide reach and a foothold on Pop Culture icons.
-
-Cinema reached its peak influence over baby names in the 90s. This apogee can be linked with the [Disney Renaissance](https://en.wikipedia.org/wiki/Disney_Renaissance) period and the emergence of globally beloved characters accross various animated and live-action films. During this era, cinema was the main medium for conveying stories and entertaining the people.
-
-Y2K brings a noticeable decline in influenced names, dropping back to similar levels as the 70s despite having a much more developped industry. This indicates a shift in cultural trends, where people turn to the rising internet and streaming services, giving less attention to feature-length films. This period reflects the fragmentation of media influence and the appearance of new ways of telling stories.
-
-
-# Birth of a new name
-Some films have such a cultural impact that they leave a lasting impression on the audience with their characters and make them remember their name, even when they don't even exist or are practically unused. These events lead to the resurgence of an unpopular name or even the creation of a new one.
-
-{% include newnames_carrousel.html %}
-
-
-
-
-# Test 2 colonnes de texte
-<div class="two-col">
-  <div>
-    <p>Text a gauche lorem fidsfjiji j idfisi ii ii ifii ii fi i ifjwionfnenfo nn nef iewi omeiofm owmefiom io</p>
-  </div>
-  <div>
-    <p>Paragraph on the right for additional content or details.</p>
-  </div>
-</div>
-
-
-# Is there a movie genre that has a stronger influence on names ?
-Does an adventurous film, where the hero embodies all the traits we aspire to—bravery, charisma, and triumph—leave a stronger mark than a heart-wrenching drama? Or is it the tension and excitement of a thriller that makes a name stick in our minds?
-
-In this part, we set out to explore which movie genres resonate the most, in other words, whether certain movie genres have a stronger influence on baby names than others. 
-To measure this, we used the difference-mean metric—a score that represents the gap between a name’s real trend curve after a movie’s release and its predicted curve if the movie had never existed. Simply put, the higher the score, the greater the movie’s impact on that name.
-The results are clear: Action, Thriller, and Drama stand out as the most influential genres. These types of movies, often featuring intense storytelling and memorable characters, seem to leave a stronger mark on audiences. The treemap confirms this, highlighting names like Ethan and Emma that dominate multiple categories, particularly in high-stakes genres like Action and Thriller.
-
-
-{% include top_10_influenced_genres.html %}
-
-
-
-This treemap is a representation of the amplitude of the influence of movie genre:
-
-{% include treemap_top3_by_genre.html %}
-
-
-this other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
-
-{% include treemap_top3_by_genre_by_count.html %}
-
-
-
-
-
-While we might expect romantic films or period pieces to lead the charge, it’s the fast-paced, emotionally gripping genres that truly shape naming trends. It’s as if the excitement and tension of these stories spill over into real life, inspiring parents to choose names that reflect the bold and impactful characters they’ve seen on screen.
-The two treemaps reveal interesting insights about the influence of movie genres on baby names. The top three genres—Action, Drama, and Thriller—consistently dominate both in amplitude (the magnitude of influence) and in occurrence (the number of names impacted). However, the patterns start to diverge beyond these top genres.
-
-For instance, Comedy ranks 5th in influence by amplitude but climbs to 4th in occurrence. This suggests that while comedic movies impact a larger number of names, their influence on each name's trend is relatively smaller compared to genres like Action or Drama.
-
-On the other hand, Adventure stands out for its higher influence in amplitude than in occurrence. This indicates that while fewer names are impacted by Adventure movies, the magnitude of the impact on those names is significant—suggesting strong but targeted influence.
-
-Overall, the three most influential genres—Action, Drama, and Thriller—not only reach a broad range of names but also leave a strong mark on each name’s trend. They balance both breadth (occurrence) and depth (amplitude) in their cultural impact on naming trends.
-
-
-# Are women names more influenced than men's ?
+TODO : COMPLETER AVEC LES COFOUNDERS
 
 
 # Bibliography

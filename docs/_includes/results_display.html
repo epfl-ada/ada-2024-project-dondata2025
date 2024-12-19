@@ -40,13 +40,17 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+            width: auto;
+            height: auto;
+            overflow: auto; /* Allow scroll if content overflows */
         }
     </style>
 </head>
 <body>
 
-<h1>Movie Character Name Influence</h1>
-<p>Click on a movie below to view the influence graph of its character name:</p>
+<h3>Movie Character Name Influence</h3>
+<p>Click on a movie below to view the influence graph on a character name:</p>
 
 <div class="movie-list" id="movie-list">
     <!-- Movie icons will be dynamically added here -->
@@ -59,10 +63,16 @@
 <script>
     // Example data - replace this with your own
     const movies = [
-        { id: "1", name: "Mission: Impossible II", year: "2000", graph: "mission_impossible_ii" },
-        { id: "2", name: "Love Actually", year: "2003", graph: "love_actually" },
-        { id: "3", name: "Pulp Fiction", year: "1994", graph: "pulp_fiction" },
+        { id: "1", name: "Mission: Impossible II", year: "2000", graph: "mission_impossible_ii"},
+        { id: "2", name: "Pulp Fiction", year: "1994", graph: "pulp_fiction"},
+        { id: "3", name: "Star Wars Episode IV: A New Hope", year: "1977", graph: "star_wars_episode_iv_a_new_hope"},
+        { id: "4", name: "Titanic", year: "1997", graph: "titanic"},
+        { id: "5", name: "The Little Mermaid", year: "1989", graph: "the_little_mermaid"},
+        { id: "6", name: "Doctor Zhivago", year: "1965", graph: "doctor_zhivago"},
+        { id: "7", name: "Charlie and the Chocolate Factory", year: "2005", graph: "charlie_and_the_chocolate_factory"},
+        { id: "8", name: "The Nightmare Before Christmas", year: "1993", graph: "the_nightmare_before_christmas"}
     ];
+
 
     const movieList = document.getElementById('movie-list');
     const graphContainer = document.getElementById('graph-container');
@@ -88,7 +98,7 @@
 
     // Function to load a graph
     function loadGraph(graphFile) {
-        graphpath = `https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/${graphFile}_graph.html`;
+        graphpath = `https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/graphs/${graphFile}_graph.html`;
         fetch(graphpath)
             .then(response => {
                 if (!response.ok) {
@@ -97,7 +107,26 @@
                 return response.text();
             })
             .then(htmlContent => {
-                graphContainer.innerHTML = htmlContent;
+                // Use an iframe to embed the graph content
+                graphContainer.innerHTML = ''; // Clear loading message
+                const iframe = document.createElement('iframe');
+                iframe.srcdoc = htmlContent;
+                iframe.style.width = '100%';
+                iframe.style.border = 'none';
+
+                // Set iframe height after loading content
+                iframe.onload = function () {
+                    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                };
+
+                graphContainer.appendChild(iframe);
+                <!-- If the name is DAWSON, add a footnote to precise its jacks last name -->
+                if (graphFile === "titanic") {
+                    const footnote = document.createElement('p');
+                    footnote.textContent = "Note: 'Dawson' is the last name of the main character Jack.";
+                    graphContainer.appendChild(footnote);
+                }
+
             })
             .catch(error => {
                 console.error('Error loading graph:', error);

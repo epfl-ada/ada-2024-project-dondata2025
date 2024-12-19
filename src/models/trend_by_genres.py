@@ -76,7 +76,6 @@ def visualize_top_names(top_names_df):
         template="plotly_white"
     )
     # fixed size for better visualization
-    top_fig.update_layout(width=1000, height=600)
     top_fig.update_traces(
         hovertemplate="<b>%{label}</b><br>Count: %{value}<extra></extra>"
     )
@@ -96,13 +95,153 @@ def count_top_genres(df, top_n=10):
     df = df[df['Genres'] != 'Action/Adventure']
 
     genre_influence = (
-        df.groupby('Genres')[['Movie-name', Normalized_name]]
+        df.groupby('Genres')[['Movie-name', 'Normalized_name']]
         .sum()
         .reset_index()
         .sort_values(by='', ascending=False)
     )
 
     return genre_influence.head(top_n)
+
+
+# viauslization 
+def plot_top_genres(genre_influence, metric):
+    """
+    Create a bar chart for the top N genres and save it as an HTML file.
+    """
+    fig = px.bar(
+        genre_influence,
+        x='Genres',
+        y=metric,
+        title='Top 10 Most Influential Movie Genres on Names',
+        labels={'Mean Difference': 'Total Influence Score'},
+        template='plotly_white'
+    )
+
+    fig.show()
+
+def find_top_names_for_top_genres(df, top_genres, top_n_names=3):
+    """
+    Determine the top N normalized names for each of the top genres.
+
+    Parameters:
+        df (DataFrame): The dataset with 'Genres' and 'Normalized_name'.
+        top_genres (DataFrame): The DataFrame containing top genres with their counts.
+        top_n_names (int): Number of top names to retrieve per genre.
+
+    Returns:
+        DataFrame: Top N names for each genre.
+    """
+    # Filter the dataset to include only rows with the top genres
+    filtered_df = df[df['Genres'].isin(top_genres['Genres'])]
+
+    # Group by genre and name, and count occurrences
+    name_counts = (
+        filtered_df.groupby(['Genres', 'Normalized_name'])
+        .size()
+        .reset_index(name='Count')
+    )
+
+    # Find the top N names for each genre
+    top_names = (
+        name_counts.groupby('Genres')
+        .apply(lambda x: x.nlargest(top_n_names, 'Count'))
+        .reset_index(drop=True)
+    )
+
+    return top_names
+
+
+
+def find_top_names_with_movies(df, top_genres, top_n_names=3):
+    """
+    Determine the top N normalized names for each genre, with a list of movie names.
+
+    Parameters:
+        df (DataFrame): The dataset with 'Genres', 'Normalized_name', and 'Movie Name'.
+        top_genres (DataFrame): The DataFrame containing top genres with their counts.
+        top_n_names (int): Number of top names to retrieve per genre.
+
+    Returns:
+        DataFrame: Top N names for each genre with a list of associated movie names.
+    """
+    # Filter the dataset to include only rows with the top genres
+    filtered_df = df[df['Genres'].isin(top_genres['Genres'])]
+
+    # Group by genre and normalized name, aggregating movie names into a list
+    grouped = (
+        filtered_df.groupby(['Genres', 'Normalized_name'])
+        .agg(
+            Count=('Normalized_name', 'size'),
+            Movie_Names=('Movie Name', lambda x: list(x.unique()))
+        )
+        .reset_index()
+    )
+
+    # Find the top N names for each genre
+    top_names = (
+        grouped.groupby('Genres')
+        .apply(lambda x: x.nlargest(top_n_names, 'Count'))
+        .reset_index(drop=True)
+    )
+
+    return top_names
+
+
+
+def plot_treemap_with_movies(top_names_by_genre):
+    """
+    Plot a treemap of the top 3 influential names per genre with movie names displayed on hover.
+    """
+    # Ensure the movie names are in a single string for hover display
+    top_names_by_genre['Movies'] = top_names_by_genre['Movie_Names'].apply(lambda x: ", ".join(x))
+
+    # Create the treemap
+    fig = px.treemap(
+        top_names_by_genre,
+        path=['Genres', 'Normalized_name'],
+        values='Count',  # Use the count of names as the value
+        title="Top 3 influenced names per most influent genre in occurence",
+        template="plotly_white",
+        color='Genres',
+        custom_data=['Movies']  # Include aggregated movie names for hover
+    )
+    
+    # Update hover template to display the movie list
+    fig.update_traces(
+        hovertemplate="<b>%{label}</b><br>Movies: %{customdata[0]}<extra></extra>"
+    )
+    
+    # Show and save the figure
+    fig.show()
+    fig.write_html("docs/_includes/treemap_top3_by_genre_by_count.html")
+
+
+
+def proportion_of_influence(df, top_n=10):
+    """
+    Determine the proportion of influence for the top N genres
+    """
+    # Count occurrences of each genre
+    genre_counts = df['Genres'].value_counts()
+    
+    # Get the top N genres
+    top_genres = genre_counts.head(top_n)
+    print(top_genres)
+
+    # Calculate the total number of names
+    total_names = len(df)
+    print(total_names)
+
+    # Calculate the proportion of influence for each genre in percentage
+    top_genres_proportion = top_genres / total_names * 100
+    
+    # Convert to a DataFrame for output
+    top_genres_proportion_df = top_genres_proportion.reset_index()
+    top_genres_proportion_df.columns = ['Genres', 'Proportion (%)']  # Rename columns for clarity
+
+    return top_genres_proportion_df
+
 
 
 
