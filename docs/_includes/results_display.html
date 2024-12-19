@@ -120,6 +120,13 @@
                 };
 
                 graphContainer.appendChild(iframe);
+                <!-- If the name is DAWSON, add a footnote to precise its jacks last name -->
+                if (graphFile === "titanic") {
+                    const footnote = document.createElement('p');
+                    footnote.textContent = "Note: 'Dawson' is the last name of the main character Jack.";
+                    graphContainer.appendChild(footnote);
+                }
+
             })
             .catch(error => {
                 console.error('Error loading graph:', error);
