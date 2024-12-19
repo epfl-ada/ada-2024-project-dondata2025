@@ -158,7 +158,16 @@ The results are clear: Action, Thriller, and Drama stand out as the most influen
 
 
 
+This treemap is a representation of the amplitude of the influence of movie genre:
+
 {% include treemap_top3_by_genre.html %}
+
+
+this other treemap shows the most influent genre and the top 3 names for each of them, in term  propotion.
+
+{% include treemap_top3_by_genre_by_count.html %}
+
+
 
 
 
