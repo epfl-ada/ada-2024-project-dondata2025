@@ -88,87 +88,36 @@ We used a dataset consisting of baby names each year for the United States, Unit
 <div style="display: flex; justify-content: center; align-items:center; width:100%;">
   <img src="assets/img/laplace_citation.jpg" alt="laplace citation" height=300>
 </div>
-<div class="blockquote-wrapper">
-  <div class="blockquote">
-    <h1>
-     Give me the <span style="color:#ffffff">positions and velocities</span> of all the particles in the universem and <span style="color:#ffffff">I will predict.</span>
-     </h1>
-    <h4>&mdash;Marquis Pierre Simon de Laplace</h4>
-  </div>
+
+<div>
+  <blockquote>
+    <p>Give me the positions and velocities of all the particles in the universe, and I will predict the future.</p>
+  </blockquote>
+  <p>— Marquis Pierre Simon de Laplace</p>
 </div>
 <style>
-    /* center the blockquote in the page */
-  .blockquote-wrapper {
-    display: flex;
-    height: 100vh;
-    padding: 0 20px;
-  }
-
-  .blockquote {
-    position: relative;
-    font-family: 'Barlow Condensed', sans-serif;
-    max-width: 620px;
-    margin: 80px auto;
-    align-self: center;
-  }
-
-  .blockquote h1 {
-      font-family: 'Abril Fatface', cursive;
-      position: relative; /* for pseudos */
-      color: #e74848;
-      font-size: 2.8rem;
-      font-weight: normal;
-      line-height: 1;
-      margin: 0;
-      border: 2px solid #fff;
-      border: solid 2px;
-      border-radius:20px;
-      padding: 25px;
-  }
-
-  /* Blockquote right double quotes */
-  .blockquote h1:after {
-      content:"";
-      position: absolute;
-      border: 2px solid #e74848;
-      border-radius: 0 100% 0 0;
-      width: 60px;
-      height: 60px;
-      bottom: -62px;
-      left: 50px;
-      border-bottom: none;
-      border-left: none;
-      z-index: 3; 
-  }
-
-  .blockquote h1:before {
-      content:"";
-      position: absolute;
-      width: 80px;
-      border: 6px solid #292a2b;
-      bottom: -3px;
-      left: 50px;
-      z-index: 2;
-  }
-
-  .blockquote h4 {
-      position: relative;
-      color: #ffffff;
-      font-size: 1.3rem;
-      font-weight: 400;
-      line-height: 1.2;
-      margin: 0;
-      padding-top: 15px;
-      z-index: 1;
-      margin-left:150px;
-      padding-left:12px;
-  }
-
   
-  .blockquote h4:first-letter {
-    margin-left:-12px;
+  div:has(> blockquote) {
+    background-color: #ededed;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
   }
+
+  blockquote p::before {
+    content: '\201C';
+  }
+
+  blockquote p::after {
+    content: '\201D';
+  }
+
+  blockquote + p {
+    text-align: right;
+  }
+
 </style>
+
 
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
 
