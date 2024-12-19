@@ -76,7 +76,6 @@ def visualize_top_names(top_names_df):
         template="plotly_white"
     )
     # fixed size for better visualization
-    top_fig.update_layout(width=1000, height=600)
     top_fig.update_traces(
         hovertemplate="<b>%{label}</b><br>Count: %{value}<extra></extra>"
     )

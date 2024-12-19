@@ -64,7 +64,7 @@ Blockbuster movies are far more likely to influence baby name trends than obscur
 
 ### Genre representation
 The genre of a movie is a key indicator of themes and storytelling style of a movie. We will look at its distribution in the dataset.
-{% include top_10_genres.html %}
+{% include top_10_names_by_genres.html %}
 
 **NB:** A movie can belong to multiple genres.
 
