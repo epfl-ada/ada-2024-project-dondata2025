@@ -178,7 +178,13 @@ On the other hand, Adventure stands out for its higher influence in amplitude th
 Overall, the three most influential genres—Action, Drama, and Thriller—not only reach a broad range of names but also leave a strong mark on each name’s trend. They balance both breadth (occurrence) and depth (amplitude) in their cultural impact on naming trends.
 
 
-## Are women names more influenced than men's ?
+## Do movies shape names differently for men and women ?
+
+When the cinema brings unforgettable characters to life—be they fearless adventurers, clever strategists, or tender-hearted dreamers—how do they influence the names we pass on to the next generation? In this spotlight, we’ll explore how movies shape naming trends differently based on gender. Do male and female characters leave distinct marks on birth certificates, or does the silver screen affect all names equally? Let’s roll the film and uncover how the stories we love might shape the names we choose.
+
+First, let's look at the repartition of gender amongst the names influenced by movies.
+
+{% include pie_chart_gender.html %}
 
 # Limitations of our project
 
