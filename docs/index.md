@@ -96,7 +96,7 @@ Here is a word cloud plot representing the most given names in the dataset. The 
 Now that we have all this data, the next step is leveraging it to create insights into the influence of movies on baby names. How can we analyze and interpret this information to better understand this cultural impact of cinema ?
 
 ## The naïve approach
-At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By dividing the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
+At first, we developped a naïve model that compared the popularity of a name five years before and after a movie's release. By substracting the average number of times the name is given per year before and after the movie, we get a trend metric that assesses the film's impact. 
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
@@ -134,7 +134,7 @@ One might come to the idea that cultural and cinematic impact fluctuates over ti
 A steady growth is observed in the 60s and 70s, corresponding to the late stage of the [Golden Age of Hollywood](https://en.wikipedia.org/wiki/Classical_Hollywood_cinema#1927–1960:_Sound_era_and_the_Golden_Age_of_Hollywood). This period marks the rise of popular movies and the increase in revenue the cinema industry generates.
 
 The 80s exhibit a significant increase, influencing over a **hundred** names. With the release of iconic movies such as [Alien](https://en.wikipedia.org/wiki/Alien_(film)), 
-[E.T.](https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial) and the first three [Indiana Jones](https://en.wikipedia.org/wiki/Indiana_Jones) movies, this era represents the start of the Blockbuster age, giving Hollywood a worldwide reach and a foothold on Pop Culture icons.
+[E.T.](https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial) and the first three [Indiana Jones](https://en.wikipedia.org/wiki/Indiana_Jones), this era represents the start of the Blockbuster age, giving Hollywood a worldwide reach and a foothold on Pop Culture icons.
 
 Cinema reached its peak influence over baby names in the 90s. This apogee can be linked with the [Disney Renaissance](https://en.wikipedia.org/wiki/Disney_Renaissance) period and the emergence of globally beloved characters accross various animated and live-action films. During this era, cinema was the main medium for conveying stories and entertaining the people.
 
