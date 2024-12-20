@@ -151,6 +151,7 @@ The results are clear: Action, Thriller, and Drama stand out as the most influen
 
 
 This treemap is a representation of the amplitude of the influence of movie genre:
+(For this analysis, we are aware that our metric, the distance between curves, is not completely reliable, so we won't conclude anything concretely for the magnitude influence of genre movies on names.)
 
 {% include treemap_top3_by_genre.html %}
 
@@ -168,6 +169,9 @@ For instance, Comedy ranks 5th in influence by amplitude but climbs to 4th in oc
 On the other hand, Adventure stands out for its higher influence in amplitude than in occurrence. This indicates that while fewer names are impacted by Adventure movies, the magnitude of the impact on those names is significant—suggesting strong but targeted influence.
 
 Overall, the three most influential genres—Action, Drama, and Thriller—not only reach a broad range of names but also leave a strong mark on each name’s trend. They balance both breadth (occurrence) and depth (amplitude) in their cultural impact on naming trends.
+
+
+
 
 
 ## Do movies shape names differently for men and women ?
