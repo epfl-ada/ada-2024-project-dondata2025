@@ -107,4 +107,8 @@ Contribution of Group Members
     - setting up Jekyll to host the website and making carousel shaped as movie film
     - Creating the pipelines to link all of the different parts together
     - Worked on the results.ipynb
-- 
+- Emile :
+    - datasets and naïve approach model presentation
+    - "try it yourself" results display
+    - Movie influence over time analysis
+    - Birth of a new name analysis
