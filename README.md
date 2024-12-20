@@ -68,7 +68,15 @@ After filtering the data, we proceeded to identify the main characters. For this
 
 This approach allowed us to efficiently detect main characters. Ultimately, we created a DataFrame containing the character names and their respective counts for each movie.
 
-### prophet
+### Machine learning prediction Prophet
+
+The metric given in the section above identifies which names are potential candidates, but we still need to fin a way to know if the name was actually influenced.
+
+To do so, we use a technique called Interrupted Time Series. Basically, what we do is taking the data about a name before a movie was released, and trying to deduce what would a normal evolution for the name be with machine a learning model.
+
+This will leave us with two curves that represent the names evolution after the release of the movie. One containing the actual data from the datasets and one that was predicted based on the previous counts (predicted). If the actual curve is much higher than the predicted one, we can assume that the movie has influenced this name! 
+
+Thus we run this algorithm on all main character names of every movie of the dataset and then define a threshold on the distance between the curves to decide wether a movie influenced a name or not.
 
 ## Contribution of group members 
 - Jeremy : 
@@ -80,8 +88,8 @@ This approach allowed us to efficiently detect main characters. Ultimately, we c
 - Emile :
     - datasets and naïve approach model presentation
     - "try it yourself" results display
-    - Movie influence over time analysis
-    - Birth of a new name analysis
+    - "Movie influence over time" analysis
+    - "Birth of a new name" analysis
 - Corentin :
     - Predicted name counts using Prophet and SARIMA models, incorporating confidence intervals and metric computation to determine name influence.
     - Developed the character name recognition system.
@@ -91,7 +99,7 @@ This approach allowed us to efficiently detect main characters. Ultimately, we c
     - Worked on defining what a blockbuster is
     - Studied of genre movie on names
     - Studied on the case of Norwegian names (only on the results notebook)
-    - Updated the website to sho the findings of the analysis for the datastory
+    - Updated the website to show the findings of the analysis for the datastory
 
 
    
