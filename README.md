@@ -25,7 +25,6 @@ For our project, we integrated several name attribution datasets from various co
 - France
 - United Kingdom
 - Norway
-- Ireland
 
 You may wonder why our additional datasets mostly come from developed countries. We faced an initial challenge: **the alphabet**. Many countries use scripts other than the Latin alphabet, which complicates the task of managing and processing names consistently. Translating traditional names or finding equivalent representations in the Latin script proved to be a daunting, error-prone task.
 Therefore, we opted to limit our analysis to datasets that use the Latin alphabet.
@@ -57,47 +56,9 @@ However, we must take into account that the character name could be influenced b
 
 We tried another approach to detect unusual trends in name counts following a key date: using Interrupted Time Series (ITS). This approach involves splitting the data, using the pre-date segment to train a model that forecasts expected trends, and then comparing this forecast with the actual post-date data. We’re evaluating two models (Prophet and SARIMA), considering our yearly data limitations.
 
-## Proposed timeline 
+### name detection
 
-Week 18-24nov 
-- Models' improvement and refinement
-- Add more visualization
-- Look for additional baby names datasets to clean and add
-- Avoid deep diving into new features to wait for Milestone feedback
-Week 25nov-1dec
-- Adjust from Milestone feedback, decide all choices for implementation
-- Lighter Week for project to do and submit Homework 2
-
-Week 2-8dec
-- Start website UI/layout
-- Implement P-value for better results reliability
-- Start additional analysis bound to characteristics (popularity in certain countries/continents, ethnicity of influential characters, etc...)
-- Start linking the data story from A to Z
-
-Week 9-14dec 
-- Finalize website visuals and data story showcase 
-- Clean and comment the code
-- Test the data story for edge cases/weird inputs
-- Ensure clarity and conciseness on the website
-
-Week 15-20dec
-- Polish everything for the submission
-- Finish any remaining task
-
-## Task attribution
-
-Jérémy and Emile : coding up the features 
-
-Julien and Pauline : Designing the process and the algorithms
-
-Corentin : handling the website/data story visualizations
-
-Obviously bound to change according to necessities
-
-## Questions for TAs
-
-- Is it a reasonable assumption that blockbusters will have no missing datas (NaN values) and thus we don't have to worry about discarding data entries with missing values in important fields such as Revenue ?
-- How can we elaborately determine how a movie is a blockbuster ? For now we only sort by Revenue but should we use a more refined metric ? Same question for iconic actors
+### prophet
 
 ## Updated ReadMe
 Contribution of Group Members 

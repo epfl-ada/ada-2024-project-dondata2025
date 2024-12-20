@@ -32,7 +32,7 @@ But enough talking—now it’s your turn to explore! Ever wondered if your favo
 
 {% include results_display.html %}
 
-# Our *datasets* :
+# Our datasets :
 To find out how movies influence baby name trends, we worked with 2 datasets. The first one is all about movies. It’s our link to the big screen and helps us track the cultural buzz created by blockbuster hits. The second dataset dives into baby names across four countries: the United States, United Kingdom, France, and Norway. It lets us see how names rise and fall in popularity over time, giving us the some insight to on what’s happening in cinemas to real-world trends. Now, let’s dive into the data !
 
 
