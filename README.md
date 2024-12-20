@@ -60,8 +60,7 @@ We tried another approach to detect unusual trends in name counts following a ke
 
 ### prophet
 
-## Updated ReadMe
-Contribution of Group Members 
+# Contribution of Group Members 
 - Jeremy : 
     - Names datasets -> cleaning and structuring them in data classes 
     - Name count prediction with Prophet and SARIMA + determining if a name was influenced using the confidence interval.
