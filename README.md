@@ -91,5 +91,7 @@ This approach allowed us to efficiently detect main characters. Ultimately, we c
     - Worked on defining what a blockbuster is
     - Studied of genre movie on names
     - Studied on the case of Norwegian names (only on the results notebook)
+    - Updated the website to sho the findings of the analysis for the datastory
+
 
    
