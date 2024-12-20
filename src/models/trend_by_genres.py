@@ -85,23 +85,58 @@ def visualize_top_names(top_names_df):
 
 
 
-
-#####  Based on proportion of influence (count) ######
-def count_top_genres(df, top_n=10):
+def load(filepath):
     """
-    Group data by genres and calculate the total mean difference (influence score).
-    Returns the top N influential genres.
+    Load the dataset, clean it, and explode the Genres column.
     """
+    # Load the data
+    df = pd.read_csv(filepath)
+    
+    # Rename the column and drop unnecessary ones
+    df = df.rename(columns={"Movie Name": "Movie_name"})
+    df = df.drop(columns=['Influenced', 'Character Name', 'Wikipedia_movie_ID'])
     df = df[df['Genres'] != 'Action/Adventure']
 
-    genre_influence = (
-        df.groupby('Genres')[['Movie-name', 'Normalized_name']]
-        .sum()
-        .reset_index()
-        .sort_values(by='', ascending=False)
-    )
+    
+    # Explode Genres
+    df['Genres'] = df['Genres'].str.split(', ')
+    exploded_df = df.explode('Genres')
+    
+    return exploded_df
 
-    return genre_influence.head(top_n)
+
+
+
+#####  Based on proportion of influence (count) ######
+
+
+def count_top_genres(df, top_n=10):
+    """
+   Determine the top N genres by count
+    """
+   # Count occurrences of each genre
+    genre_counts = df['Genres'].value_counts()
+    
+    # Get the top N genres
+    top_genres = genre_counts.head(top_n)
+    
+    # Convert to a DataFrame for output
+    top_genres_df = top_genres.reset_index()
+    top_genres_df.columns = ['Genres', 'Count']  # Rename columns for clarity
+    
+    return top_genres_df
+        
+
+
+
+
+
+
+
+
+
+
+
 
 
 # viauslization 
@@ -170,13 +205,14 @@ def find_top_names_with_movies(df, top_genres, top_n_names=3):
 
     # Group by genre and normalized name, aggregating movie names into a list
     grouped = (
-        filtered_df.groupby(['Genres', 'Normalized_name'])
+        filtered_df.groupby(['Genres', 'Normalized_name', 'Movie_name'])
         .agg(
             Count=('Normalized_name', 'size'),
-            Movie_Names=('Movie Name', lambda x: list(x.unique()))
+            Movie_Names=('Movie_name', lambda x: list(x.unique()))
         )
         .reset_index()
     )
+
 
     # Find the top N names for each genre
     top_names = (
@@ -250,24 +286,6 @@ def proportion_of_influence(df, top_n=10):
 
 
 
-def load(filepath):
-    """
-    Load the dataset, clean it, and explode the Genres column.
-    """
-    # Load the data
-    df = pd.read_csv(filepath)
-    
-    # Rename the column and drop unnecessary ones
-    df = df.rename(columns={"Movie Name": "Movie_name"})
-    df = df.drop(columns=['Influenced', 'Character Name', 'Wikipedia_movie_ID'])
-    df = df[df['Genres'] != 'Action/Adventure']
-
-    
-    # Explode Genres
-    df['Genres'] = df['Genres'].str.split(', ')
-    exploded_df = df.explode('Genres')
-    
-    return exploded_df
 
 
 
