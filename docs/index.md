@@ -86,7 +86,7 @@ We used a dataset consisting of baby names each year for the United States, Unit
 
 ### Most given names in the dataset
 
-Here is a word cloud plot representing the most given names in the dataset. The bigger the name is, the more it has been given to newborns
+Here is a word cloud plot representing the most given names in the dataset. The bigger the name is, the more it has been given to newborns.
 <div style="display: flex; justify-content: center; align-items:center; width:100%;">
   <img src="assets/img/wordcloud.png" width="80%" alt="Word Cloud">
 </div>
