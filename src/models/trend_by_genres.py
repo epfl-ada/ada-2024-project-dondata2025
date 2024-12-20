@@ -1,5 +1,6 @@
 import pandas as pd
 import plotly.express as px
+import matplotlib.pyplot as plt
 
 def clean_valid_names(global_names, names_to_remove=["M", "DOCTOR"]):
     """
@@ -309,15 +310,14 @@ def plot_top_genres(genre_influence, metric):
     """
     Create a bar chart for the top N genres and save it as an HTML file.
     """
-    fig = px.bar(
-        genre_influence,
-        x='Genres',
-        y=metric,
-        title='Top 10 Most Influential Movie Genres on Names',
-        labels={'Mean Difference': 'Total Influence Score'},
-        template='plotly_white'
-    )
-    fig.show()
+    fig, ax = plt.subplots()
+    ax.bar(genre_influence['Genres'], genre_influence[metric], color='skyblue')
+    ax.set_title('Top 10 Most Influential Movie Genres on Names')
+    ax.set_xlabel('Genres')
+    ax.set_ylabel('Total Influence Score')
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.show()
 
 def get_top_names_by_genre(exploded):
     """
