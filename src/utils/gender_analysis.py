@@ -1,48 +1,53 @@
 import pandas as pd
-import plotly.express as px
-from pandas import read_csv
-
+import matplotlib.pyplot as plt
+import numpy as np
 from src.models.trend_by_gender import *
 
 def plot_gender_proportion():
     """
-    Plot the proportion of male vs female names influenced.
+    Plot the proportion of male vs female names influenced using Matplotlib.
     :return: None. Displays a pie chart of the proportion of male and female names.
     """
 
     # Load cleaned dataframe
-    df = read_csv("data/clean/gender_name_influenced_prophet.csv")
+    df = pd.read_csv("data/clean/gender_name_influenced_prophet.csv")
 
     # Calculate the proportion of male vs female names influenced
     gender_counts = df['Gender'].value_counts()
 
-    # Create a pie chart
-    fig = px.pie(
-        gender_counts,
-        values=gender_counts.values,
-        names=gender_counts.index,
-        title='Proportion of Male vs Female Names Influenced'
+    # Create the pie chart
+    fig, ax = plt.subplots(figsize=(8, 6))
+
+    # Colors for the pie chart
+    colors = ['blue', 'pink']  # Assuming 'M' corresponds to blue and 'F' to pink
+
+    # Plot the pie chart
+    ax.pie(
+        gender_counts.values,
+        labels=gender_counts.index,
+        autopct='%1.1f%%',  # Display percentage
+        startangle=90,  # Start pie chart at 90 degrees
+        colors=colors
     )
+
+    # Add a title
+    ax.set_title('Proportion of male vs female names influenced')
 
     # Set transparent background
-    fig.update_layout(
-        plot_bgcolor='rgba(0,0,0,0)',  # Transparent plot background
-        paper_bgcolor='rgba(0,0,0,0)'  # Transparent chart background
-    )
+    fig.patch.set_alpha(0)  # Transparent figure background
+    ax.set_facecolor((1, 1, 1, 0))  # Transparent plot background
 
-    # Show the pie chart
-    fig.show()
+    # Show the plot
+    plt.tight_layout()
+    plt.show()
 
 def plot_genre_gender_influence():
     """
-    Plots the percentage distribution of influenced baby names
-
-    Returns:
-    - None: Displays the plot.
+    Plots the percentage distribution of influenced baby names by gender across genres using Matplotlib.
+    :return: None. Displays the plot.
     """
-
     # Load cleaned dataframe
-    df = read_csv("data/clean/gender_name_influenced_prophet.csv")
+    df = pd.read_csv("data/clean/gender_name_influenced_prophet.csv")
 
     # Drop rows where 'Genres' is NaN
     df = df.dropna(subset=['Genres'])
@@ -81,30 +86,54 @@ def plot_genre_gender_influence():
     # Reset index to turn 'Genres' back into a column
     genre_pivot = genre_pivot.reset_index()
 
-    # Melt the pivot table to long format for easier plotting with seaborn
-    genre_percentage_melted = genre_pivot.melt(id_vars='Genres', value_vars=['M_Percent', 'F_Percent'],
-                                               var_name='Gender', value_name='Percentage')
+    # Melt the pivot table to long format for easier plotting
+    genre_percentage_melted = genre_pivot.melt(
+        id_vars='Genres', value_vars=['M_Percent', 'F_Percent'],
+        var_name='Gender', value_name='Percentage'
+    )
 
     # Replace 'M_Percent'/'F_Percent' with 'M'/'F' for clarity in the plot
     genre_percentage_melted['Gender'] = genre_percentage_melted['Gender'].str.replace('_Percent', '')
 
-    # Create a horizontal bar plot to display percentage distribution within each genre
-    fig = px.bar(
-        genre_percentage_melted,
-        x='Percentage',
-        y='Genres',
-        color='Gender',
-        color_discrete_map={'M': 'blue', 'F': 'pink'},
-        title='Percentage of Influenced Baby Names by Gender Across Top Genres',
-        labels={'Percentage': 'Percentage of Influenced Names', 'Genres': 'Genre', 'Gender': 'Gender'},
-        orientation='h'  # Horizontal bars
-    )
+    # Prepare data for plotting
+    genres = genre_percentage_melted['Genres'].unique()[::-1]  # Reverse order for horizontal bars
+    genders = ['M', 'F']
+    colors = {'M': 'blue', 'F': 'pink'}
 
-    fig.update_layout(
-        xaxis=dict(range=[0, 100]),  # Since percentages range from 0 to 100
-        barmode='stack',  # Stack the bars for gender comparison
-        plot_bgcolor='rgba(0,0,0,0)',  # Transparent plot background
-        paper_bgcolor='rgba(0,0,0,0)',  # Transparent chart background
-    )
+    # Pivot the data for stacking
+    data_pivot = genre_percentage_melted.pivot(index='Genres', columns='Gender', values='Percentage').fillna(0)
+    data_pivot = data_pivot.loc[genres]  # Ensure the genres are in the correct order
 
-    fig.show()
+    # Create the plot
+    fig, ax = plt.subplots(figsize=(10, 8))
+
+    # Track bottom position for stacking
+    bottom = np.zeros(len(data_pivot))
+
+    # Plot each gender's bar
+    for gender in genders:
+        ax.barh(
+            data_pivot.index,
+            data_pivot[gender],
+            color=colors[gender],
+            label=gender,
+            left=bottom
+        )
+        bottom += data_pivot[gender]
+
+    # Add labels, title, and legend
+    ax.set_xlabel('Percentage of influenced names')
+    ax.set_ylabel('Genre')
+    ax.set_title('Percentage of influenced baby names by gender across top genres')
+    ax.set_xlim(0, 100)
+    ax.legend(title='Gender')
+
+    # Set a transparent background
+    fig.patch.set_alpha(0)
+    ax.set_facecolor((1, 1, 1, 0))  # Transparent plot area
+
+    # Improve layout
+    plt.tight_layout()
+
+    # Show the plot
+    plt.show()
