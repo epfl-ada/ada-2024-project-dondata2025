@@ -82,21 +82,23 @@
         movieItem.className = 'movie-item';
         movieItem.setAttribute('data-graph', movie.graph);
 
-        const movieIcon = document.createElement('div');
-        movieIcon.className = 'movie-icon';
-        
-        const posterImg = document.createElement('img');
-        posterImg.src = `https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/img/${movie.graph}.jpg`;
-        posterImg.alt = `${movie.name} poster`;
-        posterImg.style.width = '100px';
-        posterImg.style.height = '150px';
-        posterImg.style.borderRadius = '10px';
-        movieIcon.appendChild(posterImg);
+        // Create image for poster
+        const moviePoster = document.createElement('img');
+        moviePoster.src = `https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/img/${movie.graph}.jpg`;
+        moviePoster.alt = `${movie.name} Poster`;
+        moviePoster.className = 'movie-poster'; // Optional class for styling
+        moviePoster.style.width = '100px'; // Adjust the size as needed
+        moviePoster.style.height = '150px';
+        moviePoster.style.borderRadius = '10px';
 
-        const movieText = document.createElement('p');
-        movieText.textContent = `${movie.name} (${movie.year})`;
-        movieIcon.appendChild(movieText);
-        movieItem.appendChild(movieIcon);
+        // Create a text label for the movie name and year
+        const movieLabel = document.createElement('div');
+        movieLabel.textContent = `${movie.name} (${movie.year})`;
+        movieLabel.style.marginTop = '10px';
+
+        movieItem.appendChild(moviePoster);
+        movieItem.appendChild(movieLabel);
+        movieList.appendChild(movieItem);
 
         // Add click event to load the graph
         movieItem.addEventListener('click', () => {
