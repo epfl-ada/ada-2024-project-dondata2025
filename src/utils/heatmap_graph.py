@@ -45,7 +45,8 @@ def density_heatmap(df_rating):
     )
 
     # Max width
-    fig.update_layout(width=1000, height=800)
+    fig.update_layout(width=800, height=600)
 
     fig.update_layout(xaxis_title="Average Rating", yaxis_title="Number of Votes", coloraxis_colorbar_title="Number of Movies")
+    fig.write_html("docs/_includes/rating-votes.html")
     fig.show()
