@@ -23,7 +23,7 @@ def density_heatmap(df_rating):
 
     df_rating["averageRating_bin"] = pd.cut(df_rating["weightedAverageRating"], bins=[0,2,3,4,5, 6,7, 8, 9,10], labels=["0-2", "2-3", "3-4", "4-5", "5-6","6-7", "7-8","8-9","9-10"])
 
-    heatmap_data = df_rating.groupby(["numVotes_bin", "averageRating_bin"]).size().reset_index(name="Movie Count")
+    heatmap_data = df_rating.groupby(["numVotes_bin", "averageRating_bin"], observed=False).size().reset_index(name="Movie Count")
 
     custom_scale = [
             [0.0, "white"],    # At 0% of the scale, the color is white
