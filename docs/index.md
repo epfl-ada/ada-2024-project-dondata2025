@@ -25,7 +25,6 @@ For example, the famous sitcom *Friends* created "The Rachel" phenomenon. In thi
 The case illustrates how a single person's appearance captivated the audience and shaped the tastes of thousands of people, displaying how far the power of storytelling and character design reaches. That effect is what intrigued us for our project and guided us toward its subject.
 In this article, we will see how the character names in movies induce trends in baby names, particularly the years immediately following the movie release. 
 
-*option 2 : This case is exactly what captured our curiosity for this project. If a hairstyle can spark a global movement, what about something as personal and enduring as a name? In this article, we dive into the fascinating connection between movies and baby name trends, exploring how characters leave their mark not just on screens, but on birth certificates in the years following their rise to fame.*
 
 
 # Try it yourself !
@@ -38,14 +37,7 @@ To find out how movies influence baby name trends, we worked with 2 datasets. Th
 
 
 ## The film corpus
-First and most important, movies are what inspire people. They tell stories and affect our culture and lifestyle. For example, had you heard of macaws before [Rio](https://en.wikipedia.org/wiki/Rio_(2011_film)) ?
-
-Our dataset contains movies released up to 2014 and informations such as their **unique ID**, **release date**, **genre** and the list of **characters** featured in the work.
-
-In addition to that, we augmented it with [IMDB](https://www.imdb.com) **average rating** and **number of voters** coming from the [IMDB data files](https://datasets.imdbws.com).
-We pretreated this dataset to only keep one weighted mean of votes per movie and the number of voters. We created an information 
-
-*option 2:Movies are more than just entertainment, they inspire us, shape our culture, and sometimes even change the way we see the world. Think about it: would you have known about macaws if [Rio](https://en.wikipedia.org/wiki/Rio_(2011_film)) hadn’t brought them to life on screen?*
+Movies are more than just entertainment, they inspire us, shape our culture, and sometimes even change the way we see the world. Think about it: would you have known about macaws if [Rio](https://en.wikipedia.org/wiki/Rio_(2011_film)) hadn’t brought them to life on screen?*
 To explore these connections, our dataset includes a collection of films released up to 2014. It’s packed with details such as:
 <ul>
   <li><strong>Movie IDs</strong> to uniquely identify each film.</li>
@@ -54,7 +46,7 @@ To explore these connections, our dataset includes a collection of films release
   <li><strong>Character Names</strong> — the stars of our analysis! — to connect the dots between movies and baby name trends.</li>
 </ul>
 
-*To make the dataset even more insightful, we added extra details from [IMDB](https://www.imdb.com), including average ratings and the number of votes each movie received. After some preprocessing, we ensured movie has a single weighted rating and vote count.*
+To make the dataset even more insightful, we added extra details from [IMDB](https://www.imdb.com), including **average ratings** and the **number of votes** each movie received. After some preprocessing, we ensured movie has a single weighted rating and vote count.
 
 
 
@@ -64,8 +56,8 @@ Blockbuster movies are far more likely to influence baby name trends than obscur
 
 ### Genre representation
 The genre of a movie is a key indicator of themes and storytelling style of a movie. We will look at its distribution in the dataset.
-{% include top_10_names_by_genres.html %}
 
+{% include top_10_genres.html %}
 **NB:** A movie can belong to multiple genres.
 
 Characters in movie genres often follow archetypes, including how they are named. Here are the most common names by genre.
