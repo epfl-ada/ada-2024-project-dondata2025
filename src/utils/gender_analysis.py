@@ -1,5 +1,6 @@
 import pandas as pd
 import plotly.express as px
+from src.models.trend_by_gender import *
 
 def plot_gender_proportion(df):
     """
