@@ -6,6 +6,7 @@ from prophet import Prophet
 from causalimpact import CausalImpact
 import numpy as np
 import seaborn as sns
+import plotly.graph_objects as go
 
 
 
@@ -311,3 +312,86 @@ def plot_distance(distance_df, label1='Distance 1', distance_df2=None, label2='D
     plt.ylabel('Count Difference')
     plt.legend()
     plt.show()
+
+def predict_naming_ARIMA_with_plotly(data, movname:str, name: str, stop_year: int, nb_years: int, plot=False):
+    input_data = data.copy()
+
+    # Filter for the specified name and aggregate counts if needed
+    name_data = input_data[input_data['Name'] == name]
+    name_data = name_data.groupby(['Year']).sum().reset_index()
+    name_data = name_data.drop(columns=['Name'])
+
+    # Split the dataset at the stop_year
+    train_data = name_data[name_data['Year'] <= stop_year]
+    true_data = name_data[name_data['Year'] >= stop_year]
+    true_data = true_data[true_data['Year'] <= stop_year + nb_years]
+
+    # Check if there is data to train the model (since some odd names might not have enough data)
+    # we want to have more than 10 years of data
+    if len(train_data) < 5:
+        return None
+
+    # Handle missing years by filling with 0
+    all_years = pd.DataFrame({'Year': range(train_data['Year'].min(), stop_year + 1)})
+    train_data = pd.merge(all_years, train_data, on='Year', how='left').fillna(0)
+
+    all_years = pd.DataFrame({'Year': range(stop_year, stop_year + nb_years + 1)})
+    true_data = pd.merge(all_years, true_data, on='Year', how='left').fillna(0)
+
+    # Split into x and y as an array
+    x_train = train_data['Year'].values
+    y_train = train_data['Count'].values
+
+    x_true = true_data['Year'].values
+    y_true = true_data['Count'].values
+
+    try:
+        # Fit the model
+        model = pm.auto_arima(y_train, seasonal=True, m=1)
+        forecast, conf_int = model.predict(n_periods=nb_years, return_conf_int=True)
+    except:
+        print(f"An error occurred while predicting the evolution of the name count for {name} using SARIMA.")
+        return None
+
+    if plot:
+        # Prepare data for plotting
+        x_forecast = list(range(stop_year, stop_year + nb_years + 1))
+
+        lower_bound = conf_int[:, 0]
+        upper_bound = conf_int[:, 1]
+
+        # Create the plot
+        fig = go.Figure()
+
+        # Add training data trace
+        fig.add_trace(go.Scatter(x=x_train[-30:], y=y_train[-30:], mode='lines+markers', name='Previous Years', line=dict(color='blue')))
+
+        # Add forecast data trace
+        fig.add_trace(go.Scatter(x=x_forecast, y=[y_train[-1]] + list(forecast), mode='lines+markers', name='Forecast', line=dict(color='orange')))
+
+        # Add true data trace
+        fig.add_trace(go.Scatter(x=x_true, y=y_true, mode='lines+markers', name='Following years', line=dict(color='green')))
+
+        # Add confidence interval as shaded area
+        fig.add_trace(go.Scatter(
+            x=list(x_forecast) + list(x_forecast[::-1]),
+            y=list([y_train[-1]] + list(lower_bound)) + list([y_train[-1]] + list(upper_bound))[::-1],
+            fill='toself',
+            fillcolor='rgba(128, 128, 128, 0.2)',
+            line=dict(color='rgba(255,255,255,0)'),
+            showlegend=True,
+            name='Confidence Interval'
+        ))
+
+        # Add a vertical line for stop year
+        fig.add_trace(go.Scatter(x=[stop_year, stop_year], y=[0, max(y_true)], mode='lines', name='Stop Year', line=dict(color='red', dash='dash')))
+
+        # Update layout
+        fig.update_layout(
+            title=f"Impact of {movname} on {name}",
+            xaxis_title='Year',
+            yaxis_title='Count',
+            legend_title='Legend',
+        )
+
+        return fig
