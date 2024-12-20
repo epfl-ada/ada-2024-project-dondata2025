@@ -228,15 +228,13 @@ The chart reveals that male names dominate the influence across almost all genre
 
 ### Detection of character names
 
-Our techniques, while effective, are not without limitations. The model used to detect character names may occasionally miss some or erroneously include others. For instance, in Star Wars: Episode IV - A New Hope, a "Jedi Knight" was detected multiple times, while Leia's name was entirely overlooked. Despite such issues, we can often mitigate them, as names are typically detected in other movies or not matched with legitimate names in our dataset. **peut être inclure ici un exemple** 
+Our techniques, while effective, are not without limitations. The model used to detect character names may occasionally miss some or erroneously include others. For instance, in Star Wars: Episode IV - A New Hope, a "Jedi Knight" was detected multiple times, while Leia's name was entirely overlooked. Despite such issues, we can often mitigate them, as names are typically detected in other movies or not matched with legitimate names in our dataset.
 
 These discrepancies may also arise in specific cases, such as the name "Doctor," which has over 40 matches in the U.S. dataset. This suggests that Americans might name their children "Doctor," humorously implying that they are born with a Ph.D.
 
 ### Confounders
 
 Dealing with external events was a significant challenge for us. On multiple occasions, we were surprised by unexpected results. However, upon closer analysis, external events often explained these sudden changes. The Harry Potter saga serves as an excellent example to illustrate this point. Harry Potter and the Philosopher's Stone was published in 1997, while the movie adaptation premiered in cinemas in 2001. By the time the movie was released, the hype around Harry’s name had already begun, making it difficult for our model to accurately predict its influence.
-
-**Insérer ici au moins l'exmple de Harry Potter** 
 
 # Bibliography
 1. [Wikipedia: The Rachel](https://en.wikipedia.org/wiki/The_Rachel)
