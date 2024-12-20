@@ -12,14 +12,24 @@
         .movie-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 15px;
+            justify-content: center;
         }
         .movie-item {
             text-align: center;
             cursor: pointer;
             transition: transform 0.2s;
+            width: 100px;
         }
         .movie-item:hover {
+            transform: scale(1.05);
+        }
+        .movie-poster {
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .movie-poster:hover {
             transform: scale(1.1);
         }
         .movie-icon {
@@ -61,7 +71,6 @@
 </div>
 
 <script>
-    // Example data - replace this with your own
     const movies = [
         { id: "1", name: "Mission: Impossible II", year: "2000", graph: "mission_impossible_ii"},
         { id: "2", name: "Pulp Fiction", year: "1994", graph: "pulp_fiction"},
@@ -83,11 +92,23 @@
         movieItem.className = 'movie-item';
         movieItem.setAttribute('data-graph', movie.graph);
 
-        const movieIcon = document.createElement('div');
-        movieIcon.className = 'movie-icon';
-        movieIcon.textContent = `${movie.name} (${movie.year})`;
+        // Create a smaller image for the poster
+        const moviePoster = document.createElement('img');
+        moviePoster.src = `https://epfl-ada.github.io/ada-2024-project-dondata2025/assets/img/${movie.graph}.jpg`;
+        moviePoster.alt = `${movie.name} Poster`;
+        moviePoster.className = 'movie-poster';
+        moviePoster.style.width = '80px'; // Smaller width
+        moviePoster.style.height = '120px'; // Smaller height
+        moviePoster.style.borderRadius = '8px';
 
-        movieItem.appendChild(movieIcon);
+        // Create a smaller text label for the movie name and year
+        const movieLabel = document.createElement('div');
+        movieLabel.textContent = `${movie.name} (${movie.year})`;
+        movieLabel.style.fontSize = '12px'; // Smaller font size
+        movieLabel.style.marginTop = '5px'; // Reduce margin between poster and label
+
+        movieItem.appendChild(moviePoster);
+        movieItem.appendChild(movieLabel);
         movieList.appendChild(movieItem);
 
         // Add click event to load the graph

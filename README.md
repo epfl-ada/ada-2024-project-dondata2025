@@ -25,7 +25,6 @@ For our project, we integrated several name attribution datasets from various co
 - France
 - United Kingdom
 - Norway
-- Ireland
 
 You may wonder why our additional datasets mostly come from developed countries. We faced an initial challenge: **the alphabet**. Many countries use scripts other than the Latin alphabet, which complicates the task of managing and processing names consistently. Translating traditional names or finding equivalent representations in the Latin script proved to be a daunting, error-prone task.
 Therefore, we opted to limit our analysis to datasets that use the Latin alphabet.
@@ -57,54 +56,55 @@ However, we must take into account that the character name could be influenced b
 
 We tried another approach to detect unusual trends in name counts following a key date: using Interrupted Time Series (ITS). This approach involves splitting the data, using the pre-date segment to train a model that forecasts expected trends, and then comparing this forecast with the actual post-date data. We’re evaluating two models (Prophet and SARIMA), considering our yearly data limitations.
 
-## Proposed timeline 
+### Name detection
 
-Week 18-24nov 
-- Models' improvement and refinement
-- Add more visualization
-- Look for additional baby names datasets to clean and add
-- Avoid deep diving into new features to wait for Milestone feedback
-Week 25nov-1dec
-- Adjust from Milestone feedback, decide all choices for implementation
-- Lighter Week for project to do and submit Homework 2
+To identify the main characters in our movies, we processed the plot_summaries.txt file, which contains plot summaries for 42,306 movies extracted from English-language Wikipedia.
+Every line in the file represents a movie, with its wikipedia id and plot summary separated by a tabulation.
 
-Week 2-8dec
-- Start website UI/layout
-- Implement P-value for better results reliability
-- Start additional analysis bound to characteristics (popularity in certain countries/continents, ethnicity of influential characters, etc...)
-- Start linking the data story from A to Z
+Using this format, we extracted both the Wikipedia ID and the plot summary, linking each movie’s name to its corresponding Wikipedia ID and release year.
 
-Week 9-14dec 
-- Finalize website visuals and data story showcase 
-- Clean and comment the code
-- Test the data story for edge cases/weird inputs
-- Ensure clarity and conciseness on the website
+After filtering the data, we proceeded to identify the main characters. For this task, we utilized spaCy, an open-source Natural Language Processing library for Python. We analyzed each plot summary, labeled words in the text, and calculated the frequency of each character’s name. To ensure relevance, we applied a threshold: only characters mentioned at least twice in the plot summary were retained.
 
-Week 15-20dec
-- Polish everything for the submission
-- Finish any remaining task
+This approach allowed us to efficiently detect main characters. Ultimately, we created a DataFrame containing the character names and their respective counts for each movie.
 
-## Task attribution
+### Machine learning prediction Prophet
 
-Jérémy and Emile : coding up the features 
+The metric given in the section above identifies which names are potential candidates, but we still need to fin a way to know if the name was actually influenced.
 
-Julien and Pauline : Designing the process and the algorithms
+To do so, we use a technique called Interrupted Time Series. Basically, what we do is taking the data about a name before a movie was released, and trying to deduce what would a normal evolution for the name be with machine a learning model.
 
-Corentin : handling the website/data story visualizations
+This will leave us with two curves that represent the names evolution after the release of the movie. One containing the actual data from the datasets and one that was predicted based on the previous counts (predicted). If the actual curve is much higher than the predicted one, we can assume that the movie has influenced this name! 
 
-Obviously bound to change according to necessities
+Thus we run this algorithm on all main character names of every movie of the dataset and then define a threshold on the distance between the curves to decide wether a movie influenced a name or not.
 
-## Questions for TAs
-
-- Is it a reasonable assumption that blockbusters will have no missing datas (NaN values) and thus we don't have to worry about discarding data entries with missing values in important fields such as Revenue ?
-- How can we elaborately determine how a movie is a blockbuster ? For now we only sort by Revenue but should we use a more refined metric ? Same question for iconic actors
-
-## Updated ReadMe
-Contribution of Group Members 
+## Contribution of group members 
 - Jeremy : 
     - Names datasets -> cleaning and structuring them in data classes 
     - Name count prediction with Prophet and SARIMA + determining if a name was influenced using the confidence interval.
     - setting up Jekyll to host the website and making carousel shaped as movie film
     - Creating the pipelines to link all of the different parts together
     - Worked on the results.ipynb
-- 
+- Emile :
+    - datasets and naïve approach model presentation
+    - "try it yourself" results display
+    - "Movie influence over time" analysis
+    - "Birth of a new name" analysis
+- Corentin :
+    - Predicted name counts using Prophet and SARIMA models, incorporating confidence intervals and metric computation to determine name influence.
+    - Developed the character name recognition system.
+    - Contributed to the analysis in results.ipynb.
+    - Updated the website to reflect my findings and results.
+ - Pauline :
+    - Worked on defining what a blockbuster is
+    - Studied of genre movie on names
+    - Studied on the case of Norwegian names (only on the results notebook)
+    - Updated the website to show the findings of the analysis for the datastory
+ - Julien : 
+   - Worked on the data cleaning and structuring of the datasets
+   - Studied comparison between Sarima and Prophet models
+   - Worked on different ways to choose the metric to determine if a name was influenced by a movie
+   - Studied the influence of movies on names with regard to gender
+   - Worked on visuals for website
+
+
+   
