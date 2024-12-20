@@ -58,9 +58,8 @@ We tried another approach to detect unusual trends in name counts following a ke
 
 ### Name detection
 
-To identify the main characters in our movies, we processed the plot_summaries.txt file, which contains plot summaries for 42,306 movies extracted from English-language Wikipedia. Each entry in the file follows a consistent structure:
-
-Wikipedia ID \t Plot Summary \n
+To identify the main characters in our movies, we processed the plot_summaries.txt file, which contains plot summaries for 42,306 movies extracted from English-language Wikipedia.
+Every line in the file represents a movie, with its wikipedia id and plot summary separated by a tabulation.
 
 Using this format, we extracted both the Wikipedia ID and the plot summary, linking each movie’s name to its corresponding Wikipedia ID and release year.
 
