@@ -141,12 +141,12 @@ Cinema reached its peak influence over baby names in the 90s. This apogee can be
 Y2K brings a noticeable decline in influenced names, dropping back to similar levels as the 70s despite having a much more developped industry. This indicates a shift in cultural trends, where people turn to the rising internet and streaming services, giving less attention to feature-length films. This period reflects the fragmentation of media influence and the appearance of new ways of telling stories.
 
 
-# Birth of a new name
+## Birth of a new name
 Some films have such a cultural impact that they leave a lasting impression on the audience with their characters and make them remember their name, even when they don't even exist or are practically unused. These events lead to the resurgence of an unpopular name or even the creation of a new one.
 
 {% include newnames_carrousel.html %}
 
-# Is there a movie genre that has a stronger influence on names ?
+## Is there a movie genre that has a stronger influence on names ?
 Does an adventurous film, where the hero embodies all the traits we aspire to—bravery, charisma, and triumph—leave a stronger mark than a heart-wrenching drama? Or is it the tension and excitement of a thriller that makes a name stick in our minds?
 
 In this part, we set out to explore which movie genres resonate the most, in other words, whether certain movie genres have a stronger influence on baby names than others. 
@@ -178,7 +178,7 @@ On the other hand, Adventure stands out for its higher influence in amplitude th
 Overall, the three most influential genres—Action, Drama, and Thriller—not only reach a broad range of names but also leave a strong mark on each name’s trend. They balance both breadth (occurrence) and depth (amplitude) in their cultural impact on naming trends.
 
 
-# Are women names more influenced than men's ?
+## Are women names more influenced than men's ?
 
 # Limitations of our project
 
