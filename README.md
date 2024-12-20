@@ -112,3 +112,8 @@ Contribution of Group Members
     - "try it yourself" results display
     - Movie influence over time analysis
     - Birth of a new name analysis
+- Corentin :
+    - Predicted name counts using Prophet and SARIMA models, incorporating confidence intervals and metric computation to determine name influence.
+    - Developed the character name recognition system.
+    - Contributed to the analysis in results.ipynb.
+    - Updated the website to reflect my findings and results.
