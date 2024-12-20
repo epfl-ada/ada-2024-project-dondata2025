@@ -71,11 +71,11 @@ The genre of a movie is a key indicator of themes and storytelling style of a mo
 Characters in movie genres often follow archetypes, including how they are named. Here are the most common names by genre.
 {% include top_10_names_by_genres.html %}
 ### Important characters
-Some characters retain the attention of spectators whereas others will be forgotten after a day. To account for this disparity and for simplicity, we decided to keep only the most important characters in every movie in the dataset. 
+Some characters captivate the audience's attention, leaving a lasting impression, while others fade from memory within a day. To address this disparity and simplify our analysis, we decided to retain only the most important characters in each movie in our dataset.
 
-In order to measure character importance, we count the number of citation of their name in the summary of the movie and keep the most mentioned ones.
+To measure character importance, we counted the number of times their names appeared in the movie's summary and selected the most frequently mentioned ones. Below, we provide partial plot summaries of well-known movies such as Star Wars: Episode IV - A New Hope, Titanic, and Back to the Future. In each summary, we highlighted the characters' names as detected by our technique.
 
-**A VENIR : exemple avec les 2-3 persos d'un film connu, fourni par Coco**
+However, this method is not flawless. You may notice some undetected names (highlighted in red), particularly when they are highly fictional or unusual.
 
 {% include plots_carrousel.html %}
 
