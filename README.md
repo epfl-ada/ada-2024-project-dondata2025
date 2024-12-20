@@ -99,6 +99,12 @@ Thus we run this algorithm on all main character names of every movie of the dat
     - Studied of genre movie on names
     - Studied on the case of Norwegian names (only on the results notebook)
     - Updated the website to show the findings of the analysis for the datastory
+ - Julien : 
+   - Worked on the data cleaning and structuring of the datasets
+   - Studied comparison between Sarima and Prophet models
+   - Worked on different ways to choose the metric to determine if a name was influenced by a movie
+   - Studied the influence of movies on names with regard to gender
+   - Worked on visuals for website
 
 
    
