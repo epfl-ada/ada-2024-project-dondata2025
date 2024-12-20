@@ -56,11 +56,21 @@ However, we must take into account that the character name could be influenced b
 
 We tried another approach to detect unusual trends in name counts following a key date: using Interrupted Time Series (ITS). This approach involves splitting the data, using the pre-date segment to train a model that forecasts expected trends, and then comparing this forecast with the actual post-date data. We’re evaluating two models (Prophet and SARIMA), considering our yearly data limitations.
 
-### name detection
+### Name detection
+
+To identify the main characters in our movies, we processed the plot_summaries.txt file, which contains plot summaries for 42,306 movies extracted from English-language Wikipedia. Each entry in the file follows a consistent structure:
+
+Wikipedia ID \t Plot Summary \n
+
+Using this format, we extracted both the Wikipedia ID and the plot summary, linking each movie’s name to its corresponding Wikipedia ID and release year.
+
+After filtering the data, we proceeded to identify the main characters. For this task, we utilized spaCy, an open-source Natural Language Processing library for Python. We analyzed each plot summary, labeled words in the text, and calculated the frequency of each character’s name. To ensure relevance, we applied a threshold: only characters mentioned at least twice in the plot summary were retained.
+
+This approach allowed us to efficiently detect main characters. Ultimately, we created a DataFrame containing the character names and their respective counts for each movie.
 
 ### prophet
 
-# Contribution of Group Members 
+## Contribution of group members 
 - Jeremy : 
     - Names datasets -> cleaning and structuring them in data classes 
     - Name count prediction with Prophet and SARIMA + determining if a name was influenced using the confidence interval.
