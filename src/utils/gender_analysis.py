@@ -1,13 +1,18 @@
 import pandas as pd
 import plotly.express as px
+from pandas import read_csv
+
 from src.models.trend_by_gender import *
 
-def plot_gender_proportion(df):
+def plot_gender_proportion():
     """
     Plot the proportion of male vs female names influenced.
-    :param df: DataFrame with a 'Gender' column.
     :return: None. Displays a pie chart of the proportion of male and female names.
     """
+
+    # Load cleaned dataframe
+    df = read_csv("data/clean/gender_name_influenced_prophet.csv")
+
     # Calculate the proportion of male vs female names influenced
     gender_counts = df['Gender'].value_counts()
 
@@ -28,16 +33,16 @@ def plot_gender_proportion(df):
     # Show the pie chart
     fig.show()
 
-def plot_genre_gender_influence(df):
+def plot_genre_gender_influence():
     """
     Plots the percentage distribution of influenced baby names
-
-    Parameters:
-    - df (DataFrame): The dataset containing influenced baby names and genres.
 
     Returns:
     - None: Displays the plot.
     """
+
+    # Load cleaned dataframe
+    df = read_csv("data/clean/gender_name_influenced_prophet.csv")
 
     # Drop rows where 'Genres' is NaN
     df = df.dropna(subset=['Genres'])

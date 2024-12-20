@@ -1,24 +1,19 @@
 import pandas as pd
 import src.utils.pipelines as pip
 
-def load_and_clean_influenced_names(file_path):
+def load_and_clean_influenced_names():
     """
     Load and clean the dataset of influenced names.
-    :param file_path: The path to the CSV file containing the influenced names data.
     :return: A cleaned DataFrame containing the influenced names.
     """
     # Load the dataset
-    prophet = pd.read_csv(file_path)
+    prophet = pd.read_csv("data/clean/influenced_prophet_with_genres.csv")
 
     # Filter for influenced names
     influenced_prophet = prophet[prophet["Influenced"] > 0]
 
     # Remove common identification mistakes such as "the", "a" or "Mr"
     influenced_prophet = influenced_prophet[~influenced_prophet["Character Name"].isin(["the", "a", "Mr"])]
-
-    # Print the number of influenced names and the shape of the dataframe
-    print("Number of influenced names with prophet: ", len(influenced_prophet))
-    print(influenced_prophet.shape)
 
     # Drop unnecessary columns
     influenced_prophet.drop(columns=["Count", 'Mean Difference'], inplace=True)
@@ -32,11 +27,8 @@ def load_and_clean_character_data():
     :return: A cleaned DataFrame with 'Name' and 'Gender' columns.
     """
     # Load the data
-    global_names, _, _, _, _ = pip.read_all_names_data()
+    global_names, _, _, _, _ = pip.read_all_names_data();
     df_character = global_names()
-
-    # Keep only 'Name' and 'Sex' columns
-    df_character = df_character[['Name', 'Sex']]
 
     # Rename 'Sex' to 'Gender'
     df_character.rename(columns={'Sex': 'Gender'}, inplace=True)
@@ -99,10 +91,34 @@ def fill_missing_gender_and_clean(merged_df):
     # Fill NaN values in 'Gender' using 'Gender_reference' from df_reference
     merged_df['Gender'] = merged_df['Gender'].fillna(merged_df['Gender_reference'])
 
-    # Drop the temporary 'Gender_reference' column
-    merged_df.drop(columns=['Gender_reference'], inplace=True)
+    # Drop the unnecessary columns
+    merged_df.drop(columns=['Gender_reference', 'Wikipedia ID', 'Wikipedia_movie_ID', 'Influenced', 'Full name'],
+                   inplace=True)
 
     # Drop rows with 'Character Name' as 'Daily', 'Hill', or 'Lo'
     merged_df = merged_df[~merged_df['Character Name'].isin(['Daily', 'Hill', 'Lo'])]
 
     return merged_df
+
+
+def write_influenced_data():
+    """
+    Loads, cleans, and processes the influenced names and character data,
+    merges them, fills missing gender information, and cleans the result.
+    """
+    # Load and clean influenced names data
+    influenced_prophet = load_and_clean_influenced_names()
+
+    # Load and clean character data
+    df_character = load_and_clean_character_data()
+
+    # Merge influenced names with character data
+    merged_df = merge_influenced_and_character_data(influenced_prophet, df_character)
+
+    # Fill missing gender information and clean the merged data
+    merged_df_cleaned = fill_missing_gender_and_clean(merged_df)
+
+    # Write the cleaned data to a new CSV file
+    merged_df_cleaned.to_csv("data/clean/gender_name_influenced_prophet.csv")
+
+    return merged_df_cleaned

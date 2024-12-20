@@ -1,0 +1,430 @@
+,Movie Name,Year,Character Name,Normalized_name,Genres,Gender,Count
+0,mission: impossible ii,2000,Ethan,ETHAN,"Thriller, Action Thrillers, Action/Adventure, Glamorized Spy Film, Action, Spy",M,18059.0
+1,the avengers,1998,Emma,EMMA,"Thriller, Adventure, Action/Adventure, Comedy, Action, Spy",F,19870.0
+2,man on fire,1987,Samantha,SAMANTHA,"Thriller, Action, Drama, Indie",F,18864.0
+3,suspiria,1977,Sarah,SARAH,"Horror, World cinema, Supernatural, Gothic Film, Cult, Coming of age, Slasher",F,19777.0
+4,barton fink,1991,Taylor,TAYLOR,"Thriller, Indie, Comedy-drama, Mystery, Period piece, Drama, Comedy, Black comedy",F,10255.0
+5,dracula,1979,Jonathan,JONATHAN,Horror,M,16495.0
+6,apollo 13,1995,Jack,JACK,"History, Drama, Adventure",M,4080.0
+7,goldeneye,1995,Jack,JACK,"Thriller, Action Thrillers, Adventure, Action/Adventure, Glamorized Spy Film, Action, Spy",M,4080.0
+8,the usual suspects,1995,Jack,JACK,"Thriller, Ensemble Film, Mystery, Crime Fiction, Crime Thriller, Neo-noir",M,4080.0
+9,titanic,1997,Jack,JACK,"Tragedy, Costume drama, Historical fiction, Action/Adventure, Period piece, Drama, Disaster, Romantic drama, Romance Film",M,16162.0
+10,superman,1978,Jonathan,JONATHAN,"Science Fiction, Adventure, Superhero movie, Action/Adventure, Family Film, Action",M,13433.0
+11,sixteen candles,1984,Samantha,SAMANTHA,"Romantic comedy, Cult, Coming of age, Comedy, Romance Film, Teen",F,8506.0
+12,the terminator,1984,Kyle,KYLE,"Thriller, Science Fiction, Indie, Doomsday film, Stop motion, Action/Adventure, Time travel, Action",M,12575.0
+13,speed,1994,Jack,JACK,"Thriller, Action/Adventure, Action, Crime Fiction, Adventure",M,3304.0
+14,die hard,1988,Alexander,ALEXANDER,"Crime Fiction, Thriller, Action, Action/Adventure",M,14047.0
+15,mission: impossible,1996,Ethan,ETHAN,"Thriller, Action/Adventure, Action, Spy",M,6505.0
+16,the nightmare before christmas,1993,Jack,JACK,,M,2763.0
+17,love actually,2003,Mia,MIA,"Romantic comedy, Ensemble Film, Comedy-drama, Holiday Film, Drama, Comedy, Romance Film",F,10802.0
+18,the fast and the furious,2001,Mia,MIA,"Crime Fiction, Thriller, Sports, Action/Adventure, Action, Auto racing",F,6367.0
+19,the notebook,2004,Noah,NOAH,"Coming of age, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",M,15647.0
+20,terminator 2: judgment day,1991,Connor,CONNOR,"Thriller, Science Fiction, Doomsday film, Action/Adventure, Time travel, Action",M,2600.0
+21,terminator 2: judgment day,1991,Connor,CONNOR,"Thriller, Science Fiction, Doomsday film, Action/Adventure, Time travel, Action",M,2600.0
+22,an officer and a gentleman,1982,Zachary,ZACHARY,"Romantic drama, Romance Film, Drama",M,6149.0
+23,"good morning, vietnam",1987,Taylor,TAYLOR,"Comedy-drama, Comedy, War film",M,2431.0
+24,invasion of the body snatchers,1978,Elizabeth,ELIZABETH,"Thriller, Science Fiction, Remake, New Hollywood, Doomsday film",F,17131.0
+25,the last of the mohicans,1992,Jack,JACK,"Costume drama, War film, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",M,2316.0
+26,bram stoker's dracula,1992,Jack,JACK,"Thriller, Horror, Costume drama, Gothic Film, Cult, Period piece, Fantasy, Film adaptation, Drama, Romance Film, Costume Horror",M,2316.0
+27,lethal weapon 3,1992,Jack,JACK,"Thriller, Crime Fiction, Buddy film, Buddy cop, Action/Adventure, Comedy, Action Thrillers, Action",M,2316.0
+28,gladiator,2000,Noah,NOAH,"Crime Fiction, Sports, Drama, Boxing, Teen",M,14811.0
+29,a time to kill,1996,Harry,HARRY,"Thriller, Crime Fiction, Drama",M,5038.0
+30,picnic at hanging rock,1975,Sara,SARA,"LGBT, Thriller, Horror, World cinema, Supernatural, Mystery, Period piece, Coming of age, Drama",F,5336.0
+31,suspiria,1977,Daniel,DANIEL,"Horror, World cinema, Supernatural, Gothic Film, Cult, Coming of age, Slasher",M,27661.0
+32,yellow submarine,1968,Jeremy,JEREMY,"Adventure, Animation, Musical, Fantasy, Comedy, Family Film",M,641.0
+33,unbreakable,2000,Elijah,ELIJAH,"Thriller, Science Fiction, Superhero movie, Supernatural, Psychological thriller, Superhero, Action/Adventure, Suspense",M,7571.0
+34,halloween,1978,Lindsey,LINDSEY,"Thriller, Horror, Indie, Cult, Slasher, Teen",F,1882.0
+35,dead poets society,1989,Cameron,CAMERON,"Ensemble Film, School story, Period piece, Drama, Coming of age, Teen",M,5686.0
+36,the addams family,1991,Abigail,ABIGAIL,"Black comedy, Family Film, Fantasy, Comedy, Domestic Comedy",F,3842.0
+37,the lost world: jurassic park,1997,Owen,OWEN,"Thriller, Science Fiction, Action, Adventure, Film adaptation",M,2322.0
+38,platoon,1986,Taylor,TAYLOR,"Anti-war, Indie, Drama, War film, Action, Anti-war film, Combat Films",M,2032.0
+39,robocop,1987,Alex,ALEX,"Thriller, Crime Fiction, Science Fiction, Superhero movie, Stop motion, Action/Adventure, Satire, Action",M,6188.0
+40,the terminal,2004,Amelia,AMELIA,"Romantic comedy, Comedy-drama, Drama, Comedy, Romantic drama, Romance Film, Comedy of Errors",F,6383.0
+41,braveheart,1995,Isabella,ISABELLA,"Biography, Adventure, History, War film, Action/Adventure, Period piece, Drama, Costume drama, Action",F,1754.0
+42,where eagles dare,1968,Jonathan,JONATHAN,"Adventure, Roadshow theatrical release, Action/Adventure, Drama, War film, Action",M,5824.0
+43,unforgiven,1992,Logan,LOGAN,"Western, Drama",M,4364.0
+44,ferris bueller's day off,1986,Cameron,CAMERON,"Cult, Drama, Coming of age, Comedy, Teen",M,2133.0
+45,"lock, stock and two smoking barrels",1998,Harry,HARRY,"Thriller, Caper story, Crime Fiction, Buddy film, Crime Comedy",M,5387.0
+46,fear and loathing in las vegas,1998,Lucy,LUCY,"Buddy film, Adventure, Absurdism, Road movie, Experimental film, Cult, Drama, Comedy, Black comedy, Avant-garde",F,5800.0
+47,legends of the fall,1994,Tristan,TRISTAN,"Family Drama, War film, Western, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",M,1454.0
+48,jurassic park iii,2001,Ellie,ELLIE,"Thriller, Natural horror films, Science Fiction, Horror, Adventure, Action/Adventure, Monster, Action",F,5075.0
+49,a time to kill,1996,Hailey,HAILEY,"Thriller, Crime Fiction, Drama",F,3781.0
+50,a time to kill,1996,Hailey,HAILEY,"Thriller, Crime Fiction, Drama",F,3781.0
+51,hook,1991,Jack,JACK,,M,2099.0
+52,the silence of the lambs,1991,Jack,JACK,"Thriller, LGBT, Horror, Psychological thriller, Crime Fiction, Suspense, Drama, Crime Thriller",M,2099.0
+53,the naked gun 2½: the smell of fear,1991,Quentin,QUENTIN,"Parody, Comedy",M,5445.0
+54,how to steal a million,1966,Nicole,NICOLE,"Crime Fiction, Romantic comedy, Crime Comedy, Heist, Caper story, Comedy, Romance Film",F,3665.0
+55,2 fast 2 furious,2003,Carter,CARTER,"Thriller, Crime Fiction, Action/Adventure, Crime Thriller, Action Thrillers, Action, Sports",M,4288.0
+56,charlie and the chocolate factory,2005,Charlie,CHARLIE,,M,5282.0
+57,shrek 2,2004,Lillian,LILLIAN,,F,4839.0
+58,doctor zhivago,1965,Tonya,TONYA,Costume drama,F,2968.0
+59,doctor zhivago,1965,Tonya,TONYA,"Roadshow theatrical release, Epic, Period piece, Drama, War film, Romantic drama, Romance Film",F,2968.0
+60,jackie brown,1997,Louis,LOUIS,"Thriller, Crime Fiction, Indie, Action/Adventure, Blaxploitation, Drama, Comedy, Crime Thriller, Action",M,5964.0
+61,meet joe black,1998,William,WILLIAM,"Heaven-Can-Wait Fantasies, Mystery, Fantasy, Drama, Romantic drama, Romance Film, Romantic fantasy",M,27732.0
+62,minority report,2002,Leo,LEO,"Crime Fiction, Thriller, Science Fiction, Future noir, Chase Movie, Action/Adventure, Mystery, Drama, Dystopia, Film adaptation, Action, Film noir",M,5967.0
+63,bill & ted's excellent adventure,1989,Logan,LOGAN,"Science Fiction, Buddy film, Adventure, Fantasy, Comedy, Time travel, Sci-Fi Adventure, Family Film, Teen",M,3397.0
+64,final destination,2000,Carter,CARTER,"Thriller, Horror, Supernatural, Cult, Slasher, Teen",M,2607.0
+65,"lock, stock and two smoking barrels",1998,Tom,TOM,"Thriller, Caper story, Crime Fiction, Buddy film, Crime Comedy",M,2642.0
+66,the little mermaid,1989,Ariel,ARIEL,"Costume drama, Animation, Musical, Fantasy, Romance Film, Family Film",F,1285.0
+67,the omen,1976,Katherine,KATHERINE,"Demonic child, Horror, Supernatural, Psychological thriller, Cult, Mystery",F,5119.0
+68,tron,1982,Kevin,KEVIN,"Cyberpunk, Thriller, Science Fiction, Adventure, Computer Animation, Family Film, Action",M,20276.0
+69,pearl harbor,2001,Evelyn,EVELYN,"Action/Adventure, Period piece, Drama, War film, Romantic drama, Romance Film, Action, Airplanes and airports",F,2863.0
+70,the mummy returns,2001,Evelyn,EVELYN,"Thriller, Monster movie, Horror, Adventure, Supernatural, Costume drama, Costume Adventure, Creature Film, Action/Adventure, Fantasy, Adventure Comedy, Action",F,2863.0
+71,bruce almighty,2003,Nolan,NOLAN,"Heavenly Comedy, Drama, Comedy, Fantasy, Fantasy Comedy, Religious Film",M,2919.0
+72,jackie brown,1997,Max,MAX,"Thriller, Crime Fiction, Indie, Action/Adventure, Blaxploitation, Drama, Comedy, Crime Thriller, Action",M,3193.0
+73,liar liar,1997,Max,MAX,"Slapstick, Fantasy Comedy, Fantasy, Comedy, Domestic Comedy",M,3193.0
+74,stargate,1994,Jackson,JACKSON,"Thriller, Science Fiction, Action, Sci-Fi Adventure, Adventure",M,1942.0
+75,the jerk,1979,Marie,MARIE,"Music, Screwball comedy, Slapstick, Comedy, Absurdism",F,8721.0
+76,notting hill,1999,Max,MAX,"Romantic comedy, Romance Film, Comedy",M,4000.0
+77,the naked gun: from the files of police squad!,1988,Spencer,SPENCER,"Parody, Crime Fiction, Screwball comedy, Comedy, Romance Film, Action",M,2693.0
+78,rush hour,1998,Carter,CARTER,"Thriller, Crime Fiction, Action, Comedy",M,1849.0
+79,the exorcist,1973,Damien,DAMIEN,"Demonic child, Horror, Supernatural, Psychological thriller, Cult, Drama, New Hollywood",M,2186.0
+80,mission: impossible,1996,Max,MAX,"Thriller, Action/Adventure, Action, Spy",M,2861.0
+81,saving private ryan,1998,George,GEORGE,"Ensemble Film, History, Drama, War film, Action, Combat Films",M,7678.0
+82,american psycho,2000,Evelyn,EVELYN,"Thriller, Crime Thriller, Horror, Psychological thriller, Period piece, Satire, Drama, Comedy, Film adaptation, Crime Fiction, Black comedy, Slasher",F,2323.0
+83,natural born killers,1994,Owen,OWEN,"Thriller, Crime Fiction, Crime Drama, Road movie, Drama, Media Satire, Romance Film",M,545.0
+84,the lost world: jurassic park,1997,Carter,CARTER,"Thriller, Science Fiction, Action, Adventure, Film adaptation",M,1589.0
+85,titanic,1997,Dawson,DAWSON,"Tragedy, Costume drama, Historical fiction, Action/Adventure, Period piece, Drama, Disaster, Romantic drama, Romance Film",M,209.0
+86,titanic,1997,Dawson,DAWSON,"Tragedy, Costume drama, Historical fiction, Action/Adventure, Period piece, Drama, Disaster, Romantic drama, Romance Film",M,209.0
+87,saving private ryan,1998,Charlie,CHARLIE,"Ensemble Film, History, Drama, War film, Action, Combat Films",M,3087.0
+88,close encounters of the third kind,1977,Jillian,JILLIAN,"Science Fiction, Drama, Adventure, New Hollywood",F,1150.0
+89,tombstone,1993,Wyatt,WYATT,"Crime Fiction, Costume drama, Action/Adventure, Western, Drama, History, Romance Film, Action",M,628.0
+90,jurassic park iii,2001,Cooper,COOPER,"Thriller, Natural horror films, Science Fiction, Horror, Adventure, Action/Adventure, Monster, Action",M,1807.0
+91,star wars episode iv: a new hope,1977,Luke,LUKE,"Science Fiction, Adventure, Fantasy, Coming of age, Family Film, Action, Space western",M,1258.0
+92,pulp fiction,1994,Mia,MIA,"Crime Fiction, Thriller, Crime Comedy, Indie, Gangster Film, Ensemble Film, Drama, Crime Thriller, Black comedy",F,980.0
+93,dressed to kill,1980,Blake,BLAKE,"Thriller, Horror, Erotica, Mystery, Psychological thriller, Erotic thriller, Suspense, Crime Thriller, Slasher, Indie",M,971.0
+94,being john malkovich,1999,Charlie,CHARLIE,"Workplace Comedy, Fantasy, Drama, Comedy, Black comedy, Fantasy Comedy",M,3072.0
+95,young frankenstein,1974,Elizabeth,ELIZABETH,"Parody, Science Fiction, Horror, Black-and-white, Horror Comedy, Comedy, Slapstick",F,12670.0
+96,braveheart,1995,William,WILLIAM,"Biography, Adventure, History, War film, Action/Adventure, Period piece, Drama, Costume drama, Action",M,21615.0
+97,caddyshack,1980,Lacey,LACEY,"Sports, Gross-out film, Cult, Satire, Comedy, Gross out, Slapstick",F,900.0
+98,caddyshack,1980,Lacey,LACEY,"Sports, Gross-out film, Cult, Satire, Comedy, Gross out, Slapstick",F,900.0
+99,an american werewolf in london,1981,Alex,ALEX,"Fantasy, Horror, Creature Film, Horror Comedy",M,1949.0
+100,the graduate,1967,Benjamin,BENJAMIN,"Romance Film, Drama, Comedy",M,2566.0
+101,the fearless vampire killers,1967,Sarah,SARAH,"Parody, Cult, Horror, Comedy",F,4268.0
+102,jurassic park,1993,Ellie,ELLIE,"Thriller, Natural horror films, Science Fiction, Horror, Adventure, Film adaptation, Action/Adventure, Monster, Action",F,270.0
+103,superbad,2007,Jules,JULES,"Sex comedy, Buddy film, Cult, Coming of age, Comedy, Teen",M,3610.0
+104,top gun,1986,Mitchell,MITCHELL,"Action/Adventure, Drama, War film, Romantic drama, Romance Film, Action, Airplanes and airports",M,2674.0
+105,evil dead ii,1987,Jake,JAKE,"Horror, Stop motion, Cult, Comedy, Splatter film, Zombie Film, Black comedy",M,1640.0
+106,dirty dancing,1987,Jake,JAKE,"Dance, Indie, Period piece, Musical, Coming of age, Drama, Romantic drama, Romance Film, Musical Drama, Teen",M,1640.0
+107,lethal weapon,1987,Martin,MARTIN,"Crime Fiction, Albino bias, Buddy film, Buddy cop, Action/Adventure, Thriller, Comedy, Action",M,4086.0
+108,casino,1995,Sam,SAM,"Crime Fiction, Biography, Gangster Film, Period piece, Drama, Film adaptation",M,729.0
+109,jumanji,1995,Sam,SAM,,M,729.0
+110,somewhere in time,1980,Elise,ELISE,"Science Fiction, Indie, Tragedy, Romantic fantasy, Fantasy, Drama, Romantic drama, Time travel, Romance Film",F,1742.0
+111,sleepless in seattle,1993,Jonah,JONAH,"Romantic comedy, Comedy-drama, Romance Film, Drama, Comedy",M,449.0
+112,2 fast 2 furious,2003,Roman,ROMAN,"Thriller, Crime Fiction, Action/Adventure, Crime Thriller, Action Thrillers, Action, Sports",M,1446.0
+113,paint your wagon,1969,Jacob,JACOB,"Roadshow theatrical release, Western, Action/Adventure, Musical, Drama, Comedy, Film adaptation",M,677.0
+114,the hunt for red october,1990,Jack,JACK,"Thriller, Action Thrillers, Action/Adventure, Drama, Political thriller, Action",M,1979.0
+115,face/off,1997,Eve,EVE,"Thriller, Crime Fiction, Tragedy, Chase Movie, Science Fiction, Action Thrillers, Action",F,749.0
+116,casino,1995,McKenna,MCKENNA,"Crime Fiction, Biography, Gangster Film, Period piece, Drama, Film adaptation",F,1066.0
+117,the lost boys,1987,Max,MAX,"Cult, Horror, Coming of age, Comedy, Teen",M,1501.0
+118,picnic at hanging rock,1975,Miranda,MIRANDA,"LGBT, Thriller, Horror, World cinema, Supernatural, Mystery, Period piece, Coming of age, Drama",F,894.0
+119,back to the future part iii,1990,Clara,CLARA,"Science Fiction, Adventure, Western, Comedy, Family Film, Hybrid Western",F,1043.0
+120,highlander,1986,Connor,CONNOR,"Cult, Action/Adventure, Science Fiction, Fantasy, Superhero movie",M,278.0
+121,ghostbusters ii,1989,Oscar,OSCAR,"Science Fiction, Supernatural, Action/Adventure, Satire, Fantasy, Comedy, Action",M,1996.0
+122,time bandits,1981,Kevin,KEVIN,"Science Fiction, Fantasy Adventure, Indie, Costume drama, Existentialism, Fantasy, Comedy, Family Film, Fantasy Comedy, Time travel, Adventure",M,19744.0
+123,field of dreams,1989,Jackson,JACKSON,"Americana, Family Drama, Baseball, Sports, Fantasy, Film adaptation, Drama, Family Film",M,503.0
+124,heat,1995,Hanna,HANNA,"Thriller, Crime Fiction, Heist, Psychological thriller, Action/Adventure, Drama, Crime Thriller, Action",F,1622.0
+125,sleepless in seattle,1993,Sam,SAM,"Romantic comedy, Comedy-drama, Romance Film, Drama, Comedy",M,679.0
+126,sixteen candles,1984,Jake,JAKE,"Romantic comedy, Cult, Coming of age, Comedy, Romance Film, Teen",M,747.0
+127,doctor zhivago,1965,Lara,LARA,"Roadshow theatrical release, Epic, Period piece, Drama, War film, Romantic drama, Romance Film",F,65.0
+128,doctor zhivago,1965,Lara,LARA,Costume drama,F,65.0
+129,mad max beyond thunderdome,1985,Max,MAX,"Science Fiction, Indie, World cinema, Doomsday film, Apocalyptic and post-apocalyptic fiction, Action",M,806.0
+130,mad max beyond thunderdome,1985,Max,MAX,"Science Fiction, Indie, World cinema, Doomsday film, Apocalyptic and post-apocalyptic fiction, Action",M,806.0
+131,weird science,1985,Max,MAX,"Science Fiction, Buddy film, Cult, Fantasy, Comedy, Romance Film, Teen",M,806.0
+132,the little mermaid,1989,Sebastian,SEBASTIAN,"Costume drama, Animation, Musical, Fantasy, Romance Film, Family Film",M,630.0
+133,days of heaven,1978,Abby,ABBY,"Crime Fiction, Period piece, Drama, Romantic drama, Romance Film, New Hollywood",F,620.0
+134,ghostbusters ii,1989,Louis,LOUIS,"Science Fiction, Supernatural, Action/Adventure, Satire, Fantasy, Comedy, Action",M,2677.0
+135,die hard,1988,Theo,THEO,"Crime Fiction, Thriller, Action, Action/Adventure",M,191.0
+136,ghostbusters ii,1989,Jack,JACK,"Science Fiction, Supernatural, Action/Adventure, Satire, Fantasy, Comedy, Action",M,1832.0
+137,gladiator,2000,Maximus,MAXIMUS,"Tragedy, Adventure, Costume drama, Epic, Drama, War film, Action, Movies About Gladiators, Historical drama",M,222.0
+138,the flight of the phoenix,1965,Carlos,CARLOS,"Disaster, Film adaptation, Drama, Adventure, Airplanes and airports",M,2285.0
+139,picnic at hanging rock,1975,Marion,MARION,"LGBT, Thriller, Horror, World cinema, Supernatural, Mystery, Period piece, Coming of age, Drama",F,737.0
+140,lethal weapon 2,1989,Leo,LEO,"Thriller, Crime Fiction, Buddy film, Buddy cop, Action/Adventure, Comedy, Action Thrillers, Action",M,917.0
+141,the mask,1994,Dorian,DORIAN,"Crime Fiction, Romance Film, Action, Fantasy, Comedy",M,1067.0
+142,pulp fiction,1994,Jules,JULES,"Crime Fiction, Thriller, Crime Comedy, Indie, Gangster Film, Ensemble Film, Drama, Crime Thriller, Black comedy",M,713.0
+143,magnolia,1999,Rose,ROSE,Drama,F,1658.0
+144,the naked gun: from the files of police squad!,1988,Jackson,JACKSON,"Parody, Crime Fiction, Screwball comedy, Comedy, Romance Film, Action",M,391.0
+145,the wild bunch,1969,Angel,ANGEL,"Western, Action",M,971.0
+146,titanic,1997,Rose,ROSE,"Tragedy, Costume drama, Historical fiction, Action/Adventure, Period piece, Drama, Disaster, Romantic drama, Romance Film",F,966.0
+147,once upon a time in america,1984,Max,MAX,"Crime Fiction, Ensemble Film, Gangster Film, Period piece, Drama, Film adaptation",M,672.0
+148,sixteen candles,1984,Bryce,BRYCE,"Romantic comedy, Cult, Coming of age, Comedy, Romance Film, Teen",M,842.0
+149,boyz n the hood,1991,Brenda,BRENDA,"Crime Fiction, Drama, Coming of age, Teen",F,2643.0
+150,indiana jones and the last crusade,1989,Donovan,DONOVAN,Adventure,M,831.0
+151,a fistful of dollars,1964,Antonio,ANTONIO,"World cinema, Spaghetti Western, Remake, Action/Adventure, Western, Action",M,2260.0
+152,back to the future part ii,1989,Parker,PARKER,"Science Fiction, Adventure, Comedy, Time travel, Family Film, Sci-Fi Adventure, Humour",M,528.0
+153,clerks.,1994,Dante,DANTE,"Buddy film, Indie, Black-and-white, Cult, Drama, Comedy",M,786.0
+154,breakfast at tiffany's,1961,Holly,HOLLY,"Romantic comedy, Comedy of manners, Comedy-drama, Drama, Comedy, Romance Film",F,2574.0
+155,friday the 13th part 2,1981,Pamela,PAMELA,"Cult, Horror, Slasher, Teen",F,5456.0
+156,once upon a time in america,1984,Patrick,PATRICK,"Crime Fiction, Ensemble Film, Gangster Film, Period piece, Drama, Film adaptation",M,12407.0
+157,clueless,1995,Josh,JOSH,"Romantic comedy, LGBT, Comedy of manners, Coming of age, Comedy, Romance Film, Teen",M,297.0
+158,once upon a time in america,1984,Bailey,BAILEY,"Crime Fiction, Ensemble Film, Gangster Film, Period piece, Drama, Film adaptation",F,267.0
+159,the big sleep,1978,Philip,PHILIP,"Crime Fiction, Thriller, Gangster Film, Mystery, Drama, Crime Thriller",M,3418.0
+160,dead poets society,1989,Nolan,NOLAN,"Ensemble Film, School story, Period piece, Drama, Coming of age, Teen",M,620.0
+161,"paris, texas",1984,Hunter,HUNTER,"Mystery, Romance Film, Drama, Indie, Road movie",M,458.0
+162,the fast and the furious,2001,Leon,LEON,"Crime Fiction, Thriller, Sports, Action/Adventure, Action, Auto racing",M,1526.0
+163,videodrome,1983,Max,MAX,"Thriller, Mystery, Science Fiction, Horror",M,587.0
+164,toy story 2,1999,Andy,ANDY,,M,1940.0
+165,tombstone,1993,Josephine,JOSEPHINE,"Crime Fiction, Costume drama, Action/Adventure, Western, Drama, History, Romance Film, Action",F,903.0
+166,breakfast at tiffany's,1961,José,JOSE,"Romantic comedy, Comedy of manners, Comedy-drama, Drama, Comedy, Romance Film",M,5161.0
+167,hot shots!,1991,Harley,HARLEY,"Parody, Absurdism, Action/Adventure, Comedy, War film, Action, Slapstick",M,355.0
+168,cannibal holocaust,1980,Alan,ALAN,"Mockumentary, Jungle Film, Horror, World cinema",M,3595.0
+169,saturday night fever,1977,Pauline,PAULINE,"Dance, Musical, Drama, Coming of age, Romance Film, Musical Drama",F,800.0
+170,minority report,2002,Iris,IRIS,"Crime Fiction, Thriller, Science Fiction, Future noir, Chase Movie, Action/Adventure, Mystery, Drama, Dystopia, Film adaptation, Action, Film noir",F,1092.0
+171,somewhere in time,1980,William,WILLIAM,"Science Fiction, Indie, Tragedy, Romantic fantasy, Fantasy, Drama, Romantic drama, Time travel, Romance Film",M,27187.0
+172,spider-man 2,2004,Jameson,JAMESON,"Thriller, Science Fiction, Superhero movie, Superhero, Action/Adventure, Drama, Fantasy, Action",M,474.0
+173,the last boy scout,1991,Darian,DARIAN,"Thriller, Crime Fiction, Buddy film, Action/Adventure, Comedy, Crime Thriller, Action",M,271.0
+174,the terminator,1984,Connor,CONNOR,"Thriller, Science Fiction, Indie, Doomsday film, Stop motion, Action/Adventure, Time travel, Action",M,156.0
+175,sleepers,1996,Tommy,TOMMY,"Crime Fiction, Thriller, Period piece, Coming of age, Drama, Courtroom Drama",M,1352.0
+176,trainspotting,1996,Tommy,TOMMY,"Crime Fiction, Buddy film, Indie, Comedy-drama, Addiction Drama, Cult, Drama, Comedy, Film adaptation, Black comedy",M,1352.0
+177,the terminal,2004,Cruz,CRUZ,"Romantic comedy, Comedy-drama, Drama, Comedy, Romantic drama, Romance Film, Comedy of Errors",M,409.0
+178,tremors,1990,Valentine,VALENTINE,"Action/Adventure, Science Fiction, Horror, Adventure, Creature Film, Cult, Horror Comedy, Monster, Action, Comedy",F,421.0
+179,national lampoon's christmas vacation,1989,Ruby,RUBY,"Christmas movie, Family Film, Comedy, Holiday Film, Slapstick",F,764.0
+180,the wicker man,1973,Neil,NEIL,"Thriller, Mystery, Crime Fiction, Horror",M,1296.0
+181,the usual suspects,1995,Keaton,KEATON,"Thriller, Ensemble Film, Mystery, Crime Fiction, Crime Thriller, Neo-noir",M,515.0
+182,"i, robot",2004,Sonny,SONNY,"Thriller, Science Fiction, Mystery, Drama, Film adaptation, Action",M,683.0
+183,national lampoon's christmas vacation,1989,Ellen,ELLEN,"Christmas movie, Family Film, Comedy, Holiday Film, Slapstick",F,1442.0
+184,two for the road,1967,Joanna,JOANNA,"Romantic comedy, Road movie, Existentialism, Comedy-drama, Marriage Drama, Drama, Comedy, Romantic drama, Romance Film",F,867.0
+185,marathon man,1976,Thomas,THOMAS,"Thriller, Crime Fiction, Psychological thriller, Mystery, Drama, Film adaptation, Crime Thriller, Action, New Hollywood",M,19798.0
+186,mad max,1979,Jessie,JESSIE,"Thriller, Tragedy, Adventure, World cinema, Doomsday film, Chase Movie, Science Fiction, Cult, Apocalyptic and post-apocalyptic fiction, Biker Film, Action",M,1023.0
+187,logan's run,1976,Logan,LOGAN,"Science Fiction, Action",M,114.0
+188,million dollar baby,2004,Frankie,FRANKIE,"Sports, Tragedy, Drama, Boxing",M,551.0
+189,wayne's world,1992,Kane,KANE,"Buddy film, Absurdism, Cult, Satire, Comedy, Music",M,121.0
+190,goodfellas,1990,Henry,HENRY,"Thriller, Crime Fiction, Gangster Film, Crime Drama, Drama, Film adaptation, Biographical film",M,2299.0
+191,jurassic park iii,2001,Isla,ISLA,"Thriller, Natural horror films, Science Fiction, Horror, Adventure, Action/Adventure, Monster, Action",F,210.0
+192,friday the 13th part 2,1981,Alice,ALICE,"Cult, Horror, Slasher, Teen",F,1625.0
+193,blade,1998,Quinn,QUINN,"Thriller, Horror, Superhero movie, Action/Adventure, Fantasy, Archives and records, Action",M,868.0
+194,the last of the mohicans,1992,Duncan,DUNCAN,"Costume drama, War film, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",M,365.0
+195,home alone 2: lost in new york,1992,Duncan,DUNCAN,,M,365.0
+196,the rocky horror picture show,1975,Rocky,ROCKY,"Parody, Sex comedy, Horror, Science Fiction, Cult, Musical, Comedy, Horror Comedy",M,335.0
+197,thelma & louise,1991,Sawyer,SAWYER,"Crime Fiction, Female buddy film, Buddy film, Chase Movie, Road movie, Comedy-drama, Drama, Comedy, Outlaw, Feminist Film",M,126.0
+198,blade runner,1982,Tyrell,TYRELL,"Thriller, Cyberpunk, Science Fiction, Future noir, Existentialism, Cult, Drama, Film noir, Crime Thriller, Chinese Movies, Dystopia, Neo-noir",M,211.0
+199,ocean's eleven,2001,Reuben,REUBEN,"Crime Fiction, Heist, Remake, Action/Adventure, Thriller, Comedy, Action",M,487.0
+200,indiana jones and the last crusade,1989,Henry,HENRY,Adventure,M,2219.0
+201,dazed and confused,1993,Davis,DAVIS,"Ensemble Film, Indie, Comedy-drama, Cult, Period piece, Drama, Comedy, Coming of age, Stoner film, Teen",M,458.0
+202,the usual suspects,1995,Dean,DEAN,"Thriller, Ensemble Film, Mystery, Crime Fiction, Crime Thriller, Neo-noir",M,957.0
+203,romeo + juliet,1996,Juliet,JULIET,"Crime Fiction, Thriller, Romance Film, Drama",F,308.0
+204,aliens,1986,Ellen,ELLEN,"Thriller, Science Fiction, Horror, Adventure, Stop motion, Sci-Fi Horror, Creature Film, Action/Adventure, Action",F,1072.0
+205,blood diamond,2006,Archer,ARCHER,"Crime Fiction, Thriller, Tragedy, Adventure, Private military company, Action/Adventure, Drama, War film, Action, Political drama",M,135.0
+206,brazil,1985,Ida,IDA,"Science Fiction, Future noir, Cult, Satire, Fantasy, Comedy, Drama, Black comedy, Dystopia, Kafkaesque",F,637.0
+207,toy story,1995,Davis,DAVIS,,M,563.0
+208,romeo + juliet,1996,Romeo,ROMEO,"Crime Fiction, Thriller, Romance Film, Drama",M,158.0
+209,the english patient,1996,Hana,HANA,"War film, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",F,301.0
+210,big trouble in little china,1986,Jack,JACK,"Fantasy Comedy, Adventure, Action Comedy, Martial Arts Film, Fantasy, Comedy, Romance Film, Action",M,1563.0
+211,sleepless in seattle,1993,Reed,REED,"Romantic comedy, Comedy-drama, Romance Film, Drama, Comedy",M,437.0
+212,the aristocats,1970,Abigail,ABIGAIL,,F,362.0
+213,good will hunting,1997,Will,WILL,"Drama, Romantic drama, Romance Film, Coming of age, Indie",M,339.0
+214,rambo iii,1988,Sam,SAM,"Thriller, Action/Adventure, Action Thrillers, Action, War film",M,539.0
+215,the lost boys,1987,Sam,SAM,"Cult, Horror, Coming of age, Comedy, Teen",M,514.0
+216,pride & prejudice,2005,Darcy,DARCY,"Costume drama, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",F,377.0
+217,the intern,2000,Bennett,BENNETT,"Romantic comedy, Romance Film, Comedy, Indie",M,546.0
+218,ghost,1990,Sam,SAM,"Thriller, Supernatural, Mystery, Drama, Comedy, Romantic drama, Romance Film, Fantasy",M,672.0
+219,reservoir dogs,1992,Joe,JOE,"Thriller, Crime Fiction, Gangster Film, Indie, Mystery, Drama, Crime Thriller",M,1441.0
+220,shrek 2,2004,King,KING,,M,89.0
+221,oliver!,1968,Noah,NOAH,"Crime Fiction, Childhood Drama, Musical, Drama, Family Film, Musical Drama",M,176.0
+222,jaws 2,1978,Martin,MARTIN,"Thriller, Natural horror films, Horror, Adventure, Creature Film, Action/Adventure, Suspense, Action, Slasher",M,2826.0
+223,platoon,1986,Elias,ELIAS,"Anti-war, Indie, Drama, War film, Action, Anti-war film, Combat Films",M,443.0
+224,halloween,1978,Annie,ANNIE,"Thriller, Horror, Indie, Cult, Slasher, Teen",F,881.0
+225,the lord of the rings: the return of the king,2003,Arwen,ARWEN,"Fantasy Adventure, Adventure, Epic, Action/Adventure, Drama, Film adaptation, Fantasy, Sword and sorcery films",F,201.0
+226,e.t. the extra-terrestrial,1982,Elliott,ELLIOTT,,M,471.0
+227,the lord of the rings: the two towers,2002,Arwen,ARWEN,"Fantasy Adventure, Adventure, Epic, Action/Adventure, Fantasy, Film adaptation, Drama, Action, Sword and sorcery films",F,73.0
+228,pocahontas,1995,Willow,WILLOW,,F,93.0
+229,the pursuit of happyness,2006,Chris,CHRIS,"Inspirational Drama, Family Drama, Drama, Biographical film",M,1049.0
+230,batman forever,1995,Robin,ROBIN,"Thriller, Crime Fiction, Buddy film, Superhero movie, Master Criminal Films, Superhero, Action/Adventure, Fantasy, Action",M,2080.0
+231,who framed roger rabbit,1988,Baby,BABY,"Parody, Crime Fiction, Fantasy Comedy, Buddy film, Animation, Action/Adventure, Mystery, Fantasy, Comedy, Black comedy, Family Film, Action",M,171.0
+232,"lock, stock and two smoking barrels",1998,Chris,CHRIS,"Thriller, Caper story, Crime Fiction, Buddy film, Crime Comedy",M,772.0
+233,300,2006,Leonidas,LEONIDAS,"Historical fiction, Adventure, Superhero movie, Costume drama, Film adaptation, Epic, Action/Adventure, Fantasy, War film, Historical Epic, Action",M,31.0
+234,escape from the planet of the apes,1971,Armando,ARMANDO,"Science Fiction, Adventure, Escape Film",M,801.0
+235,black christmas,1974,Clare,CLARE,"Thriller, Horror, Indie, Cult, Mystery, Slasher",F,261.0
+236,independence day,1983,Parker,PARKER,Drama,M,208.0
+237,transformers,2007,Lennox,LENNOX,"Thriller, Science Fiction, Doomsday film, Alien Film, Disaster, Action",M,130.0
+238,dirty dancing,1987,Baby,BABY,"Dance, Indie, Period piece, Musical, Coming of age, Drama, Romantic drama, Romance Film, Musical Drama, Teen",M,139.0
+239,tron,1982,Alan,ALAN,"Cyberpunk, Thriller, Science Fiction, Adventure, Computer Animation, Family Film, Action",M,3549.0
+240,from here to eternity,1979,Lee,LEE,Drama,M,2280.0
+241,aliens,1986,Carter,CARTER,"Thriller, Science Fiction, Horror, Adventure, Stop motion, Sci-Fi Horror, Creature Film, Action/Adventure, Action",M,182.0
+242,the lost world: jurassic park,1997,Isla,ISLA,"Thriller, Science Fiction, Action, Adventure, Film adaptation",F,150.0
+243,the lost world: jurassic park,1997,Isla,ISLA,"Thriller, Science Fiction, Action, Adventure, Film adaptation",F,150.0
+244,american pie,1999,Chris,CHRIS,"Romantic comedy, Sex comedy, Coming of age, Comedy, Romance Film, Teen",M,792.0
+245,twister,1996,Chris,CHRIS,"Black comedy, Film adaptation, Drama, Comedy, Indie",M,665.0
+246,harry potter and the chamber of secrets,2002,Hermione,HERMIONE,,F,102.0
+247,trading places,1983,Louis,LOUIS,"Satire, Comedy, Comedy of manners",M,2180.0
+248,dracula,1979,Lucy,LUCY,Horror,F,438.0
+249,escape from the planet of the apes,1971,Cornelius,CORNELIUS,"Science Fiction, Adventure, Escape Film",M,305.0
+250,the exorcist,1973,Regan,REGAN,"Demonic child, Horror, Supernatural, Psychological thriller, Cult, Drama, New Hollywood",F,109.0
+251,heat,1995,Cyrus,CYRUS,"Thriller, Crime Fiction, Gangster Film, Action/Adventure, Drama, Crime Thriller, Action",M,179.0
+252,jfk,1991,Dean,DEAN,"Thriller, Mystery, Biography, Drama, History",M,1032.0
+253,robocop,1987,Lewis,LEWIS,"Thriller, Crime Fiction, Science Fiction, Superhero movie, Stop motion, Action/Adventure, Satire, Action",M,676.0
+254,the color purple,1985,Avery,AVERY,"LGBT, Period piece, Marriage Drama, Drama, Film adaptation, Feminist Film",M,259.0
+255,scary movie,2000,Campbell,CAMPBELL,"Parody, Gross-out film, Comedy, Gross out, Slasher, Teen",M,173.0
+256,blade runner,1982,Sebastian,SEBASTIAN,"Thriller, Cyberpunk, Science Fiction, Future noir, Existentialism, Cult, Drama, Film noir, Crime Thriller, Chinese Movies, Dystopia, Neo-noir",M,295.0
+257,rambo: first blood part ii,1985,Sam,SAM,"Thriller, Action/Adventure, Action Thrillers, Action, War film",M,376.0
+258,brazil,1985,Sam,SAM,"Science Fiction, Future noir, Cult, Satire, Fantasy, Comedy, Drama, Black comedy, Dystopia, Kafkaesque",M,376.0
+259,the running man,1987,Killian,KILLIAN,"Thriller, Science Fiction, Action, Dystopia, Film adaptation",M,15.0
+260,kindergarten cop,1990,Phoebe,PHOEBE,"Thriller, Indie, Comedy Thriller, Action/Adventure, Comedy, Family Film, Action",F,228.0
+261,top gun,1986,Tom,TOM,"Action/Adventure, Drama, War film, Romantic drama, Romance Film, Action, Airplanes and airports",M,437.0
+262,la notte,1961,Roberto,ROBERTO,"Marriage Drama, Drama, World cinema, Black-and-white, Art film",M,1041.0
+263,robin hood: prince of thieves,1991,Scarlett,SCARLETT,"Swashbuckler films, Adventure, Costume drama, Costume Adventure, Action/Adventure, Period piece, Drama, Romantic drama, Romance Film",F,154.0
+264,annie hall,1977,Annie,ANNIE,"Romantic comedy, Comedy of manners, Drama, Comedy, Romance Film, New Hollywood",F,768.0
+265,ghost,1990,Oda,ODA,"Thriller, Supernatural, Mystery, Drama, Comedy, Romantic drama, Romance Film, Fantasy",F,156.0
+266,hello dolly!,1969,Cornelius,CORNELIUS,"Romantic comedy, Romance Film, Musical, Family Film, Comedy",M,274.0
+267,troy,2004,Achilles,ACHILLES,"Sword and Sandal, Adventure, Costume drama, Historical fiction, Epic, Action/Adventure, History, War film, Romance Film, Action, Historical Epic, Documentary",M,32.0
+268,mystic river,2003,Harris,HARRIS,"Thriller, Crime Fiction, Tragedy, Psychological thriller, Mystery, Drama, Film adaptation, Crime Thriller",M,291.0
+269,true romance,1993,Presley,PRESLEY,"Thriller, Crime Fiction, Indie, Action/Adventure, Drama, Crime Thriller, Romance Film, Action",F,156.0
+270,blade,1998,Deacon,DEACON,"Thriller, Horror, Superhero movie, Action/Adventure, Fantasy, Archives and records, Action",M,19.0
+271,pete's dragon,1977,Elliott,ELLIOTT,,M,273.0
+272,lawrence of arabia,1962,Ali,ALI,"LGBT, Historical fiction, Adventure, British Empire Film, Costume drama, Roadshow theatrical release, Epic, Action/Adventure, Drama, War film, Biographical film, Action",M,317.0
+273,the towering inferno,1974,Duncan,DUNCAN,"Disaster, Action/Adventure, Ensemble Film, Action, Doomsday film",M,216.0
+274,viridiana,1961,Jorge,JORGE,"Art film, World cinema, Comedy-drama, Satire, Drama, Comedy, Black comedy",M,546.0
+275,the big sleep,1978,Rusty,RUSTY,"Crime Fiction, Thriller, Gangster Film, Mystery, Drama, Crime Thriller",M,341.0
+276,léon: the professional,1994,Mathilda,MATHILDA,"Thriller, Crime Fiction, Buddy film, Indie, World cinema, Action/Adventure, Coming of age, Drama, Crime Thriller, Action",F,17.0
+277,spider-man 2,2004,Otto,OTTO,"Thriller, Science Fiction, Superhero movie, Superhero, Action/Adventure, Drama, Fantasy, Action",M,157.0
+278,heat,1995,Chris,CHRIS,"Thriller, Crime Fiction, Heist, Psychological thriller, Action/Adventure, Drama, Crime Thriller, Action",M,595.0
+279,harry potter and the goblet of fire,2005,Viktor,VIKTOR,,M,175.0
+280,the last of the mohicans,1992,Cora,CORA,"Costume drama, War film, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",F,250.0
+281,mad max,1979,Max,MAX,"Thriller, Tragedy, Adventure, World cinema, Doomsday film, Chase Movie, Science Fiction, Cult, Apocalyptic and post-apocalyptic fiction, Biker Film, Action",M,514.0
+282,the prestige,2006,Alfred,ALFRED,"Thriller, Science Fiction, Psychological thriller, Mystery, Period piece, Fantasy, Film adaptation, Drama, Steampunk",M,665.0
+283,donnie darko,2001,Kitty,KITTY,"Thriller, Science Fiction, Indie, Doomsday film, Tragedy, Comedy-drama, Psychological thriller, Mystery, Period piece, Satire, Fantasy, Drama, Coming of age, Time travel, Teen",F,126.0
+284,i spit on your grave,1978,Andy,ANDY,"Cult, Horror, Slasher",M,976.0
+285,high plains drifter,1973,Duncan,DUNCAN,"Thriller, Action/Adventure, Western, Action, Revisionist Western",M,122.0
+286,gattaca,1997,Anton,ANTON,"Thriller, Science Fiction, Future noir, Drama, Film noir, Romance Film, Dystopia",M,318.0
+287,home alone,1990,Marley,MARLEY,,F,85.0
+288,rosemary's baby,1968,Abraham,ABRAHAM,"Horror, Drama, Psychological thriller, Mystery",M,262.0
+289,troy,2004,Briseis,BRISEIS,"Sword and Sandal, Adventure, Costume drama, Historical fiction, Epic, Action/Adventure, History, War film, Romance Film, Action, Historical Epic, Documentary",F,
+290,stand by me,1986,Charlie,CHARLIE,"Adventure, Period piece, Coming of age, Film adaptation, Drama, Teen",M,649.0
+291,the shawshank redemption,1994,Hadley,HADLEY,"Crime Fiction, Buddy film, Prison film, Drama, Escape Film, Prison",F,123.0
+292,man on fire,1987,Eleanor,ELEANOR,"Thriller, Action, Drama, Indie",F,312.0
+293,the terminal,2004,Viktor,VIKTOR,"Romantic comedy, Comedy-drama, Drama, Comedy, Romantic drama, Romance Film, Comedy of Errors",M,136.0
+294,willow,1988,Elora,ELORA,"Fantasy Adventure, Sword and sorcery films, Stop motion, Costume drama, Action/Adventure, Fantasy, Comedy, Drama, Sword and sorcery, Family Film, Action, Romance Film, Adventure",F,29.0
+295,harry potter and the chamber of secrets,2002,Lucius,LUCIUS,,M,60.0
+296,pearl harbor,2001,Rafe,RAFE,"Action/Adventure, Period piece, Drama, War film, Romantic drama, Romance Film, Action, Airplanes and airports",M,55.0
+297,slap shot,1977,Braden,BRADEN,"Sports, Action/Adventure, Action, Comedy",M,117.0
+298,five easy pieces,1970,Elton,ELTON,"Road movie, Family Drama, Drama, New Hollywood",M,124.0
+299,cool hand luke,1967,Lucas,LUCAS,"Crime Fiction, Prison film, Prison, Drama, Film adaptation",M,59.0
+300,schindler's list,1993,Oskar,OSKAR,"Tragedy, Biography, History, War film, Biopic [feature], Black-and-white, Period piece, Drama, Film adaptation, Biographical film",M,72.0
+301,ocean's eleven,2001,Linus,LINUS,"Crime Fiction, Heist, Remake, Action/Adventure, Thriller, Comedy, Action",M,75.0
+302,point blank,1967,Hugo,HUGO,Thriller,M,162.0
+303,the fifth element,1997,Korben,KORBEN,"Thriller, Science Fiction, Action, Fantasy, Adventure",M,15.0
+304,how to steal a million,1966,Simon,SIMON,"Crime Fiction, Romantic comedy, Crime Comedy, Heist, Caper story, Comedy, Romance Film",M,344.0
+305,alien³,1992,Bishop,BISHOP,"Thriller, Science Fiction, Horror, Adventure, Action/Adventure, Action",M,39.0
+306,superman ii,1981,Clark,CLARK,"Science Fiction, Adventure, Superhero movie, Superhero, Action/Adventure, Alien Film, Family Film, Action",M,270.0
+307,the odd couple,1968,Oscar,OSCAR,"Romance Film, Screwball comedy, Drama, Comedy, Film adaptation",M,913.0
+308,juno,2007,Juno,JUNO,"Ensemble Film, Indie, Comedy-drama, Coming of age, Comedy, Drama, Romance Film, Domestic Comedy, Teen",M,17.0
+309,planet of the apes,1968,Cornelius,CORNELIUS,"Cult, Thriller, Science Fiction, Adventure, New Hollywood",M,246.0
+310,"it's a mad, mad, mad, mad world",1963,Marcus,MARCUS,"Crime Fiction, Ensemble Film, Adventure, Chase Movie, Comedy, Family Film, Action",M,1329.0
+311,dead poets society,1989,Anderson,ANDERSON,"Ensemble Film, School story, Period piece, Drama, Coming of age, Teen",M,121.0
+312,"planes, trains and automobiles",1987,Page,PAGE,"Buddy film, Road movie, Screwball comedy, Drama, Comedy, Comedy of Errors, Airplanes and airports",F,76.0
+313,speed,1994,Porter,PORTER,"Thriller, Action/Adventure, Action, Crime Fiction, Adventure",M,66.0
+314,where eagles dare,1968,Wyatt,WYATT,"Adventure, Roadshow theatrical release, Action/Adventure, Drama, War film, Action",M,81.0
+315,trading places,1983,Coleman,COLEMAN,"Satire, Comedy, Comedy of manners",M,123.0
+316,snatch,2000,Avi,AVI,"Crime Fiction, Thriller, Gangster Film, Heist, Action/Adventure, Comedy, Crime Thriller, Black comedy, Action",M,99.0
+317,constantine,2005,Constantine,CONSTANTINE,"Fantasy, Horror, Action, Drama, Mystery",M,87.0
+318,stir crazy,1980,Wilson,WILSON,"Action/Adventure, Buddy film, Prison film, Cult, Comedy, Comedy of Errors, Action, Prison",M,305.0
+319,million dollar baby,2004,Mack,MACK,"Sports, Tragedy, Drama, Boxing",M,119.0
+320,the truman show,1998,Truman,TRUMAN,"Parody, Media Satire, Science Fiction, Existentialism, Comedy-drama, Fantasy, Comedy, Drama",M,118.0
+321,manhattan,1979,Davis,DAVIS,"Romantic comedy, Indie, Black-and-white, Comedy, Romance Film, New Hollywood",M,132.0
+322,superman iii,1983,Clark,CLARK,"Thriller, Science Fiction, Adventure, Superhero movie, Superhero, Action/Adventure, Fantasy, Comedy, Family Film, Action",M,326.0
+323,vacation,1983,Clark,CLARK,"Romance Film, Comedy, Adventure",M,326.0
+324,falling down,1993,Foster,FOSTER,"Thriller, Crime Fiction, Crime Drama, Psychological thriller, Drama, Comedy, Crime Thriller, Black comedy, Action",M,74.0
+325,the english patient,1996,Tiger,TIGER,"War film, Period piece, Drama, Film adaptation, Romantic drama, Romance Film",M,18.0
+326,soylent green,1973,Solomon,SOLOMON,"Thriller, Mystery, Science Fiction, Drama",M,162.0
+327,the last boy scout,1991,Mike,MIKE,"Thriller, Crime Fiction, Buddy film, Action/Adventure, Comedy, Crime Thriller, Action",M,730.0
+328,the terminator,1984,Reese,REESE,"Thriller, Science Fiction, Indie, Doomsday film, Stop motion, Action/Adventure, Time travel, Action",M,54.0
+329,wedding crashers,2005,Grey,GREY,"Romantic comedy, Sex comedy, Romance Film, Comedy",M,50.0
+330,snatch,2000,Vinnie,VINNIE,"Crime Fiction, Thriller, Gangster Film, Heist, Action/Adventure, Comedy, Crime Thriller, Black comedy, Action",M,40.0
+331,midnight express,1978,Max,MAX,"Thriller, LGBT, Indie, Crime Fiction, Escape Film, Biopic [feature], Drama, Biographical film, Prison, Adventure",M,463.0
+332,superman,1978,Clark,CLARK,"Science Fiction, Adventure, Superhero movie, Action/Adventure, Family Film, Action",M,225.0
+333,goldeneye,1995,Tiger,TIGER,"Thriller, Action Thrillers, Adventure, Action/Adventure, Glamorized Spy Film, Action, Spy",M,12.0
+334,love actually,2003,Mack,MACK,"Romantic comedy, Ensemble Film, Comedy-drama, Holiday Film, Drama, Comedy, Romance Film",M,133.0
+335,rocky iv,1985,Nicolai,NICOLAI,"Sports, Action, Drama, Political drama, Boxing",M,49.0
+336,the jerk,1979,Johnson,JOHNSON,"Music, Screwball comedy, Slapstick, Comedy, Absurdism",M,36.0
+337,apocalypse now,1979,Johnson,JOHNSON,"Anti-war, Adventure, Existentialism, Jungle Film, Drama, War film, Anti-war film, New Hollywood",M,36.0
+338,ferris bueller's day off,1986,Sloane,SLOANE,"Cult, Drama, Coming of age, Comedy, Teen",F,32.0
+339,somewhere in time,1980,McKenna,MCKENNA,"Science Fiction, Indie, Tragedy, Romantic fantasy, Fantasy, Drama, Romantic drama, Time travel, Romance Film",F,
+340,the dead zone,1983,Sam,SAM,"Thriller, Science Fiction, Horror, Indie, Supernatural, Psychological thriller, Political thriller, Crime Thriller",M,375.0
+341,alien³,1992,Queen,QUEEN,"Thriller, Science Fiction, Horror, Adventure, Action/Adventure, Action",F,37.0
+342,war of the worlds,2005,Manny,MANNY,"Thriller, Science Fiction, Horror, Adventure, Doomsday film, Alien Film, Drama, Disaster, Action",M,61.0
+343,the jerk,1979,Carl,CARL,"Music, Screwball comedy, Slapstick, Comedy, Absurdism",M,3032.0
+344,snatch,2000,Sol,SOL,"Crime Fiction, Thriller, Gangster Film, Heist, Action/Adventure, Comedy, Crime Thriller, Black comedy, Action",M,72.0
+345,twister,1996,Miller,MILLER,"Action/Adventure, Disaster",M,66.0
+346,a beautiful mind,2001,Sol,SOL,"Biography, Psychological thriller, Period piece, Marriage Drama, Drama, Biopic [feature], Romantic drama, Romance Film, Biographical film",F,80.0
+347,toy story 3,2010,Woody,WOODY,,M,87.0
+348,autumn sonata,1978,Eva,EVA,"Musical, Family Drama, Drama, Art film, World cinema",F,1272.0
+349,the last picture show,1971,Jacy,JACY,"Ensemble Film, Slice of life story, Americana, Black-and-white, Period piece, Coming of age, Film adaptation, Drama, New Hollywood",F,9.0
+350,true grit,1969,Reuben,REUBEN,"Adventure, Costume drama, Action/Adventure, Western, Drama, Film adaptation",M,159.0
+351,"the chronicles of narnia: the lion, the witch and the wardrobe",2005,Aslan,ASLAN,,M,18.0
+352,face/off,1997,Archer,ARCHER,"Thriller, Crime Fiction, Tragedy, Chase Movie, Science Fiction, Action Thrillers, Action",M,13.0
+353,platoon,1986,Harris,HARRIS,"Anti-war, Indie, Drama, War film, Action, Anti-war film, Combat Films",M,73.0
+354,saving private ryan,1998,Miller,MILLER,"Ensemble Film, History, Drama, War film, Action, Combat Films",M,71.0
+355,eyes wide shut,1999,Nick,NICK,"Thriller, Erotic Drama, Erotica, Mystery, Surrealism, Psychological thriller, Erotic thriller, Marriage Drama, Drama, Romance Film",M,221.0
+356,little miss sunshine,2006,Dwayne,DWAYNE,"LGBT, Ensemble Film, Adventure, Road movie, Comedy-drama, Drama, Comedy, Domestic Comedy, Indie",M,410.0
+357,barefoot in the park,1967,Corie,CORIE,"Romantic comedy, Romance Film, Comedy",F,26.0
+358,the breakfast club,1985,Clark,CLARK,"Ensemble Film, Comedy-drama, Drama, Comedy, Coming of age, Teen",M,290.0
+359,mr. & mrs. smith,2005,Smith,SMITH,"Thriller, Romantic comedy, Action/Adventure, Comedy, Black comedy, Romance Film, Action",M,45.0
+360,philadelphia,1993,Miller,MILLER,"LGBT, Tragedy, Gay, Gay Interest, Drama, Medical fiction, Gay Themed, Courtroom Drama",M,46.0
+361,carlito's way,1993,Carlito,CARLITO,"Crime Fiction, Gangster Film, Drama, Thriller, Crime Drama",M,12.0
+362,police academy,1984,Harris,HARRIS,"Crime Fiction, Comedy",M,70.0
+363,close encounters of the third kind,1977,Barry,BARRY,"Science Fiction, Drama, Adventure, New Hollywood",M,1799.0
+364,superman ii,1981,Kent,KENT,"Science Fiction, Adventure, Superhero movie, Superhero, Action/Adventure, Alien Film, Family Film, Action",M,578.0
+365,the usual suspects,1995,Edie,EDIE,"Thriller, Ensemble Film, Mystery, Crime Fiction, Crime Thriller, Neo-noir",F,24.0
+366,"lock, stock and two smoking barrels",1998,Nick,NICK,"Thriller, Caper story, Crime Fiction, Buddy film, Crime Comedy",M,199.0
+367,the matrix reloaded,2003,Smith,SMITH,"Action/Adventure, Thriller, Science Fiction, Action, Adventure",M,24.0
+368,aliens,1986,Hudson,HUDSON,"Thriller, Science Fiction, Horror, Adventure, Stop motion, Sci-Fi Horror, Creature Film, Action/Adventure, Action",M,21.0
+369,jaws,1975,Ben,BEN,Thriller,M,637.0
+370,picnic at hanging rock,1975,Ben,BEN,"LGBT, Thriller, Horror, World cinema, Supernatural, Mystery, Period piece, Coming of age, Drama",M,637.0
+371,first blood,1982,Sam,SAM,"Thriller, Adventure, Psychological thriller, Action Thrillers, Drama, Action",M,391.0
+372,the deer hunter,1978,Michael,MICHAEL,"Anti-war, Ensemble Film, Drama, War film, Anti-war film, New Hollywood",M,72389.0
+373,halloween,1978,Michael,MICHAEL,"Thriller, Horror, Indie, Cult, Slasher, Teen",M,72389.0
+374,robin hood: prince of thieves,1991,Robin,ROBIN,"Swashbuckler films, Adventure, Costume drama, Costume Adventure, Action/Adventure, Period piece, Drama, Romantic drama, Romance Film",M,1359.0
+375,from here to eternity,1979,Lorene,LORENE,Drama,F,85.0
+376,the neverending story,1984,Fantasia,FANTASIA,,F,8.0
+377,star wars episode iii: revenge of the sith,2005,Mace,MACE,"Science Fiction, Action, Fantasy, Tragedy, Adventure",M,28.0
+378,die hard,1988,Eddie,EDDIE,"Crime Fiction, Thriller, Action, Action/Adventure",M,1158.0
+379,who framed roger rabbit,1988,Eddie,EDDIE,"Parody, Crime Fiction, Fantasy Comedy, Buddy film, Animation, Action/Adventure, Mystery, Fantasy, Comedy, Black comedy, Family Film, Action",M,1158.0
+380,notting hill,1999,Spike,SPIKE,"Romantic comedy, Romance Film, Comedy",M,6.0
+381,doctor zhivago,1965,Yuri,YURI,Costume drama,M,
+382,doctor zhivago,1965,Yuri,YURI,"Roadshow theatrical release, Epic, Period piece, Drama, War film, Romantic drama, Romance Film",M,
+383,28 days later,2002,Farrell,FARRELL,"Thriller, Science Fiction, Horror, Doomsday film, Sci-Fi Horror, Plague, Zombie Film",M,16.0
+384,bonnie and clyde,1967,Buck,BUCK,"Crime Fiction, Heist, Gangster Film, Crime Drama, Road movie, Action/Adventure, Drama, Outlaw, Romance Film, Action, Biographical film, New Hollywood",M,35.0
+385,la notte,1961,Valentina,VALENTINA,"Marriage Drama, Drama, World cinema, Black-and-white, Art film",F,66.0
+386,the bourne ultimatum,2007,Daniels,DANIELS,"Thriller, Crime Fiction, Action/Adventure, Mystery, Martial Arts Film, Drama, Film adaptation, Action Thrillers, Action, Spy",M,9.0
+387,stand by me,1986,Hogan,HOGAN,"Adventure, Period piece, Coming of age, Film adaptation, Drama, Teen",M,7.0
+388,forrest gump,1994,Blue,BLUE,"Coming of age, Comedy film, Drama, War film, Romantic drama, Romance Film",M,12.0
+389,training day,2001,Hoyt,HOYT,"Crime Fiction, Crime Thriller, Drama, Adventure, Thriller",M,19.0
+390,the outlaw josey wales,1976,Josey,JOSEY,"Action/Adventure, Revisionist Western, Western, War film",F,10.0
+391,die hard,1988,Kristoff,KRISTOFF,"Crime Fiction, Thriller, Action, Action/Adventure",M,
+392,casino,1995,Frankie,FRANKIE,"Crime Fiction, Biography, Gangster Film, Period piece, Drama, Film adaptation",M,286.0
+393,the bourne supremacy,2004,Abbott,ABBOTT,"Thriller, Crime Fiction, Action/Adventure, Mystery, Martial Arts Film, Drama, Film adaptation, Action Thrillers, Action, Spy",M,9.0
+394,the poseidon adventure,1972,Manny,MANNY,"Thriller, Adventure, Action/Adventure, Drama, Disaster, Action",M,32.0
+395,andrei rublev,1966,Andrei,ANDREI,"Christian film, Biography, Art film, World cinema, Costume drama, History, Biopic [feature], Period piece, Drama, War film, Biographical film, Historical fiction, Historical Epic, Historical drama",M,11.0
+396,elf,2003,Buddy,BUDDY,,M,50.0
+397,jaws 2,1978,Peterson,PETERSON,"Thriller, Natural horror films, Horror, Adventure, Creature Film, Action/Adventure, Suspense, Action, Slasher",M,12.0
+399,enemy of the state,1998,Banks,BANKS,"Thriller, Action Thrillers, Chase Movie, Action/Adventure, Drama, Suspense, Political thriller, Crime Thriller, Action",M,7.0
+400,dr. strangelove or: how i learned to stop worrying and love the bomb,1964,Alexei,ALEXEI,"Drama, Comedy",M,
+401,kelly's heroes,1970,Colt,COLT,"Crime Fiction, Heist, Adventure, Anti-war, Action/Adventure, Satire, Comedy, War film, Action, Anti-war film",M,8.0
+402,children of men,2006,Faron,FARON,"Thriller, Action Thrillers, Science Fiction, Future noir, Adventure, Doomsday film, Action/Adventure, Mystery, Drama, Film adaptation, Action, Dystopia",M,14.0
+403,basic instinct,1992,Garner,GARNER,"LGBT, Thriller, Mystery, Psychological thriller, Erotic thriller, Drama, Crime Thriller",M,5.0
+404,rocky,1981,Shankar,SHANKAR,"World cinema, Musical, Drama, Romantic drama, Romance Film, Bollywood",M,
+405,fear and loathing in las vegas,1998,Raoul,RAOUL,"Buddy film, Adventure, Absurdism, Road movie, Experimental film, Cult, Drama, Comedy, Black comedy, Avant-garde",M,28.0
+406,terminator 2: judgment day,1991,Dyson,DYSON,"Thriller, Science Fiction, Doomsday film, Action/Adventure, Time travel, Action",M,6.0
+407,west side story,1961,Bernardo,BERNARDO,"Crime Fiction, Musical, Drama, Romance Film, Musical Drama, Juvenile Delinquency Film",M,69.0
+408,jaws 2,1978,Andrews,ANDREWS,"Thriller, Natural horror films, Horror, Adventure, Creature Film, Action/Adventure, Suspense, Action, Slasher",M,5.0
+409,jumanji,1995,Shepherd,SHEPHERD,,M,10.0
+410,ferris bueller's day off,1986,Ferris,FERRIS,"Cult, Drama, Coming of age, Comedy, Teen",M,17.0
+411,the wild bunch,1969,Deke,DEKE,"Western, Action",M,8.0
+412,the silence,1963,Johan,JOHAN,"World cinema, Drama, Art film, Black-and-white",M,101.0
+413,bonnie and clyde,1967,Parker,PARKER,"Crime Fiction, Heist, Gangster Film, Crime Drama, Road movie, Action/Adventure, Drama, Outlaw, Romance Film, Action, Biographical film, New Hollywood",M,38.0
+414,alien,1979,Ash,ASH,"Science Fiction, Horror, Adventure, Sci-Fi Horror, Creature Film, New Hollywood",M,
+415,pirates of the caribbean: the curse of the black pearl,2003,Sparrow,SPARROW,"Swashbuckler films, Fantasy Adventure, Adventure, Action/Adventure, Fantasy, Comedy, Adventure Comedy, Action",M,
+416,basic instinct,1992,Gus,GUS,"LGBT, Thriller, Mystery, Psychological thriller, Erotic thriller, Drama, Crime Thriller",M,50.0
+417,doctor zhivago,1965,Pasha,PASHA,"Roadshow theatrical release, Epic, Period piece, Drama, War film, Romantic drama, Romance Film",M,
+418,bonnie and clyde,1967,Moss,MOSS,"Crime Fiction, Heist, Gangster Film, Crime Drama, Road movie, Action/Adventure, Drama, Outlaw, Romance Film, Action, Biographical film, New Hollywood",M,
+419,the last picture show,1971,Crawford,CRAWFORD,"Ensemble Film, Slice of life story, Americana, Black-and-white, Period piece, Coming of age, Film adaptation, Drama, New Hollywood",M,17.0
+420,scent of a woman,1992,Ranger,RANGER,"Drama, Coming of age",M,
+421,constantine,2005,Lucifer,LUCIFER,"Fantasy, Horror, Action, Drama, Mystery",M,
+424,dead poets society,1989,Knox,KNOX,"Ensemble Film, School story, Period piece, Drama, Coming of age, Teen",M,6.0
+425,point blank,1967,Walker,WALKER,"Thriller, Crime Fiction, Gangster Film, Mystery, Drama, Film noir, Crime Thriller, New Hollywood",M,33.0
+426,chitty chitty bang bang,1968,Jemima,JEMIMA,"Musical, Family Film, Fantasy, Comedy, Family-Oriented Adventure",F,
+427,boyz n the hood,1991,Ferris,FERRIS,"Crime Fiction, Drama, Coming of age, Teen",M,14.0
+428,highlander,1986,Ramirez,RAMIREZ,"Cult, Action/Adventure, Science Fiction, Fantasy, Superhero movie",M,6.0
+429,what ever happened to baby jane?,1962,Hudson,HUDSON,"Thriller, Drama, Horror, Psychological thriller",M,6.0
+430,"the good, the bad and the ugly",1966,Blondie,BLONDIE,"World cinema, Epic Western, Spaghetti Western, Action/Adventure, Revisionist Western, Western, War film, Action",F,
+431,superman ii,1981,Lex,LEX,"Science Fiction, Adventure, Superhero movie, Superhero, Action/Adventure, Alien Film, Family Film, Action",M,14.0
