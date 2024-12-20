@@ -182,6 +182,15 @@ First, let's look at the repartition of gender amongst the names influenced by m
 
 {% include pie_chart_gender.html %}
 
+Interesting! For much of cinematic history, male characters have dominated the spotlight, often portrayed as heroes, leaders, and pivotal figures in stories that shape popular culture. This historical trend is reflected in our data, where approximately 3 out of 4 influenced names are male.
+
+To better understand how movies influence names, we look at the distribution of influenced names across different movie genres. This will help us see if certain genres have a stronger impact on male or female names.
+
+{% include plot_genre_gender_influence.html %}
+
+The chart reveals that male names dominate the influence across almost all genres, which aligns with the broader trend where 3 out of 4 influenced names are male. This pattern holds consistent in most cases. We could have expected this outcome due to our previous observation about the historical dominance of male characters in movies. However, the Comedy genre is a surprising exception, showing an almost 50/50 split between male and female names influenced.
+
+
 # Limitations of our project
 
 <div style="display: flex; justify-content: center; align-items:center; width:100%;">

@@ -87,3 +87,11 @@ This approach allowed us to efficiently detect main characters. Ultimately, we c
     - Developed the character name recognition system.
     - Contributed to the analysis in results.ipynb.
     - Updated the website to reflect my findings and results.
+ - Pauline :
+    - Worked on defining what a blockbuster is
+    - Studied of genre movie on names
+    - Studied on the case of Norwegian names (only on the results notebook)
+    - Updated the website to sho the findings of the analysis for the datastory
+
+
+   
